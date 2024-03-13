@@ -7,22 +7,21 @@
   <title>SUPERGYM</title>
   <link rel="stylesheet" href="sass/style.scss">
   <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="/source/img/favicons/apple-icon.png">
-  <link rel="preload" href="../fonts/alumni/AlumniSans-SemiBold.woff2" as="font" type="font/woff2"
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="preload" href="fonts/alumni/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="../fonts/alumni/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Light.woff" as="font" type="font/woff"
     crossorigin="anonymous">
-  <link rel="preload" href="../fonts/roboto/Roboto-Condensed-Light.woff" as="font" type="font/woff"
+  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Light.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="../fonts/roboto/Roboto-Condensed-Light.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Regular.woff" as="font" type="font/woff"
     crossorigin="anonymous">
-  <link rel="preload" href="../fonts/roboto/Roboto-Condensed-Regular.woff" as="font" type="font/woff"
+  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Regular.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="../fonts/roboto/Roboto-Condensed-Regular.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
-  <link rel="preload" href="../fonts/roboto/Roboto-Condensed-Bold.woff" as="font" type="font/woff"
-    crossorigin="anonymous">
-  <link rel="preload" href="../fonts/roboto/Roboto-Condensed-Bold.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Bold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
 </head>
 
@@ -39,22 +38,26 @@
       <a class="hero__phone" href="tel:+78005555555">8-800-555-55-55</a>
     </div>
     <div class="hero__content">
-      <h2 class="hero__heading">Фитнес центр</h1>
-        <p class="hero__text hero__text--fitness">Омск</p>
-        <div class="hero__wrapper">
-          <p class="hero__text">Тренажерный зал</p>
-          <p class="hero__text">Групповые занятия</p>
-          <p class="hero__text">Кардио-зона</p>
-        </div>
-        <a class="hero__button" href="#">Купить абонемент</a>
+      <h2 class="hero__heading">Фитнес центр</h2>
+      <p class="hero__text hero__text--fitness">Омск</p>
+      <div class="hero__wrapper">
+        <p class="hero__text">Тренажерный зал</p>
+        <p class="hero__text">Групповые занятия</p>
+        <p class="hero__text">Кардио-зона</p>
+      </div>
+      <a class="hero__button" href="#">Купить абонемент</a>
     </div>
     <picture>
-      <source media="(min-width: 1366px)" srcset="" width="" height="" type="image/webp">
-      <source media="(min-width: 768px)" srcset="" width="" height="" type="image/webp">
-      <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-      <source media="(min-width: 1366px)" srcset="" width="" height="">
-      <source media="(min-width: 768px)" srcset="" width="" height="">
-      <img class="hero__img" src="" alt="Тренер фитнес центра" width="" height="">
+      <source media="(min-width: 1366px)" srcset="img/hero/hero-desktop.webp, img/hero/hero-desktop@2x.webp 2x"
+        width="500" height="524" type="image/webp">
+      <source media="(min-width: 768px)" srcset="img/hero/hero-tablet.webp, img/hero/hero-tablet@2x.webp 2x" width="324"
+        height="390" type="image/webp">
+      <source media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg, img/hero/hero-desktop@2x.jpg 2x"
+        width="500" height="524">
+      <source media="(min-width: 768px)" srcset="img/hero/hero-tablet.jpg, img/hero/hero-tablet@2x.jpg 2x" width="324"
+        height="390">
+      <img class="hero__img" src="img/hero/hero-tablet.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x"
+        alt="Тренер фитнес центра" width="0" height="0">
     </picture>
   </section>
   <main class="page-main">
@@ -64,16 +67,22 @@
       <p>Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и
         здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
       <picture>
-        <source media="(min-width: 1366px)" srcset="" width="" height="" type="image/webp">
-        <source media="(min-width: 768px)" srcset="" width="" height="" type="image/webp">
-        <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-        <source media="(min-width: 1366px)" srcset="" width="" height="">
-        <source media="(min-width: 768px)" srcset="" width="" height="">
-        <img class="about__img" src="" alt="Фотография тренажерного зала" width="" height="">
+        <source media="(min-width: 1366px)" srcset="img/about/about-desktop.webp, img/about/about-desktop@2x.webp 2x"
+          width="660" height="400" type="image/webp">
+        <source media="(min-width: 768px)" srcset="img/about/about-tablet.webp, img/about/about-tablet@2x.webp 2x"
+          width="678" height="345" type="image/webp">
+        <source media="(min-width: 320px)" srcset="img/about/about-mobile.webp, img/about/about-mobile@2x.webp 2x "
+          width="320" height="280" type="image/webp">
+        <source media="(min-width: 1366px)" srcset="img/about/about-desktop.jpg, img/about/about-desktop@2x.jpg 2x"
+          width="660" height="400">
+        <source media="(min-width: 768px)" srcset="img/about/about-tablet.jpg, img/about/about-tablet@2x.jpg 2x"
+          width="678" height="345">
+        <img class="about__img" src="img/about/about-mobile.jpg" srcset="img/about/about-mobile@2x.jpg 2x"
+          alt="Тренажёрный зал" width="320" height="280">
       </picture>
       <div class="about__wrapper">
         <iframe class="about__video" src="https://www.youtube.com/embed/9TZXsZItgdw?si=0APauuiOqIzVbOTx" width="320"
-          height="170" title="youTube video player" frameborder="0"
+          height="170" title="youTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
@@ -190,12 +199,18 @@
           <a class="games__button" href="#">Заполнить заявку</a>
         </div>
         <picture>
-          <source media="(min-width: 1366px)" srcset="" width="" height="" type="image/webp">
-          <source media="(min-width: 768px)" srcset="" width="" height="" type="image/webp">
-          <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-          <source media="(min-width: 1366px)" srcset="" width="" height="">
-          <source media="(min-width: 768px)" srcset="" width="" height="">
-          <img class="games__img" src="" alt="Фотография спортсмена" width="" height="">
+          <source media="(min-width: 1366px)" srcset="img/games/games-desktop.webp, img/games/games-desktop@2x.webp 2x"
+            width="660" height="500" type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/games/games-tablet.webp, img/games/games-tablet@2x.webp 2x"
+            width="378" height="348" type="image/webp">
+          <source media="(min-width: 320px)" srcset="img/games/games-mobile.webp, img/games/games-mobile@2x.webp 2x"
+            width="290" height="290" type="image/webp">
+          <source media="(min-width: 1366px)" srcset="img/games/games-desktop.jpg, img/games/games-desktop@2x.jpg 2x"
+            width="660" height="500">
+          <source media="(min-width: 768px)" srcset="img/games/games-tablet.jpg, img/games/games-tablet@2x.jpg 2x"
+            width="378" height="348">
+          <img class="games__img" src="img/games/games-mobile.jpg" srcset="img/games/games-mobile@2x.jpg 2x"
+            alt="Фотография спортсмена" width="290" height="290">
         </picture>
       </div>
     </section>
@@ -205,12 +220,10 @@
         <div class="juri__wrapper swiper__wrapper">
           <div class="juri__slide swiper__slide">
             <picture>
-              <source media="(min-width: 1366px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 768px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 1366px)" srcset="" width="" height="">
-              <source media="(min-width: 768px)" srcset="" width="" height="">
-              <img class="juri__img" src="" alt="Участник жюри Анна Павлова" width="" height="">
+              <source media="(min-width: 320px)" srcset="img/juri/juri-anna.webp,img/juri/juri-anna@2x.webp 2x "
+                width="260" height="300" type="image/webp">
+              <img class="juri__img" src="img/juri/juri-anna.jpg" srcset="img/juri/juri-anna@2x.jpg 2x"
+                alt="Участник жюри Анна Павлова" width="260" height="300">
             </picture>
             <h3 class="juri__title swiper__title">Анна Павлова</h3>
             <p class="juri__text swiper__text">CrossFit</p>
@@ -222,12 +235,10 @@
           </div>
           <div class="juri__slide swiper__slide">
             <picture>
-              <source media="(min-width: 1366px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 768px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 1366px)" srcset="" width="" height="">
-              <source media="(min-width: 768px)" srcset="" width="" height="">
-              <img class="juri__img" src="" alt="Участник жюри Алексей Лавров" width="" height="">
+              <source media="(min-width: 320px)" srcset="img/juri/juri-alexey.webp, img/juri/juri-alexey@2x.webp 2x"
+                width="260" height="300" type="image/webp">
+              <img class="juri__img" src="img/juri/juri-alexey.jpg" srcset="img/juri/juri-alexey@2x.jpg 2x"
+                alt="Участник жюри Алексей Лавров" width="260" height="300">
             </picture>
             <h3 class="juri__title swiper__title">Алексей Лавров</h3>
             <p class="juri__text swiper__text">CrossFit</p>
@@ -239,12 +250,10 @@
           </div>
           <div class="juri__slide swiper__slide">
             <picture>
-              <source media="(min-width: 1366px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 768px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 1366px)" srcset="" width="" height="">
-              <source media="(min-width: 768px)" srcset="" width="" height="">
-              <img class="juri__img" src="" alt="Участник жюри Александр Пашков" width="" height="">
+              <source media="(min-width: 320px)" srcset="img/juri/juri-alex.webp, img/juri/juri-alex@2x.webp 2x"
+                width="260" height="300" type="image/webp">
+              <img class="juri__img" src="img/juri/juri-alex.jpg" srcset="img/juri/juri-alex@2x.jpg 2x"
+                alt="Участник жюри Александр Пашков" width="260" height="300">
             </picture>
             <h3 class="juri__title swiper__title">Александр Пашков</h3>
             <p class="juri__text swiper__text">CrossFit</p>
@@ -256,12 +265,10 @@
           </div>
           <div class="juri__slide swiper__slide">
             <picture>
-              <source media="(min-width: 1366px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 768px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-              <source media="(min-width: 1366px)" srcset="" width="" height="">
-              <source media="(min-width: 768px)" srcset="" width="" height="">
-              <img class="juri__img" src="" alt="Участник жюри Мария Кетова" width="" height="">
+              <source media="(min-width: 320px)" srcset="img/juri/juri-mary.webp, img/juri/juri-mary@2x.webp 2x"
+                width="260" height="300" type="image/webp">
+              <img class="juri__img" src="img/juri/juri-mary.jpg" srcset="img/juri/juri-mary@2x.jpg 2x"
+                alt="Участник жюри Мария Кетова" width="260" height="300">
             </picture>
             <h3 class="juri__title swiper__title">Мария Кетова</h3>
             <p class="juri__text swiper__text">CrossFit</p>
@@ -321,12 +328,19 @@
             <a class="offers__link" href="#">Подробнее</a>
           </div>
           <picture>
-            <source media="(min-width: 1366px)" srcset="" width="" height="" type="image/webp">
-            <source media="(min-width: 768px)" srcset="" width="" height="" type="image/webp">
-            <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-            <source media="(min-width: 1366px)" srcset="" width="" height="">
-            <source media="(min-width: 768px)" srcset="" width="" height="">
-            <img class="offers__img" src="" alt="Девушка в спортивном костюме" width="" height="">
+            <source media="(min-width: 1366px)"
+              srcset="img/offers/girl-desktop.webp, img/offers/girl-desktop@2x.webp 2x" width="280" height="460"
+              type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/offers/girl-tablet.webp, img/offers/girl-tablet@2x.webp 2x"
+              width="400" height="462" type="image/webp">
+            <source media="(min-width: 320px)" srcset="img/offers/girl-mobile.webp, img/offers/girl-mobile@2x.webp 2x"
+              width="320" height="360" type="image/webp">
+            <source media="(min-width: 1366px)" srcset="img/offers/girl-desktop.jpg, img/offers/girl-desktop@2x.jpg 2x"
+              width="280" height="460">
+            <source media="(min-width: 768px)" srcset="img/offers/girl-tablet.jpg, img/offers/girl-tablet@2x.jpg 2x"
+              width="400" height="462">
+            <img class="offers__img" src="img/offers/girl-mobile.jpg" srcset="img/offers/girl-mobile@2x.jpg 2x"
+              alt="Девушка в спортивном костюме" width="320" height="360">
           </picture>
         </div>
         <div class="offers__info">
@@ -471,8 +485,10 @@
         <div class="reviews__wrapper swiper__wrapper">
           <div class="reviews__slide swiper__slide">
             <picture>
-              <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-              <img src="" alt="Клиент фитнес-центра" width="" height="">
+              <source media="(min-width: 320px)" srcset="img/reviews/user.webp, img/reviews/user@2x.webp 2x" width="68"
+                height="68" type="image/webp">
+              <img src="img/reviews/user.png" srcset="img/reviews/user@2x.png 2x" alt="Клиент фитнес-центра" width="68"
+                height="68">
             </picture>
             <h3>Анна Орлова</h3>
             <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
@@ -480,8 +496,10 @@
           </div>
           <div class="reviews__slide swiper__slide">
             <picture>
-              <source media="(min-width: 320px)" srcset="" width="" height="" type="image/webp">
-              <img src="" alt="Клиент фитнес-центра" width="" height="">
+              <source media="(min-width: 320px)" srcset="img/reviews/user.webp, img/reviews/user@2x.webp 2x" width="68"
+                height="68" type="image/webp">
+              <img src="img/reviews/user.png" srcset="img/reviews/user@2x.png 2x" alt="Клиент фитнес-центра" width="68"
+                height="68">
             </picture>
             <h3>Анна Орлова</h3>
             <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
