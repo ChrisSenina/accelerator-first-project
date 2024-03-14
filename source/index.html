@@ -12,15 +12,10 @@
   <link rel="preload" href="fonts/alumni/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Light.woff" as="font" type="font/woff"
-    crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto/Roboto-Condensed-Light.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Regular.woff" as="font" type="font/woff"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto/Roboto-Condensed-Regular.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto/Roboto-Condensed-Bold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
 </head>
@@ -35,30 +30,33 @@
         <img class="hero__logo" src="/__spritemap#sprite-logo-mobile-view" width="100" height="20"
           alt="Логотип фитнес-центра SUPERGYM">
       </picture>
-      <a class="hero__phone" href="tel:+78005555555">8-800-555-55-55</a>
+      <a class="hero__phone link" href="tel:+78005555555">8 800 555-55-55</a>
     </div>
     <div class="hero__content">
-      <h2 class="hero__heading">Фитнес центр</h2>
-      <p class="hero__text hero__text--fitness">Омск</p>
+      <h2 class="visually-hidden">Фитнес центр города Омск</h2>
+      <ul class="hero__list">
+        <li class="hero__item">Тренажёрный зал</li>
+        <li class="hero__item">Групповые занятия</li>
+        <li class="hero__item">Кардио-зона</li>
+      </ul>
       <div class="hero__wrapper">
-        <p class="hero__text">Тренажерный зал</p>
-        <p class="hero__text">Групповые занятия</p>
-        <p class="hero__text">Кардио-зона</p>
+        <p class="hero__text hero__text--city">Омск</p>
+        <p class="hero__text hero__text--fitness">Фитнес центр</p>
       </div>
-      <a class="hero__button" href="#">Купить абонемент</a>
+      <picture>
+        <source media="(min-width: 1366px)" srcset="img/hero/hero-desktop.webp, img/hero/hero-desktop@2x.webp 2x"
+          width="500" height="524" type="image/webp">
+        <source media="(min-width: 768px)" srcset="img/hero/hero-tablet.webp, img/hero/hero-tablet@2x.webp 2x"
+          width="324" height="390" type="image/webp">
+        <source media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg, img/hero/hero-desktop@2x.jpg 2x"
+          width="500" height="524">
+        <source media="(min-width: 768px)" srcset="img/hero/hero-tablet.jpg, img/hero/hero-tablet@2x.jpg 2x" width="324"
+          height="390">
+        <img class="hero__img" src="img/hero/hero-tablet.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x"
+          alt="Тренер фитнес центра" width="0" height="0">
+      </picture>
     </div>
-    <picture>
-      <source media="(min-width: 1366px)" srcset="img/hero/hero-desktop.webp, img/hero/hero-desktop@2x.webp 2x"
-        width="500" height="524" type="image/webp">
-      <source media="(min-width: 768px)" srcset="img/hero/hero-tablet.webp, img/hero/hero-tablet@2x.webp 2x" width="324"
-        height="390" type="image/webp">
-      <source media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg, img/hero/hero-desktop@2x.jpg 2x"
-        width="500" height="524">
-      <source media="(min-width: 768px)" srcset="img/hero/hero-tablet.jpg, img/hero/hero-tablet@2x.jpg 2x" width="324"
-        height="390">
-      <img class="hero__img" src="img/hero/hero-tablet.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x"
-        alt="Тренер фитнес центра" width="0" height="0">
-    </picture>
+    <a class="hero__button button link" href="#">Купить абонемент</a>
   </section>
   <main class="page-main">
     <section class="about" data-test="about">
@@ -93,9 +91,9 @@
 
         <div class="tab-price__wrapper">
           <div class="tab-price__head">
-            <a class="tab-price__label" href="#tab-1">1 месяц</a>
-            <a class="tab-price__label" href="#tab-2">6 месяцев</a>
-            <a class="tab-price__label" href="#tab-3">12 месяцев</a>
+            <a class="tab-price__label link" href="#tab-1">1 месяц</a>
+            <a class="tab-price__label link" href="#tab-2">6 месяцев</a>
+            <a class="tab-price__label link" href="#tab-3">12 месяцев</a>
           </div>
 
           <div class="tab-price__content tab-price__content--active" id="tab-1">
@@ -105,21 +103,21 @@
                 <p class="tab-price__text">12 занятий</p>
                 <p class="tab-price__price">5000</p>
                 <span class="tab-price__icon"></span>
-                <a class="tab-price__button" href="#">Купить абонемент</a>
+                <a class="tab-price__button button link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Дневной</h3>
                 <p class="tab-price__text">с 8:00 до 17:00</p>
                 <p class="tab-price__price">1700</p>
                 <span class="tab-price__icon"></span>
-                <a class="tab-price__button" href="#">Купить абонемент</a>
+                <a class="tab-price__button button link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Полный день</h3>
                 <p class="tab-price__text">с 8:00 до 22:00</p>
                 <p class="tab-price__price">2700</p>
                 <span class="tab-price__icon"></span>
-                <a class="tab-price__button" href="#">Купить абонемент</a>
+                <a class="tab-price__button button link" href="#">Купить абонемент</a>
               </li>
             </ul>
           </div>
@@ -131,21 +129,21 @@
                 <p class="tab-price__text">12 занятий</p>
                 <p class="tab-price__price">30000</p>
                 <span class="tab-price__icon"></span>
-                <a class="tab-price__button" href="#">Купить абонемент</a>
+                <a class="tab-price__button button link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Дневной</h3>
                 <p class="tab-price__text">с 8:00 до 17:00</p>
                 <p class="tab-price__price">10200</p>
                 <span class="tab-price__icon"></span>
-                <a class="tab-price__button" href="#">Купить абонемент</a>
+                <a class="tab-price__button button link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Полный день</h3>
                 <p class="tab-price__text">с 8:00 до 22:00</p>
                 <p class="tab-price__price">16200</p>
                 <span class="tab-price__icon"></span>
-                <a class="tab-price__button" href="#">Купить абонемент</a>
+                <a class="tab-price__button button link" href="#">Купить абонемент</a>
               </li>
             </ul>
           </div>
@@ -157,21 +155,21 @@
                 <p class="tab-price__text">12 занятий</p>
                 <p class="tab-price__price">60000</p>
                 <span class="tab-price__icon"></span>
-                <a class="tab-price__button" href="#">Купить абонемент</a>
+                <a class="tab-price__button button link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Дневной</h3>
                 <p class="tab-price__text">с 8:00 до 17:00</p>
                 <p class="tab-price__price">20400</p>
                 <span class="tab-price__icon"></span>
-                <a class="tab-price__button" href="#">Купить абонемент</a>
+                <a class="tab-price__button button link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Полный день</h3>
                 <p class="tab-price__text">с 8:00 до 22:00</p>
                 <p class="tab-price__price">32400</p>
                 <span class="tab-price__icon"></span>
-                <a class="tab-price__button" href="#">Купить абонемент</a>
+                <a class="tab-price__button button link" href="#">Купить абонемент</a>
               </li>
             </ul>
           </div>
@@ -196,7 +194,7 @@
             </li>
           </ul>
           <p class="games__text">Ежегдные соревнования по CrossFit</p>
-          <a class="games__button" href="#">Заполнить заявку</a>
+          <a class="games__button link" href="#">Заполнить заявку</a>
         </div>
         <picture>
           <source media="(min-width: 1366px)" srcset="img/games/games-desktop.webp, img/games/games-desktop@2x.webp 2x"
@@ -347,12 +345,12 @@
           <div class="offers__case">
             <h3>Месяц бесплатно</h3>
             <p>Приведи друга, получи абонемент в подарок</p>
-            <a class="offers__link" href="#"></a>
+            <a class="offers__link link" href="#"></a>
           </div>
           <div class="offers__case">
             <h3>Скидка 20%</h3>
             <p>Корпоративный фитнес с командой</p>
-            <a class="offers__link" href="#"></a>
+            <a class="offers__link link" href="#"></a>
           </div>
         </div>
       </div>
@@ -363,10 +361,10 @@
 
         <div class="tab-faq__wrapper">
           <div class="tab-faq__head">
-            <a class="tab-faq__label" href="#tab-one">Центр</a>
-            <a class="tab-faq__label" href="#tab-two">Абонемент</a>
-            <a class="tab-faq__label" href="#tab-three">Услуги</a>
-            <a class="tab-faq__label" href="#tab-four">Правила</a>
+            <a class="tab-faq__label link" href="#tab-one">Центр</a>
+            <a class="tab-faq__label link" href="#tab-two">Абонемент</a>
+            <a class="tab-faq__label link" href="#tab-three">Услуги</a>
+            <a class="tab-faq__label link" href="#tab-four">Правила</a>
           </div>
 
           <div class="tab-faq__content tab-faq__content--active" id="tab-one">
@@ -546,25 +544,25 @@
         alt="Логотип фитнес-центра SUPERGYM">
     </picture>
     <div class="footer__wrapper">
-      <a class="footer__link" href="#">Услуги</a>
-      <a class="footer__link" href="#">Абонементы</a>
-      <a class="footer__link" href="#">Акции</a>
-      <a class="footer__link" href="#">Тренеры</a>
-      <a class="footer__link" href="#">Расписание</a>
+      <a class="footer__link link" href="#">Услуги</a>
+      <a class="footer__link link" href="#">Абонементы</a>
+      <a class="footer__link link" href="#">Акции</a>
+      <a class="footer__link link" href="#">Тренеры</a>
+      <a class="footer__link link" href="#">Расписание</a>
     </div>
     <ul class="footer__social social">
       <li class="social__item">
-        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+        <a class="social__link link social__link--vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--ok" href="https://ok.ru/live/htmlacademy">
+        <a class="social__link link social__link--ok" href="https://ok.ru/live/htmlacademy">
           <span class="visually-hidden">Одноклассники</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--reddit" href="https://reddit.com/">
+        <a class="social__link link social__link--reddit" href="https://reddit.com/">
           <span class="visually-hidden">Reddit</span>
         </a>
       </li>

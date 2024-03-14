@@ -1,8 +1,15 @@
 /* GLOBAL */
+@import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
 @import "./global/visually-hidden.scss";
 
+/* ELEMENTS */
+@import "./elements/link.scss";
+@import "./elements/button.scss";
+
+/* BLOCKS */
+@import "./blocks/hero/hero.scss";
 
 /* VENDOR */
 @import "./vendor/normalize.scss";
