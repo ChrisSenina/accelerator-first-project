@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 93px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 173px;
+  }
 }
 
 .hero__header {
@@ -72,7 +76,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 45px 0;
-    position: relative;
     justify-content: space-between;
   }
 
@@ -128,7 +131,6 @@
   }
 }
 
-
 .hero__text--city {
   font-family: "Alumni Sans", sans-serif;
   font-size: 32px;
@@ -173,6 +175,19 @@
   }
 }
 
+.hero__box {
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    margin-top: -94px;
+    margin-left: 184px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -126px;
+    margin-left: 365px;
+  }
+}
+
 .hero__button {
   color: $base-white;
   width: 290px;
@@ -188,16 +203,11 @@
     margin: 0;
     width: 185px;
     height: 56px;
-    position: absolute;
-    top: 386px;
-    left: 184px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 27px;
     width: 270px;
     height: 66px;
-    top: 522px;
-    left: 364px;
   }
 }
