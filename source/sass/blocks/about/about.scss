@@ -95,6 +95,11 @@
   border-radius: 50%;
   background: linear-gradient(151.36deg, #ed0233 6.982%, #003eb7 116.498%);
   transform: translate(-50%, -50%);
+
+  @media (min-width: $desktop-width) {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .about__button:hover::after {
@@ -124,6 +129,10 @@
   z-index: 10000;
   top: 14px;
   left: 47px;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
 .about__button:hover::before {
