@@ -67,7 +67,8 @@
       <div class="about__content">
         <h2 class="about__title inner-title">Тренажёрный зал</h2>
         <h3 class="about__description">Просторный зал площадью 900 кв/м</h3>
-        <p>Supergym – самый большой фитнес центр <br> за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
+        <p>Supergym – самый большой фитнес центр <br> за Уралом и идеальное место для укрепления тела и здоровья.
+          Тренажёрный
           зал оснащён всем необходимым современным оборудованием <br> для всех спортсменов.</p>
       </div>
       <picture>
@@ -85,10 +86,41 @@
           alt="Тренажёрный зал" width="320" height="280">
       </picture>
       <div class="about__wrapper">
-        <iframe class="about__video" src="https://www.youtube.com/embed/9TZXsZItgdw?si=0APauuiOqIzVbOTx" width="320"
+        <a class="about__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+          <picture>
+            <source media="(min-width: 1366px)"
+              srcset="img/about/video-desktop.webp, img/about/video-desktop@2x.webp 2x" width="360" height="230"
+              type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/about/video-tablet.webp, img/about/video-tablet@2x.webp 2x"
+              width="270" height="170" type="image/webp">
+            <source media="(min-width: 320px)" srcset="img/about/video-mobile.webp, img/about/video-mobile@2x.webp 2x "
+              width="320" height="170" type="image/webp">
+            <source media="(min-width: 1366px)" srcset="img/about/video-desktop.jpg, img/about/video-desktop@2x.jpg 2x"
+              width="360" height="230">
+            <source media="(min-width: 768px)" srcset="img/about/video-tablet.jpg, img/about/video-tablet@2x.jpg 2x"
+              width="270" height="170">
+            <img class="about__cover" src="img/about/video-mobile.jpg" srcset="img/about/video-mobile@2x.jpg 2x"
+              alt="Обложка видеообзора тренажёрного зала" width="320" height="170">
+          </picture>
+        </a>
+        <button class="about__button" aria-label="Запустить видео">
+
+          <!-- <svg class="about__button-svg" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="about__button-circle" opacity="0.2" cx="36" cy="36" r="35" stroke-width="2"/>
+            <circle class="about__button-shape" cx="36" cy="36" r="26"/>
+            <path class="about__button-icon" d="M42 36L33 41.1962L33 30.8038L42 36Z"/>
+            <defs>
+            <linearGradient id="paint0_linear_1330_109" x1="20.2825" y1="10" x2="65.0083" y2="15.5351" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#ED0233"/>
+            <stop offset="1" stop-color="#003EB7"/>
+            </linearGradient>
+            </defs>
+            </svg> -->
+        </button>
+        <!-- <iframe class="about__video" src="https://www.youtube.com/embed/9TZXsZItgdw?si=0APauuiOqIzVbOTx" width="320"
           height="170" title="youTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+          allowfullscreen></iframe> -->
       </div>
     </section>
     <section class="price" data-test="price">

@@ -10,7 +10,7 @@
 
 .about__title {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 .about__content p {
@@ -29,3 +29,198 @@
   font-weight: 400;
   line-height: 20px;
 }
+
+.about__wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: transparent;
+  margin-top: 24px;
+}
+
+.about__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: contain;
+}
+
+.about__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  width: 72px;
+  height: 72px;
+  border: 2px solid #ed023333;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.about__button:hover {
+  border: 2px solid #10265499;
+}
+
+.about__button:focus {
+  border-color: $base-blue;
+  outline: none;
+}
+
+.about__button:active {
+  border-color: $base-blue;
+}
+
+.about__button:disabled {
+  border-color: rgba(16, 38, 84, 0.4);
+}
+
+.about__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(151.36deg, #ed0233 6.982%, #003eb7 116.498%);
+  transform: translate(-50%, -50%);
+}
+
+.about__button:hover::after {
+  background: $base-white;
+}
+
+.about__button:focus::after {
+  background: #c8c9cc;
+}
+
+.about__button:active::after {
+  background: $base-white;
+}
+
+.about__button:disabled::after {
+  background: $base-white;
+}
+
+.about__button::before {
+  content: "";
+  position: absolute;
+  transform: rotate(270.00deg);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 9px solid $base-white;
+  border-bottom: 32px solid transparent;
+  z-index: 10000;
+  top: 14px;
+  left: 47px;
+}
+
+.about__button:hover::before {
+  border-top: 9px solid #10265499;
+}
+
+.about__button:focus::before {
+  border-top: 9px solid $base-blue;
+}
+
+.about__button:active::before {
+  border-top: 9px solid $base-blue;
+}
+
+.about__button:disabled::before {
+  border-top: 9px solid rgba(16, 38, 84, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .about__button-img {
+//   width: 72px;
+//   height: 72px;
+
+//   @media (min-width: $desktop-width) {
+//     width: 100px;
+//     height: 100px;
+//   }
+// }
+
+// .about__button-shape {
+//   fill: url(#paint0_linear_1330_109);
+// }
+
+// .about__button:hover .about__button-shape {
+//   fill: $base-white;
+// }
+
+// .about__button:focus .about__button-shape {
+//   fill: #c8c9cc;
+// }
+
+// .about__button:active .about__button-shape {
+//   fill: $base-white;
+// }
+
+// .about__button-circle {
+//   stroke: $base-red;
+// }
+
+// .about__button:hover .about__button-circle {
+//   stroke: $base-blue;
+//   stroke-opacity: 0.6;
+// }
+
+// .about__button:focus .about__button-circle {
+//   stroke: $base-blue;
+// }
+
+// .about__button:active .about__button-circle {
+//   stroke: $base-blue;
+// }
+
+// .about__button-icon {
+//   fill: $base-white;
+// }
+
+// .about__button:hover .about__button-icon {
+//   fill: $base-blue;
+//   fill-opacity: 0.6;
+// }
+
+// .about__button:focus .about__button-icon {
+//   fill: $base-blue;
+// }
+
+// .about__button:active .about__button-icon {
+//   fill: $base-blue;
+// }
