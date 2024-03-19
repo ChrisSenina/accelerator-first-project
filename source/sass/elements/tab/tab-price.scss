@@ -10,12 +10,14 @@
   margin: 28px 0 31px;
 }
 
-.tab-price__label {
+.tab-price__tab {
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   color: #10265480;
-  padding-bottom: 18px;
+  padding: 0 0 18px;
+  border: none;
+  background: transparent;
 }
 
 .tab-price__list {
@@ -49,15 +51,6 @@
   text-align: center;
 }
 
-.tab-price__price {
-  margin: 0;
-  padding: 85px 37px 0;
-  color: $light-blue;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 150%;
-}
-
 .tab-price__shadow {
   position: absolute;
   font-size: 80px;
@@ -69,7 +62,34 @@
   z-index: -1;
 }
 
-.tab-price__icon {}
+.tab-price__shadow--special {
+  left: 40px;
+}
+
+.tab-price__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 85px 0 0;
+  gap: 10px;
+}
+
+.tab-price__price {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: $light-blue;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.tab-price__icon {
+  width: 24px;
+  height: 33px;
+  background: url("../img/sprite/ruble-mobile.svg") no-repeat center;
+  display: block;
+}
 
 .tab-price__button {
   padding: 25px 42px;
