@@ -1,0 +1,82 @@
+.tab-price {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tab-price__head {
+  display: flex;
+  gap: 45px;
+  flex-wrap: nowrap;
+  margin: 28px 0 31px;
+}
+
+.tab-price__label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #10265480;
+  padding-bottom: 18px;
+}
+
+.tab-price__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.tab-price__item {
+  position: relative;
+  padding: 50px 42px 21px;
+  background-color: $base-white;
+  z-index: 1;
+}
+
+.tab-price__heading {
+  margin: 0;
+  padding: 1px 0 0;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tab-price__text {
+  margin: 0;
+  padding: 17px 0 0;
+  text-align: center;
+}
+
+.tab-price__price {
+  margin: 0;
+  padding: 85px 37px 0;
+  color: $light-blue;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.tab-price__shadow {
+  position: absolute;
+  font-size: 80px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #e8e8e8;
+  top: 145px;
+  left: 64px;
+  z-index: -1;
+}
+
+.tab-price__icon {}
+
+.tab-price__button {
+  padding: 25px 42px;
+  width: 195px;
+  height: 66px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  margin: 28px auto;
+}

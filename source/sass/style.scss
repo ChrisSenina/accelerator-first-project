@@ -8,10 +8,12 @@
 @import "./elements/link.scss";
 @import "./elements/button.scss";
 @import "./elements/inner-title.scss";
+@import "./elements/tab/tab-price.scss";
 
 /* BLOCKS */
 @import "./blocks/hero/hero.scss";
 @import "./blocks/about/about.scss";
+@import "./blocks/price/price.scss";
 
 /* VENDOR */
 @import "./vendor/normalize.scss";
