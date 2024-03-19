@@ -42,9 +42,9 @@ function createIframe(id) {
   return iframe;
 }
 
-function generateURL(id) {
-  const query = 'watch?v=9TZXsZItgdw&autoplay=1';
+function generateURL() {
+  const query = '9TZXsZItgdw?si=8px8KtZwPRRuyLnO';
 
-  return `https://www.youtube.com/embed/${id}${query}`;
+  return `https://www.youtube.com/embed/${query}&autoplay=1`;
 }
 
