@@ -188,6 +188,7 @@
   font-weight: 700;
   line-height: 12px;
   margin: 28px auto 0;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 26px;
