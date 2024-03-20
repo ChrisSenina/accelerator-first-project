@@ -2,10 +2,55 @@
   margin: 0;
   padding: 0 15px;
   background-color: $secondary-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px 60px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 103px 100px;
+  }
+}
+
+.price::after {
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url("../img/price/wheels-tablet.png") no-repeat center;
+    background-size: cover;
+    width: 325px;
+    height: 388px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/price/wheels-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 303px;
+    height: 449px;
+    background-image: url("../img/price/wheels-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/price/wheels-desktop@2x.png");
+    }
+  }
 }
 
 .price__title {
   margin: 0;
   padding: 41px 0 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 99px;
+  }
 }

@@ -4,7 +4,7 @@
 // import 'swiper/css';
 
 import { findVideos } from './video.js';
-import { tabsStart } from './tab-price.js';
+import { openTabs } from './tab-price.js';
 
 findVideos ();
-tabsStart ();
+openTabs ();

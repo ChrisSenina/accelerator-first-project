@@ -3,15 +3,18 @@
   padding: 0;
   min-width: 320px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-bottom: 84px;
+    padding: 120px 103px 125px;
   }
 }
 
 .about__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 120px 103px 0;
   }
 }
 

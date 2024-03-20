@@ -4,10 +4,22 @@
 }
 
 .tab-price__head {
+  position: relative;
   display: flex;
-  gap: 45px;
+  justify-content: center;
+  gap: 46px;
   flex-wrap: nowrap;
   margin: 28px 0 31px;
+
+  @media (min-width: $tablet-width) {
+    margin: 35px 0 46px;
+    gap: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 52px;
+    margin: 22px 0 42px;
+  }
 }
 
 .tab-price__tab {
@@ -18,6 +30,17 @@
   padding: 0 0 18px;
   border: none;
   background: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .tab-price__list {
@@ -27,13 +50,35 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+    padding: 0 149px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    gap: 37px;
+  }
 }
 
 .tab-price__item {
-  position: relative;
-  padding: 50px 42px 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 49px 42px 50px;
   background-color: $base-white;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 80px 67px;
+  }
 }
 
 .tab-price__heading {
@@ -43,35 +88,69 @@
   line-height: 22px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .tab-price__text {
   margin: 0;
   padding: 17px 0 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+  }
 }
 
 .tab-price__shadow {
-  position: absolute;
   font-size: 80px;
   line-height: 150%;
   font-weight: 700;
   color: #e8e8e8;
-  top: 145px;
-  left: 64px;
-  z-index: -1;
-}
+  padding-top: 30px;
 
-.tab-price__shadow--special {
-  left: 40px;
+  @media (min-width: $tablet-width) {
+    font-size: 100px;
+    padding-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+  }
 }
 
 .tab-price__box {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 85px 0 0;
+  padding: 0;
+  margin-top: -65px ;
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -90px;
+    gap: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -87px;
+    gap: 15px;
+  }
 }
 
 .tab-price__price {
@@ -82,6 +161,10 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 150%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .tab-price__icon {
@@ -89,14 +172,44 @@
   height: 33px;
   background: url("../img/sprite/ruble-mobile.svg") no-repeat center;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 42px;
+    background-image: url("../img/sprite/ruble-tablet.svg");
+  }
 }
 
 .tab-price__button {
-  padding: 25px 42px;
+  padding: 25px;
   width: 195px;
   height: 66px;
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
-  margin: 28px auto;
+  margin: 28px auto 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px;
+    width: 250px;
+    margin: 22px auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 197px;
+    margin-top: 16px;
+  }
+}
+
+.tab-price__content {
+  display: none;
+}
+
+.tab-price__content.tab-active {
+  display: block;
+}
+
+.tab-price__tab.tab-active {
+  color: $base-blue;
+  border-bottom: 2px solid #d10a42;
 }

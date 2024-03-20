@@ -192,7 +192,7 @@
   color: $base-white;
   width: 290px;
   height: 60px;
-  padding: 22px;
+  padding: 10px;
   margin: 0 auto;
   border: 2px solid $base-white;
   font-size: 12px;
@@ -206,7 +206,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px;
     width: 270px;
     height: 66px;
   }
