@@ -57,8 +57,6 @@
         <img class="hero__img" src="img/hero/hero-tablet.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x"
           alt="Тренер фитнес центра" width="0" height="0">
       </picture>
-    </div>
-    <div class="hero__box">
       <button class="hero__button button" href="#price">Купить абонемент</button>
     </div>
   </section>
@@ -235,21 +233,25 @@
       <div class="games__wrapper">
 
         <div class="games__content">
-          <h2 class="games__title">Super games</h2>
-          <ul class="games__list">
-            <li class="games__item">
-              <p class="games__info">Дата</p>
-              <p class="games__number">7</p>
-              <p class="games__details">Марта</p>
-              <p class="games__details">2019</p>
-            </li>
-            <li class="games__item">
-              <p class="games__info">Время</p>
-              <p class="games__number">12:00</p>
-            </li>
-          </ul>
-          <p class="games__text">Ежегдные соревнования по CrossFit</p>
-          <a class="games__button link" href="#">Заполнить заявку</a>
+          <div class="games__container">
+            <h2 class="games__title">Super games</h2>
+            <ul class="games__list">
+              <li class="games__item">
+                <p class="games__info games__info--date">Дата</p>
+                <div class="games__box">
+                  <p class="games__number">7</p>
+                  <p class="games__details">Марта</p>
+                  <p class="games__details">2019</p>
+                </div>
+              </li>
+              <li class="games__item">
+                <p class="games__info">Время</p>
+                <p class="games__number games__number--time">12:00</p>
+              </li>
+            </ul>
+          </div>
+          <p class="games__text">Ежегодные соревнования по CrossFit</p>
+          <a class="games__button button link" href="#">Заполнить заявку</a>
         </div>
         <picture>
           <source media="(min-width: 1366px)" srcset="img/games/games-desktop.webp, img/games/games-desktop@2x.webp 2x"
