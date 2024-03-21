@@ -219,15 +219,10 @@
 }
 
 .hero__button {
-  color: $base-white;
   width: 290px;
   height: 60px;
-  padding: 28px;
+  padding: 10px;
   margin: 0 auto;
-  border: 2px solid $base-white;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
   grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
@@ -243,29 +238,7 @@
     height: 66px;
     margin-top: -126px;
     margin-left: 190px;
+    padding: 28px 10px;
   }
 }
 
-.hero__button:hover {
-  background-color: $base-white;
-  color: $light-blue;
-  border: none;
-}
-
-.hero__button:focus {
-  outline: none;
-  border-color: #000000;
-  color: $light-blue;
-  background-color: #ffffffcc;
-  opacity: 0.8;
-}
-
-.hero__button:active {
-  border: none;
-  background-color: $base-white;
-  color: $base-blue;
-}
-
-.hero__button:disabled {
-  opacity: 0.5;
-}

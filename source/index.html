@@ -57,7 +57,7 @@
         <img class="hero__img" src="img/hero/hero-tablet.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x"
           alt="Тренер фитнес центра" width="0" height="0">
       </picture>
-      <button class="hero__button button" href="#price">Купить абонемент</button>
+      <button class="hero__button button">Купить абонемент</button>
     </div>
   </section>
   <main class="page-main">
@@ -111,7 +111,7 @@
         <button class="about__button" aria-label="Запустить видео"></button>
       </div>
     </section>
-    <section class="price" data-test="price" id="price">
+    <section class="price" data-test="price">
       <h2 class="price__title inner-title">Абонементы</h2>
       <div class="price__container tab tab-price">
 
@@ -132,7 +132,7 @@
                   <p class="tab-price__price">5000</p>
                   <span class="tab-price__icon"></span>
                 </div>
-                <a class="tab-price__button button link" href="#">Купить абонемент</a>
+                <a class="tab-price__button button button-blue link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Дневной</h3>
@@ -142,7 +142,7 @@
                   <p class="tab-price__price">1700</p>
                   <span class="tab-price__icon"></span>
                 </div>
-                <a class="tab-price__button button link" href="#">Купить абонемент</a>
+                <a class="tab-price__button button button-blue link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Полный день</h3>
@@ -152,7 +152,7 @@
                   <p class="tab-price__price">2700</p>
                   <span class="tab-price__icon"></span>
                 </div>
-                <a class="tab-price__button button link" href="#">Купить абонемент</a>
+                <a class="tab-price__button button button-blue link" href="#">Купить абонемент</a>
               </li>
             </ul>
           </div>
@@ -167,7 +167,7 @@
                   <p class="tab-price__price">30000</p>
                   <span class="tab-price__icon"></span>
                 </div>
-                <a class="tab-price__button button link" href="#">Купить абонемент</a>
+                <a class="tab-price__button button button-blue link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Дневной</h3>
@@ -177,7 +177,7 @@
                   <p class="tab-price__price">10200</p>
                   <span class="tab-price__icon"></span>
                 </div>
-                <a class="tab-price__button button link" href="#">Купить абонемент</a>
+                <a class="tab-price__button button button-blue link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Полный день</h3>
@@ -187,7 +187,7 @@
                   <p class="tab-price__price">16200</p>
                   <span class="tab-price__icon"></span>
                 </div>
-                <a class="tab-price__button button link" href="#">Купить абонемент</a>
+                <a class="tab-price__button button button-blue link" href="#">Купить абонемент</a>
               </li>
             </ul>
           </div>
@@ -202,7 +202,7 @@
                   <p class="tab-price__price">60000</p>
                   <span class="tab-price__icon"></span>
                 </div>
-                <a class="tab-price__button button link" href="#">Купить абонемент</a>
+                <a class="tab-price__button button button-blue link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Дневной</h3>
@@ -212,7 +212,7 @@
                   <p class="tab-price__price ">20400</p>
                   <span class="tab-price__icon"></span>
                 </div>
-                <a class="tab-price__button button link" href="#">Купить абонемент</a>
+                <a class="tab-price__button button button-blue link" href="#">Купить абонемент</a>
               </li>
               <li class="tab-price__item">
                 <h3 class="tab-price__heading">Полный день</h3>
@@ -222,7 +222,7 @@
                   <p class="tab-price__price">32400</p>
                   <span class="tab-price__icon"></span>
                 </div>
-                <a class="tab-price__button button link" href="#">Купить абонемент</a>
+                <a class="tab-price__button button button-blue link" href="#">Купить абонемент</a>
               </li>
             </ul>
           </div>
@@ -280,13 +280,16 @@
               <img class="juri__img" src="img/juri/juri-anna.jpg" srcset="img/juri/juri-anna@2x.jpg 2x"
                 alt="Участник жюри Анна Павлова" width="260" height="300">
             </picture>
-            <h3 class="juri__title swiper__title">Анна Павлова</h3>
-            <p class="juri__text swiper__text">CrossFit</p>
-            <ul class="juri__list swiper__list">
-              <li class="juri__details swiper__details">Certified Level 3 Trainer</li>
-              <li class="juri__details swiper__details">Победитель чемпионата России по CrossFit</li>
-              <li class="juri__details swiper__details">Опыт - 6 лет</li>
-            </ul>
+            <h3 class="juri__name">Анна Павлова</h3>
+            <div class="juri__info">
+              <p class="juri__name">Анна Павлова</p>
+              <p class="juri__text">CrossFit</p>
+              <ul class="juri__list">
+                <li class="juri__item">Certified Level 3 Trainer</li>
+                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__item">Опыт - 6 лет</li>
+              </ul>
+            </div>
           </div>
           <div class="juri__slide swiper__slide">
             <picture>
@@ -295,13 +298,16 @@
               <img class="juri__img" src="img/juri/juri-alexey.jpg" srcset="img/juri/juri-alexey@2x.jpg 2x"
                 alt="Участник жюри Алексей Лавров" width="260" height="300">
             </picture>
-            <h3 class="juri__title swiper__title">Алексей Лавров</h3>
-            <p class="juri__text swiper__text">CrossFit</p>
-            <ul class="juri__list swiper__list">
-              <li class="juri__details swiper__details">Certified Level 3 Trainer</li>
-              <li class="juri__details swiper__details">Победитель чемпионата России по CrossFit</li>
-              <li class="juri__details swiper__details">Опыт - 6 лет</li>
-            </ul>
+            <h3 class="juri__name">Алексей Лавров</h3>
+            <div class="juri__info">
+              <p class="juri__name">Алексей Лавров</p>
+              <p class="juri__text">CrossFit</p>
+              <ul class="juri__list">
+                <li class="juri__item">Certified Level 3 Trainer</li>
+                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__item">Опыт - 6 лет</li>
+              </ul>
+            </div>
           </div>
           <div class="juri__slide swiper__slide">
             <picture>
@@ -310,13 +316,16 @@
               <img class="juri__img" src="img/juri/juri-alex.jpg" srcset="img/juri/juri-alex@2x.jpg 2x"
                 alt="Участник жюри Александр Пашков" width="260" height="300">
             </picture>
-            <h3 class="juri__title swiper__title">Александр Пашков</h3>
-            <p class="juri__text swiper__text">CrossFit</p>
-            <ul class="juri__list swiper__list">
-              <li class="juri__details swiper__details">Certified Level 3 Trainer</li>
-              <li class="juri__details swiper__details">Победитель чемпионата России по CrossFit</li>
-              <li class="juri__details swiper__details">Опыт - 6 лет</li>
-            </ul>
+            <h3 class="juri__name">Александр Пашков</h3>
+            <div class="juri__info">
+              <p class="juri__name">Александр Пашков</p>
+              <p class="juri__text">CrossFit</p>
+              <ul class="juri__list">
+                <li class="juri__item">Certified Level 3 Trainer</li>
+                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__item">Опыт - 6 лет</li>
+              </ul>
+            </div>
           </div>
           <div class="juri__slide swiper__slide">
             <picture>
@@ -325,13 +334,16 @@
               <img class="juri__img" src="img/juri/juri-mary.jpg" srcset="img/juri/juri-mary@2x.jpg 2x"
                 alt="Участник жюри Мария Кетова" width="260" height="300">
             </picture>
-            <h3 class="juri__title swiper__title">Мария Кетова</h3>
-            <p class="juri__text swiper__text">CrossFit</p>
-            <ul class="juri__list swiper__list">
-              <li class="juri__details swiper__details">Certified Level 3 Trainer</li>
-              <li class="juri__details swiper__details">Победитель чемпионата России по CrossFit</li>
-              <li class="juri__details swiper__details">Опыт - 6 лет</li>
-            </ul>
+            <h3 class="juri__name">Мария Кетова</h3>
+            <div class="juri__info">
+              <p class="juri__name">Мария Кетова</p>
+              <p class="juri__text">CrossFit</p>
+              <ul class="juri__list">
+                <li class="juri__item">Certified Level 3 Trainer</li>
+                <li class="juri__item">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__item">Опыт - 6 лет</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="swiper-button-prev"></div>
