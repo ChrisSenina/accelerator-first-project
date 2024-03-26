@@ -1,9 +1,9 @@
 .juri {
   margin: 0;
-  padding: 0 15px;
+  padding: 0 15px 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 45px;
+    padding: 0 45px 0;
   }
 
   @media (min-width: $desktop-width) {

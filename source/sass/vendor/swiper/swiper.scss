@@ -279,7 +279,10 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+  display: none;
+
   @media (min-width: $tablet-width) {
+    display: block;
     width: 23px;
     height: 300px;
     position: absolute;
