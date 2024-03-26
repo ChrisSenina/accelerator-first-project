@@ -9,7 +9,7 @@ export function slider() {
     direction: 'horizontal',
     loop: true,
 
-    loopedSlides: 3,
+    slidesPerView: 'auto',
 
     autoplay: {
       delay: 3000,
