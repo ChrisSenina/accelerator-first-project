@@ -2,12 +2,16 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width) {
+  @media (min-width: $tablet-width) {
     padding: 60px 45px;
+    margin: 0 auto;
+    width: 678px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 100px 103px;
+    width: 1160px;
+    margin: 0 auto;
   }
 }
 
@@ -16,6 +20,30 @@
   padding: 40px 15px;
   text-align: center;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 2px 0 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 70px;
+  }
+}
+
+.offers__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 40px;
+  }
+}
+
+.offers__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .offers__box {
@@ -28,7 +56,14 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    padding: 40px 25px 39px;
     align-items: start;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 45px 35px;
+    width: 190px;
   }
 }
 
@@ -60,6 +95,7 @@
   @media (min-width: $tablet-width) {
     font-size: 70px;
     line-height: 70px;
+    padding-top: 20px;
   }
 }
 
@@ -73,7 +109,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    line-height: 24px;
     text-align: left;
+    padding: 40px 35px 161px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0px 155px 0;
   }
 }
 
@@ -97,9 +139,17 @@
   border: 1px solid;
 }
 
-.offers__link--white {
+.offers__link--blue {
   color: $secondary-blue;
   border-color: #74819c;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 32px;
+  }
 }
 
 .offers__info {
@@ -112,12 +162,28 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding: 0;
+    margin-top: 28px;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-top: 81px;
   }
 }
 
 .offers__case {
   background: linear-gradient(151.36deg, rgb(237, 2, 51) 6.982%, rgb(0, 62, 183) 116.498%);
   padding: 7px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 546px;
+  }
 }
 
 .offers__case div {
@@ -128,6 +194,17 @@
   padding: 20px 0;
   gap: 20px;
   flex-wrap: nowrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+    align-items: start;
+    min-height: 134px;
+    gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 120px;
+  }
 }
 
 .offers__case h3 {
@@ -136,6 +213,11 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .offers__case p {
@@ -143,10 +225,28 @@
   padding: 0;
   line-height: 22px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
 }
 
 .offers__case:first-of-type p {
   padding: 0 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 0 0;
+  }
 }
 
+.offers__case:last-of-type p {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
+  }
 
+  @media (min-width: $desktop-width) {
+    padding-bottom: unset;
+  }
+}
