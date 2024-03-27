@@ -1,0 +1,152 @@
+.offers {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width) {
+    padding: 60px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+  }
+}
+
+.offers__title {
+  margin: 0;
+  padding: 40px 15px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.offers__box {
+  color: $base-white;
+  background-color: $base-red;
+  padding: 30px 30px 29px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+  }
+}
+
+.offers__box span:first-of-type {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.offers__box span:last-of-type {
+  margin: 0;
+  padding-top: 8px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.offers__box p {
+  margin: 0;
+  padding: 28px 43px 29px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+.offers__link {
+  color: $base-white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $base-white;
+}
+
+.offers__link:hover {
+  opacity: 0.8;
+}
+
+.offers__link:focus {
+  outline: none;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.offers__link--white {
+  color: $secondary-blue;
+  border-color: #74819c;
+}
+
+.offers__info {
+  margin: 0;
+  padding: 33px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  flex-wrap: nowrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.offers__case {
+  background: linear-gradient(151.36deg, rgb(237, 2, 51) 6.982%, rgb(0, 62, 183) 116.498%);
+  padding: 7px;
+}
+
+.offers__case div {
+  background: $base-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.offers__case h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.offers__case p {
+  margin: 0;
+  padding: 0;
+  line-height: 22px;
+  text-align: center;
+}
+
+.offers__case:first-of-type p {
+  padding: 0 37px;
+}
+
+
