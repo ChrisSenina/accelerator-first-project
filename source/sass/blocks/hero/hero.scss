@@ -7,7 +7,7 @@
   background: linear-gradient(90.00deg, #1c3477, #1c3477 0.01%, #1a3578 39.106%, #73184b 75.502%, #b4022a 100%);
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 92px;
+    padding-bottom: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,6 +94,7 @@
   display: grid;
   grid-template-columns: 134px 156px;
   row-gap: 12px;
+  column-gap: 1px;
 
   @media (min-width: $tablet-width) {
     width: 678px;
@@ -101,6 +102,7 @@
     padding: 0 45px 0;
     justify-content: space-between;
     grid-template-columns: 115px min-content min-content;
+    column-gap: unset;
     row-gap: unset;
   }
 
@@ -114,7 +116,7 @@
 
 .hero__list {
   margin: 0;
-  padding: 109px 0 0;
+  padding: 110px 0 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -164,7 +166,7 @@
   font-size: 32px;
   line-height: 32px;
   font-weight: 600;
-  padding-right: 1px;
+  padding-right: 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
@@ -221,7 +223,7 @@
 .hero__button {
   width: 290px;
   height: 60px;
-  padding: 10px;
+  padding: 11px 10px 10px;
   margin: 0 auto;
   grid-column: 1/2;
 

@@ -291,8 +291,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 24px;
-    top: 47px;
+    top: 44px;
+    height: 303px;
   }
 }
 
@@ -303,7 +303,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 0;
+    left: -4px;
   }
 }
 
@@ -314,7 +314,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 0;
+    right: -4px;
   }
 }
 
