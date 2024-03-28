@@ -1,0 +1,42 @@
+.tab-faq {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tab-faq__head {
+  padding: 35px 0 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.tab-faq__tab {
+  padding: 14px 22px;
+  border: 1px solid #10265433;
+  background: $base-white;
+  color: $base-blue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.tab-faq__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tab-faq__content {
+  display: none;
+}
+
+.tab-faq__content.tab-active {
+  display: block;
+}
+
+.tab-faq__tab.tab-active {
+  padding: 15px 23px;
+  border: none;
+  background: linear-gradient(151.36deg, #ed0233 16.508%, #003eb7 97.479%);
+  color: $base-white;
+}

@@ -1,8 +1,12 @@
 import { findVideos } from './video.js';
 import { openTabs } from './tab-price.js';
-import { slider } from './slider.js';
+
+import { playAccordion } from './accordion.js';
+import { openTabsSecond } from './tab-faq.js';
 
 findVideos ();
 openTabs ();
-slider ();
+
+playAccordion ();
+openTabsSecond ();
 

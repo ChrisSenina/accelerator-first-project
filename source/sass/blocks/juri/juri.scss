@@ -29,6 +29,19 @@
   }
 }
 
+.juri__slider {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1270px;
+  }
+}
+
 .juri__slide {
   margin: 0 auto;
   height: 280px;
@@ -82,6 +95,11 @@
     bottom: 24px;
     right: 42px;
   }
+}
+
+.juri__slide:focus .juri__name--special,
+.juri__slide:hover .juri__name--special {
+  color: transparent;
 }
 
 .juri__info {

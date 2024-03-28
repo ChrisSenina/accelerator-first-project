@@ -1,0 +1,77 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__content {
+  overflow: hidden;
+}
+
+.accordion__content h3 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 32px;
+  gap: 22px;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  border-top: 1px solid #74819c;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.accordion__content:last-child h3 {
+  border-bottom: 1px solid #74819c;
+}
+
+.accordion__content p {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  transition: all 1s linear;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.accordion__content.open p {
+  height: unset;
+}
+
+.accordion__input {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url("../img/sprite/plus.svg") no-repeat center;
+  background-size: 14px;
+  border: 1px solid $base-blue;
+}
+
+.accordion__input.open {
+  background: url("../img/sprite/minus.svg") no-repeat center;
+  background-clip: 1;
+  background-color: $base-blue;
+  border: none;
+  background-size: 14px;
+  margin-left: 1px;
+}
+
+.accordion__content.open {
+  margin-bottom: 20px;
+}
