@@ -83,11 +83,13 @@
 }
 
 .tab-price__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 49px 42px 50px;
   background-color: $base-white;
+  border: 7px solid transparent;
   z-index: 1;
   cursor: pointer;
 
@@ -99,6 +101,17 @@
     padding: 65px 80px 67px;
   }
 }
+
+.tab-price__item:hover,
+.tab-price__item:focus-within {
+  outline: none;
+  border-image: linear-gradient(151.36deg, #ed0233 16.344%,#003eb7 97.809%);
+  border-image-slice: 1;
+}
+
+
+
+
 
 .tab-price__heading {
   margin: 0;

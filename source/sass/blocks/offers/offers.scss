@@ -137,6 +137,7 @@
   outline: none;
   padding: 10px;
   border: 1px solid;
+  margin: -10px -10px -10px 0;
 }
 
 .offers__link--blue {
@@ -150,6 +151,13 @@
   @media (min-width: $desktop-width) {
     margin-top: 32px;
   }
+}
+
+.offers__link--blue:focus {
+  outline: none;
+  padding: 10px;
+  border: 1px solid $secondary-blue;
+  margin: 16px -10px 0 0;
 }
 
 .offers__info {
