@@ -20,18 +20,64 @@
   border-top: 1px solid #74819c;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 42px;
+    gap: 78px;
     font-size: 22px;
     line-height: 22px;
+    padding: 25px 0 26px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
     line-height: 24px;
+    padding: 23px 0;
+  }
+}
+
+.accordion__content:nth-child(2) h3 {
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 0 20px;
+  }
+}
+
+.accordion__content:nth-child(3) h3 {
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 21px;
+  }
+}
+
+.accordion__content:nth-child(4) h3 {
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 20px;
+  }
+}
+
+.accordion__content h3 br {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .accordion__content:last-child h3 {
   border-bottom: 1px solid #74819c;
+}
+
+.accordion__content:last-child h3 br {
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .accordion__content p {
@@ -46,6 +92,37 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding: 0 120px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 250px;
+  }
+}
+
+.accordion__content p br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.accordion__content p br:last-of-type {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.accordion__content.open h3 {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 23px;
   }
 }
 
@@ -61,6 +138,12 @@
   background: url("../img/sprite/plus.svg") no-repeat center;
   background-size: 14px;
   border: 1px solid $base-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 20px;
+  }
 }
 
 .accordion__input.open {
@@ -70,8 +153,20 @@
   border: none;
   background-size: 14px;
   margin-left: 1px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 20px;
+  }
 }
 
 .accordion__content.open {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }

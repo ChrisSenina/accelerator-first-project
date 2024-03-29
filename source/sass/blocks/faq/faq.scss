@@ -1,13 +1,24 @@
 .faq {
   margin: 0;
   padding: 77px 15px 70px;
+  background-color: $secondary-white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 45px;
+    padding: 60px 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 103px;
+    padding: 101px 103px;
+  }
+}
+
+.faq__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding-top: 50px;
   }
 }
 
@@ -15,6 +26,10 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 
