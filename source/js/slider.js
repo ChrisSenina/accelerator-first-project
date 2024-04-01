@@ -2,7 +2,6 @@ import { Swiper } from 'swiper';
 import { Navigation } from 'swiper/modules';
 import { Autoplay } from 'swiper/modules';
 
-
 export function slider() {
   new Swiper('.juri__slider', {
     modules: [Navigation, Autoplay],
@@ -50,4 +49,17 @@ export function slider() {
   });
 }
 
+export function sliderSecond() {
+  new Swiper('.reviews__slider', {
+    modules: [Navigation],
+
+    direction: 'horizontal',
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
+}
 

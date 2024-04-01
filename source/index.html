@@ -416,8 +416,8 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev juri-button-prev"></div>
+        <div class="swiper-button-next juri-button-next"></div>
       </div>
     </section>
     <section class="features" data-test="features">
@@ -563,9 +563,9 @@
 
           <div class="tab-faq__content" id="tab-two">
             <ul class="tab-faq__list accordion">
-              <li class="tab-faq__item accordion__content open">
+              <li class="tab-faq__item accordion__content">
                 <h3>Занятия с тренером входят в абонемент?
-                  <span class="accordion__input open"></span>
+                  <span class="accordion__input"></span>
                 </h3>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
                   присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
@@ -598,11 +598,11 @@
 
           <div class="tab-faq__content" id="tab-three">
             <ul class="tab-faq__list accordion">
-              <li class="tab-faq__item accordion__content open">
+              <li class="tab-faq__item accordion__content">
                 <h3>Предлагает ли клуб услуги
                   по консультированию
                   по вопросам питания?
-                  <span class="accordion__input open"></span>
+                  <span class="accordion__input"></span>
                 </h3>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
                   данные, цели и предложит программу питания.</p>
@@ -637,9 +637,9 @@
 
           <div class="tab-faq__content" id="tab-four">
             <ul class="tab-faq__list accordion">
-              <li class="tab-faq__item accordion__content open">
+              <li class="tab-faq__item accordion__content">
                 <h3>Есть в фитнес-центре дресс-код?
-                  <span class="accordion__input open"></span>
+                  <span class="accordion__input"></span>
                 </h3>
                 <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
                   и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
@@ -680,35 +680,53 @@
           </div>
         </div>
       </div>
-      </div>
     </section>
     <section class="reviews" data-test="reviews">
       <h2 class="reviews__title inner-title">Отзывы</h2>
       <div class="reviews__slider swiper">
-        <div class="reviews__wrapper swiper__wrapper">
-          <div class="reviews__slide swiper__slide">
-            <picture>
-              <source media="(min-width: 320px)" srcset="img/reviews/user.webp, img/reviews/user@2x.webp 2x" width="68"
-                height="68" type="image/webp">
-              <img src="img/reviews/user.png" srcset="img/reviews/user@2x.png 2x" alt="Клиент фитнес-центра" width="68"
-                height="68">
-            </picture>
-            <h3>Анна Орлова</h3>
-            <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
-              дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        <div class="reviews__wrapper swiper-wrapper">
+          <div class="reviews__slide swiper-slide">
+            <div class="reviews__content">
+              <picture>
+                <source media="(min-width: 768px)"
+                srcset="img/reviews/user-tablet.webp, img/reviews/user-tablet@2x.webp 2x" width="80" height="80" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/reviews/user.webp, img/reviews/user@2x.webp 2x"
+                  width="68" height="68" type="image/webp">
+                <source media="(min-width: 768px)"
+                  srcset="img/reviews/user-tablet.png, img/reviews/user-tablet@2x.png 2x" width="80" height="80">
+                <img src="img/reviews/user.png" srcset="img/reviews/user@2x.png 2x" alt="Клиент фитнес-центра"
+                  width="68" height="68">
+              </picture>
+              <div class="reviews__info">
+                <h3>Анна Орлова</h3>
+                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                  дружелюбный. <br> Зал просторный, <br> даже в вечернее время <br> нет очередей»</p>
+              </div>
+            </div>
           </div>
-          <div class="reviews__slide swiper__slide">
-            <picture>
-              <source media="(min-width: 320px)" srcset="img/reviews/user.webp, img/reviews/user@2x.webp 2x" width="68"
-                height="68" type="image/webp">
-              <img src="img/reviews/user.png" srcset="img/reviews/user@2x.png 2x" alt="Клиент фитнес-центра" width="68"
-                height="68">
-            </picture>
-            <h3>Анна Орлова</h3>
-            <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
-              дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          <div class="reviews__slide swiper-slide">
+            <div class="reviews__content">
+              <picture>
+                <source media="(min-width: 768px)"
+                srcset="img/reviews/user-tablet.webp, img/reviews/user-tablet@2x.webp 2x" width="80" height="80" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/reviews/user.webp, img/reviews/user@2x.webp 2x"
+                  width="68" height="68" type="image/webp">
+                <source media="(min-width: 768px)"
+                  srcset="img/reviews/user-tablet.png, img/reviews/user-tablet@2x.png 2x" width="80" height="80">
+                <img src="img/reviews/user.png" srcset="img/reviews/user@2x.png 2x" alt="Клиент фитнес-центра"
+                  width="68" height="68">
+              </picture>
+              <div class="reviews__info">
+                <h3>Анна Орлова</h3>
+                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                  дружелюбный. <br> Зал просторный, <br> даже в вечернее время <br> нет очередей»</p>
+              </div>
+            </div>
           </div>
+
         </div>
+        <div class="swiper-button-prev reviews-button-prev"></div>
+        <div class="swiper-button-next reviews-button-next"></div>
       </div>
     </section>
     <section class="form" data-test="form">
