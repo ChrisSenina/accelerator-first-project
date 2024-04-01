@@ -132,6 +132,10 @@
 }
 
 .reviews__content p br:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   @media (min-width: $desktop-width) {
     display: block;
   }
@@ -154,4 +158,8 @@
     height: 258px;
     top: 74px;
   }
+}
+
+.reviews-button-disabled {
+  opacity: 0.2;
 }

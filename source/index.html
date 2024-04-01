@@ -689,7 +689,8 @@
             <div class="reviews__content">
               <picture>
                 <source media="(min-width: 768px)"
-                srcset="img/reviews/user-tablet.webp, img/reviews/user-tablet@2x.webp 2x" width="80" height="80" type="image/webp">
+                  srcset="img/reviews/user-tablet.webp, img/reviews/user-tablet@2x.webp 2x" width="80" height="80"
+                  type="image/webp">
                 <source media="(min-width: 320px)" srcset="img/reviews/user.webp, img/reviews/user@2x.webp 2x"
                   width="68" height="68" type="image/webp">
                 <source media="(min-width: 768px)"
@@ -708,7 +709,8 @@
             <div class="reviews__content">
               <picture>
                 <source media="(min-width: 768px)"
-                srcset="img/reviews/user-tablet.webp, img/reviews/user-tablet@2x.webp 2x" width="80" height="80" type="image/webp">
+                  srcset="img/reviews/user-tablet.webp, img/reviews/user-tablet@2x.webp 2x" width="80" height="80"
+                  type="image/webp">
                 <source media="(min-width: 320px)" srcset="img/reviews/user.webp, img/reviews/user@2x.webp 2x"
                   width="68" height="68" type="image/webp">
                 <source media="(min-width: 768px)"
@@ -732,13 +734,15 @@
     <section class="form" data-test="form">
       <h2 class="form__title inner-title inner-title--special">Бесплатное занятие</h2>
       <form class="form__form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="form__label">
-          <input class="form__input" type="text" name="name" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Имя" required>
-        </label>
-        <label class="form__label">
-          <input class="form__input" type="number" name="number" placeholder="Телефон" required>
-        </label>
-        <button class="form__button" type="button">Отправить</button>
+        <div class="form__wrapper">
+          <label class="form__label">
+            <input class="form__input" type="text" name="name" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Имя" required>
+          </label>
+          <label class="form__label">
+            <input class="form__input" type="number" name="number" placeholder="Телефон" required>
+          </label>
+        </div>
+        <button class="form__button button" type="submit">Отправить</button>
       </form>
     </section>
     <section class="contacts">

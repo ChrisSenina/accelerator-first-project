@@ -53,13 +53,17 @@ export function sliderSecond() {
   new Swiper('.reviews__slider', {
     modules: [Navigation],
 
+    loop: false,
+    speed: 2000,
+
     direction: 'horizontal',
 
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      disabledClass: '.reviews-button-disabled',
+      hideOnClick: true,
     },
-
   });
 }
 
