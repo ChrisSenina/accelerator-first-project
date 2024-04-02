@@ -3,7 +3,7 @@
   padding: 36px 15px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px;
+    padding: 60px 45px 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,4 +113,21 @@
   @media (min-width: $tablet-width) {
     line-height: 22px;
   }
+}
+
+.contacts__text.link:hover {
+  color: #1c337480;
+}
+
+.contacts__text.link:focus {
+  outline: none;
+  border: 1px solid $base-blue;
+  margin: -1px;
+}
+
+.contacts__text.link:active {
+  border: none;
+  color: $base-blue;
+  border-bottom: 1px solid $base-blue;
+  margin-bottom: -1px;
 }
