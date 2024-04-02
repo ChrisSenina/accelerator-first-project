@@ -10,5 +10,3 @@ slider ();
 sliderSecond();
 playAccordion ();
 openTabsSecond ();
-
-

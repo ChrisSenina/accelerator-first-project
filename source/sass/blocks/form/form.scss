@@ -25,6 +25,11 @@
     line-height: 54px;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+    text-align: left;
+  }
 }
 
 .form__form {
@@ -35,6 +40,11 @@
   @media (min-width: $tablet-width) {
     width: 440px;
     padding: 36px 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+    padding: 36px 0 0;
   }
 }
 
@@ -63,6 +73,10 @@
 
   @media (min-width: $tablet-width) {
     width: 201px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 219px;
   }
 }
 
@@ -107,5 +121,10 @@
     height: 66px;
     padding: 27px 25px;
     margin-top: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+    margin-top: 0;
   }
 }
