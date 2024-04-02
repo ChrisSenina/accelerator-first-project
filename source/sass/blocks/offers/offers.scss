@@ -160,9 +160,18 @@
   margin: 16px -10px 0 0;
 }
 
+.offers__img {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
 .offers__info {
   margin: 0;
-  padding: 33px 15px;
+  padding: 41px 15px 33px;
   display: flex;
   flex-direction: column;
   gap: 31px;

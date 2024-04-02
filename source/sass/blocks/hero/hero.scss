@@ -1,6 +1,6 @@
 .hero {
   margin: 0;
-  padding: 0 0 32px;
+  padding: 0;
   background-color: $base-blue;
   color: $base-white;
   min-width: 320px;
@@ -17,7 +17,7 @@
 
 .hero__header {
   margin: 0;
-  padding: 16px 15px 18px;
+  padding: 16px 15px;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -55,7 +55,8 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
-  margin: -2px 1px 0 0;
+  margin-top: -2px;
+  padding: 0 1px 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -89,7 +90,7 @@
 
 .hero__content {
   margin: 0 auto;
-  padding: 41px 15px 0;
+  padding: 43px 15px 32px;
   width: 290px;
   display: grid;
   grid-template-columns: 134px 156px;
