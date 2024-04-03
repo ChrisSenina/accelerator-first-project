@@ -286,14 +286,12 @@
 .swiper-button-prev {
   @media (min-width: $tablet-width) {
     background: url("/__spritemap#sprite-prev-view") no-repeat center transparent;
-    left: -3px;
   }
 }
 
 .swiper-button-next {
   @media (min-width: $tablet-width) {
     background: url("/__spritemap#sprite-next-view") no-repeat center transparent;
-    right: -3px;
   }
 }
 

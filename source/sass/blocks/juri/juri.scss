@@ -7,7 +7,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 91px 45px 93px;
+    padding: 91px 45px 46px;
+  }
+}
+
+.juri__container {
+  @media (min-width: $tablet-width) {
+    position: relative;
   }
 }
 
@@ -30,15 +36,15 @@
 }
 
 .juri__slider {
-  width: 290px;
+  width: 227px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 678px;
+    width: 560px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1272px;
+    width: 1160px;
   }
 }
 
@@ -58,16 +64,14 @@
 }
 
 .juri__wrapper {
-  padding: 0 30px;
-
   @media (min-width: $tablet-width) {
-    padding: 46px 59px 53px;
+    padding: 46px 0 53px;
     width: 620px;
     height: 300px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 55px 0;
+    padding: 47px 0;
     width: 100%;
   }
 }
@@ -98,12 +102,11 @@
 
 .juri__name--special {
   position: absolute;
-  bottom: 32px;
+  bottom: 31px;
   right: 25px;
   width: 177px;
 
   @media (min-width: $tablet-width) {
-    bottom: 31px;
     right: 42px;
   }
 }
@@ -169,8 +172,31 @@
 .juri-button-prev,
 .juri-button-next {
   @media (min-width: $tablet-width) {
-  height: 300px;
-  top: 178px;
-}
+    height: 300px;
+    top: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 178px;
+  }
 }
 
+.juri-button-prev {
+  @media (min-width: $tablet-width) {
+    left: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -2px;
+  }
+}
+
+.juri-button-next {
+  @media (min-width: $tablet-width) {
+    right: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -1px;
+  }
+}
