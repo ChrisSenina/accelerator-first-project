@@ -740,9 +740,8 @@
               <input class="form__input" type="text" name="name" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Имя" required>
             </label>
             <label class="form__label">
-              <input class="form__input" type="tel" name="phone"
-                pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18"
-                placeholder="Телефон" required>
+              <input class="form__input" type="phone" name="phone" pattern="^\+7[1-9]{10}$" minlength="18"
+                maxlength="18" placeholder="Телефон" required>
             </label>
           </div>
           <button class="form__button button" type="submit">Отправить</button>

@@ -83,6 +83,7 @@
   position: relative;
   transition-property: transform;
   display: block;
+  z-index: 0;
 }
 
 .swiper-slide-invisible-blank {
@@ -277,20 +278,21 @@
     display: block;
     position: absolute;
     width: 23px;
+    height: 32px;
     z-index: 1;
   }
 }
 
 .swiper-button-prev {
   @media (min-width: $tablet-width) {
-    background: url("../img/sprite/prev.svg") no-repeat center $base-white;
+    background: url("/__spritemap#sprite-prev-view") no-repeat center transparent;
     left: -3px;
   }
 }
 
 .swiper-button-next {
   @media (min-width: $tablet-width) {
-    background: url("../img/sprite/next.svg") no-repeat center $base-white;
+    background: url("/__spritemap#sprite-next-view") no-repeat center transparent;
     right: -3px;
   }
 }

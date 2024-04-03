@@ -62,7 +62,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 74px 55px 0;
-    padding: 61px 60px 0;
+    padding: 60px 60px 0;
     gap: 30px;
   }
 }
@@ -114,7 +114,7 @@
   }
 
   @media (min-width:$desktop-width) {
-    margin: 19px 0 60px;
+    margin: 20px 0 60px;
     padding: 0 5px 0 0;
   }
 }
@@ -150,12 +150,11 @@
 .reviews-button-prev,
 .reviews-button-next {
   @media (min-width: $tablet-width) {
-    height: 220px;
     top: 46px;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    height: 258px;
-    top: 74px;
+    top: 187px;
   }
 }

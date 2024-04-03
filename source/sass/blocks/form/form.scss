@@ -119,7 +119,7 @@
   opacity: 0.4;
 }
 
-.form__input .error {
+.form__input:invalid {
   color: $secondary-red;
   border-color: $secondary-red;
 }

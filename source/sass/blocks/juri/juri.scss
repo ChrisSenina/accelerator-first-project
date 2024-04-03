@@ -42,6 +42,14 @@
   }
 }
 
+.juri__slider::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 100px;
+  background-color: white;
+}
+
 .juri__slide {
   margin: 0 auto;
   height: 280px;
@@ -162,7 +170,7 @@
 .juri-button-next {
   @media (min-width: $tablet-width) {
   height: 300px;
-  top: 46px;
+  top: 178px;
 }
 }
 
