@@ -1,5 +1,17 @@
 .form {
   margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1366px;
+    margin: 0 auto;
+  }
+}
+
+.form__container {
   padding: 70px 15px;
   background-color: $base-blue;
   color: $base-white;
@@ -74,6 +86,7 @@
 
   @media (min-width: $tablet-width) {
     width: 201px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,11 +134,9 @@
     width: 440px;
     height: 66px;
     padding: 27px 25px;
-    margin-top: -1px;
   }
 
   @media (min-width: $desktop-width) {
     width: 477px;
-    margin-top: 0;
   }
 }

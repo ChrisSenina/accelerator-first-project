@@ -1,6 +1,6 @@
 .juri {
   margin: 0;
-  padding: 0 15px 33px;
+  padding: 33px 15px 34px;
 
   @media (min-width: $tablet-width) {
     padding: 0 45px 0;
@@ -14,7 +14,7 @@
 .juri__title {
   margin: 0;
   text-align: center;
-  padding: 34px 2px 20px 0;
+  padding: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

@@ -271,6 +271,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   display: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -292,6 +293,12 @@
     background: url("../img/sprite/next.svg") no-repeat center $base-white;
     right: -3px;
   }
+}
+
+.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
 }
 
 /* Slide styles end */

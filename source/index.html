@@ -53,9 +53,9 @@
         <source media="(min-width: 768px)" srcset="img/hero/hero-tablet.jpg, img/hero/hero-tablet@2x.jpg 2x" width="324"
           height="390">
         <img class="hero__img" src="img/hero/hero-tablet.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x"
-          alt="Тренер фитнес центра" width="0" height="0">
+          alt="Тренер фитнес центра" width="324" height="390">
       </picture>
-      <button class="hero__button button">Купить абонемент</button>
+      <a class="hero__button button" href="#price">Купить абонемент</a>
     </div>
   </section>
   <main class="page-main">
@@ -109,7 +109,7 @@
         <button class="about__button" aria-label="Запустить видео"></button>
       </div>
     </section>
-    <section class="price" data-test="price">
+    <section class="price" data-test="price" id="price">
       <h2 class="price__title inner-title">Абонементы</h2>
       <div class="price__container tab tab-price">
 
@@ -530,21 +530,21 @@
             <ul class="tab-faq__list accordion">
               <li class="tab-faq__item accordion__content open">
                 <h3>Как стать членом <br> фитнес-центра?
-                  <span class="accordion__input open"></span>
+                  <button class="accordion__input open"></button>
                 </h3>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету <br> и подписать договор. При
                   покупке абонемента онлайн, анкета <br> также заполняется онлайн и договор придёт вам на почту.</p>
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Где можно посмотреть расписание?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
                   покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Есть кулеры в центре? Предоставляются полотенца?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
                   покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
@@ -552,7 +552,7 @@
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Сколько тренеров работает в клубе и какова <br> их квалификация?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
                   покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
@@ -565,7 +565,7 @@
             <ul class="tab-faq__list accordion">
               <li class="tab-faq__item accordion__content">
                 <h3>Занятия с тренером входят в абонемент?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
                   присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
@@ -574,21 +574,21 @@
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Можно ли заморозить абонемент?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно.</p>
 
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно.</p>
 
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Что такое семейный доступ и доступ для друзей?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно.</p>
 
@@ -602,7 +602,7 @@
                 <h3>Предлагает ли клуб услуги
                   по консультированию
                   по вопросам питания?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
                   данные, цели и предложит программу питания.</p>
@@ -610,7 +610,7 @@
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
                   данные, цели и предложит программу питания.</p>
@@ -618,7 +618,7 @@
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Можно ли приобрести в центре спортивное питание?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
                   данные, цели и предложит программу питания.</p>
@@ -626,7 +626,7 @@
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Есть ли в центре детская комната?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
                   данные, цели и предложит программу питания.</p>
@@ -639,7 +639,7 @@
             <ul class="tab-faq__list accordion">
               <li class="tab-faq__item accordion__content">
                 <h3>Есть в фитнес-центре дресс-код?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
                   и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
@@ -649,7 +649,7 @@
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Можно ли приводить с собой детей на тренировки?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
                   и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
@@ -659,7 +659,7 @@
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Какие дополнительные правила посещения центра?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
                   и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
@@ -669,7 +669,7 @@
               </li>
               <li class="tab-faq__item accordion__content">
                 <h3>Нужна ли медицинская справка для посещения залов и бассейна?
-                  <span class="accordion__input"></span>
+                  <button class="accordion__input"></button>
                 </h3>
                 <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
                   и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
@@ -731,8 +731,8 @@
         <div class="swiper-button-next reviews-button-next"></div>
       </div>
     </section>
-    <div class="page-main__wrapper">
-      <section class="form" data-test="form">
+    <section class="form" data-test="form">
+      <div class="form__container">
         <h2 class="form__title inner-title inner-title--special">Бесплатное занятие</h2>
         <form class="form__form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__wrapper">
@@ -740,13 +740,15 @@
               <input class="form__input" type="text" name="name" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Имя" required>
             </label>
             <label class="form__label">
-              <input class="form__input" type="tel" name="phone" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" placeholder="Телефон" required>
+              <input class="form__input" type="tel" name="phone"
+                pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18"
+                placeholder="Телефон" required>
             </label>
           </div>
           <button class="form__button button" type="submit">Отправить</button>
         </form>
-      </section>
-      <section class="contacts">
+      </div>
+      <div class="form__contacts contacts">
         <h2 class="contacts__title inner-title">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">Адрес:
@@ -762,8 +764,8 @@
             <a class="contacts__text link" href="mailto:омск@supergym.ru">омск@supergym.ru</a>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
   <footer class="footer" data-test="footer">
     <div class="footer__container">

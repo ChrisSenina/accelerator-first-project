@@ -6,20 +6,34 @@
 .tab-price__head {
   position: relative;
   display: flex;
+  width: 290px;
   justify-content: center;
   gap: 46px;
-  flex-wrap: nowrap;
-  margin: 28px 0 31px;
+  flex-wrap: wrap;
+  margin: 28px auto 31px;
 
   @media (min-width: $tablet-width) {
-    margin: 36px 0 45px;
+    margin: 36px auto 45px;
     gap: 44px;
+    width: 311px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 52px;
-    margin: 21px 0 42px;
+    margin: 21px auto 42px;
+    width: 352px;
   }
+}
+
+.tab-price__head::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #78787833;
+  bottom: 0;
+  left: 0;
+  display: block;
 }
 
 .tab-price__tab {
@@ -105,7 +119,7 @@
 .tab-price__item:focus-within {
   outline: none;
   border: 7px solid;
-  border-image: linear-gradient(151.36deg, #ed0233 16.344%,#003eb7 97.809%);
+  border-image: linear-gradient(151.36deg, #ed0233 16.344%, #003eb7 97.809%);
   border-image-slice: 1;
   margin: -7px;
 }

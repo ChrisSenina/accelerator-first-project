@@ -56,13 +56,31 @@ export function sliderSecond() {
     loop: false,
     speed: 2000,
 
+    slidesPerView: 'auto',
+
     direction: 'horizontal',
 
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-      disabledClass: '.reviews-button-disabled',
+      disabledClass: 'swiper-button-disabled',
       hideOnClick: true,
     },
+
+    on: {
+      slideChangeTransitionEnd: function () {
+        if (this.isEnd) {
+          this.navigation.$nextEl.classList.add('swiper-button-disabled');
+        } else {
+          this.navigation.$nextEl.classList.remove('swiper-button-disabled');
+        }
+        if (this.IsStart) {
+          this.navigation.$prevEl.classList.add('swiper-button-disabled');
+        } else {
+          this.navigation.$prevEl.classList.remove('swiper-button-disabled');
+        }
+        this.navigation.update();
+      }
+    }
   });
 }

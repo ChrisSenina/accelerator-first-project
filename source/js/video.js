@@ -38,6 +38,7 @@ function createIframe(id) {
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('src', generateURL(id));
   iframe.classList.add('about__cover');
+  iframe.loading = 'lazy';
 
   return iframe;
 }

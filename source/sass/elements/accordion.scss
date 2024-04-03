@@ -1,6 +1,7 @@
 .accordion {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #74819c
 }
 
 .accordion__content {
@@ -40,7 +41,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 22px 0 20px;
+    padding: 22px 0 21px;
   }
 }
 
@@ -60,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 23px 0 20px;
+    padding: 23px 0 21px;
   }
 }
 
@@ -68,10 +69,6 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-}
-
-.accordion__content:last-child h3 {
-  border-bottom: 1px solid #74819c;
 }
 
 .accordion__content:last-child h3 br {
@@ -138,12 +135,19 @@
   background: url("../img/sprite/plus.svg") no-repeat center;
   background-size: 14px;
   border: 1px solid $base-blue;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
     background-size: 20px;
   }
+}
+
+.accordion__input:focus {
+  outline: none;
+  border-color: $secondary-blue;
+  background-color: #74819c;
 }
 
 .accordion__input.open {
@@ -167,6 +171,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 }
