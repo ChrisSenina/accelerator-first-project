@@ -150,11 +150,23 @@
 .reviews-button-prev,
 .reviews-button-next {
   @media (min-width: $tablet-width) {
-    top: 46px;
+    top: 140px;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
     top: 187px;
+  }
+}
+
+.reviews-button-prev {
+  @media (min-width: $tablet-width) {
+    left: -3px;
+  }
+}
+
+.reviews-button-next {
+  @media (min-width: $tablet-width) {
+    right: -3px;
   }
 }

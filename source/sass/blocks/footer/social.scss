@@ -20,6 +20,7 @@
 
 .social__item {
   display: block;
+  position: relative;
   background-color: $base-white;
   width: 25px;
   height: 25px;
@@ -40,8 +41,10 @@
 }
 
 .social__link {
-  width: 16px;
-  height: 16px;
+ position: absolute;
+ width: 25px;
+ height: 15px;
+ top: 5px;
 }
 
 .social__link:hover,
@@ -53,6 +56,7 @@
 
 .social__link--vk {
   background: url("/__spritemap#sprite-vk-view") no-repeat center;
+  height: 16px;
 }
 
 .social__link--ok {

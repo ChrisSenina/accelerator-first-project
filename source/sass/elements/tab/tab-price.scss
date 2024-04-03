@@ -211,15 +211,15 @@
 }
 
 .tab-price__icon {
-  width: 24px;
-  height: 33px;
-  background: url("../img/sprite/ruble-mobile.svg") no-repeat center;
+  width: 25px;
+  height: 34px;
+  background: url("/__spritemap#sprite-ruble-mobile-view") no-repeat center;
   display: block;
 
   @media (min-width: $tablet-width) {
-    width: 30px;
+    width: 31px;
     height: 42px;
-    background-image: url("../img/sprite/ruble-tablet.svg");
+    background-image: url("/__spritemap#sprite-ruble-tablet-view");
   }
 }
 
