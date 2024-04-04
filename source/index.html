@@ -737,13 +737,18 @@
         <h2 class="form__title inner-title inner-title--special">Бесплатное занятие</h2>
         <form class="form__form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__wrapper">
-            <label class="form__label">
-              <input class="form__input" type="text" name="name" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Имя" required>
-            </label>
-            <label class="form__label">
-              <input class="form__input" type="phone" name="phone" pattern="^\+7[1-9]{10}$" minlength="18"
-                maxlength="18" placeholder="Телефон" required>
-            </label>
+            <div class="form__box">
+              <label class="form__label" for="name"></label>
+              <input class="form__input" type="text" id="name" name="name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя"
+                minlength="2" maxlength="18">
+              <span class="form__error"></span>
+            </div>
+            <div class="form__box">
+              <label class="form__label" for="phone"></label>
+              <input class="form__input" type="tel" id="phone" name="phone" pattern="^((\+7|)+([0-9]){10})$"
+                minlength="12" maxlength="12" placeholder="Телефон">
+              <span class="form__error--phone"></span>
+            </div>
           </div>
           <button class="form__button button" type="submit">Отправить</button>
         </form>

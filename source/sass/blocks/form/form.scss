@@ -69,13 +69,17 @@
   }
 }
 
+.form__box {
+  margin-bottom: 36px;
+  position: relative;
+}
+
 .form__input {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
   width: 285px;
-  margin-bottom: 36px;
   padding-bottom: 3px;
   color: $base-white;
   background-color: $base-blue;
@@ -119,9 +123,20 @@
   opacity: 0.4;
 }
 
-.form__input:invalid {
-  color: $secondary-red;
-  border-color: $secondary-red;
+.form__input-error {
+  border-color: $base-red;
+}
+
+.form__error,
+.form__error--phone {
+  color: $base-red;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  position: absolute;
+  top: 27px;
+  left: 0;
 }
 
 .form__button {
