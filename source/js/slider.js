@@ -11,10 +11,10 @@ export function slider() {
 
     slidesPerView: 'auto',
 
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: true,
+    // },
 
     allowTouchMove: true,
 

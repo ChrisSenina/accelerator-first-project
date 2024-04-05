@@ -76,23 +76,22 @@
 }
 
 .tab-price__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 35px;
+  width: 290px;
 
   @media (min-width: $tablet-width) {
     gap: 40px;
-    padding: 0 149px;
+    width: 380px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: center;
+    grid-template-columns: repeat(3, 360px);
+    width: 1160px;
     padding: 0;
-    gap: 37px;
   }
 }
 
@@ -108,10 +107,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 65px 80px 67px;
   }
 }
 

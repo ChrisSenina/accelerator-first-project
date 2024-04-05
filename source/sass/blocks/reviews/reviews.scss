@@ -3,7 +3,7 @@
   padding: 41px 15px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px;
+    padding: 60px 45px 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,6 +46,8 @@
   margin: 40px 25px 0;
   background-color: $secondary-blue;
   color: $base-white;
+  min-height: 328px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin: 36px 89px 0 88px;
@@ -53,12 +55,15 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 39px;
+    min-height: 243px;
+
   }
 
   @media (min-width: $desktop-width) {
     margin: 75px 55px 0;
     padding: 61px 60px 0;
     gap: 30px;
+    min-height: 259px;
   }
 }
 
