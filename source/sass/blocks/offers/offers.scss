@@ -111,11 +111,11 @@
     font-size: 18px;
     line-height: 24px;
     text-align: left;
-    padding: 40px 35px 161px 0;
+    padding: 41px 35px 159px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 0px 155px 0;
+    padding: 40px 0 155px;
   }
 }
 
@@ -186,12 +186,12 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    margin-top: 81px;
+    margin-top: 82px;
   }
 }
 
 .offers__case {
-  background: linear-gradient(151.36deg, rgb(237, 2, 51) 6.982%, rgb(0, 62, 183) 116.498%);
+  background: linear-gradient(151.36deg, $base-red 6.98%, #003eb7 116.5%);
   padding: 7px;
 
   @media (min-width: $tablet-width) {

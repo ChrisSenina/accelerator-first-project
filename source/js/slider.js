@@ -66,23 +66,22 @@ export function sliderSecond() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
       disabledClass: 'swiper-button-disabled',
-      hideOnClick: true,
-    },
 
-    on: {
-      slideChangeTransitionEnd: function () {
-        if (this.isEnd) {
-          this.navigation.$nextEl.classList.add('swiper-button-disabled');
-        } else {
-          this.navigation.$nextEl.classList.remove('swiper-button-disabled');
+      on: {
+        slideChangeTransitionStart: function () {
+          if (this.IsStart) {
+            this.navigation.$prevEl.classList.add('swiper-button-disabled');
+          } else {
+            this.navigation.$prevEl.classList.remove('swiper-button-disabled');
+          }
+          if (this.isEnd) {
+            this.navigation.$nextEl.classList.add('swiper-button-disabled');
+          } else {
+            this.navigation.$nextEl.classList.remove('swiper-button-disabled');
+          }
+          this.navigation.update();
         }
-        if (this.IsStart) {
-          this.navigation.$prevEl.classList.add('swiper-button-disabled');
-        } else {
-          this.navigation.$prevEl.classList.remove('swiper-button-disabled');
-        }
-        this.navigation.update();
       }
-    }
+    },
   });
 }

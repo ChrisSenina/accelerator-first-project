@@ -27,12 +27,12 @@ export function openTabsSecond() {
       const currentItem = document.querySelector(tabId);
 
       if (!currentTab.classList.contains('tab-active')) {
-        tabs.forEach((item) => {
-          item.classList.remove('tab-active');
+        tabs.forEach((item2) => {
+          item2.classList.remove('tab-active');
         });
 
-        tabsItems.forEach((item) => {
-          item.classList.remove('tab-active');
+        tabsItems.forEach((item2) => {
+          item2.classList.remove('tab-active');
         });
 
         currentTab.classList.add('tab-active');

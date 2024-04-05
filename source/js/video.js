@@ -48,4 +48,3 @@ function generateURL() {
 
   return `https://www.youtube.com/embed/${query}&autoplay=1`;
 }
-

@@ -1,10 +1,9 @@
 .hero {
   margin: 0;
   padding: 0;
-  background-color: $base-blue;
   color: $base-white;
   min-width: 320px;
-  background: linear-gradient(90.00deg, #1c3477, #1c3477 0.01%, #1a3578 39.106%, #73184b 75.502%, #b4022a 100%);
+  background: linear-gradient(90deg, #1c3477, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 
   @media (min-width: $tablet-width) {
     padding-bottom: 93px;
@@ -61,7 +60,7 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
-    padding: 1px 0 0 0;
+    padding: 1px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,7 +71,7 @@
 }
 
 .hero__phone:hover {
-  color: #1c337480;
+  color: rgba(28, 51, 116, 0.5);
 }
 
 .hero__phone:focus {
@@ -101,7 +100,7 @@
   @media (min-width: $tablet-width) {
     width: 678px;
     margin: 0 auto;
-    padding: 0 45px 0;
+    padding: 0 45px;
     justify-content: space-between;
     grid-template-columns: 115px min-content min-content;
     column-gap: unset;
@@ -235,6 +234,7 @@
   @media (min-width: $tablet-width) {
     margin-top: -94px;
     margin-left: 139px;
+    padding-top: 21px;
     width: 185px;
     height: 56px;
     grid-column: unset;
@@ -243,8 +243,8 @@
   @media (min-width: $desktop-width) {
     width: 270px;
     height: 66px;
-    margin-top: -126px;
+    margin-top: -125px;
     margin-left: 190px;
-    padding: 28px 10px;
+    padding: 27px 10px;
   }
 }

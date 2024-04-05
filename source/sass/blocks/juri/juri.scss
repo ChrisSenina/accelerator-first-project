@@ -3,11 +3,11 @@
   padding: 33px 15px 34px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 45px 0;
+    padding: 0 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 91px 45px 46px;
+    padding: 92px 45px 46px;
   }
 }
 
@@ -53,7 +53,7 @@
   position: absolute;
   width: 23px;
   height: 100px;
-  background-color: white;
+  background-color: $base-white;
 }
 
 .juri__slide {
@@ -124,7 +124,7 @@
   right: 0;
   opacity: 0;
   transition: 0.6s;
-  background-color: #102654e3;
+  background-color: rgba(16, 38, 84, 0.89);
   width: 227px;
   height: 280px;
   padding: 45px 0 50px;

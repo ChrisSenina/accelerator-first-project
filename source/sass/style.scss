@@ -1,32 +1,32 @@
 /* GLOBAL */
-@import "./global/variables.scss";
-@import "./global/global.scss";
-@import "./global/fonts.scss";
-@import "./global/visually-hidden.scss";
+@import "./global/variables";
+@import "./global/global";
+@import "./global/fonts";
+@import "./global/visually-hidden";
 
 /* ELEMENTS */
-@import "./elements/link.scss";
-@import "./elements/button.scss";
-@import "./elements/inner-title.scss";
-@import "./elements/tab/tab-price.scss";
-@import "./elements/tab/tab-faq.scss";
-@import "./elements/accordion.scss";
+@import "./elements/link";
+@import "./elements/button";
+@import "./elements/inner-title";
+@import "./elements/tab/tab-price";
+@import "./elements/tab/tab-faq";
+@import "./elements/accordion";
 
 /* BLOCKS */
-@import "./blocks/hero/hero.scss";
-@import "./blocks/about/about.scss";
-@import "./blocks/price/price.scss";
-@import "./blocks/games/games.scss";
-@import "./blocks/juri/juri.scss";
-@import "./blocks/features/features.scss";
-@import "./blocks/offers/offers.scss";
-@import "./blocks/faq/faq.scss";
-@import "./blocks/reviews/reviews.scss";
-@import "./blocks/form/form.scss";
-@import "./blocks/contacts/contacts.scss";
-@import "./blocks/footer/footer.scss";
-@import "./blocks/footer/social.scss";
+@import "./blocks/hero/hero";
+@import "./blocks/about/about";
+@import "./blocks/price/price";
+@import "./blocks/games/games";
+@import "./blocks/juri/juri";
+@import "./blocks/features/features";
+@import "./blocks/offers/offers";
+@import "./blocks/faq/faq";
+@import "./blocks/reviews/reviews";
+@import "./blocks/form/form";
+@import "./blocks/contacts/contacts";
+@import "./blocks/footer/footer";
+@import "./blocks/footer/social";
 
 /* VENDOR */
-@import "./vendor/normalize.scss";
-@import "./vendor/swiper/swiper.scss";
+@import "./vendor/normalize";
+@import "./vendor/swiper/swiper";

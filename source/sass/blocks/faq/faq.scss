@@ -4,11 +4,11 @@
   background-color: $secondary-white;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px;
+    padding: 61px 45px 59px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 101px 103px;
+    padding: 101px 103px 99px;
   }
 }
 
@@ -31,5 +31,3 @@
     text-align: left;
   }
 }
-
-

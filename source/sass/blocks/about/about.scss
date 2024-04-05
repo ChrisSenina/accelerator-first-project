@@ -182,12 +182,10 @@
   padding: 0;
   width: 72px;
   height: 72px;
-  border: 2px solid #ed023333;
+  border: 2px solid rgba(237, 2, 51, 0.2);
   border-radius: 50%;
   background-color: transparent;
   transform: translate(-50%, -50%);
-
-  @media (min-width: $tablet-width) {}
 
   @media (min-width: $desktop-width) {
     width: 100px;
@@ -196,7 +194,7 @@
 }
 
 .about__button:hover {
-  border: 2px solid #10265499;
+  border: 2px solid rgba(16, 38, 84, 0.6);
 }
 
 .about__button:focus {
@@ -221,7 +219,7 @@
   height: 52px;
   border: none;
   border-radius: 50%;
-  background: linear-gradient(151.36deg, #ed0233 6.982%, #003eb7 116.498%);
+  background: linear-gradient(151.36deg, $base-red 6.98%, #003eb7 116.5%);
   transform: translate(-50%, -50%);
 
   @media (min-width: $desktop-width) {
@@ -249,7 +247,7 @@
 .about__button::before {
   content: "";
   position: absolute;
-  transform: rotate(270.00deg);
+  transform: rotate(270deg);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 9px solid $base-white;
@@ -268,10 +266,10 @@
 }
 
 .about__button:hover::before {
-  border-top: 9px solid #10265499;
+  border-top: 9px solid rgba(16, 38, 84, 0.6);
 
   @media (min-width: $desktop-width) {
-    border-top: 12px solid #10265499
+    border-top: 12px solid rgba(16, 38, 84, 0.6);
   }
 }
 
@@ -292,10 +290,10 @@
 }
 
 .about__button:disabled::before {
-  border-top: 9px solid #10265466;
+  border-top: 9px solid rgba(16, 38, 84, 0.4);
 
   @media (min-width: $desktop-width) {
-    border-top: 12px solid #10265466;
+    border-top: 12px solid rgba(16, 38, 84, 0.4);
   }
 }
 

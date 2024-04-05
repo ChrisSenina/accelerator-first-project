@@ -6,7 +6,7 @@ export function isValid() {
     const name = document.getElementById('name');
     const phone = document.getElementById('phone');
     const error = document.querySelector('.form__error');
-    const errorPhone = document.querySelector('.form__error--phone');
+    const errorPhone = document.querySelector('.form__error-phone');
 
     if (name.value === '') {
       error.innerHTML = 'Имя должно содежать не менее двух символов';
@@ -17,7 +17,7 @@ export function isValid() {
     }
 
     if (phone.value === '') {
-      errorPhone.innerHTML = 'Введите телефон в формате +79999999';
+      errorPhone.innerHTML = 'Введите телефон в формате +79993322';
       phone.classList.add('form__input-error');
       event.preventDefault();
     } else {

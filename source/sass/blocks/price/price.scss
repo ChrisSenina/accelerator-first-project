@@ -14,7 +14,6 @@
 }
 
 .price::after {
-
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
@@ -25,7 +24,7 @@
     width: 325px;
     height: 388px;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/price/wheels-tablet@2x.png");
     }
   }
@@ -35,7 +34,7 @@
     height: 449px;
     background-image: url("../img/price/wheels-desktop.png");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/price/wheels-desktop@2x.png");
     }
   }
