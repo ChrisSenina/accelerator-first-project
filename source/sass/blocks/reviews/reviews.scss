@@ -59,12 +59,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 36px 0 0;
-    padding: 40px 31px 0 31px;
+    padding: 40px 31px 0;
     flex-direction: row;
     align-items: flex-start;
     gap: 39px;
     min-height: 242px;
-
   }
 
   @media (min-width: $desktop-width) {
