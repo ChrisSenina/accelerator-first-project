@@ -4,7 +4,7 @@
   padding: 24px 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px 50px;
+    padding: 60px 45px 30px;
     width: 678px;
     margin: 0 auto;
   }
@@ -55,7 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 80px 30px;
+    padding: 62px 80px 29px;
     gap: 78px;
   }
 }
@@ -110,13 +110,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 5px;
+    padding-bottom: 4px;
   }
 }
-
-// .games__info--date {
-//   width: 48px;
-// }
 
 .games__box {
   display: grid;
@@ -211,7 +207,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 30px 80px 0;
+    margin: 31px 80px 0;
     width: 340px;
   }
 }

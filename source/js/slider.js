@@ -43,6 +43,7 @@ export function slider() {
 
       1366: {
         width: 1160,
+        height: 300,
         slidesPerView: 4,
         initialSlide: 0,
         spaceBetween: 40,
@@ -83,5 +84,25 @@ export function sliderSecond() {
         }
       }
     },
+
+    breakpoints: {
+      320: {
+        width: 240,
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+
+      768: {
+        width: 500,
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+
+      1366: {
+        width: 560,
+        slidesPerView: 1,
+        spaceBetween: 40,
+      }
+    }
   });
 }

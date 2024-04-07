@@ -53,11 +53,11 @@
 
 .footer__wrapper {
   width: 290px;
-  margin: 16px auto 23px;
+  margin: 18px auto 25px;
   display: grid;
   grid-template-columns: 51px 81px min-content;
   column-gap: 20px;
-  row-gap: 6px;
+  row-gap: 10px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -75,9 +75,11 @@
 .footer__link {
   color: $base-white;
   padding: 5px 10px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     height: 22px;
+    line-height: 22px;
   }
 }
 

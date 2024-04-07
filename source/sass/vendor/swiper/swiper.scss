@@ -275,23 +275,66 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: center;
     position: absolute;
-    width: 23px;
-    height: 32px;
+    width: 56px;
+    height: 56px;
     z-index: 1;
+    border: 1px solid transparent;
+    border-radius: 50%;
   }
 }
 
-.swiper-button-prev {
+.swiper-button-prev__img,
+.swiper-button-next__img {
+  @media (min-width: $tablet-width) {
+    width: 56px;
+    height: 32px;
+    display: block;
+    position: absolute;
+  }
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  @media (min-width: $tablet-width) {
+    border-color: $base-blue;
+  }
+}
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  @media (min-width: $tablet-width) {
+    background-color: #e8e8e8;
+    outline: none;
+    border-color: $base-blue;
+  }
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  @media (min-width: $tablet-width) {
+    background-color: $base-blue;
+  }
+}
+
+.swiper-button-prev__img {
   @media (min-width: $tablet-width) {
     background: url("/__spritemap#sprite-prev-view") no-repeat center transparent;
   }
 }
 
-.swiper-button-next {
+.swiper-button-next__img {
   @media (min-width: $tablet-width) {
     background: url("/__spritemap#sprite-next-view") no-repeat center transparent;
+  }
+}
+
+.swiper-button-prev__img:active,
+.swiper-button-next__img:active {
+  @media (min-width: $tablet-width) {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(303deg) brightness(103%) contrast(101%);
   }
 }
 
