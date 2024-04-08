@@ -1,7 +1,7 @@
 .games {
   margin: 0 auto;
   width: 290px;
-  padding: 24px 15px 17px;
+  padding: 24px 15px 18px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 45px 20px;
@@ -27,7 +27,7 @@
 .games__content {
   background-color: $base-red;
   color: $base-white;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
   width: 290px;
   box-sizing: border-box;
   display: block;
@@ -201,7 +201,7 @@
   color: $base-white;
   text-transform: uppercase;
   width: 210px;
-  height: 59px;
+  height: 60px;
   padding: 23px 22px;
   margin: 2px auto 0;
   border: 2px solid $base-white;
