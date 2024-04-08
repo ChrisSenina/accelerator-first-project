@@ -4,7 +4,7 @@
   background-color: $secondary-white;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px 58px;
+    padding: 62px 45px 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +43,7 @@
     grid-template-columns: repeat(3, 360px);
     column-gap: 40px;
     row-gap: 40px;
-    padding-top: 49px;
+    padding-top: 50px;
   }
 }
 
@@ -72,7 +72,7 @@
 .features__item:nth-child(1),
 .features__item:nth-child(2) {
   @media (min-width: $desktop-width) {
-    padding-bottom: 38px;
+    padding-bottom: 37px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
   }
 }
@@ -241,7 +241,7 @@
   color: $base-white;
 
   @media (min-width: $desktop-width) {
-    padding-top: 18px;
+    padding-top: 17px;
     margin-top: 0;
   }
 }
@@ -264,12 +264,6 @@
     padding: 20px 0 15px;
   }
 }
-
-// .features__item--fifth {
-//   @media (min-width: $tablet-width) {
-//     grid-column: 3/5;
-//   }
-// }
 
 .features__wrapper {
   display: flex;

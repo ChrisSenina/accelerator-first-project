@@ -4,7 +4,7 @@
   background-color: $base-black;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 45px 41px;
+    padding: 45px 45px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +23,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1160px;
-    gap: 158px;
+    gap: 157px;
   }
 }
 
@@ -68,7 +68,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 64px;
+    gap: 63px;
   }
 }
 
@@ -76,6 +76,7 @@
   color: $base-white;
   padding: 5px 10px;
   line-height: 20px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     height: 22px;

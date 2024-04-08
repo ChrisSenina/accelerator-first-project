@@ -11,10 +11,10 @@ export function slider() {
 
     slidesPerView: 'auto',
 
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: true,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
 
     allowTouchMove: true,
 
@@ -22,8 +22,8 @@ export function slider() {
     freeMode: true,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next.juri-button-next',
+      prevEl: '.swiper-button-prev.juri-button-prev',
     },
 
     breakpoints: {
@@ -64,25 +64,9 @@ export function sliderSecond() {
     direction: 'horizontal',
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-      disabledClass: 'swiper-button-disabled',
-
-      on: {
-        slideChangeTransitionStart: function () {
-          if (this.IsStart) {
-            this.navigation.$prevEl.classList.add('swiper-button-disabled');
-          } else {
-            this.navigation.$prevEl.classList.remove('swiper-button-disabled');
-          }
-          if (this.isEnd) {
-            this.navigation.$nextEl.classList.add('swiper-button-disabled');
-          } else {
-            this.navigation.$nextEl.classList.remove('swiper-button-disabled');
-          }
-          this.navigation.update();
-        }
-      }
+      nextEl: '.swiper-button-next.reviews-button-next',
+      prevEl: '.swiper-button-prev.reviews-button-prev',
+      disabledClass: 'reviews-button-disabled',
     },
 
     breakpoints: {

@@ -1,16 +1,16 @@
 .games {
   margin: 0 auto;
   width: 290px;
-  padding: 24px 15px;
+  padding: 24px 15px 17px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px 30px;
+    padding: 60px 45px 20px;
     width: 678px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 103px;
+    padding: 100px 103px 94px;
     width: unset;
   }
 }
