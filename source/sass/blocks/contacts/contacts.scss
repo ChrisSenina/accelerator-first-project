@@ -15,6 +15,7 @@
   padding: 0;
   width: 290px;
   margin: 0 auto;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -46,13 +47,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
-    row-gap: 15px;
+    row-gap: 14px;
   }
 
   @media (min-width: $desktop-width) {
     width: 477px;
     column-gap: 121px;
     margin-top: 37px;
+    row-gap: 15px;
   }
 }
 

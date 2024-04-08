@@ -93,11 +93,18 @@
 
   @media (min-width: $tablet-width) {
     width: 205px;
+    padding-bottom: 2px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 3px;
     width: 223px;
   }
+}
+
+.form__input::placeholder {
+  color: $base-white;
+  opacity: 0.4;
 }
 
 .form__input:active::placeholder {
@@ -149,8 +156,8 @@
 
   @media (min-width: $tablet-width) {
     width: 440px;
-    height: 65px;
-    padding: 27px 25px;
+    height: 66px;
+    padding: 27px;
   }
 
   @media (min-width: $desktop-width) {

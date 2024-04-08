@@ -44,6 +44,7 @@
   margin: 0;
   padding: 41px 0 0;
   text-align: center;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     padding-top: 61px;

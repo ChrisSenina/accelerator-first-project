@@ -19,7 +19,7 @@
   margin: 0;
   padding: 40px 15px;
   text-align: center;
-  overflow: hidden;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 33px;
@@ -91,6 +91,7 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 64px;
+  overflow-wrap: anywhere;
 
   @media (min-width: $tablet-width) {
     font-size: 70px;
@@ -111,7 +112,7 @@
     font-size: 18px;
     line-height: 24px;
     text-align: left;
-    padding: 41px 35px 159px 0;
+    padding: 40px 35px 159px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -230,10 +231,12 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 26px;
     line-height: 26px;
+    text-align: left;
   }
 }
 

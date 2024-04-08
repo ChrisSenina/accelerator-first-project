@@ -6,6 +6,7 @@
 
 .accordion__content {
   overflow: hidden;
+  transition: all 1s linear;
 }
 
 .accordion__content h3 {
@@ -159,6 +160,7 @@
 }
 
 .accordion__content.open {
+  transition: all 1s linear;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {

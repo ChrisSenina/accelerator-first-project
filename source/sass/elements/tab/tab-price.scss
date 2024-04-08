@@ -160,7 +160,9 @@
   line-height: 150%;
   font-weight: 700;
   color: #e8e8e8;
+  opacity: 0.5;
   padding-top: 30px;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     font-size: 100px;
