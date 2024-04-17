@@ -63,8 +63,7 @@
             <p class="hero__text--level">Высокая сложность</p>
           </div>
           <div class="hero__slide swiper-slide">
-            <h3>Невероятная
-              природа Камчатки</h3>
+            <h3>Невероятная природа Камчатки</h3>
             <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из
               самых нетронутых уголков дикой природы в мире.</p>
             <a class="hero__link link" href="#">Смотреть тур</a>
@@ -84,7 +83,8 @@
       </div>
     </section>
     <section class="tours" data-test="tours" id="tours">
-      <h2 class="tours__title">Ближайшие туры</h2>
+      <h2 class="tours__title inner-title">Ближайшие туры</h2>
+      <span class="inner-title--shadow">Ближайшие туры</span>
       <div class="tours__container">
         <div class="tours__slider swiper">
           <div class="tours__wrapper swiper-wrapper">
@@ -175,15 +175,128 @@
       </div>
       <a class="tours__link link" href="#">Показать все туры</a>
     </section>
-    <section class="training" data-test="training" id="training">training</section>
-    <section class="about" data-test="about" id="about">about</section>
+    <section class="training" data-test="training" id="training">
+      <h2 class="training__title inner-title">Обучение</h2>
+      <span class="inner-title--shadow">Обучение</span>
+      <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
+        Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+      <div class="training__container">
+        <h3 class="training__header inner-title">Наши инструкторы</h3>
+        <div class="swiper-button-prev">
+          <span class="swiper-button-prev__img"></span>
+        </div>
+        <div class="swiper-button-next">
+          <span class="swiper-button-next__img"></span>
+        </div>
+        <div class="training__slider swiper">
+          <div class="training__wrapper swiper-wrapper">
+
+            <div class="training__slide swiper-slide">
+              <picture>
+                <img src="/source/img/training/alex.jpg" srcset="/source/img/training/alex@2x.jpg 2x" width="260" height="200" alt="Инструктор Александр Прокофьев">
+              </picture>
+              <div class="training__details">
+                <h4 class="training__name">Александр Прокофьев</h4>
+                <a class="training__link link" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </div>
+              <p class="training__description">Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+            </div>
+
+            <div class="training__slide swiper-slide">
+              <picture>
+                <img src="" srcset="" width="260" height="200" alt="Инструктор Светлана Афиногенова">
+              </picture>
+              <div class="training__details">
+                <h4>Светлана Афиногенова</h4>
+                <a href="#">
+                  <!-- <span class="visually-hidden">Вконтакте</span> -->
+                </a>
+              </div>
+              <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+            </div>
+
+            <div class="training__slide swiper-slide">
+              <picture>
+                <img src="" srcset="" width="260" height="200" alt="Инструктор Надежда Колесниченко">
+              </picture>
+              <div class="training__details">
+                <h4 class="training__name">Надежда Колесниченко</h4>
+                <a class="training__link link" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </div>
+              <p class="training__description">Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+            </div>
+
+            <div class="training__slide swiper-slide">
+              <picture>
+                <img src="" srcset="" width="260" height="200" alt="Инструктор Федор Кайгородов">
+              </picture>
+              <div class="training__details">
+                <h4 class="training__name">Федор Кайгородов</h4>
+                <a class="training__link link" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </div>
+              <p class="training__description">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+            </div>
+
+            <div class="training__slide swiper-slide">
+              <picture>
+                <img src="" srcset="" width="260" height="200" alt="Инструктор Даниэль Васнецов">
+              </picture>
+              <div class="training__details">
+                <h4 class="training__name">Даниэль Васнецов</h4>
+                <a class="training__link link" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </div>
+              <p class="training__description">Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 class="training__heading">Процесс обучения</h5>
+      <ul class="training__list">
+        <li class="training__item training__item--map">
+          <p class="training__text">Изучение спортивного туристского движения</p>
+        </li>
+        <li class="training__item training__item--outfit">
+          <p class="training__text">Подготовка и техническое снаряжение в походах</p>
+        </li>
+        <li class="training__item training__item--eco">
+          <p class="training__text">Лекции по окружающей среде, экологии и гигиене</p>
+        </li>
+        <li class="training__item training__item--hills">
+          <p class="training__text">Разъяснение сложности горных препятствий</p>
+        </li>
+      </ul>
+    </section>
+    <section class="about" data-test="about" id="about">
+      <picture>
+        <img class="about__img" src="" alt="Группа туристов идёт в поход" width="434" height="400">
+      </picture>
+      <h2>О нас</h2>
+      <span>О нас</span>
+      <ul>
+        <li>История компании
+          <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+        </li>
+        <li>Наша цель
+          <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
+        </li>
+      </ul>
+    </section>
     <section class="reviews" data-test="reviews" id="reviews">reviews</section>
     <section class="advantages" data-test="adv">adv</section>
     <section class="gallery" data-test="gallery" id="gallery">gallery</section>
     <section class="font" data-test="form">form</section>
-    <section class="contacts" id="contacts"></section>
   </main>
-  <footer class="footer" data-test="footer">footer</footer>
+  <footer class="footer" data-test="footer">
+    <section class="contacts" id="contacts"></section>
+  </footer>
   <script type="module" src="js/main.js"></script>
 </body>
 
