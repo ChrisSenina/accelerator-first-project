@@ -1,0 +1,23 @@
+.site-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  padding: 0 15px 22px;
+  margin: 0;
+}
+
+.site-list__link {
+  text-transform: uppercase;
+  color: $base-white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
