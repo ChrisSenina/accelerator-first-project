@@ -20,7 +20,7 @@
   left: 15px;
 
   @media (min-width: $tablet-width) {
-    top: -48px;
+    top: -39px;
     left: 45px;
   }
 }
@@ -33,6 +33,11 @@
   position: absolute;
   top: -54px;
   left: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: -39px;
+    left: 45px;
+  }
 }
 
 .nav--opened .nav__list {
