@@ -5,6 +5,13 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding-left: 163px;
+    margin-top: 10px;
+    gap: 30px;
+  }
 }
 
 .site-list__item {
@@ -14,11 +21,19 @@
   @media (min-width: $tablet-width) {
     padding: 0 45px 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .site-list__item:last-of-type {
-  @media (max-width: $tablet-width-only) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -34,5 +49,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0;
   }
 }

@@ -1,14 +1,14 @@
 const indexSections = [
   {section: 'header', misMatchThreshold: 0.3},
-  {section: 'hero', misMatchThreshold: 0.3},
-  {section: 'tours', misMatchThreshold: 0.3},
-  {section: 'training', misMatchThreshold: 0.3},
-  {section: 'about', misMatchThreshold: 0.3},
-  {section: 'reviews', misMatchThreshold: 0.3},
-  {section: 'adv', misMatchThreshold: 0.3},
-  {section: 'gallery', misMatchThreshold: 0.3},
-  {section: 'form', misMatchThreshold: 0.3},
-  {section: 'footer', misMatchThreshold: 0.3}
+  // {section: 'hero', misMatchThreshold: 0.3},
+  // {section: 'tours', misMatchThreshold: 0.3},
+  // {section: 'training', misMatchThreshold: 0.3},
+  // {section: 'about', misMatchThreshold: 0.3},
+  // {section: 'reviews', misMatchThreshold: 0.3},
+  // {section: 'adv', misMatchThreshold: 0.3},
+  // {section: 'gallery', misMatchThreshold: 0.3},
+  // {section: 'form', misMatchThreshold: 0.3},
+  // {section: 'footer', misMatchThreshold: 0.3}
 ]
 
 const VIEWPORTS = {

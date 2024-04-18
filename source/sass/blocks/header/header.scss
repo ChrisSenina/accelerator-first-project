@@ -1,12 +1,19 @@
 .header {
   margin: 0;
-  padding: 15px 15px 9px;
+  padding: 15px 15px 10px;
   background-color: $base-blue;
   position: relative;
   z-index: 10;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 45px 15px;
+    padding: 20px 45px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 120px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -19,6 +26,12 @@
   @media (min-width: $tablet-width) {
     padding-left: 268px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 32px;
+    z-index: 10;
+    padding-top: 10px;
   }
 }
 
@@ -36,5 +49,12 @@
     line-height: 16px;
     padding-left: 125px;
     top: -14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 135px;
+    top: 6px;
   }
 }
