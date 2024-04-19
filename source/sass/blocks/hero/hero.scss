@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     height: 1033px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 800px;
+  }
 }
 
 .hero__slide {
@@ -53,6 +57,24 @@
     background-image: url("../img/hero/kamchatka-mobile@2x.jpg");
     background-size: cover;
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero/kamchatka-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/kamchatka-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero/kamchatka-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/kamchatka-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
 }
 
 .hero__slide:nth-child(3) {
@@ -61,6 +83,24 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/altai-mobile@2x.jpg");
     background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero/altai-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/altai-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero/altai-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/altai-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
@@ -72,7 +112,7 @@
   }
 }
 
-.hero h3 {
+.hero__slide-content h3 {
   margin: 0;
   padding: 105px 0 0;
   font-size: 26px;
@@ -86,7 +126,7 @@
   }
 }
 
-.hero p {
+.hero__slide-content p {
   margin: 0;
   padding: 14px 10px;
   font-size: 15px;
@@ -118,4 +158,38 @@
 
 .hero__text {
   display: none;
+}
+
+.hero__slide-content--special {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.hero__slide-content--special h3 {
+  @media (min-width: $tablet-width) {
+    padding: 106px 0 0;
+  }
+}
+
+.hero__slide-content--special p {
+  @media (min-width: $tablet-width) {
+    padding: 14px 107px;
+  }
+}
+
+.hero__slide-content--special::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: -320px;
+    right: 163px;
+    background: url("../img/hero/photo-cards-tablet.png") no-repeat center;
+    width: 442px;
+    height: 365px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url ("../img/hero/photo-cards-tablet@2x.png");
+    }
+  }
 }
