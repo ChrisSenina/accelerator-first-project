@@ -1,0 +1,74 @@
+.hero {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__slider {
+  height: 568px;
+}
+
+.hero__slide {
+  background: url("../img/hero/caucasus-mobile.jpg") no-repeat center;
+  text-align: center;
+  color: $base-white;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/caucasus-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.hero__slide:nth-child(2) {
+  background: url("../img/hero/kamchatka-mobile.jpg") no-repeat center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/kamchatka-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.hero__slide:nth-child(3) {
+  background: url("../img/hero/altai-mobile.jpg") no-repeat center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/altai-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.hero__slide-content {
+  padding: 40px 15px;
+}
+
+.hero h3 {
+  margin: 0;
+  padding: 105px 0 0;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+.hero p {
+  margin: 0;
+  padding: 14px 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.hero__link {
+  width: 140px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: $base-white;
+  text-align: center;
+  margin: 47px auto 0;
+  background: $base-blue;
+}
+
+.hero__text {
+  display: none;
+}
