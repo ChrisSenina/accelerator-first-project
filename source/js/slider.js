@@ -9,9 +9,13 @@ export function slider() {
     direction: 'horizontal',
     loop: true,
 
+    slidesPerView: 'auto',
+
     pagination: {
       el: '.swiper-pagination',
     },
+
+    allowTouchMove: true,
 
   });
 }
