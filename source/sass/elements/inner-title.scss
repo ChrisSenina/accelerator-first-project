@@ -1,0 +1,34 @@
+.inner-title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  color: $base-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 100%;
+  }
+}
+
+.inner-title-shadow {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  color: $base-black;
+  opacity: 0.03;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}

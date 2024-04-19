@@ -6,12 +6,14 @@
 
 /* ELEMENTS */
 @import "./elements/link.scss";
+@import "./elements/inner-title.scss";
 
 /* BLOCKS */
 @import "./blocks/header/header.scss";
 @import "./blocks/header/nav.scss";
 @import "./blocks/header/site-list.scss";
 @import "./blocks/hero/hero.scss";
+@import "./blocks/tours/tours.scss";
 
 // Vendor
 // ---------------------------------

@@ -1,8 +1,8 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-// import 'swiper/css';
+import 'swiper/css';
 
-export function slider() {
+export function sliderHero() {
   new Swiper('.hero__slider', {
     modules: [Pagination],
 
@@ -17,5 +17,16 @@ export function slider() {
 
     allowTouchMove: true,
 
+  });
+}
+
+export function sliderTours() {
+  new Swiper('.tours__slider', {
+    modules: [Navigation],
+
+    direction: 'horizontal',
+    loop: true,
+
+    slidesPerView: 'auto',
   });
 }

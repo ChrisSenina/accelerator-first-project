@@ -1,0 +1,292 @@
+.tours {
+  margin: 0;
+  padding: 20px 15px;
+  position: relative;
+}
+
+.tours::after {
+  content: "";
+  position: absolute;
+  background: url("../img/tours/clouds.png") no-repeat center;
+  width: 141px;
+  height: 595px;
+  top: 10px;
+  right: 0;
+  z-index: -1;
+}
+
+.tours__title {
+  padding: 19px 0 39px;
+  margin: 0;
+}
+
+.tours__title-shadow {
+  position: absolute;
+  top: 23px;
+  left: auto;
+}
+
+.tours__slider {
+  height: 416px;
+}
+
+.tours__slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tours__slide:nth-child(1) {
+  background-image: url("../img/tours/elbrus-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/tours/elbrus-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tours/elbrus-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/elbrus-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/tours/elbrus-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/elbrus-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.tours__slide:nth-child(2) {
+  background-image: url("../img/tours/belukha-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/tours/belukha-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tours/belukha-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/belukha-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/tours/belukha-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/belukha-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.tours__slide:nth-child(3) {
+  background-image: url("../img/tours/adygea-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/tours/adygea-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tours/adygea-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/adygea-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/tours/adygea-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/adygea-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.tours__slide:nth-child(4) {
+  background-image: url("../img/tours/ural-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/tours/ural-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tours/ural-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/ural-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/tours/ural-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/ural-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.tours__slide-content {
+  color: $base-white;
+  padding: 30px 20px;
+}
+
+.tours__info {
+  margin: 0;
+  padding: 194px 0 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.tours__text {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+  }
+}
+
+.tours__text--place {
+  padding: 8px 12px 8px 34px;
+  background-color: $base-blue;
+
+  &::after {
+    width: 16px;
+    height: 16px;
+    background: url("/__spritemap#sprite-pin-view") no-repeat center;
+    top: 6px;
+    left: 12px;
+  }
+}
+
+.tours__text--days {
+  margin-left: 32px;
+
+  &::after {
+    width: 20px;
+    height: 20px;
+    background: url("/__spritemap#sprite-day-view") no-repeat center;
+    top: -4px;
+    left: -32px;
+  }
+}
+
+.tours__text--nights {
+  margin-left: 42px;
+
+  &::after {
+    width: 16px;
+    height: 16px;
+    background: url("/__spritemap#sprite-night-view") no-repeat center;
+    top: -2px;
+    left: -30px;
+  }
+}
+
+.tours__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background: $base-white;
+    opacity: 0.2;
+    bottom: -16px;
+    left: 0;
+  }
+}
+
+.tours__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: min-content max-content max-content;
+  gap: 8px;
+  padding-top: 30px;
+}
+
+.tours__item {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.tours__item:nth-child(3) {
+  margin-left: 1px;
+}
+
+.tours__stars-four {
+  width: 84px;
+  height: 16px;
+  background: url("/__spritemap#sprite-stars-four-view") no-repeat center;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.tours__details {
+  margin: 7px 0 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.tours__link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: $base-black;
+  text-transform: uppercase;
+  padding: 10px 28px 10px 10px;
+  margin: 25px 39px 0;
+  position: relative;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    background: url("/__spritemap#sprite-right-view") no-repeat center;
+    width: 31px;
+    height: 15px;
+    top: auto;
+    right: auto;
+  }
+}

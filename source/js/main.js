@@ -1,5 +1,6 @@
 import { navOpen } from './nav.js';
-import { slider } from './slider.js';
+import { sliderHero, sliderTours } from './slider.js';
 
 navOpen ();
-slider ();
+sliderHero ();
+sliderTours ();
