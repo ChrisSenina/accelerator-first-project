@@ -5,22 +5,49 @@
 
 .hero__slider {
   height: 568px;
+
+  @media (min-width: $tablet-width) {
+    height: 1033px;
+  }
 }
 
 .hero__slide {
-  background: url("../img/hero/caucasus-mobile.jpg") no-repeat center;
   text-align: center;
   color: $base-white;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+}
+
+.hero__slide:nth-child(1) {
+  background-image: url("../img/hero/caucasus-mobile.jpg");
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/caucasus-mobile@2x.jpg");
     background-size: cover;
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero/caucasus-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/caucasus-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero/caucasus-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/caucasus-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
 }
 
 .hero__slide:nth-child(2) {
-  background: url("../img/hero/kamchatka-mobile.jpg") no-repeat center;
+  background-image: url("../img/hero/kamchatka-mobile.jpg") no-repeat center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/kamchatka-mobile@2x.jpg");
@@ -29,7 +56,7 @@
 }
 
 .hero__slide:nth-child(3) {
-  background: url("../img/hero/altai-mobile.jpg") no-repeat center;
+  background-image: url("../img/hero/altai-mobile.jpg") no-repeat center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/altai-mobile@2x.jpg");
@@ -39,6 +66,10 @@
 
 .hero__slide-content {
   padding: 40px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 45px 90px;
+  }
 }
 
 .hero h3 {
@@ -47,6 +78,12 @@
   font-size: 26px;
   font-weight: 800;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 56px;
+    padding: 311px 0 0;
+  }
 }
 
 .hero p {
@@ -55,6 +92,12 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 24px;
+    padding: 14px 102px;
+  }
 }
 
 .hero__link {
@@ -67,6 +110,10 @@
   text-align: center;
   margin: 47px auto 0;
   background: $base-blue;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+  }
 }
 
 .hero__text {
