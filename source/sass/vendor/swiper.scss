@@ -325,6 +325,11 @@
   @media (min-width: $tablet-width) {
     left: 334px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 1219px;
+    bottom: 92px;
+  }
 }
 
 /* Bullets */
