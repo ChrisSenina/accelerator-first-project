@@ -35,8 +35,8 @@ export function sliderTours() {
     slidesPerView: 'auto',
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next.tours-button-next',
+      prevEl: '.swiper-button-prev.tours-button-prev',
     },
 
     breakpoints: {

@@ -8,6 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     padding: 100px 120px;
   }
 }
@@ -43,7 +45,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/tours/clouds-desktop.png");
-    width: 602px;
+    width: 642px;
     height: 1630px;
     top: -126px;
     right: 0;
@@ -369,6 +371,6 @@
 
   @media (min-width: $desktop-width) {
     top: 120px;
-    right: 120px;
+    right: 140px;
   }
 }

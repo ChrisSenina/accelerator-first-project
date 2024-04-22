@@ -294,18 +294,23 @@
 
 /* Swiper-navigation */
 
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-button {
   display: none;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    width: 37px;
-    height: 35px;
+    width: 35px;
+    height: 34px;
     z-index: 1;
     background-color: $base-blue;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: $base-white;
+      border: 1px solid #1c3374;
+    }
   }
 }
 
@@ -315,7 +320,6 @@
   width: 37px;
   height: 9px;
 }
-
 
 .swiper-button-prev__img {
   background: url("/__spritemap#sprite-prev-view") no-repeat center;

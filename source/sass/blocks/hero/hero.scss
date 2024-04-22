@@ -113,6 +113,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     text-align: left;
     padding: 200px 120px 80px;
   }
@@ -134,7 +136,7 @@
   @media (min-width: $desktop-width) {
     font-size: 77px;
     line-height: 77px;
-    padding: 0 75px 0 0;
+    padding: 0 95px 0 0;
   }
 }
 
@@ -152,13 +154,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 23px 730px 0 0;
+    padding: 23px 750px 0 0;
   }
 }
 
 .hero__link {
   width: 140px;
-  padding: 20px;
+  padding: 19px;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
@@ -166,6 +168,7 @@
   text-align: center;
   margin: 47px auto 0;
   background: $base-blue;
+  border: 1px solid transparent;
 
   @media (min-width: $tablet-width) {
     margin-top: 22px;
@@ -174,6 +177,29 @@
   @media (min-width: $desktop-width) {
     margin: 37px 0 0;
   }
+}
+
+.hero__link:hover{
+  background: $base-white;
+  border-color: $second-blue;
+  color: $second-blue;
+}
+
+.hero__link:focus {
+  outline: none;
+  border-color: transparent;
+  color: $second-blue;
+  background: $base-white;
+}
+
+.hero__link:active {
+  background: $second-blue;
+  color: $base-white;
+}
+
+.hero__link:disabled {
+  background: $disabled-color;
+  color: $base-white;
 }
 
 .hero__info {
