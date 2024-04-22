@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  background: $base-blue;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
