@@ -1,7 +1,7 @@
 const desktopSections = [
-  // {section: 'header', misMatchThreshold: 1.1},
-  // {section: 'hero', misMatchThreshold: 0.4},
-  // {section: 'tours', misMatchThreshold: 0.7},
+  {section: 'header', misMatchThreshold: 1.1},
+  {section: 'hero', misMatchThreshold: 0.4},
+  {section: 'tours', misMatchThreshold: 0.7},
   // {section: 'training', misMatchThreshold: 2.1},
   // {section: 'about', misMatchThreshold: 1.5},
   // {section: 'reviews', misMatchThreshold: 2.4},

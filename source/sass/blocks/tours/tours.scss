@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding: 41px 45px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 120px;
+  }
 }
 
 .tours::after {
@@ -36,6 +40,19 @@
       background-size: contain;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/tours/clouds-desktop.png");
+    width: 602px;
+    height: 1630px;
+    top: -126px;
+    right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/tours/clouds-desktop@2x.png") no-repeat center;
+      background-size: contain;
+    }
+  }
 }
 
 .tours__title {
@@ -44,6 +61,10 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 50px;
   }
 }
 
@@ -54,6 +75,10 @@
 
   @media (min-width: $tablet-width) {
     top: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 105px;
   }
 }
 
@@ -68,56 +93,20 @@
 }
 
 .tours__slide:nth-child(1) {
-  background-image: url("../img/tours/elbrus-mobile.jpg");
+  background-image: url("../img/tours/elbrus.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/tours/elbrus-mobile@2x.jpg");
+    background-image: url("../img/tours/elbrus@2x.jpg");
     background-size: cover;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/tours/elbrus-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tours/elbrus-tablet@2x.jpg");
-      background-size: cover;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/tours/elbrus-desktop.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tours/elbrus-desktop@2x.jpg");
-      background-size: cover;
-    }
   }
 }
 
 .tours__slide:nth-child(2) {
-  background-image: url("../img/tours/belukha-mobile.jpg");
+  background-image: url("../img/tours/belukha.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/tours/belukha-mobile@2x.jpg");
+    background-image: url("../img/tours/belukha@2x.jpg");
     background-size: cover;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/tours/belukha-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tours/belukha-tablet@2x.jpg");
-      background-size: cover;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/tours/belukha-desktop.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tours/belukha-desktop@2x.jpg");
-      background-size: cover;
-    }
   }
 }
 
@@ -126,16 +115,12 @@
   @media (max-width: $mobile-width-only) {
     padding: 161px 0 20px;
   }
-
-  @media (min-width: $tablet-width) {
-    gap: 25px;
-  }
 }
 
 .tours__slide:nth-child(2) .tours__text-box,
 .tours__slide:nth-child(3) .tours__text-box {
   @media (max-width: $mobile-width-only) {
-    margin-top: 11px;
+    margin-top: 15px;
     gap: 5px;
   }
 }
@@ -148,29 +133,11 @@
 }
 
 .tours__slide:nth-child(3) {
-  background-image: url("../img/tours/adygea-mobile.jpg");
+  background-image: url("../img/tours/adygea.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/tours/adygea-mobile@2x.jpg");
+    background-image: url("../img/tours/adygea@2x.jpg");
     background-size: cover;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/tours/adygea-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tours/adygea-tablet@2x.jpg");
-      background-size: cover;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/tours/adygea-desktop.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tours/adygea-desktop@2x.jpg");
-      background-size: cover;
-    }
   }
 }
 
@@ -182,44 +149,12 @@
   }
 }
 
-.tours__slide:nth-child(3) .tours__heading {
-  padding-right: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 50px;
-  }
-}
-
 .tours__slide:nth-child(4) {
-  background-image: url("../img/tours/ural-mobile.jpg");
+  background-image: url("../img/tours/ural.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/tours/ural-mobile@2x.jpg");
+    background-image: url("../img/tours/ural@2x.jpg");
     background-size: cover;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/tours/ural-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tours/ural-tablet@2x.jpg");
-      background-size: cover;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/tours/ural-desktop.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tours/ural-desktop@2x.jpg");
-      background-size: cover;
-    }
-  }
-}
-
-.tours__slide:nth-child(4) .tours__info {
-  @media (min-width: $tablet-width) {
-    gap: 7px;
   }
 }
 
@@ -234,10 +169,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 5px;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    gap: 45px;
     padding-bottom: 15px;
   }
 }
@@ -298,7 +232,7 @@
 
 .tours__heading {
   margin: 0;
-  padding: 0;
+  padding: 0 15px 0 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -316,7 +250,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 20px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 100px;
   }
 }
 
@@ -411,6 +349,10 @@
       width: 32px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 53px 481px 0;
+  }
 }
 
 .tours__slider-navigation {
@@ -423,5 +365,10 @@
     position: absolute;
     top: 60px;
     right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 120px;
+    right: 120px;
   }
 }

@@ -55,11 +55,10 @@ export function sliderTours() {
       },
 
       1366: {
-        width: 1160,
-        height: 300,
-        slidesPerView: 4,
+        width: 1200,
+        slidesPerView: 3,
         initialSlide: 0,
-        spaceBetween: 40,
+        spaceBetween: 30,
       }
     }
 
