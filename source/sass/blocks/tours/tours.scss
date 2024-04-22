@@ -2,28 +2,59 @@
   margin: 0;
   padding: 20px 15px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 41px 45px 40px;
+  }
 }
 
 .tours::after {
   content: "";
   position: absolute;
   background: url("../img/tours/clouds.png") no-repeat center;
+  background-size: auto;
   width: 141px;
   height: 595px;
   top: 10px;
   right: 0;
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/tours/clouds@2x.png") no-repeat center;
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tours/clouds-tablet.png");
+    width: 425px;
+    height: 1630px;
+    top: -92px;
+    right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/tours/clouds-tablet@2x.png") no-repeat center;
+      background-size: contain;
+    }
+  }
 }
 
 .tours__title {
   padding: 19px 0 39px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+  }
 }
 
 .tours__title-shadow {
   position: absolute;
   top: 23px;
   left: auto;
+
+  @media (min-width: $tablet-width) {
+    top: 46px;
+  }
 }
 
 .tours__slider {
@@ -90,6 +121,32 @@
   }
 }
 
+.tours__slide:nth-child(2) .tours__info,
+.tours__slide:nth-child(3) .tours__info {
+  @media (max-width: $mobile-width-only) {
+    padding: 161px 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 25px;
+  }
+}
+
+.tours__slide:nth-child(2) .tours__text-box,
+.tours__slide:nth-child(3) .tours__text-box {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 11px;
+    gap: 5px;
+  }
+}
+
+.tours__slide:nth-child(2) .tours__text--nights,
+.tours__slide:nth-child(3) .tours__text--nights {
+  @media (max-width: $mobile-width-only) {
+    margin-left: 42px;
+  }
+}
+
 .tours__slide:nth-child(3) {
   background-image: url("../img/tours/adygea-mobile.jpg");
 
@@ -114,6 +171,22 @@
       background-image: url("../img/tours/adygea-desktop@2x.jpg");
       background-size: cover;
     }
+  }
+}
+
+.tours__slide:nth-child(3) .tours__info {
+  padding: 134px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 165px 0 16px;
+  }
+}
+
+.tours__slide:nth-child(3) .tours__heading {
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
   }
 }
 
@@ -144,30 +217,15 @@
   }
 }
 
+.tours__slide:nth-child(4) .tours__info {
+  @media (min-width: $tablet-width) {
+    gap: 7px;
+  }
+}
+
 .tours__slide-content {
   color: $base-white;
   padding: 30px 20px;
-}
-
-.tours__slide-content--special .tours__info {
-  padding: 161px 0 20px;
-}
-
-.tours__slide-content--special .tours__list {
-  gap: 12px;
-}
-
-.tours__slide-content--special .tours__text-box {
-  margin-top: 11px;
-  gap: 5px;
-}
-
-.tours__slide-content--special:last-of-type .tours__info {
-  padding-top: 134px;
-}
-
-.tours__slide-content--special:last-of-type .tours__heading {
-  padding-right: 20px;
 }
 
 .tours__info {
@@ -177,6 +235,11 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    gap: 45px;
+    padding-bottom: 15px;
+  }
 }
 
 .tours__text-box {
@@ -222,7 +285,7 @@
 }
 
 .tours__text--nights {
-  margin-left: 42px;
+  margin-left: 47px;
 
   &::after {
     width: 16px;
@@ -251,6 +314,10 @@
     bottom: -16px;
     left: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
 }
 
 .tours__list {
@@ -259,8 +326,9 @@
   list-style: none;
   display: grid;
   grid-template-columns: min-content max-content max-content;
-  gap: 8px;
+  justify-content: space-between;
   padding-top: 30px;
+
 }
 
 .tours__item {
@@ -280,6 +348,10 @@
   height: 16px;
   display: inline-block;
   margin-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
 }
 
 .tours__stars-four {
@@ -300,6 +372,10 @@
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
 }
 
 .tours__link {
@@ -324,5 +400,28 @@
     height: 15px;
     top: auto;
     right: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 25px 220px 0;
+
+    &::after {
+      width: 32px;
+    }
+  }
+}
+
+.tours__slider-navigation {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    position: absolute;
+    top: 60px;
+    right: 45px;
   }
 }

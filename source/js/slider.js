@@ -30,8 +30,38 @@ export function sliderTours() {
     modules: [Navigation],
 
     direction: 'horizontal',
-    loop: true,
+    loop: false,
 
     slidesPerView: 'auto',
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      320: {
+        width: 290,
+        slidesPerView: 1,
+        initialSlide: 0,
+        spaceBetween: 15,
+      },
+
+      768: {
+        width: 678,
+        slidesPerView: 2,
+        initialSlide: 0,
+        spaceBetween: 18,
+      },
+
+      1366: {
+        width: 1160,
+        height: 300,
+        slidesPerView: 4,
+        initialSlide: 0,
+        spaceBetween: 40,
+      }
+    }
+
   });
 }

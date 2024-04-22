@@ -292,6 +292,47 @@
 
 /* Slide styles end */
 
+/* Swiper-navigation */
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 37px;
+    height: 35px;
+    z-index: 1;
+    background-color: $base-blue;
+  }
+}
+
+.swiper-button-prev__img,
+.swiper-button-next__img {
+  display: block;
+  width: 37px;
+  height: 9px;
+}
+
+
+.swiper-button-prev__img {
+  background: url("/__spritemap#sprite-prev-view") no-repeat center;
+}
+
+.swiper-button-next__img {
+  background: url("/__spritemap#sprite-next-view") no-repeat center;
+}
+
+.swiper-button-disabled {
+  @media (min-width: $tablet-width) {
+    background-color: #999999;
+  }
+}
+
+/* Swiper-pagination */
+
 .swiper-pagination {
   position: absolute;
   text-align: center;
