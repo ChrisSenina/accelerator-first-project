@@ -9,10 +9,15 @@ export function sliderHero() {
     direction: 'horizontal',
     loop: true,
 
-    slidesPerView: 'auto',
+    slidesPerView: 1,
+    initialSlide: 0,
+
+    watchSlidesProgress: true,
 
     pagination: {
       el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
     },
 
     allowTouchMove: true,
