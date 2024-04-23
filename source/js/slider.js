@@ -85,6 +85,13 @@ export function sliderTraining () {
         initialSlide: 2,
         spaceBetween: 15,
       },
+
+      768: {
+        width: 678,
+        slidesPerView: 3,
+        initialSlide: 0,
+        spaceBetween: 20,
+      }
     }
   });
 }
