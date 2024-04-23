@@ -1,0 +1,148 @@
+.training {
+  margin: 0;
+  padding: 19px 15px 20px;
+  position: relative;
+}
+
+.training__title {
+  margin: 0;
+  padding: 18px 0 19px;
+}
+
+.training__title-shadow {
+  position: absolute;
+  top: 20px;
+  left: auto;
+}
+
+.training__text p {
+  margin: 0;
+  padding: 14px 0 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.training__slider {
+  height: 356px;
+}
+
+.training__content {
+  padding: 14px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  min-height: 326px;
+}
+
+.training__img {
+  width: 260px;
+  height: 200px;
+}
+
+.training__details {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.training__details h4,
+.training__name {
+  margin: 0;
+  padding-right: 55px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+}
+
+.training__link {
+  width: 23px;
+  height: 23px;
+  border: 1px solid rgb(45, 56, 63, 0.3);
+  background: url("/__spritemap#sprite-vk-view") no-repeat center center;
+  background-size: 14px 8px;
+  margin-top: -1px;
+}
+
+.training__content--special p,
+.training__description {
+  margin: 0;
+  padding: 13px 19px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.training__heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0;
+  padding: 26px 0 0;
+}
+
+.training__list {
+  position: relative;
+  margin: 24px 0 0 17px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 183px;
+    height: 2px;
+    background: $base-blue;
+    transform: rotate(-90.00deg);
+    bottom: 109px;
+    left: -102px;
+  }
+}
+
+.training__item {
+  position: relative;
+  padding: 0 30px 0 45px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: $base-blue;
+    border-radius: 50%;
+    top: 11px;
+    left: -17px;
+  }
+}
+
+.training__item--map {
+  background: url("/__spritemap#sprite-map-view") no-repeat 12px 1px;
+  background-size: 25px 25px;
+}
+
+.training__item--outfit {
+  background: url("/__spritemap#sprite-outfit-view") no-repeat 12px 1px;
+  background-size: 24px 24px;
+}
+
+.training__item--eco {
+  background: url("/__spritemap#sprite-pine-tree-view") no-repeat 12px 1px;
+  background-size: 23px 23px;
+}
+
+.training__item--hills {
+  background: url("/__spritemap#sprite-hills-view") no-repeat 12px 1px;
+  background-size: 25px 25px;
+}
+
+.training__text {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}

@@ -61,6 +61,30 @@ export function sliderTours() {
         spaceBetween: 30,
       }
     }
+  });
+}
 
+export function sliderTraining () {
+  new Swiper ('.training__slider', {
+    modules: [Navigation],
+    direction: 'horizontal',
+
+    loop: false,
+
+    slidesPerView: 'auto',
+
+    navigation: {
+      nextEl: '.swiper-button-next.training-button-next',
+      prevEl: '.swiper-button-prev.training-button-prev',
+    },
+
+    breakpoints: {
+      320: {
+        width: 290,
+        slidesPerView: 1,
+        initialSlide: 2,
+        spaceBetween: 15,
+      },
+    }
   });
 }

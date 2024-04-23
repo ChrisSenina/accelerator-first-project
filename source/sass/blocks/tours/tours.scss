@@ -329,27 +329,32 @@
   margin: 25px 39px 0;
   position: relative;
   box-sizing: border-box;
+  background: url(/__spritemap#sprite-right-view) no-repeat 193px 10px;
+  background-size: 12px 14px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 6px;
-    background: url("/__spritemap#sprite-right-view") no-repeat center;
-    width: 31px;
-    height: 15px;
-    top: auto;
-    right: auto;
+  &:hover {
+    color: $base-blue;
+    opacity: 0.1;
+  }
+
+  &:focus-within {
+    outline: none;
+    filter: invert(19%) sepia(100%) saturate(2878%) hue-rotate(197deg) brightness(95%) contrast(98%);
+  }
+
+  &:active {
+    filter: invert(20%) sepia(10%) saturate(7372%) hue-rotate(201deg) brightness(94%) contrast(102%);
+  }
+
+  &:disabled {
+    filter: invert(69%) sepia(0%) saturate(78%) hue-rotate(288deg) brightness(89%) contrast(85%);
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
     margin: 25px 220px 0;
-
-    &::after {
-      width: 32px;
-    }
+    background-position: 218px 10px;
   }
 
   @media (min-width: $desktop-width) {
