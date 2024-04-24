@@ -17,7 +17,7 @@ const tabletSections = [
   // {section: 'tours', misMatchThreshold: 1.1},
   // {section: 'training', misMatchThreshold: 3.5},
   // {section: 'about', misMatchThreshold: 3.5},
-  // {section: 'reviews', misMatchThreshold: 2.5},
+  {section: 'reviews', misMatchThreshold: 2.5},
   // {section: 'adv', misMatchThreshold: 0.8},
   // {section: 'gallery', misMatchThreshold: 0.7},
   // {section: 'form', misMatchThreshold: 1.2},
