@@ -102,3 +102,28 @@ export function sliderTraining () {
     }
   });
 }
+
+export function sliderReviews () {
+  new Swiper ('.reviews__slider', {
+    modules: [Navigation],
+    direction: 'horizontal',
+
+    loop: false,
+
+    slidesPerView: 'auto',
+
+    navigation: {
+      nextEl: '.swiper-button-next.reviews-button-next',
+      prevEl: '.swiper-button-prev.reviews-button-prev',
+    },
+
+    breakpoints: {
+      320: {
+        width: 290,
+        slidesPerView: 1,
+        initialSlide: 0,
+        spaceBetween: 15,
+      }
+    }
+  });
+}
