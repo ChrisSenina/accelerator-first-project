@@ -64,8 +64,8 @@ export function sliderTours() {
   });
 }
 
-export function sliderTraining () {
-  new Swiper ('.training__slider', {
+export function sliderTraining() {
+  new Swiper('.training__slider', {
     modules: [Navigation],
     direction: 'horizontal',
 
@@ -103,8 +103,8 @@ export function sliderTraining () {
   });
 }
 
-export function sliderReviews () {
-  new Swiper ('.reviews__slider', {
+export function sliderReviews() {
+  new Swiper('.reviews__slider', {
     modules: [Navigation],
     direction: 'horizontal',
 
@@ -141,3 +141,48 @@ export function sliderReviews () {
     }
   });
 }
+
+export function sliderAdv() {
+  new Swiper('.advantages__slider', {
+    modules: [Navigation],
+    direction: 'horizontal',
+
+    loop: false,
+
+    navigation: {
+      nextEl: '.swiper-button-next.advantages-button-next',
+      prevEl: '.swiper-button-prev.advantages-button-prev',
+    },
+
+    on: {
+      resize: function enableOnlyDesktop(swiper) {
+        // Disable the slider when the window width is less than or equal to 960
+        if (1440 > window.innerWidth) {
+          swiper.disable();
+          swiper.el.classList.add('-non-slider');
+        } else {
+          swiper.enable();
+          swiper.el.classList.remove('-non-slider');
+        }
+      }
+    },
+
+    breakpoints: {
+      320: {
+        width: 288,
+      },
+
+      768: {
+        width: 324,
+      },
+
+      1440: {
+        width: 380,
+        slidesPerView: 3,
+        initialSlide: 0,
+        spaceBetween: 30,
+      }
+    }
+  });
+}
+
