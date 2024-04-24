@@ -120,6 +120,7 @@ export function sliderReviews () {
     breakpoints: {
       320: {
         width: 290,
+        height: 486,
         slidesPerView: 1,
         initialSlide: 0,
         spaceBetween: 15,
