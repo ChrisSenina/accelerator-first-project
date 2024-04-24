@@ -6,6 +6,26 @@
   @media (min-width: $tablet-width) {
     padding: 40px 0 40px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0 100px 115px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1440px;
+      height: 447px;
+      bottom: -139px;
+      left: 0;
+      background: url("../img/reviews/clouds-3.png") no-repeat center;
+      background-size: auto;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/reviews/clouds-3@2x.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
 }
 
 .reviews__container {
@@ -25,6 +45,10 @@
   @media (min-width: $tablet-width) {
     padding: 20px 15px 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 5px 22px;
+  }
 }
 
 .reviews__title-shadow {
@@ -36,6 +60,11 @@
     top: 45px;
     left: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 105px;
+    left: 120px;
+  }
 }
 
 .reviews__navigation {
@@ -44,6 +73,10 @@
     flex-direction: row;
     gap: 4px;
     padding: 20px 45px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 120px 0 0;
   }
 }
 
@@ -54,6 +87,10 @@
 
   @media (min-width: $tablet-width) {
     width: 565px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
   }
 }
 
@@ -71,6 +108,11 @@
     min-height: unset;
     gap: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    padding: 20px 40px 15px 20px;
+  }
 }
 
 .reviews__img {
@@ -83,8 +125,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 186px;
-    height: 237px;
+    width: 258px;
+    height: 253px;
   }
 }
 
@@ -97,6 +139,10 @@
   @media (min-width: $tablet-width) {
     margin: 4px 0 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: -2px 0 4px;
+  }
 }
 
 .reviews__box p,
@@ -106,6 +152,11 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .reviews__text {
@@ -114,6 +165,10 @@
   font-size: 12px;
   font-weight: 300;
   line-height: 12px;
+
+  @media (min-width: $desktop-width) {
+    line-height: 100%;
+  }
 }
 
 .reviews__text--name {

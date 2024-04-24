@@ -131,6 +131,13 @@ export function sliderReviews () {
         initialSlide: 0,
         spaceBetween: 30,
       },
+
+      1440: {
+        width: 700,
+        slidesPerView: 1,
+        initialSlide: 0,
+        spaceBetween: 120,
+      },
     }
   });
 }
