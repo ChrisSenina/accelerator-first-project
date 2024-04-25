@@ -2,34 +2,96 @@
   position: relative;
   margin: 0;
   padding: 20px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 45px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 768px;
+      height: 996px;
+      background: url("../img/advantages/clouds.png") no-repeat center;
+      background-size: auto;
+      top: 166px;
+      left: 0;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/advantages/clouds@2x.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
 }
 
 .advantages__title {
   margin: 0;
-  padding: 15px 0 38px;
+  padding: 16px 0 37px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0 61px;
+  }
 }
 
 .advantages__title-shadow {
   position: absolute;
   top: 23px;
   left: 51px;
+
+  @media (min-width: $tablet-width) {
+    top: 44px;
+    left: 216px;
+  }
 }
 
 .advantages__wrapper {
   flex-direction: column;
-  height: 1323px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: unset;
+  }
+}
+
+.advantages__container {
+  width: 288px;
+
+  @media (min-width: $tablet-width) {
+    width: 676px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+.advantages__slide-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+  }
 }
 
 .advantages__slide {
   border: 1px solid rgba(2, 102, 193, 0.1);
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__slide-wrapper .advantages__slide {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 0 auto;
+  }
 }
 
 .advantages__content {
   padding: 20px 9px 19px;
   text-align: center;
   position: relative;
+  box-sizing: border-box;
+  background-color: $base-white;
 
   &::before {
     content: "";
@@ -39,6 +101,17 @@
     top: 18px;
     left: 123px;
     border: 1px solid $base-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 19px;
+
+    &::before {
+      width: 47px;
+      height: 47px;
+      top: 28px;
+      left: 137px;
+    }
   }
 }
 
@@ -61,6 +134,10 @@
     background: url("/__spritemap#sprite-boots-view") no-repeat center;
     background-size: 24px 24px;
     top: 19px;
+
+    @media (min-width: $tablet-width) {
+      top: 28px;
+    }
   }
 }
 
@@ -70,6 +147,9 @@
     background-size: 24px 24px;
     top: 19px;
 
+    @media (min-width: $tablet-width) {
+      top: 28px;
+    }
   }
 }
 
@@ -87,6 +167,12 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 72px 10px 14px 9px;
+  }
 }
 
 .advantages__content p,
@@ -96,4 +182,15 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.advantages__navigation {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

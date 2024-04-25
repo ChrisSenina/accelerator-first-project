@@ -173,7 +173,7 @@ export function sliderAdv() {
       },
 
       768: {
-        width: 324,
+        width: 320,
       },
 
       1440: {
