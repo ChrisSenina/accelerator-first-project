@@ -148,6 +148,11 @@ export function sliderAdv() {
     direction: 'horizontal',
 
     loop: false,
+    slidesPerView: 'auto',
+    observer: true,
+    observeParents: true,
+    // watchSlidesVisibility: true,
+    // watchSlidesProgress: true,
 
     navigation: {
       nextEl: '.swiper-button-next.advantages-button-next',
@@ -156,30 +161,23 @@ export function sliderAdv() {
 
     on: {
       resize: function enableOnlyDesktop(swiper) {
-        // Disable the slider when the window width is less than or equal to 960
         if (1440 > window.innerWidth) {
           swiper.disable();
-          swiper.el.classList.add('-non-slider');
+          swiper.el.classList.add('-non-slider')
+          swiper.destroy();
         } else {
           swiper.enable();
           swiper.el.classList.remove('-non-slider');
+          swiper.init();
         }
       }
     },
 
     breakpoints: {
-      320: {
-        width: 288,
-      },
-
-      768: {
-        width: 320,
-      },
-
       1440: {
-        width: 380,
-        slidesPerView: 3,
-        initialSlide: 0,
+        width: 1200,
+        slidesPerView: 4,
+        initialSlide: 1,
         spaceBetween: 30,
       }
     }
