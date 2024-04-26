@@ -183,13 +183,26 @@ export function sliderGallery() {
 
     direction: 'horizontal',
     loop: true,
+    allowTouchMove: true,
 
     navigation: {
       nextEl: '.swiper-button-next.gallery-button-next',
       prevEl: '.swiper-button-prev.gallery-button-prev',
     },
+    on: {
+      resize: function enableOnlyTablet(swiper) {
+        if (1025 <= window.innerWidth) {
+          swiper.disable();
+          swiper.el.classList.add('-non-slider');
+          swiper.destroy(true, true);
+        } else {
+          swiper.enable();
+          swiper.el.classList.remove('-non-slider');
+          swiper.init();
+        }
+      }
+    },
 
-    allowTouchMove: true,
 
     breakpoints: {
       320: {
@@ -204,7 +217,7 @@ export function sliderGallery() {
         spaceBetween: 5,
         slidesPerView: 3,
         initialSlide: 0,
-      }
+      },
     }
   });
 }
