@@ -148,12 +148,10 @@ export function sliderAdv() {
     modules: [Navigation],
     direction: 'horizontal',
 
-    loop: false,
+    loop: true,
     slidesPerView: 'auto',
     observer: true,
-    observeParents: true,
-    // watchSlidesVisibility: true,
-    // watchSlidesProgress: true,
+    initialSlide: 1,
 
     navigation: {
       nextEl: '.swiper-button-next.advantages-button-next',
@@ -165,25 +163,21 @@ export function sliderAdv() {
         if (1440 > window.innerWidth) {
           swiper.disable();
           swiper.el.classList.add('-non-slider');
-          swiper.destroy(true, true);
+          swiper.destroy();
         } else {
           swiper.enable();
           swiper.el.classList.remove('-non-slider');
-          swiper.init();
+          swiper.init(true);
         }
       }
     },
 
     breakpoints: {
-      320: {
-        width: 288,
-      },
-
       1440: {
         width: 1200,
-        slidesPerView: 4,
-        initialSlide: 1,
+        slidesPerView: 3,
         spaceBetween: 30,
+        watchOverflow: true,
       }
     }
   });
