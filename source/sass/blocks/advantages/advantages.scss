@@ -62,12 +62,6 @@
   }
 }
 
-.advantages__slider {
-  @media (min-width: $desktop-width) {
-    overflow: visible;
-  }
-}
-
 .advantages__wrapper {
   flex-direction: column;
 
@@ -287,7 +281,7 @@
 }
 
 .advantages__navigation {
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width-only) {
     display: none;
   }
 

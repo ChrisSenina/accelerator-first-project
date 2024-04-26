@@ -1,7 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
-import { sassTrue } from 'sass';
 
 export function sliderHero() {
   new Swiper('.hero__slider', {
@@ -149,9 +148,13 @@ export function sliderAdv() {
     direction: 'horizontal',
 
     loop: true,
-    slidesPerView: 'auto',
     observer: true,
+    observeParents: true,
     initialSlide: 1,
+
+    width: 1200,
+    slidesPerView: 3,
+    spaceBetween: 30,
 
     navigation: {
       nextEl: '.swiper-button-next.advantages-button-next',
@@ -163,21 +166,44 @@ export function sliderAdv() {
         if (1440 > window.innerWidth) {
           swiper.disable();
           swiper.el.classList.add('-non-slider');
-          swiper.destroy();
+          swiper.destroy(true, true);
         } else {
           swiper.enable();
           swiper.el.classList.remove('-non-slider');
-          swiper.init(true);
+          swiper.init();
         }
       }
     },
+  });
+}
+
+export function sliderGallery() {
+  new Swiper('.gallery__slider', {
+    modules: [Navigation],
+
+    direction: 'horizontal',
+    loop: true,
+
+    navigation: {
+      nextEl: '.swiper-button-next.gallery-button-next',
+      prevEl: '.swiper-button-prev.gallery-button-prev',
+    },
+
+    allowTouchMove: true,
 
     breakpoints: {
-      1440: {
-        width: 1200,
+      320: {
+        width: 320,
+        spaceBetween: 5.5,
+        slidesPerView: 2,
+        initialSlide: 0,
+      },
+
+      768: {
+        width: 678,
+        spaceBetween: 5.5,
         slidesPerView: 3,
-        spaceBetween: 30,
-        watchOverflow: true,
+        initialSlide: 0,
       }
     }
   });

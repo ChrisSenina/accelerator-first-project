@@ -624,53 +624,73 @@
     </section>
     <section class="gallery" data-test="gallery" id="gallery">
       <h2 class="gallery__title inner-title">Фотогалерея</h2>
-      <span class="inner-title-shadow" aria-hidden="true">Фотогалерея</span>
+      <span class="gallery__title-shadow inner-title-shadow" aria-hidden="true">Фотогалерея</span>
       <p>Добавляйте фото в с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
         нашего сайта.</p>
       <div class="gallery__container">
-        <div class="swiper-button-prev">
-          <span class="swiper-button-prev__img"></span>
-        </div>
-        <div class="swiper-button-next">
-          <span class="swiper-button-next__img"></span>
+        <div class="gallery__navigation">
+          <div class="gallery-button-prev swiper-button swiper-button-prev">
+            <span class="swiper-button-prev__img"></span>
+          </div>
+          <div class="gallery-button-next swiper-button swiper-button-next">
+            <span class="swiper-button-next__img"></span>
+          </div>
         </div>
         <div class="gallery__slider swiper">
-          <div class="gallery__wrapper slider-wrapper">
+          <div class="gallery__wrapper swiper-wrapper">
             <div class="gallery__slide swiper-slide">
               <picture>
-                <img class="gallery__img" src="" alt="Турист на вершине горы" width="158" height="266">
+                <source media="(min-width: 1440px)" srcset="img/gallery/photo-desktop.webp, img/gallery/photo-desktop@2x.webp 2x" width="284" height="463" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/gallery/photo-tablet.webp, img/gallery/photo-tablet@2x.webp 2x" width="253" height="418" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/gallery/photo-mobile.webp, img/gallery/photo-mobile@2x.webp 2x" width="158" height="266" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/gallery/photo-desktop.jpg, img/gallery/photo-desktop@2x.jpg 2x" width="284" height="463" type="image/jpg">
+                <source media="(min-width: 768px)" srcset="img/gallery/photo-tablet.jpg, img/gallery/photo-tablet@2x.jpg 2x" width="253" height="418" type="image/jpg">
+                <img class="gallery__img" src="img/gallery/photo-mobile.jpg" srcset="img/gallery/photo-mobile@2x.jpg 2x" alt="Турист на вершине горы" width="158" height="266">
               </picture>
             </div>
 
             <div class="gallery__slide swiper-slide">
               <picture>
-                <img class="gallery__img" src="" alt="Компания туристов у костра" width="157" height="135">
+                <source media="(min-width: 1440px)" srcset="img/gallery/photo2-desktop.webp, img/gallery/photo2-desktop@2x.webp 2x" width="284" height="240" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/gallery/photo2-tablet.webp, img/gallery/photo2-tablet@2x.webp 2x" width="257" height="217" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/gallery/photo2-mobile.webp, img/gallery/photo2-mobile@2x.webp 2x" width="157" height="142" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/gallery/photo2-desktop.jpg, img/gallery/photo2-desktop@2x.jpg 2x" width="284" height="240" type="image/jpg">
+                <source media="(min-width: 768px)" srcset="img/gallery/photo2-tablet.jpg, img/gallery/photo2-tablet@2x.jpg 2x" width="257" height="217" type="image/jpg">
+                <img class="gallery__img" src="img/gallery/photo2-mobile.jpg" srcset="img/gallery/photo2-mobile@2x.jpg 2x" alt="Компания туристов у костра" width="157" height="142">
               </picture>
               <picture>
-                <img class="gallery__img" src="" alt="Компас в руке на фоне гор" width="157" height="125">
+                <source media="(min-width: 1440px)" srcset="img/gallery/photo3-desktop.webp, img/gallery/photo3-desktop@2x.webp 2x" width="284" height="223" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/gallery/photo3-tablet.webp, img/gallery/photo3-tablet@2x.webp 2x" width="252" height="202" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/gallery/photo3-mobile.webp, img/gallery/photo3-mobile@2x.webp 2x" width="157" height="125" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/gallery/photo3-desktop.jpg, img/gallery/photo3-desktop@2x.jpg 2x" width="284" height="223" type="image/jpg">
+                <source media="(min-width: 768px)" srcset="img/gallery/photo3-tablet.jpg, img/gallery/photo3-tablet@2x.jpg 2x" width="252" height="202" type="image/jpg">
+                <img class="gallery__img gallery__img--three" src="img/gallery/photo3-mobile.jpg" srcset="img/gallery/photo3-mobile@2x.jpg 2x" alt="Компас в руке на фоне гор" width="157" height="125">
               </picture>
             </div>
 
             <div class="gallery__slide swiper-slide">
               <picture>
-                <img class="gallery__img" src="" alt="Трекинг-тур по горной местности" width="284" height="463">
+                <source media="(min-width: 320px)" srcset="img/gallery/photo4.webp, img/gallery/photo4@2x.webp 2x" width="158" height="266" type="image/webp">
+                <img class="gallery__img gallery__img--four" src="img/gallery/photo4.jpg" srcset="img/gallery/photo4@2x.jpg 2x" alt="Трекинг-тур по горной местности" width="158" height="266">
               </picture>
             </div>
 
             <div class="gallery__slide swiper-slide">
               <picture>
-                <img class="gallery__img" src="" alt="Люди зимой в горых обходят водную местность" width="284"
-                  height="240">
+                <source media="(min-width: 320px)" srcset="img/gallery/photo5.webp, img/gallery/photo5@2x.webp 2x" width="157" height="142" type="image/webp">
+                <img class="gallery__img gallery__img--five" src="img/gallery/photo5.jpg" srcset="img/gallery/photo5@2x.jpg 2x" alt="Люди зимой в горых обходят водную местность" width="157"
+                  height="142">
               </picture>
               <picture>
-                <img class="gallery__img" src="" alt="Кемпинговая палатка ночью стоит под звёздным небом" width="284"
+                <source media="(min-width: 320px)" srcset="img/gallery/photo6.webp, img/gallery/photo6@2x.webp 2x" width="157" height="125" type="image/webp">
+                <img class="gallery__img gallery__img--six" src="img/gallery/photo6.jpg" srcset="img/gallery/photo6@2x.jpg 2x" alt="Кемпинговая палатка ночью стоит под звёздным небом" width="284"
                   height="223">
               </picture>
             </div>
 
             <div class="gallery__slide swiper-slide">
               <picture>
-                <img class="gallery__img" src="" alt="Двое мужчин у горной реки" width="284" height="463">
+                <img class="gallery__img gallery__img--seven" src="img/gallery/photo7.jpg" srcset="img/gallery/photo7@2x.jpg 2x" alt="Двое мужчин у горной реки" width="158" height="266">
               </picture>
             </div>
 
