@@ -200,8 +200,8 @@ export function sliderGallery() {
       },
 
       768: {
-        width: 678,
-        spaceBetween: 5.5,
+        width: 768,
+        spaceBetween: 5,
         slidesPerView: 3,
         initialSlide: 0,
       }
