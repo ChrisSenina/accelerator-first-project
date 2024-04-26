@@ -38,7 +38,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 0 61px;
+    padding: 21px 0 60px;
   }
 }
 
@@ -48,7 +48,7 @@
   left: 51px;
 
   @media (min-width: $tablet-width) {
-    top: 44px;
+    top: 45px;
     left: 216px;
   }
 }
@@ -58,7 +58,9 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
+    max-width: 678px;
     flex-direction: row;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,7 +77,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    width: 324px;
+    max-width: 324px;
   }
 }
 
@@ -107,8 +109,8 @@
     padding: 30px 19px;
 
     &::before {
-      width: 47px;
-      height: 47px;
+      width: 46.4px;
+      height: 46.4px;
       top: 28px;
       left: 137px;
     }
@@ -140,13 +142,17 @@
     top: 20px;
 
     @media (min-width: $tablet-width) {
-      top: 28px;
+      top: 29px;
     }
   }
 }
 
 .advantages__content--boots .advantages__heading {
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 15px;
+  }
 }
 
 .advantages__content--path {
@@ -156,7 +162,7 @@
     top: 19px;
 
     @media (min-width: $tablet-width) {
-      top: 28px;
+      top: 29px;
     }
   }
 }
@@ -165,6 +171,12 @@
   &::before {
     background: url("/__spritemap#sprite-eco-view") no-repeat center;
     background-size: 24px 24px;
+  }
+}
+
+.advantages__content--eco .advantages__heading {
+  @media (min-width: $tablet-width) {
+    padding: 70.5px 10px 15px 6px;
   }
 }
 
@@ -188,6 +200,12 @@
   }
 }
 
+.advantages__heading span {
+  @media (min-width: $tablet-width) {
+    padding-left: 4px;
+  }
+}
+
 .advantages__content p,
 .advantages__text {
   margin: 0;
@@ -198,7 +216,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 22.07px;
   }
 }
 
