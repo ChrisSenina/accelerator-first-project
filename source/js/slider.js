@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
+import { sassTrue } from 'sass';
 
 export function sliderHero() {
   new Swiper('.hero__slider', {
@@ -163,8 +164,8 @@ export function sliderAdv() {
       resize: function enableOnlyDesktop(swiper) {
         if (1440 > window.innerWidth) {
           swiper.disable();
-          swiper.el.classList.add('-non-slider')
-          swiper.destroy();
+          swiper.el.classList.add('-non-slider');
+          swiper.destroy(true, true);
         } else {
           swiper.enable();
           swiper.el.classList.remove('-non-slider');
@@ -174,6 +175,10 @@ export function sliderAdv() {
     },
 
     breakpoints: {
+      320: {
+        width: 288,
+      },
+
       1440: {
         width: 1200,
         slidesPerView: 4,

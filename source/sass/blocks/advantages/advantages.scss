@@ -54,7 +54,6 @@
 }
 
 .advantages__wrapper {
-  width: 288px;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
@@ -71,7 +70,6 @@
 }
 
 .advantages__slide {
-  border: 1px solid rgba(2, 102, 193, 0.1);
   margin-bottom: 15px;
 
 
@@ -93,13 +91,14 @@
   position: relative;
   box-sizing: border-box;
   background-color: $base-white;
+  border: 1px solid rgba(2, 102, 193, 0.1);
 
   &::before {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 18px;
+    width: 40.4px;
+    height: 40.4px;
+    top: 19px;
     left: 123px;
     border: 1px solid $base-blue;
   }
@@ -138,12 +137,16 @@
   &::before {
     background: url("/__spritemap#sprite-boots-view") no-repeat center;
     background-size: 24px 24px;
-    top: 19px;
+    top: 20px;
 
     @media (min-width: $tablet-width) {
       top: 28px;
     }
   }
+}
+
+.advantages__content--boots .advantages__heading {
+  padding-bottom: 16px;
 }
 
 .advantages__content--path {
