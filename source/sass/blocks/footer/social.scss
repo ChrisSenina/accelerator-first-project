@@ -1,0 +1,44 @@
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.social__item {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 31.84px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+}
+
+.social__link {
+  position: absolute;
+  top: 6px;
+  left: auto;
+}
+
+.social__link--vk {
+  background: url("/__spritemap#sprite-vk-view") no-repeat center;
+  width: 31px;
+  height: 9px;
+  top: 10px;
+}
+
+.social__link--ok {
+  background: url("/__spritemap#sprite-ok-view") no-repeat center;
+  width: 31px;
+  height: 16px;
+}
+
+.social__link--reddit {
+  background: url("/__spritemap#sprite-reddit-view") no-repeat center;
+  width: 31px;
+  height: 15px;
+}

@@ -757,10 +757,11 @@
         <p>Заполните форму и наш оператор свяжется <br> с вами для консультации.</p>
         <form class="form__form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="form__label" for="phone">Телефон</label>
-          <input class="form__input form__input-phone" type="tel" id="phone" name="phone" pattern="^((\+7|)+([0-9]){10})$" minlength="12"
-            maxlength="12" placeholder="Телефон" required>
+          <input class="form__input form__input-phone" type="tel" id="phone" name="phone"
+            pattern="^((\+7|)+([0-9]){10})$" minlength="12" maxlength="12" placeholder="Телефон" required>
           <label class="form__label" for="email">Email</label>
-          <input class="form__input form__input-email" type="email" id="email" name="email" pattern="[A-Za-zА-Яа-яЁё0-9._%+-]+@[a-z0-9.-]+\.[A-Za-zА-Яа-яЁё]{2,4}$" placeholder="Email" required>
+          <input class="form__input form__input-email" type="email" id="email" name="email"
+            pattern="[A-Za-zА-Яа-яЁё0-9._%+-]+@[a-z0-9.-]+\.[A-Za-zА-Яа-яЁё]{2,4}$" placeholder="Email" required>
           <button class="form__button button" type="submit">Отправить</button>
         </form>
       </div>
@@ -770,15 +771,15 @@
     <section class="footer__contacts contacts" id="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title inner-title">Контакты</h2>
-        <span class="inner-title-shadow" aria-hidden="true">Контакты</span>
-        <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
+        <span class="contacts__title-shadow inner-title-shadow" aria-hidden="true">Контакты</span>
+        <p>Свяжитесь с нами любым удобным для вас способом или приходите к&nbsp;нам в гости. Мы будем рады поделиться
           увлекательными историями и подобрать для вас тур.</p>
         <ul class="contacts__list">
           <li class="contacts__item">Телефон
-            <a class="contacts__link link" href="+79837454545">+7 983 745-45-45</a>
+            <a class="contacts__link link" href="tel:+79837454545">+7 983 745-45-45</a>
           </li>
           <li class="contacts__item">Email
-            <a class="contacts__link link" href="info@lifetour.com">info@lifetour.com</a>
+            <a class="contacts__link link" href="mailto:info@lifetour.com">info@lifetour.com</a>
           </li>
           <li class="contacts__item">Адрес
             <p class="contacts__text">г. Москва, пр-т Мира, д. 14, офис 101</p>
@@ -786,34 +787,43 @@
         </ul>
       </div>
       <picture>
-        <img class="contacts__img" src="" alt="Карта с местоположением офиса LIFETOUR" width="320" height="343">
+        <source media="(min-width: 1440px)" srcset="img/contacts/map-desktop.webp, img/contacts/map-desktop@2x.webp 2x"
+          width="600" height="324" type="image/webp">
+        <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.webp, img/contacts/map-tablet@2x.webp 2x"
+          width="768" height="340" type="image/webp">
+        <source media="(min-width: 320px)" srcset="img/contacts/map-mobile.webp, img/contacts/map-mobile@2x.webp 2x"
+          width="320" height="343" type="image/webp">
+        <source media="(min-width: 1440px)" srcset="img/contacts/map-desktop.jpg, img/contacts/map-desktop@2x.jpg 2x"
+          width="600" height="324" type="image/jpg">
+        <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.jpg, img/contacts/map-tablet@2x.jpg 2x"
+          width="768" height="340" type="image/jpg">
+        <img class="contacts__img" src="img/contacts/map-mobile.jpg" srcset="img/contacts/map-mobile@2x.jpg 2x"
+          alt="Карта с местоположением офиса LIFETOUR" width="320" height="343">
       </picture>
     </section>
     <div class="footer__container">
       <img class="footer__logo" src="/__spritemap#sprite-logo-footer-view" width="142" height="42"
         alt="Логотип организации LIFETOUR">
-      <nav class="footer__nav nav">
-        <ul class="nav__list site-list">
-          <li class="nav__list-item site-list__item">
-            <a class="nav__link site-list__link link" href="#tours">Туры</a>
-          </li>
-          <li class="nav__list-item site-list__item">
-            <a class="nav__link site-list__link link" href="#training">Обучение</a>
-          </li>
-          <li class="nav__list-item site-list__item">
-            <a class="nav__link site-list__link link" href="#about">О нас</a>
-          </li>
-          <li class="nav__list-item site-list__item">
-            <a class="nav__link site-list__link link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="nav__list-item site-list__item">
-            <a class="nav__link site-list__link link" href="#gallery">Фотографии</a>
-          </li>
-          <li class="nav__list-item site-list__item">
-            <a class="nav__link site-list__link link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link link" href="#tours">Туры</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link link" href="#training">Обучение</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link link" href="#about">О нас</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link link" href="#reviews">Отзывы</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link link" href="#gallery">Фотографии</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
       <a class="footer__phone link" href="tel:+78007253232">8 800 725-32-32</a>
     </div>
     <ul class="footer__social social">
