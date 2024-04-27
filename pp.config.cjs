@@ -6,8 +6,8 @@ const desktopSections = [
   // {section: 'about', misMatchThreshold: 1.5},
   // {section: 'reviews', misMatchThreshold: 2.4},
   // {section: 'adv', misMatchThreshold: 1.2},
-  {section: 'gallery', misMatchThreshold: 0.4},
-  // {section: 'form', misMatchThreshold: 0.6},
+  // {section: 'gallery', misMatchThreshold: 0.4},
+  {section: 'form', misMatchThreshold: 0.6},
   // {section: 'footer', misMatchThreshold: 1.2}
 ]
 

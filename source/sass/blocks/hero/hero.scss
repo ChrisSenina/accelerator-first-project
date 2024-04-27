@@ -159,16 +159,12 @@
 }
 
 .hero__link {
-  width: 140px;
+  width: 180px;
   padding: 19px;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
-  color: $base-white;
-  text-align: center;
   margin: 47px auto 0;
-  background: $base-blue;
-  border: 1px solid transparent;
 
   @media (min-width: $tablet-width) {
     margin-top: 22px;
@@ -177,29 +173,6 @@
   @media (min-width: $desktop-width) {
     margin: 37px 0 0;
   }
-}
-
-.hero__link:hover{
-  background: $base-white;
-  border-color: $second-blue;
-  color: $second-blue;
-}
-
-.hero__link:focus {
-  outline: none;
-  border-color: transparent;
-  color: $second-blue;
-  background: $base-white;
-}
-
-.hero__link:active {
-  background: $second-blue;
-  color: $base-white;
-}
-
-.hero__link:disabled {
-  background: $disabled-color;
-  color: $base-white;
 }
 
 .hero__info {

@@ -57,7 +57,7 @@
               <h3>Захватывающие вершины Кавказа</h3>
               <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите
                 восход на вершину горы Чегет.</p>
-              <a class="hero__link link" href="#">Смотреть тур</a>
+              <a class="hero__link link button" href="#">Смотреть тур</a>
               <div class="hero__info">
                 <span class="hero__text hero__text--days">6 дней/5 ночей</span>
                 <span class="hero__text hero__text--level">Высокая сложность</span>
@@ -69,7 +69,7 @@
               <h3>Невероятная природа Камчатки</h3>
               <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из
                 самых нетронутых уголков дикой природы в мире.</p>
-              <a class="hero__link link" href="#">Смотреть тур</a>
+              <a class="hero__link link button" href="#">Смотреть тур</a>
               <div class="hero__info">
                 <span class="hero__text hero__text--days">9 дней/10 ночей</span>
                 <span class="hero__text hero__text--level">Средняя сложность</span>
@@ -81,7 +81,7 @@
               <h3>Магические пейзажи Алтайского Края</h3>
               <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и
                 захватывающих дух ландшафтов Алтайских гор.</p>
-              <a class="hero__link link" href="#">Смотреть тур</a>
+              <a class="hero__link link button" href="#">Смотреть тур</a>
               <div class="hero__info">
                 <span class="hero__text hero__text--days">8 дней/7 ночей</span>
                 <span class="hero__text hero__text--level">Лёгкая сложность</span>
@@ -752,16 +752,18 @@
       </div>
     </section>
     <section class="form" data-test="form">
-      <h2>Остались вопросы?</h2>
-      <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
-      <form class="form__form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="form__label" for="phone">Телефон</label>
-        <input class="form__input" type="tel" id="phone" name="phone" pattern="^((\+7|)+([0-9]){10})$" minlength="12"
-          maxlength="12" placeholder="Телефон" required>
-        <label class="form__label" for="email">Email</label>
-        <input class="form__input" type="email" id="email" name="email" placeholder="Email" required>
-        <button class="form__button button" type="submit">Отправить</button>
-      </form>
+      <div class="form__container">
+        <h2>Остались вопросы?</h2>
+        <p>Заполните форму и наш оператор свяжется <br> с вами для консультации.</p>
+        <form class="form__form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="form__label" for="phone">Телефон</label>
+          <input class="form__input form__input-phone" type="tel" id="phone" name="phone" pattern="^((\+7|)+([0-9]){10})$" minlength="12"
+            maxlength="12" placeholder="Телефон" required>
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input form__input-email" type="email" id="email" name="email" pattern="[A-Za-zА-Яа-яЁё0-9._%+-]+@[a-z0-9.-]+\.[A-Za-zА-Яа-яЁё]{2,4}$" placeholder="Email" required>
+          <button class="form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer" data-test="footer">

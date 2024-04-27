@@ -8,6 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
     padding: 100px 0 0;
   }
 }
@@ -82,6 +84,12 @@
 }
 
 .gallery__wrapper {
+  max-height: 269px;
+
+  @media (min-width: $tablet-width) {
+    max-height: unset;
+  }
+
   @media (min-width: $desktop-width) {
     gap: 5px;
   }
