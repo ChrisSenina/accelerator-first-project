@@ -17,6 +17,24 @@
   box-sizing: border-box;
   border: 1px solid rgba(45, 56, 63, 0.3);
 
+  &:hover {
+    border-color: $base-black;
+  }
+
+  &:focus-within {
+    outline: none;
+    border-color: transparent;
+  }
+
+  &:active {
+    background-color: $base-blue;
+    border-color: transparent;
+  }
+
+  &:disabled {
+    border-color: rgba(45, 56, 63, 0.3);
+  }
+
   @media (min-width: $desktop-width) {
     width: 30px;
   }
@@ -26,6 +44,22 @@
   position: absolute;
   top: 6px;
   left: auto;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    filter: invert(100%) sepia(100%) saturate(7549%) hue-rotate(217deg) brightness(109%) contrast(250%);
+  }
+
+  &:disabled {
+    filter: invert(0%) sepia(40%) saturate(18%) hue-rotate(100deg) brightness(300%) contrast(130%);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -1px;
+  }
 }
 
 .social__link--vk {

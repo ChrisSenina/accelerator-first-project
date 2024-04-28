@@ -29,7 +29,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 40px 120px 31px;
-    gap: 114px;
+    gap: 110px;
   }
 }
 
@@ -56,12 +56,8 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(6, max-content);
-    column-gap: 25px;
+    column-gap: 23px;
     align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    column-gap: 31px;
   }
 }
 
@@ -90,11 +86,46 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  border: 1px solid transparent;
 
   @media (min-width: $desktop-width) {
+    padding: 0 3px;
     font-size: 16px;
     line-height: 16px;
   }
+}
+
+.footer__link:hover {
+    padding: 0 3px;
+    margin: 0 -3px;
+    border-bottom-color: $base-black;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 3px;
+    margin: 0;
+  }
+}
+
+.footer__link:focus {
+  padding: 0 3px;
+  margin: 0 -3px;
+  outline: none;
+  border-color: $base-black;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.footer__link:active {
+  color: $base-blue;
+  border-color: transparent;
+  padding: 0 3px;
+}
+
+.footer__link:disabled {
+  color: $disabled-color;
+  padding: 0 3px;
 }
 
 .footer__phone {
@@ -103,12 +134,29 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 4px 0 0 54px;
+    padding: 4px 0 0 56px;
     align-self: center;
     font-size: 18px;
     font-weight: 600;
     line-height: 18px;
     color: $base-black;
+
+    &:hover {
+      color: rgba(2, 102, 193, 0.1);
+    }
+
+    &:focus {
+      outline: none;
+      color: $base-blue;
+    }
+
+    &:active {
+      color: $second-blue;
+    }
+
+    &:disabled {
+      color: $disabled-color;
+    }
   }
 }
 
