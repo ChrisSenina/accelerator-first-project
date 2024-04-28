@@ -113,7 +113,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1200px;
     margin: 0 auto;
     text-align: left;
     padding: 200px 120px 80px;
@@ -122,10 +122,10 @@
 
 .hero__slide-content h3 {
   margin: 0;
-  padding: 105px 0 0;
+  padding: 105.3px 0 0;
   font-size: 26px;
   font-weight: 800;
-  line-height: 26px;
+  line-height: 25.9px;
 
   @media (min-width: $tablet-width) {
     font-size: 56px;
@@ -142,7 +142,7 @@
 
 .hero__slide-content p {
   margin: 0;
-  padding: 14px 10px;
+  padding: 15px 10px;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -160,11 +160,12 @@
 
 .hero__link {
   width: 180px;
+  min-height: 56px;
   padding: 19px;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
-  margin: 47px auto 0;
+  margin: 45px auto 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 22px;

@@ -306,6 +306,8 @@
     z-index: 1;
     background-color: $base-blue;
     border: 1px solid transparent;
+    padding: 17px 0;
+    box-sizing: border-box;
 
     &:hover {
       background-color: $base-white;
@@ -319,7 +321,12 @@
   display: block;
   width: 37px;
   height: 9px;
+
+  // &:hover {
+
+  // }
 }
+
 
 .swiper-button-prev__img {
   background: url("/__spritemap#sprite-prev-view") no-repeat center;
@@ -380,8 +387,8 @@
 /* Bullets */
 
 .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
+  width: 14.4px;
+  height: 14.4px;
   display: inline-block;
   border: 1px solid $base-white;
   border-radius: 50%;
