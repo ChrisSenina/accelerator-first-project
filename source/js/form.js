@@ -26,7 +26,7 @@ export function isValidate() {
     });
 
     emailInput.addEventListener('invalid', () => {
-      if (emailInput.matches('[a-zA-Zа-яА-Я0-9_\-\.]{2,}@[a-zA-Zа-яА-Я]{2,}\.[a-zA-Zа-яА-Я]{2,}')) {
+      if (emailInput.matches('^[a-zA-Zа-яА-Я0-9_\-\.]{2,}@[a-zA-Zа-яА-Я]{2,}\.[a-zA-Zа-яА-Я]{2,}$')) {
         SubmitEvent();
       } else {
         evt.preventDefault();
