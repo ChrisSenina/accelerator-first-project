@@ -9,15 +9,24 @@ export function sliderHero() {
     direction: 'horizontal',
     loop: true,
 
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     initialSlide: 0,
 
     watchSlidesProgress: true,
 
     pagination: {
       el: '.swiper-pagination',
+      bulletElement: 'button',
+      bulletClass: 'swiper-pagination-bullet',
+      // bulletActiveClass: 'swiper-pagination-bullet-active',
       type: 'bullets',
       clickable: true,
+
+      on: {
+        init: function onFocus () {
+          'swiper-pagination-bullet'.setAttribute('tabIndex', 0);
+        }
+      }
     },
 
     allowTouchMove: true,
@@ -151,6 +160,8 @@ export function sliderAdv() {
     observer: true,
     observeParents: true,
     initialSlide: 1,
+    watchSlidesProgress: true,
+    watchOverflow: true,
 
     width: 1200,
     slidesPerView: 3,
