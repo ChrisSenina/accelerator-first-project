@@ -23,7 +23,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 100px 120px;
+      padding: 100px 0;
 
       &::after {
         visibility: hidden;
@@ -42,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 35.5px 0  50px;
+    padding: 35.5px 120px 50px;
   }
 }
 
@@ -80,6 +80,7 @@
     gap: unset;
     flex-wrap: nowrap;
     margin: 0;
+    padding: 0 120px;
   }
 }
 
@@ -233,6 +234,10 @@
   @media (min-width: $tablet-width) {
     padding: 70.5px 10px 15px 6px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82.5px;
+  }
 }
 
 .advantages__content h3,
@@ -259,6 +264,10 @@
 .advantages__heading span {
   @media (min-width: $tablet-width) {
     padding-left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 

@@ -23,7 +23,7 @@ export function sliderHero() {
       clickable: true,
 
       on: {
-        init: function onFocus () {
+        init: function onFocus() {
           'swiper-pagination-bullet'.setAttribute('tabIndex', 0);
         }
       }
@@ -157,6 +157,7 @@ export function sliderAdv() {
     direction: 'horizontal',
 
     loop: true,
+    loopedSlides: 5,
     observer: true,
     observeParents: true,
     initialSlide: 1,
