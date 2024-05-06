@@ -14,7 +14,7 @@ export function isValidate() {
       if (phoneInput.matches('^((\+7|)+([0-9]){10})$')) {
         SubmitEvent();
       } else {
-        evt.preventDefault();
+        // evt.preventDefault();
         phoneInput.classList.add('form__input-error');
         phoneInput.setCustomValidity('Введите телефон в формате: +79996663322');
       }
@@ -29,7 +29,7 @@ export function isValidate() {
       if (emailInput.matches('^[a-zA-Zа-яА-Я0-9_\-\.]{2,}@[a-zA-Zа-яА-Я]{2,}\.[a-zA-Zа-яА-Я]{2,}$')) {
         SubmitEvent();
       } else {
-        evt.preventDefault();
+        // evt.preventDefault();
         emailInput.classList.add('form__input-error');
         emailInput.setCustomValidity('Введите email в формате: example@example.ru');
       }

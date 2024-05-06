@@ -1,4 +1,5 @@
 const nav = document.querySelector('.nav');
+const navLinks = document.querySelectorAll('.nav__link');
 const menuButton = document.querySelector('.nav__toggle');
 
 export function navOpen() {
@@ -10,5 +11,11 @@ export function navOpen() {
     nav.classList.toggle('nav--closed');
     nav.classList.toggle('nav--opened');
   });
-}
 
+  navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', () => {
+      nav.classList.remove('nav--opened');
+      nav.classList.add('nav--closed');
+    });
+  });
+}
