@@ -10,12 +10,16 @@ export function navOpen() {
   menuButton.addEventListener('click', () => {
     nav.classList.toggle('nav--closed');
     nav.classList.toggle('nav--opened');
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
   });
 
   navLinks.forEach((navLink) => {
     navLink.addEventListener('click', () => {
       nav.classList.remove('nav--opened');
       nav.classList.add('nav--closed');
+      document.body.style.position = '';
+      document.body.style.width = '';
     });
   });
 }
