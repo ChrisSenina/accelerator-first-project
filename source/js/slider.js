@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Manipulation, Navigation, Pagination, Virtual } from 'swiper/modules';
 import 'swiper/css';
 
 export function sliderHero() {
@@ -153,19 +153,22 @@ export function sliderReviews() {
 
 export function sliderAdv() {
   new Swiper('.advantages__slider', {
-    modules: [Navigation],
+    modules: [Navigation, Manipulation, Virtual],
     direction: 'horizontal',
 
     loop: true,
-    loopedSlides: 5,
-    observer: true,
-    observeParents: true,
+    loopAddBlankSlides: false,
+    loopAdditionalSlides: 0,
+    // observer: true,
+    // observeParents: true,
     initialSlide: 1,
     watchSlidesProgress: true,
     watchOverflow: true,
 
     width: 1200,
+    centeredSlides: true,
     slidesPerView: 3,
+    slidesPerGroup: 2,
     spaceBetween: 30,
 
     navigation: {
@@ -183,8 +186,12 @@ export function sliderAdv() {
           swiper.enable();
           swiper.el.classList.remove('-non-slider');
           swiper.init();
+          const originalSlides = swiper.slides;
+          originalSlides.forEach((slide) => {
+            swiper.appendSlide(slide.outerHTML);
+          });
         }
-      }
+      },
     },
   });
 }
