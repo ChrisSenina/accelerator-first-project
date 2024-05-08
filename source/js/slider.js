@@ -159,20 +159,19 @@ export function sliderAdv() {
 
       loop: true,
       // loopAddBlankSlides: false,
-      // loopedSlides: 0,
       observer: true,
       observeParents: true,
       resizeObserver: true,
-      initialSlide: 1,
+      updateOnWindowResize: true,
       watchSlidesProgress: true,
       watchOverflow: true,
-      // updateOnWindowResize: true,
+      centeredSlides: true,
 
       width: 1200,
-      centeredSlides: true,
       slidesPerView: 3,
       slidesPerGroup: 2,
       spaceBetween: 30,
+      initialSlide: 1,
 
       navigation: {
         nextEl: '.swiper-button-next.advantages-button-next',
@@ -186,9 +185,9 @@ export function sliderAdv() {
             swiper.el.classList.add('-non-slider');
             swiper.destroy(true, true);
           } else {
+            swiper.el.classList.remove('-non-slider');
             swiper.enable();
             swiper.updateSize();
-            swiper.el.classList.remove('-non-slider');
             swiper.init(swiper);
             const originalSlides = swiper.slides;
             originalSlides.forEach((slide) => {
@@ -214,6 +213,7 @@ export function sliderGallery() {
       nextEl: '.swiper-button-next.gallery-button-next',
       prevEl: '.swiper-button-prev.gallery-button-prev',
     },
+
     on: {
       resize: function enableOnlyTablet(swiper) {
         if (1025 <= window.innerWidth) {
@@ -227,7 +227,6 @@ export function sliderGallery() {
         }
       }
     },
-
 
     breakpoints: {
       320: {
