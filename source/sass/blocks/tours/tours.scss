@@ -63,6 +63,10 @@
   justify-content: space-between;
   width: 290px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
 }
 
 .tours__title {
@@ -386,6 +390,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 238px;
     font-size: 16px;
     line-height: 16px;
     margin: 25px 220px 0;

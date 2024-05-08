@@ -36,6 +36,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 360px;
     padding: 40px 45px;
   }
 
@@ -75,7 +76,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 160px 25px;
+    padding: 27px 0 25px;
     font-size: 16px;
     line-height: 24px;
   }

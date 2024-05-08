@@ -5,6 +5,7 @@
   width: 290px;
 
   @media (min-width: $tablet-width) {
+    width: 678px;
     padding: 40px 45px;
 
     &::after {
@@ -192,6 +193,7 @@
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 72px;
     padding-bottom: 15px;
   }
 }
