@@ -158,15 +158,15 @@ export function sliderAdv() {
       direction: 'horizontal',
 
       loop: true,
-      loopAddBlankSlides: false,
-      loopedSlides: 0,
+      // loopAddBlankSlides: false,
+      // loopedSlides: 0,
       observer: true,
       observeParents: true,
       resizeObserver: true,
       initialSlide: 1,
       watchSlidesProgress: true,
       watchOverflow: true,
-      updateOnWindowResize: true,
+      // updateOnWindowResize: true,
 
       width: 1200,
       centeredSlides: true,

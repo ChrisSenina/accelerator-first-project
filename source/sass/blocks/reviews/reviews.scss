@@ -10,6 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1324px;
     padding: 100px 0 100px 115px;
 
     &::after {
@@ -39,6 +40,10 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1324px;
   }
 }
 

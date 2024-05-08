@@ -396,8 +396,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 1219px;
-    bottom: 92px;
+    bottom: 112px;
+    width: 1200px;
+    justify-content: flex-end;
   }
 }
 

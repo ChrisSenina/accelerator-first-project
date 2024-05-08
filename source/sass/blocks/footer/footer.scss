@@ -31,6 +31,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 40px 120px 31px;
     gap: 110px;
@@ -62,6 +63,7 @@
     grid-template-columns: repeat(6, max-content);
     column-gap: 23px;
     align-items: center;
+    margin-left:-57px;
   }
 }
 
@@ -138,7 +140,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 4px 0 0 56px;
+    padding: 4px 0 0;
     align-self: center;
     font-size: 18px;
     font-weight: 600;

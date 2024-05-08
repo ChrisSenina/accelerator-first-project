@@ -25,6 +25,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 1440px;
       padding: 100px 0;
 
       &::after {
@@ -195,6 +196,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 72px;
     padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 83px;
   }
 }
 
