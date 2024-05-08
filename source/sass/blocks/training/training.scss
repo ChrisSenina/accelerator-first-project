@@ -1,7 +1,8 @@
 .training {
-  margin: 0;
+  margin: 0 auto;
   padding: 19px 15px 20px;
   position: relative;
+  width: 290px;
 
   @media (min-width: $tablet-width) {
     position: relative;

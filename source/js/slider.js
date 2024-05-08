@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Manipulation, Navigation, Pagination, Virtual } from 'swiper/modules';
+import { Manipulation, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 export function sliderHero() {
@@ -152,48 +152,54 @@ export function sliderReviews() {
 }
 
 export function sliderAdv() {
-  new Swiper('.advantages__slider', {
-    modules: [Navigation, Manipulation, Virtual],
-    direction: 'horizontal',
+  document.addEventListener('DOMContentLoaded', () => {
+    new Swiper('.advantages__slider', {
+      modules: [Navigation, Manipulation],
+      direction: 'horizontal',
 
-    loop: true,
-    loopAddBlankSlides: false,
-    loopAdditionalSlides: 0,
-    // observer: true,
-    // observeParents: true,
-    initialSlide: 1,
-    watchSlidesProgress: true,
-    watchOverflow: true,
+      loop: true,
+      loopAddBlankSlides: false,
+      loopedSlides: 0,
+      observer: true,
+      observeParents: true,
+      resizeObserver: true,
+      initialSlide: 1,
+      watchSlidesProgress: true,
+      watchOverflow: true,
+      updateOnWindowResize: true,
 
-    width: 1200,
-    centeredSlides: true,
-    slidesPerView: 3,
-    slidesPerGroup: 2,
-    spaceBetween: 30,
+      width: 1200,
+      centeredSlides: true,
+      slidesPerView: 3,
+      slidesPerGroup: 2,
+      spaceBetween: 30,
 
-    navigation: {
-      nextEl: '.swiper-button-next.advantages-button-next',
-      prevEl: '.swiper-button-prev.advantages-button-prev',
-    },
-
-    on: {
-      resize: function enableOnlyDesktop(swiper) {
-        if (1440 > window.innerWidth) {
-          swiper.disable();
-          swiper.el.classList.add('-non-slider');
-          swiper.destroy(true, true);
-        } else {
-          swiper.enable();
-          swiper.el.classList.remove('-non-slider');
-          swiper.init();
-          const originalSlides = swiper.slides;
-          originalSlides.forEach((slide) => {
-            swiper.appendSlide(slide.outerHTML);
-          });
-        }
+      navigation: {
+        nextEl: '.swiper-button-next.advantages-button-next',
+        prevEl: '.swiper-button-prev.advantages-button-prev',
       },
-    },
-  });
+
+      on: {
+        resize: function enableOnlyDesktop(swiper) {
+          if (1440 > window.innerWidth) {
+            swiper.disable();
+            swiper.el.classList.add('-non-slider');
+            swiper.destroy(true, true);
+          } else {
+            swiper.enable();
+            swiper.updateSize();
+            swiper.el.classList.remove('-non-slider');
+            swiper.init(swiper);
+            const originalSlides = swiper.slides;
+            originalSlides.forEach((slide) => {
+              swiper.appendSlide(slide.outerHTML);
+            });
+          }
+        },
+      },
+    });
+  }
+  );
 }
 
 export function sliderGallery() {

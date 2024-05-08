@@ -107,6 +107,8 @@
 .hero__slide-content {
   text-align: center;
   padding: 40px 15px;
+  margin: 0 auto;
+  width: 290px;
 
   @media (min-width: $tablet-width) {
     padding: 30px 45px 90px;

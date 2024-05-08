@@ -1,5 +1,6 @@
 .footer {
   padding: 20px 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding: 40px 0 20px;
@@ -17,6 +18,8 @@
   justify-content: center;
   gap: 23px;
   border-top: 1px solid rgb(45, 56, 63, 0.2);
+  width: 290px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 34px 45px;
@@ -50,7 +53,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 120px);
-  row-gap: 15px;
+  row-gap: 13px;
   column-gap: 50px;
   justify-items: center;
 

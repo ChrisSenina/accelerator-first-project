@@ -61,6 +61,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 290px;
+  margin: 0 auto;
 }
 
 .tours__title {
@@ -103,6 +105,16 @@
 
 .tours__slider {
   height: 416px;
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 416px;
+  }
 }
 
 .tours__slide {
@@ -348,7 +360,8 @@
   color: $base-black;
   text-transform: uppercase;
   padding: 10px 28px 10px 10px;
-  margin: 25px 39px 0;
+  margin: 25px auto 0;
+  width: 212px;
   position: relative;
   box-sizing: border-box;
   background: url(/__spritemap#sprite-right-view) no-repeat 193px 10px;

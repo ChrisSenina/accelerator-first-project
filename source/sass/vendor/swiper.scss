@@ -358,7 +358,7 @@
 /* Swiper-pagination */
 
 .swiper-pagination {
-  position: absolute;
+  position: relative;
   text-align: center;
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
@@ -383,16 +383,16 @@
 .swiper-pagination-custom,
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 40px;
+  bottom: 56px;
   top: auto;
-  left: 110px;
   width: 100px;
+  margin: 0 auto;
   display: flex;
   gap: 20px;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    left: 334px;
+    bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {

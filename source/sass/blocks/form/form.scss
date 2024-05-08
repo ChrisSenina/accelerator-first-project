@@ -32,6 +32,8 @@
 .form__container {
   background-size: cover;
   padding: 174px 31px 175px;
+  width: 258px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 40px 45px;

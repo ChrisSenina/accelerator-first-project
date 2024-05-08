@@ -1,60 +1,71 @@
 .header {
   margin: 0;
-  padding: 15px 15px 10px;
+  padding: 15px;
   background-color: $base-blue;
   position: relative;
   z-index: 10;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 45px 16px;
+    padding: 20px 45px 5px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 32px 120px 42px;
-    display: flex;
-    flex-direction: row;
+    display: block;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
     align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
 .header__logo {
   width: 142px;
   height: 42px;
-  padding-left: 148px;
-  padding-bottom: 8px;
+  margin-left: auto;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 268px;
+    margin: 0 auto;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 32px;
+    margin: 0;
     z-index: 10;
     padding-top: 10px;
+    padding-left: 32px;
   }
 }
 
 .header__phone {
-  display: unset;
   color: $base-white;
   font-size: 14px;
   font-weight: 600;
   line-height: 14px;
-  padding-left: 168px;
+  margin-left: auto;
   position: relative;
+  top: 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
-    padding-left: 125px;
-    top: -14px;
+    top: -28px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
-    padding-left: 128px;
     top: 7px;
   }
 }

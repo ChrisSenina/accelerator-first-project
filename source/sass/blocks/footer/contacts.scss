@@ -1,6 +1,8 @@
 .contacts {
   padding: 0 0 14px;
   position: relative;
+  margin: 0 auto;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 34px;
@@ -16,7 +18,7 @@
 
 .contacts__title {
   margin: 0;
-  padding: 16px 0 17px;
+  padding: 17px 0 16px;
 
   @media (min-width: $tablet-width) {
     padding: 20px 0 5px;
