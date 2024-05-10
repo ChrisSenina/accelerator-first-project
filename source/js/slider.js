@@ -158,7 +158,8 @@ export function sliderAdv() {
       direction: 'horizontal',
 
       loop: true,
-      // loopAddBlankSlides: false,
+      loopedSlides: 1,
+      loopAddBlankSlides: false,
       observer: true,
       observeParents: true,
       resizeObserver: true,
@@ -166,6 +167,8 @@ export function sliderAdv() {
       watchSlidesProgress: true,
       watchOverflow: true,
       centeredSlides: true,
+      allowSlidePrev: true,
+      allowSlideNext: true,
 
       width: 1200,
       slidesPerView: 3,
@@ -186,13 +189,14 @@ export function sliderAdv() {
             swiper.destroy(true, true);
           } else {
             swiper.el.classList.remove('-non-slider');
-            swiper.enable();
             swiper.updateSize();
-            swiper.init(swiper);
             const originalSlides = swiper.slides;
             originalSlides.forEach((slide) => {
               swiper.appendSlide(slide.outerHTML);
             });
+            swiper.enable();
+            swiper.update();
+            swiper.init();
           }
         },
       },
@@ -245,4 +249,3 @@ export function sliderGallery() {
     }
   });
 }
-

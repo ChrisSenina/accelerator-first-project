@@ -26,7 +26,7 @@
 .hero__slide:nth-child(1) {
   background-image: url("../img/hero/caucasus-mobile.jpg");
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/hero/caucasus-mobile@2x.jpg");
     background-size: cover;
   }
@@ -34,7 +34,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero/caucasus-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero/caucasus-tablet@2x.jpg");
       background-size: cover;
     }
@@ -43,7 +43,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/hero/caucasus-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero/caucasus-desktop@2x.jpg");
       background-size: cover;
     }
@@ -53,7 +53,7 @@
 .hero__slide:nth-child(2) {
   background-image: url("../img/hero/kamchatka-mobile.jpg") no-repeat center;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/hero/kamchatka-mobile@2x.jpg");
     background-size: cover;
   }
@@ -61,7 +61,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero/kamchatka-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero/kamchatka-tablet@2x.jpg");
       background-size: cover;
     }
@@ -70,7 +70,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/hero/kamchatka-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero/kamchatka-desktop@2x.jpg");
       background-size: cover;
     }
@@ -80,7 +80,7 @@
 .hero__slide:nth-child(3) {
   background-image: url("../img/hero/altai-mobile.jpg") no-repeat center;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/hero/altai-mobile@2x.jpg");
     background-size: cover;
   }
@@ -88,7 +88,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero/altai-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero/altai-tablet@2x.jpg");
       background-size: cover;
     }
@@ -97,7 +97,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/hero/altai-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero/altai-desktop@2x.jpg");
       background-size: cover;
     }
@@ -277,7 +277,7 @@
     width: 442px;
     height: 365px;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero/photo-cards-tablet@2x.png");
       background-size: contain;
     }
@@ -290,7 +290,7 @@
     right: 120px;
     background: url("../img/hero/photo-cards-desktop.png") no-repeat center;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero/photo-cards-desktop@2x.png");
       background-size: contain;
     }

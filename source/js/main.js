@@ -1,6 +1,6 @@
 import { navOpen } from './nav.js';
 import { sliderHero, sliderTours, sliderTraining, sliderReviews, sliderAdv, sliderGallery } from './slider.js';
-import { isValidate } from './form.js';
+import { isValid } from './form.js';
 
 navOpen ();
 sliderHero ();
@@ -9,4 +9,4 @@ sliderTraining ();
 sliderReviews ();
 sliderAdv ();
 sliderGallery ();
-isValidate ();
+isValid();

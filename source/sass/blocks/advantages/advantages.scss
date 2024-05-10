@@ -18,7 +18,7 @@
       top: 166px;
       left: 0;
 
-      @media (min-resolution: 2dppx) {
+      @media (resolution >= 2dppx) {
         background: url("../img/advantages/clouds@2x.png") no-repeat center;
         background-size: contain;
       }
@@ -79,7 +79,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    max-width: unset;
     gap: unset;
     flex-wrap: nowrap;
     margin: 0;

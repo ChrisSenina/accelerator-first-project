@@ -5,7 +5,7 @@
   text-align: center;
   color: $base-white;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/form/form-mobile@2x.jpg");
     background-size: cover;
   }
@@ -13,7 +13,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/form/form-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/form/form-tablet@2x.jpg");
       background-size: cover;
     }
@@ -22,7 +22,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/form/form-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/form/form-desktop@2x.jpg");
       background-size: cover;
     }
@@ -120,7 +120,7 @@
 
 .form__input {
   width: 258px;
-  padding: 17px 15px 15px 15px;
+  padding: 17px 15px 15px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   box-sizing: border-box;
 

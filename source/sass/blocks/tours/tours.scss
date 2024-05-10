@@ -25,7 +25,7 @@
   right: 0;
   z-index: -1;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background: url("../img/tours/clouds@2x.png") no-repeat center;
     background-size: contain;
   }
@@ -37,7 +37,7 @@
     top: -92px;
     right: 0;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background: url("../img/tours/clouds-tablet@2x.png") no-repeat center;
       background-size: contain;
     }
@@ -50,7 +50,7 @@
     top: -126px;
     right: 0;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background: url("../img/tours/clouds-desktop@2x.png") no-repeat center;
       background-size: contain;
     }
@@ -78,7 +78,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 35px;;
+    padding-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,7 +134,7 @@
 .tours__slide:nth-child(1) {
   background-image: url("../img/tours/elbrus.jpg");
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/tours/elbrus@2x.jpg");
     background-size: cover;
   }
@@ -143,7 +143,7 @@
 .tours__slide:nth-child(2) {
   background-image: url("../img/tours/belukha.jpg");
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/tours/belukha@2x.jpg");
     background-size: cover;
   }
@@ -174,7 +174,7 @@
 .tours__slide:nth-child(3) {
   background-image: url("../img/tours/adygea.jpg");
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/tours/adygea@2x.jpg");
     background-size: cover;
   }
@@ -195,7 +195,7 @@
 .tours__slide:nth-child(4) {
   background-image: url("../img/tours/ural.jpg");
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/tours/ural@2x.jpg");
     background-size: cover;
   }
@@ -204,7 +204,7 @@
 .tours__slide-content {
   color: $base-white;
   padding: 30px 20px;
-  background: linear-gradient(0.00deg, rgba(0, 0, 0, 0.6) 22.304%,rgba(0, 0, 0, 0) 60.316%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
 }
 
 .tours__info {
@@ -310,7 +310,6 @@
   grid-template-columns: min-content max-content max-content;
   justify-content: space-between;
   padding-top: 30px;
-
 }
 
 .tours__item {
@@ -372,7 +371,7 @@
   width: 212px;
   position: relative;
   box-sizing: border-box;
-  background: url(/__spritemap#sprite-right-view) no-repeat 193px 10px;
+  background: url("/__spritemap#sprite-right-view") no-repeat 193px 10px;
   background-size: 12px 14px;
 
   &:hover {

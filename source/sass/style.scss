@@ -5,28 +5,28 @@
 @import "./global/visually-hidden";
 
 /* ELEMENTS */
-@import "./elements/link.scss";
-@import "./elements/inner-title.scss";
-@import "./elements/button.scss";
+@import "./elements/link";
+@import "./elements/inner-title";
+@import "./elements/button";
 
 /* BLOCKS */
-@import "./blocks/header/header.scss";
-@import "./blocks/header/nav.scss";
-@import "./blocks/header/site-list.scss";
-@import "./blocks/hero/hero.scss";
-@import "./blocks/tours/tours.scss";
-@import "./blocks/training/training.scss";
-@import "./blocks/about/about.scss";
-@import "./blocks/reviews/reviews.scss";
-@import "./blocks/advantages/advantages.scss";
-@import "./blocks/gallery/gallery.scss";
-@import "./blocks/form/form.scss";
-@import "./blocks/footer/footer.scss";
-@import "./blocks/footer/contacts.scss";
-@import "./blocks/footer/social.scss";
+@import "./blocks/header/header";
+@import "./blocks/header/nav";
+@import "./blocks/header/site-list";
+@import "./blocks/hero/hero";
+@import "./blocks/tours/tours";
+@import "./blocks/training/training";
+@import "./blocks/about/about";
+@import "./blocks/reviews/reviews";
+@import "./blocks/advantages/advantages";
+@import "./blocks/gallery/gallery";
+@import "./blocks/form/form";
+@import "./blocks/footer/footer";
+@import "./blocks/footer/contacts";
+@import "./blocks/footer/social";
 
 // Vendor
 // ---------------------------------
 
-@import "./vendor/normalize.scss";
-@import "./vendor/swiper.scss";
+@import "./vendor/normalize";
+@import "./vendor/swiper";

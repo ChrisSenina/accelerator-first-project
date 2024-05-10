@@ -20,7 +20,7 @@
       right: 0;
       z-index: -1;
 
-      @media (min-resolution: 2dppx) {
+      @media (resolution >= 2dppx) {
         background: url("../img/training/clouds-2-tablet@2x.png") no-repeat center;
         background-size: contain;
       }
@@ -38,7 +38,7 @@
       width: 633px;
       bottom: -3px;
 
-      @media (min-resolution: 2dppx) {
+      @media (resolution >= 2dppx) {
         background: url("../img/training/clouds-2-desktop@2x.png") no-repeat center;
         background-size: contain;
       }
@@ -65,7 +65,7 @@
   left: auto;
 
   @media (min-width: $tablet-width) {
-    top: 45px
+    top: 45px;
   }
 }
 
@@ -316,7 +316,7 @@
     width: 183px;
     height: 2px;
     background: $base-blue;
-    transform: rotate(-90.00deg);
+    transform: rotate(-90deg);
     bottom: 109px;
     left: -102px;
 
@@ -414,7 +414,7 @@
 }
 
 .training__item--eco {
-  background: url("/__spritemap#sprite-pine-tree-view") no-repeat 12px 0px;
+  background: url("/__spritemap#sprite-pine-tree-view") no-repeat 12px 0;
   background-size: 24px 25px;
 
   @media (min-width: $tablet-width) {
