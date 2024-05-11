@@ -1,4 +1,4 @@
-const form = document.querySelector('.form__form');
+const form = document.getElementById('form');
 const phoneInput = form.querySelector('.form__input-phone');
 const emailInput = form.querySelector('.form__input-email');
 
