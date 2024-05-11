@@ -159,12 +159,11 @@ export function sliderAdv() {
 
       loop: true,
       loopAddBlankSlides: false,
+      loopAdditionalSlides: 0,
       observer: true,
       observeParents: true,
-      // resizeObserver: true,
+      resizeObserver: true,
       updateOnWindowResize: true,
-      watchSlidesProgress: true,
-      watchOverflow: true,
       centeredSlides: true,
       allowSlidePrev: true,
       allowSlideNext: true,
@@ -189,15 +188,13 @@ export function sliderAdv() {
           } else {
             swiper.enable();
             swiper.el.classList.remove('-non-slider');
-            swiper.update();
-            swiper.updateSize();
             const originalSlides = swiper.slides;
             originalSlides.forEach((slide) => {
-              swiper.prependSlide(slide.outerHTML);
-              swiper.activeIndex = 3;
+              swiper.appendSlide(slide.outerHTML);
             });
             swiper.init();
           }
+          swiper.update();
         },
       },
     });
