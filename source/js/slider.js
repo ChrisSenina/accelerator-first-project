@@ -158,11 +158,10 @@ export function sliderAdv() {
       direction: 'horizontal',
 
       loop: true,
-      loopedSlides: 1,
       loopAddBlankSlides: false,
       observer: true,
       observeParents: true,
-      resizeObserver: true,
+      // resizeObserver: true,
       updateOnWindowResize: true,
       watchSlidesProgress: true,
       watchOverflow: true,
@@ -188,14 +187,15 @@ export function sliderAdv() {
             swiper.el.classList.add('-non-slider');
             swiper.destroy(true, true);
           } else {
+            swiper.enable();
             swiper.el.classList.remove('-non-slider');
+            swiper.update();
             swiper.updateSize();
             const originalSlides = swiper.slides;
             originalSlides.forEach((slide) => {
-              swiper.appendSlide(slide.outerHTML);
+              swiper.prependSlide(slide.outerHTML);
+              swiper.activeIndex = 3;
             });
-            swiper.enable();
-            swiper.update();
             swiper.init();
           }
         },
@@ -227,6 +227,7 @@ export function sliderGallery() {
         } else {
           swiper.enable();
           swiper.el.classList.remove('-non-slider');
+          swiper.update();
           swiper.init();
         }
       }
