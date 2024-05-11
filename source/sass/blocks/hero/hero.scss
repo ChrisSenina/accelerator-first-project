@@ -23,6 +23,19 @@
   cursor: pointer;
 }
 
+.hero__slide-container {
+  background: linear-gradient(142.94deg, rgba(15, 20, 41, 0.33) 12.38%, rgba(15, 20, 41, 0) 99.43%);
+  min-height: 568px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1033px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: auto;
+  }
+}
+
 .hero__slide:nth-child(1) {
   background-image: url("../img/hero/caucasus-mobile.jpg");
 
