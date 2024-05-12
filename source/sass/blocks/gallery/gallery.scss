@@ -18,7 +18,8 @@
 
 .gallery__title {
   margin: 0;
-  padding: 16px 15px 16.5px;
+  padding: 16.5px 15px 16.5px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     padding: 20.5px 45px 15px;
@@ -60,7 +61,7 @@
 
 .gallery__container p {
   margin: 0;
-  padding: 10px 40px 30.5px 15px;
+  padding: 10px 40px 30.2px 15px;
   font-size: 12px;
   font-weight: 400;
   line-height: 18.2px;

@@ -68,22 +68,22 @@
     line-height: 18px;
     top: 7px;
   }
-}
 
-.header__phone:hover {
-  color: $base-white;
-  opacity: 0.5;
-}
+  &:hover {
+    color: $base-white;
+    opacity: 0.5;
+  }
 
-.header__phone:focus {
-  outline: none;
-  color: $base-black;
-}
+  &:focus {
+    outline: none;
+    color: $base-black;
+  }
 
-.header__phone:active {
-  color: $second-blue;
-}
+  &:active {
+    color: $second-blue;
+  }
 
-.header__phone:disabled {
-  color: $disabled-color;
+  &:disabled {
+    color: $disabled-color;
+  }
 }

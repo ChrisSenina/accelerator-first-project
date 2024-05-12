@@ -24,7 +24,7 @@
 
   &:focus-within {
     outline: none;
-    border-color: transparent;
+    border-color: $base-black;
   }
 
   &:active {

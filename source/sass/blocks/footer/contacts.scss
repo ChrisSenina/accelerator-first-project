@@ -20,6 +20,7 @@
 .contacts__title {
   margin: 0;
   padding: 17px 0 16px;
+  word-break: break-all;
 
   @media (min-width: $tablet-width) {
     padding: 20px 0 5px;
@@ -33,7 +34,7 @@
 .contacts__title-shadow {
   position: absolute;
   left: auto;
-  top: 15px;
+  top: 3px;
 
   @media (min-width: $tablet-width) {
     top: 6px;
@@ -104,6 +105,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 0;
   }
@@ -156,19 +158,19 @@
   }
 }
 
-.contacts__item:nth-child(1) {
+.contacts__item--phone {
   &::after {
     background: url("/__spritemap#sprite-phone-view") no-repeat center;
   }
 }
 
-.contacts__item:nth-child(2) {
+.contacts__item--email {
   &::after {
     background: url("/__spritemap#sprite-mail-view") no-repeat center;
   }
 }
 
-.contacts__item:nth-child(3) {
+.contacts__item--address {
   &::after {
     background: url("/__spritemap#sprite-address-view") no-repeat center;
   }
@@ -193,10 +195,27 @@
     line-height: 24px;
     margin-top: 8px;
   }
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    outline: none;
+    color: $base-blue;
+  }
+
+  &:active {
+    color: $second-blue;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+  }
 }
 
-
 .contacts__img {
+  background: linear-gradient(142.94deg, rgba(15, 20, 41, 0.33) 12.38%, rgba(15, 20, 41, 0) 99.43%);
   width: 320px;
   height: 343px;
 

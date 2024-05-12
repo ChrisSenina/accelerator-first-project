@@ -7,8 +7,9 @@
   <title>LIFETOUR</title>
   <link rel="stylesheet" href="sass/style.scss">
   <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png" sizes="180x180">
-  <link rel="manifest" href="../img/favicons/manifest.json">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="img/favicons/manifest.json">
   <link rel="preload" href="fonts/Montserrat/Montserrat-Light.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat/Montserrat-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -108,8 +109,8 @@
         <h2 class="tours__title inner-title">Ближайшие туры</h2>
         <span class="tours__title-shadow inner-title-shadow" aria-hidden="true">Ближайшие туры</span>
         <div class="tours__slider-navigation">
-          <div class="swiper-button-prev swiper-button tours-button-prev" tabindex="0"></div>
-          <div class="swiper-button-next swiper-button tours-button-next" tabindex="0"></div>
+          <button class="swiper-button-prev swiper-button tours-button-prev" type="button" aria-label="button" role="button"></button>
+          <button class="swiper-button-next swiper-button tours-button-next" type="button" aria-label="button" role="button"></button>
         </div>
       </div>
       <div class="tours__slider swiper">
@@ -220,8 +221,8 @@
       <div class="training__container">
         <h3 class="training__header inner-title">Наши инструкторы</h3>
         <div class="training__navigation">
-          <div class="training-button-prev swiper-button swiper-button-prev" tabindex="0"></div>
-          <div class="training-button-next swiper-button swiper-button-next" tabindex="0"></div>
+          <button class="training-button-prev swiper-button swiper-button-prev" type="button" aria-label="button" role="button"></button>
+          <button class="training-button-next swiper-button swiper-button-next" type="button" aria-label="button" role="button"></button>
         </div>
       </div>
       <div class="training__slider swiper">
@@ -372,8 +373,8 @@
         <h2 class="reviews__title inner-title">Отзывы</h2>
         <span class="reviews__title-shadow inner-title-shadow" aria-hidden="true">Отзывы</span>
         <div class="reviews__navigation">
-          <div class="reviews-button-prev swiper-button swiper-button-prev" tabindex="0"></div>
-          <div class="reviews-button-next swiper-button swiper-button-next" tabindex="0"></div>
+          <button class="reviews-button-prev swiper-button swiper-button-prev" type="button" aria-label="button" role="button"></button>
+          <button class="reviews-button-next swiper-button swiper-button-next" type="button" aria-label="button" role="button"></button>
         </div>
       </div>
       <div class="reviews__slider swiper">
@@ -562,8 +563,8 @@
         </div>
       </div>
       <div class="advantages__navigation">
-        <div class="advantages-button-prev swiper-button swiper-button-prev" tabindex="0"></div>
-        <div class="advantages-button-next swiper-button swiper-button-next" tabindex="0"></div>
+        <button class="advantages-button-prev swiper-button swiper-button-prev" type="button" aria-label="button" role="button"></button>
+        <button class="advantages-button-next swiper-button swiper-button-next" type="button" aria-label="button" role="button"></button>
       </div>
     </section>
     <section class="gallery" data-test="gallery" id="gallery">
@@ -572,8 +573,8 @@
       <div class="gallery__container">
         <p>Добавляйте фото в с хэштегом #лайфтур, <br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
         <div class="gallery__navigation">
-          <div class="gallery-button-prev swiper-button swiper-button-prev" tabindex="0"></div>
-          <div class="gallery-button-next swiper-button swiper-button-next" tabindex="0"></div>
+          <button class="gallery-button-prev swiper-button swiper-button-prev" type="button" aria-label="button" role="button"></button>
+          <button class="gallery-button-next swiper-button swiper-button-next" type="button" aria-label="button" role="button"></button>
         </div>
       </div>
       <div class="gallery__slider swiper">
@@ -712,13 +713,13 @@
         <span class="contacts__title-shadow inner-title-shadow" aria-hidden="true">Контакты</span>
         <p>Свяжитесь с нами любым удобным для вас способом или приходите к&nbsp;нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
         <ul class="contacts__list">
-          <li class="contacts__item">Телефон
+          <li class="contacts__item contacts__item--phone">Телефон
             <a class="contacts__link link" href="tel:+79837454545">+7 983 745-45-45</a>
           </li>
-          <li class="contacts__item">Email
+          <li class="contacts__item contacts__item--email">Email
             <a class="contacts__link link" href="mailto:info@lifetour.com">info@lifetour.com</a>
           </li>
-          <li class="contacts__item">Адрес
+          <li class="contacts__item contacts__item--address">Адрес
             <p class="contacts__text">г. Москва, пр-т Мира, <br> д. 14, офис 101</p>
           </li>
         </ul>

@@ -50,6 +50,7 @@
 .reviews__title {
   margin: 0;
   padding: 16px 15px 18px;
+  word-break: break-all;
 
   @media (min-width: $tablet-width) {
     padding: 20px 0 19px;

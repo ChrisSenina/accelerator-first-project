@@ -49,6 +49,7 @@
 .training__title {
   margin: 0;
   padding: 18px 0 19px;
+  word-break: break-all;
 
   @media (min-width: $tablet-width) {
     padding: 20px 0 19px;
@@ -141,15 +142,7 @@
 }
 
 .training__slider {
-  height: 356px;
-
-  @media (min-width: $tablet-width) {
-    height: 388px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 356px;
-  }
+  height: auto;
 }
 
 .training__slide {
@@ -159,7 +152,7 @@
 }
 
 .training__content {
-  padding: 14px;
+  padding: 14px 14px 14.4px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   min-height: 326px;
   background: $base-white;
@@ -238,7 +231,7 @@
   }
 
   &:focus {
-    border-color: transparent;
+    border-color: $base-black;
     outline: none;
   }
 
