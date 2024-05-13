@@ -196,6 +196,7 @@
   appearance: none;
   box-sizing: border-box;
   background: transparent;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 20px;
