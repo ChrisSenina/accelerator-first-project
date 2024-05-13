@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
-import { Manipulation, Navigation, Pagination } from 'swiper/modules';
+import { Manipulation, Navigation, Pagination, A11y } from 'swiper/modules';
 import 'swiper/css';
 
 export function sliderHero() {
   new Swiper('.hero__slider', {
-    modules: [Pagination],
+    modules: [Pagination, A11y],
 
     direction: 'horizontal',
     loop: true,
@@ -18,7 +18,7 @@ export function sliderHero() {
       el: '.swiper-pagination',
       bulletElement: 'button',
       bulletClass: 'swiper-pagination-bullet',
-      // bulletActiveClass: 'swiper-pagination-bullet-active',
+      bulletActiveClass: 'swiper-pagination-bullet-active',
       type: 'bullets',
       clickable: true,
 
@@ -27,6 +27,10 @@ export function sliderHero() {
           'swiper-pagination-bullet'.setAttribute('tabIndex', 0);
         }
       }
+    },
+
+    ally: {
+      paginationBulletMessage: 'Go to slide {{index}}',
     },
 
     allowTouchMove: true,
