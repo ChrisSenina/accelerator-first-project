@@ -1,0 +1,62 @@
+.nav {
+  width: 100%;
+  left: 0;
+}
+
+.nav__toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 136px;
+  height: 54px;
+  color: $base-blue;
+  background-color: $base-white;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  padding: 4px 4px 4px 21px;
+  border: 1px solid $base-blue;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.nav__toggle-back {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $base-blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 8px;
+}
+
+.nav--closed .nav__toggle-back {
+  background-image: url("/__spritemap#sprite-toggle-close-view");
+}
+
+.nav--opened .nav__toggle-back {
+  background-color: $base-white;
+  background-image: url("/__spritemap#sprite-toggle-open-view");
+  background-size: 20px 20px;
+}
+
+.nav--opened {
+  position: absolute;
+  left: 0;
+}
+
+.nav--opened .nav__toggle {
+  width: 290px;
+  background-color: $base-blue;
+  color: $base-white;
+  padding-left: 19px;
+}
+
+.nav--closed .nav__list{
+  display: none;
+}

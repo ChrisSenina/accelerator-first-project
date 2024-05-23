@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $base-grey;
+  background-color: $biege;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-style: normal;
+  min-width: 320px;
+  height: 100%;
+}
+
+img {
+  object-fit: contain;
+}

@@ -25,10 +25,12 @@
           <img class="header__logo" src="/__spritemap#sprite-logo-view"
             alt="Логотип официального сайта проекта «Стажировка»" width="52" height="52">
           <nav class="header__nav nav nav--closed">
-            <button class="nav__toggle" type="button">Меню</button>
+            <button class="nav__toggle" type="button">Меню
+              <span class="nav__toggle-back"></span>
+            </button>
             <ul class="nav__list site__list">
               <li class="nav__list-item site__list-item">О проекте</li>
-              <li class="nav__list-item site__list-item">Программы
+              <li class="nav__list-item site__list-item site__list-item--programs site__list-item--active">Программы
                 <ul class="site__list-submenu">
                   <li class="site__list-subitem">Стажировки</li>
                   <li class="site__list-subitem">Волонтёрство</li>
@@ -38,14 +40,14 @@
               </li>
               <li class="nav__list-item site__list-item">Как поехать</li>
               <li class="nav__list-item site__list-item">Отзывы</li>
-              <li class="nav__list-item site__list-item">Новости
-                <ul class="site__list-submenu">
+              <li class="nav__list-item site__list-item site__list-item--news">Новости
+                <!-- <ul class="site__list-submenu">
                   <li class="site__list-subitem">Общее</li>
                   <li class="site__list-subitem">Волонтёрство</li>
                   <li class="site__list-subitem">Стажировки</li>
                   <li class="site__list-subitem">Карьера</li>
                   <li class="site__list-subitem">Путешествия</li>
-                </ul>
+                </ul> -->
               </li>
               <li class="nav__list-item site__list-item">Контакты</li>
             </ul>
@@ -70,7 +72,7 @@
 
           <div class="hero__slide swiper-slide">
             <div class="hero__slide-content">
-              <h3 class="hero__slide-title">Волонтёрские программы – внесите свой вклад в общество</h3>
+              <h3 class="hero__slide-title">Волонтёрские программы – внесите свой вклад в общество</h3>
               <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
               <button class="hero__button" type="button">Подробнее</button>
             </div>

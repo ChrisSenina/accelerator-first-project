@@ -1,4 +1,14 @@
-// Vendor
-// ---------------------------------
+// Global
+@import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/variables.scss";
+@import "./global/global.scss";
 
-@import "vendor/normalize";
+// Blocks
+@import "./blocks//hero/hero.scss";
+@import "./blocks//hero/header.scss";
+@import "./blocks/hero/nav.scss";
+@import "./blocks/hero/site-list.scss";
+
+// Vendor
+@import "./vendor/normalize.scss";
