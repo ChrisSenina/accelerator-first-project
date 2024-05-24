@@ -3,6 +3,7 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
-import { navOpen } from './nav.js';
+import { navOpen, subOpen } from './nav.js';
 
 navOpen();
+subOpen();
