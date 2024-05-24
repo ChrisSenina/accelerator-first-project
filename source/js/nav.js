@@ -1,6 +1,5 @@
 const nav = document.querySelector('.nav');
 const menuButton = document.querySelector('.nav__toggle');
-// const sub = document.querySelectorAll('.site-list__submenu');
 const subToggle = document.querySelectorAll('.site-list__item--subopen');
 
 export function navOpen() {
@@ -10,8 +9,21 @@ export function navOpen() {
   menuButton.addEventListener('click', () => {
     nav.classList.toggle('nav--closed');
     nav.classList.toggle('nav--opened');
+
+    if (!nav.classList.contains('nav--closed')) {
+      document.body.style.background = 'rgba(13, 29, 51, 0.4)';
+    } else {
+      document.body.style.background = 'unset';
+    }
     // document.body.style.position = 'fixed';
     // document.body.style.width = '100%';
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!nav.contains(event.target)) {
+      nav.classList.remove('nav--opened');
+      nav.classList.add('nav--closed');
+    }
   });
 }
 

@@ -4,6 +4,12 @@
 }
 
 .hero__container {
-  margin: 0;
+  margin: 0 auto;
+  width: 290px;;
   padding: 20px 15px;
+  min-height: 528px;
+}
+
+.hero__container--overlay {
+  background: rgba(13, 29, 51, 0.4);
 }
