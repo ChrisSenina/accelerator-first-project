@@ -22,6 +22,18 @@
   border: 1px solid $base-blue;
   border-radius: 30px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $base-white;
+    background-color: $base-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.7);
+    background-color: $base-blue;
+  }
 }
 
 .nav__toggle-back {
@@ -33,6 +45,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px 8px;
+  color: transparent;
+}
+
+.nav__toggle:hover .nav__toggle-back,
+.nav__toggle:focus .nav__toggle-back {
+  background-color: $base-white;
+  outline: none;
 }
 
 .nav--closed .nav__toggle-back {
@@ -57,6 +76,6 @@
   padding-left: 19px;
 }
 
-.nav--closed .nav__list{
+.nav--closed .nav__list {
   display: none;
 }

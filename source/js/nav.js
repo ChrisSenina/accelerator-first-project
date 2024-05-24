@@ -13,7 +13,7 @@ export function navOpen() {
     if (!nav.classList.contains('nav--closed')) {
       document.body.style.background = 'rgba(13, 29, 51, 0.4)';
     } else {
-      document.body.style.background = 'unset';
+      document.body.style.background = '#f0efe9';
     }
     // document.body.style.position = 'fixed';
     // document.body.style.width = '100%';
@@ -34,6 +34,11 @@ export function subOpen() {
     item.addEventListener('click', () => {
       sub.classList.toggle('site-list__submenu--closed');
       sub.classList.toggle('site-list__submenu--opened');
+      if (!sub.classList.contains('site-list__submenu--closed')) {
+        item.classList.add('site-list__item--active');
+      } else {
+        item.classList.remove('site-list__item--active');
+      }
     });
   });
 }
