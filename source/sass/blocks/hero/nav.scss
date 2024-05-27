@@ -5,16 +5,11 @@
 }
 
 .nav__toggle {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   width: 136px;
   height: 54px;
   color: $base-blue;
   background-color: $base-white;
   text-align: left;
-  text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -22,7 +17,18 @@
   padding: 4px 4px 4px 21px;
   border: 1px solid $base-blue;
   border-radius: 30px;
-  cursor: pointer;
+
+  &::after {
+    width: 46px;
+    height: 46px;
+    right: 3px;
+  }
+
+  &::before {
+    background: url("/__spritemap#sprite-toggle-close-view") no-repeat center;
+    width: 18px;
+    height: 8px;
+  }
 
   &:hover,
   &:focus {
@@ -37,37 +43,13 @@
   }
 }
 
-.nav__toggle-back {
-  display: block;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background-color: $base-blue;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 18px 8px;
-  color: transparent;
-}
-
-.nav__toggle:hover .nav__toggle-back,
-.nav__toggle:focus .nav__toggle-back {
-  background-color: $base-white;
-  outline: none;
-}
-
-.nav--closed .nav__toggle-back {
-  background-image: url("/__spritemap#sprite-toggle-close-view");
-}
-
-.nav--opened .nav__toggle-back {
-  background-color: $base-white;
-  background-image: url("/__spritemap#sprite-toggle-open-view");
-  background-size: 20px 20px;
-}
-
 .nav--opened {
   position: absolute;
-  left: 0;
+  top: -20px;
+  left: -15px;
+  width: 320px;
+  height: 568px;
+  background: rgba(13, 29, 51, 0.4);
 }
 
 .nav--opened .nav__toggle {
@@ -75,6 +57,19 @@
   background-color: $base-blue;
   color: $base-white;
   padding-left: 19px;
+  left: 15px;
+  top: 20px;
+}
+
+.nav--opened .nav__toggle::after {
+  background-color: $base-white;
+  right: 4px;
+}
+
+.nav--opened .nav__toggle::before {
+  background: url("/__spritemap#sprite-toggle-open-view") no-repeat center;
+  width: 20px;
+  height: 20px;
 }
 
 .nav--closed .nav__list {

@@ -1,5 +1,5 @@
 .site-list {
-  margin: 4px 0 0;
+  margin: 24px auto 0;
   padding: 33px 25px;
   list-style: none;
   background-color: $base-blue;
@@ -36,7 +36,7 @@
   color: transparent;
   background: url("/__spritemap#sprite-arrow-down-view") no-repeat center;
   width: 12px;
-  height: 12px;
+  height: 8px;
 }
 
 .site-list__item--active .site-list__svg {

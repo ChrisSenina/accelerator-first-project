@@ -15,8 +15,6 @@ export function navOpen() {
     } else {
       document.body.style.background = '#f0efe9';
     }
-    // document.body.style.position = 'fixed';
-    // document.body.style.width = '100%';
   });
 
   document.addEventListener('click', (event) => {

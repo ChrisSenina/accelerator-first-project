@@ -2,24 +2,43 @@
   margin: 0;
   padding: 0;
   position: relative;
-  background: url("../img/hero/photo-1-mobile.jpg") no-repeat center;
 }
 
 .hero__container {
-  // position: absolute;
-  // top: 0;
-  // z-index: 1;
   margin: 0 auto;
   width: 290px;
   padding: 20px 15px;
 }
 
-.hero__container--overlay {
-  background: rgba(13, 29, 51, 0.4);
+.hero__slider {
+  min-height: 568px;
+  margin-top: -122px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1024px;
+  }
 }
 
-.hero__slider {
-  margin-top: 127px;
+.hero__slide {
+  background-size: cover;
+}
+
+.hero__slide-one {
+  background: url("../img/hero/photo-1-mobile.jpg") no-repeat center;
+}
+
+.hero__slide-two {
+  background: url("../img/hero/photo-2-mobile.jpg") no-repeat center;
+}
+
+.hero__slide-three {
+  background: url("../img/hero/photo-3-mobile.jpg") no-repeat center;
+}
+
+.hero__slide-content {
+  width: 290px;
+  margin: 0 auto;
+  padding: 229px 15px 20px;
 }
 
 .hero__pagination {
