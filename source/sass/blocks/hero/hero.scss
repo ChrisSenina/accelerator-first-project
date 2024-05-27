@@ -1,15 +1,125 @@
 .hero {
   margin: 0;
   padding: 0;
+  position: relative;
+  background: url("../img/hero/photo-1-mobile.jpg") no-repeat center;
 }
 
 .hero__container {
+  // position: absolute;
+  // top: 0;
+  // z-index: 1;
   margin: 0 auto;
-  width: 290px;;
+  width: 290px;
   padding: 20px 15px;
-  min-height: 528px;
 }
 
 .hero__container--overlay {
   background: rgba(13, 29, 51, 0.4);
+}
+
+.hero__slider {
+  margin-top: 127px;
+}
+
+.hero__pagination {
+  position: relative;
+  padding: 10px 16px;
+  border-radius: 12px 12px 0px 0px;
+  background-color: $base-white;
+  width: 48px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("/__spritemap#sprite-angle-2-mob-view") no-repeat center;
+    z-index: 10;
+    right: -10px;
+    bottom: 0;
+  }
+}
+
+.hero__pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 2px solid $base-blue;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.hero__pagination-bullet--active {
+  background: $base-blue;
+  border: none;
+}
+
+.hero__slide-title {
+  position: relative;
+  margin: 0;
+  padding: 20px 14px 16px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $base-blue;
+  background-color: $base-white;
+  border-radius: 0 16px 16px 0;
+
+  &::after {
+    right: 13px;
+  }
+}
+
+.hero__slide-two .hero__slide-title,
+.hero__slide-three .hero__slide-title  {
+  padding-bottom: 40px;
+}
+
+.hero__slide-title,
+.hero__slide p {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: -9px;
+    background: url("/__spritemap#sprite-angle-mobile-view") no-repeat center;
+  }
+}
+
+.hero__slide p {
+  position: relative;
+  margin: 0 23px 0 0;
+  padding: 0 14px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 0 0 16px 0;
+  background-color: $base-white;
+
+  &::after {
+    right: 73px;
+  }
+}
+
+.hero__slide-two p,
+.hero__slide-three p {
+  padding-bottom: 37px;
+}
+
+.hero__button-wrapper {
+  margin-right: 106px;
+  padding: 10px 15px;
+  background-color: $base-white;
+  border-radius: 0px 0px 14px 14px;
+}
+
+.hero__button {
+  padding: 5px 5px 5px 21px;
+  border: 1px solid $base-blue;
+  border-radius: 30px;
+  width: 154px;
+  height: 44px;
 }

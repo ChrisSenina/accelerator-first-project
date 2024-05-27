@@ -1,0 +1,38 @@
+.button {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  color: $base-blue;
+  background-color: $base-white;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: $base-blue;
+    border-radius: 44px;
+    right: 5px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: url("/__spritemap#sprite-arrow-mob-view") no-repeat center;
+    right: 17px;
+    z-index: 1;
+  }
+}
