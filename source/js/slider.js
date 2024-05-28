@@ -12,6 +12,7 @@ export function sliderHero() {
 
     slidesPerView: 'auto',
     initialSlide: 0,
+    autoHeight: true,
 
     pagination: {
       el: '.hero__pagination',
@@ -31,6 +32,10 @@ export function sliderHero() {
     breakpoints: {
       320: {
         width: 290,
+      },
+
+      768: {
+        width: 678,
       }
     }
 

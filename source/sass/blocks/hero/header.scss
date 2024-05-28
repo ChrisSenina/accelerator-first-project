@@ -7,7 +7,9 @@
   width: 290px;
 
   @media (min-width: $tablet-width) {
+    width: 678px;
     gap: 489px;
+    align-items: center;
   }
 }
 

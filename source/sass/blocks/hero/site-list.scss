@@ -5,6 +5,11 @@
   background-color: $base-blue;
   border-radius: 16px;
   width: 240px;
+
+  @media (min-width: $tablet-width) {
+    margin: 24px 15px 0 auto;
+    width: 236px;
+  }
 }
 
 .site-list__item {

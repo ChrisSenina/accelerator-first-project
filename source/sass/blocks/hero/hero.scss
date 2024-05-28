@@ -10,23 +10,39 @@
 
   @media (min-width: $tablet-width) {
     background: url("../img/hero/photo-1-tablet.jpg") no-repeat center;
+    background-size: cover;
   }
 }
 
 .hero__slide-two {
   background: url("../img/hero/photo-2-mobile.jpg") no-repeat center;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/hero/photo-2-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
 }
 
 .hero__slide-three {
   background: url("../img/hero/photo-3-mobile.jpg") no-repeat center;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/hero/photo-3-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
 }
 
 .hero__slide-content {
   padding: 229px 15px 20px;
   width: 290px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 687px 15px 60px;
+    width: 678px;
+  }
 }
 
 .hero__devider {
@@ -34,11 +50,19 @@
   margin: 0 auto;
   z-index: 2;
   width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
 }
 
 .hero__devider-two {
   margin: 202px 0 0;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 647px;
+  }
 }
 
 .hero__pagination {
@@ -118,6 +142,10 @@
 .hero__slide-two .hero__slide-title,
 .hero__slide-three .hero__slide-title {
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .hero__slide-wrapper {
@@ -143,6 +171,14 @@
     height: 10px;
     bottom: -9px;
     background: url("/__spritemap#sprite-angle-mobile-view") no-repeat center;
+
+    @media (min-width: $tablet-width) {
+      background: url("/__spritemap#sprite-angle-view") no-repeat center;
+      width: 26px;
+      height: 26px;
+      bottom: -25px;
+      right: 40px;
+    }
   }
 }
 
@@ -189,6 +225,10 @@
 .hero__slide-two p,
 .hero__slide-three p {
   padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .hero__button-wrapper {
@@ -225,4 +265,8 @@
   width: 100%;
   top: 0;
   padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
 }

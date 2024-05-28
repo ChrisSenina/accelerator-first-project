@@ -12,7 +12,7 @@ const desktopSections = [
 ]
 
 const tabletSections = [
-  // {section: 'hero', misMatchThreshold: 0.5},
+  {section: 'hero', misMatchThreshold: 0.5},
   // {section: 'about', misMatchThreshold: 0.5},
   // {section: 'programs', misMatchThreshold: 0.7},
   // {section: 'grant', misMatchThreshold: 0.5},
