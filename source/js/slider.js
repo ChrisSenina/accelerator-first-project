@@ -31,11 +31,15 @@ export function sliderHero() {
 
     breakpoints: {
       320: {
-        width: 290,
+        width: 320,
       },
 
       768: {
-        width: 678,
+        width: 768,
+      },
+
+      1440: {
+        width: 1440,
       }
     }
 

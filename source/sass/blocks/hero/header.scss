@@ -11,6 +11,11 @@
     gap: 489px;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+    gap: 1052px;
+  }
 }
 
 .header__logo {
