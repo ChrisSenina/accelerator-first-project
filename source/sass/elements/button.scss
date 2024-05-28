@@ -16,6 +16,12 @@
   box-sizing: border-box;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -24,6 +30,11 @@
     background-color: $base-blue;
     border-radius: 44px;
     right: 5px;
+
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+    }
   }
 
   &::before {
@@ -31,8 +42,12 @@
     position: absolute;
     width: 8px;
     height: 8px;
-    background: url("/__spritemap#sprite-arrow-mob-view") no-repeat center;
+    background: url("/__spritemap#sprite-arrow-view") no-repeat center;
     right: 17px;
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      right: 24px;
+    }
   }
 }

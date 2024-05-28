@@ -9,22 +9,9 @@ export function sliderHero() {
     direction: 'horizontal',
 
     loop: true,
-    autoHeight: true,
 
     slidesPerView: 'auto',
     initialSlide: 0,
-
-    // on: {
-    //   init:
-    //     function changeImg () {
-    //       const hero = document.querySelector('.hero');
-    //       if (this.realIndex === 1) {
-    //         hero.classList.add('hero-red');
-    //       } else {
-    //         hero.classList.remove('hero-red');
-    //       }
-    //     }
-    // },
 
     pagination: {
       el: '.hero__pagination',
