@@ -13,8 +13,11 @@
   text-align: left;
   color: $base-blue;
   background-color: $base-white;
+  border: 1px solid $base-blue;
+  border-radius: 30px;
   box-sizing: border-box;
   cursor: pointer;
+  padding: 5px 5px 5px 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;

@@ -26,7 +26,7 @@ const tabletSections = [
 
 const mobileSections = [
   {section: 'hero', misMatchThreshold: 2.3},
-  // {section: 'about', misMatchThreshold: 1.8},
+  {section: 'about', misMatchThreshold: 1.8},
   // {section: 'programs', misMatchThreshold: 0.5},
   // {section: 'grant', misMatchThreshold: 2.3},
   // {section: 'news', misMatchThreshold: 0.5},

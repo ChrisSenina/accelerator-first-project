@@ -1,0 +1,96 @@
+.about {
+  margin: 0;
+  padding: 50px 15px;
+}
+
+.about__container p {
+  margin: 0;
+  padding-top: 15px;
+  line-height: 22px;
+}
+
+.about__wrapper h3 {
+  margin: 0;
+  padding: 40px 0 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $base-blue;
+}
+
+.about__wrapper p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.about__button {
+  width: 223px;
+  height: 44px;
+  margin: 30px 0 40px;
+  padding-left: 20px;
+
+  &::after {
+    right: 4px;
+  }
+}
+
+.about__list {
+  margin: 0;
+  padding: 42px 20px 40px;
+  list-style: none;
+  color: $base-white;
+  background-color: $base-blue;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border-radius: 20px;
+}
+
+.about__list li {
+  position: relative;
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  border: 1px solid $biege;
+  border-radius: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-color: $base-blue;
+    border-radius: 50%;
+    top: -22px;
+    left: -21px;
+
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 22px;
+    background: url("/__spritemap#sprite-star-view") no-repeat center;
+    top: -13px;
+    left: -9px;
+    z-index: 10;
+  }
+}
+
+.about__list p {
+  margin: 0;
+  padding: 15px 0 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: initial;
+  letter-spacing: 0;
+}

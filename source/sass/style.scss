@@ -7,12 +7,14 @@
 // Elements
 @import "./elements/link.scss";
 @import "./elements/button.scss";
+@import "./elements/inner-title.scss";
 
 // Blocks
 @import "./blocks//hero/hero.scss";
 @import "./blocks//hero/header.scss";
 @import "./blocks/hero/nav.scss";
 @import "./blocks/hero/site-list.scss";
+@import "./blocks/about/about.scss";
 
 // Vendor
 @import "./vendor/normalize.scss";
