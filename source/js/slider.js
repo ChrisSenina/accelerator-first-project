@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 
 export function sliderHero() {
@@ -49,7 +49,7 @@ export function sliderHero() {
 
 export function sliderPrograms() {
   new Swiper('.programs__slider', {
-    modules: [Pagination, Navigation],
+    modules: [Scrollbar, Navigation],
 
     direction: 'horizontal',
     loop: false,
@@ -57,13 +57,11 @@ export function sliderPrograms() {
     slidesPerView: 'auto',
     initialSlide: 0,
 
-    pagination: {
-      el: '.programs__pagination',
-      bulletElement: 'button',
-      bulletClass: 'programs__pagination-bullet swiper-pagination-bullet',
-      bulletActiveClass: 'programs__pagination-bullet--active swiper-pagination-bullet-active',
-      type: 'bullets',
-      clickable: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      dragClass: 'swiper-scrollbar-drag',
+      dragSize: '326px',
+      draggable: true,
     },
 
     navigation: {
@@ -75,11 +73,13 @@ export function sliderPrograms() {
     breakpoints: {
       320: {
         width: 290,
+        slidesPerView: 1,
       },
 
       768: {
         width: 678,
         spaceBetween: 30,
+        slidesPerView: 2,
       },
 
       1440: {

@@ -17,10 +17,18 @@
 
 .programs__title {
   padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+  }
 }
 
 .programs__slider {
   margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+  }
 }
 
 .programs__slide {
@@ -74,6 +82,10 @@
 
 .programs__slide-content {
   padding: 271px 10px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 285px 20px 10px;
+  }
 }
 
 .programs__slide-title {
@@ -86,6 +98,13 @@
   color: $base-blue;
   background-color: $base-white;
   border-radius: 12px 12px 0px 0px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 111px;
+    padding: 19px 18px 5px;
+    font-size: 20px;
+    line-height: 14px;
+  }
 
   &::after {
     content: "";
@@ -107,6 +126,11 @@
   align-items: center;
   gap: 20px;
   min-height: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 18px 15px;
+    min-height: 60px;
+  }
 }
 
 
@@ -115,6 +139,11 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .programs__link {
@@ -125,6 +154,10 @@
   height: 30px;
   box-sizing: border-box;
   top: -1px;
+
+  @media (min-width: $tablet-width) {
+    top: auto;
+  }
 
   &::after {
     content: "";
@@ -138,22 +171,36 @@
   }
 }
 
-.programs__wrap {
-  position: absolute;
-  top: 54px;
-  right: 15px;
-}
-
-.programs__pagination {
+.programs__scrollbar {
   visibility: hidden;
   width: 0;
   height: 0;
+
+  @media (min-width: $tablet-width) {
+    visibility: visible;
+    width: 562px;
+    height: 2px;
+  }
 }
 
 .programs__navigation {
+  position: absolute;
+  top: 54px;
+  right: 15px;
   display: flex;
   flex-direction: row;
   gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    top: 606px;
+    right: 45px;
+    gap: 10px;
+    width: 54px;
+  }
+}
+
+.test {
+  display: flex;
 }
 
 .programs__button-prev,
@@ -180,11 +227,30 @@
   padding-left: 30px;
   margin-top: 30px;
 
+  @media (min-width: $tablet-width) {
+    width: 234px;
+    height: 56px;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    right: 45px;
+  }
+
   &::after {
     top: 4px;
+
+    @media (min-width: $tablet-width) {
+      top: 4px;
+      right: 4px;
+    }
   }
 
   &::before {
     top: 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 23px;
+      right: 23px;
+    }
   }
 }
