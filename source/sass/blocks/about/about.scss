@@ -1,12 +1,24 @@
 .about {
-  margin: 0;
+  margin: 0 auto;
   padding: 50px 15px;
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 45px;
+    width: 678px;
+  }
 }
 
 .about__container p {
   margin: 0;
   padding-top: 15px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .about__wrapper h3 {
@@ -16,6 +28,13 @@
   font-weight: 400;
   line-height: 22px;
   color: $base-blue;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .about__wrapper p {
@@ -24,6 +43,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 145px;
+    font-size: 16px;
+  }
 }
 
 .about__button {
@@ -35,6 +59,19 @@
   &::after {
     right: 4px;
   }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      right: 23px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 279px;
+    height: 56px;
+    margin: 40px 0 60px;
+    padding-left: 30px;
+  }
 }
 
 .about__list {
@@ -43,10 +80,16 @@
   list-style: none;
   color: $base-white;
   background-color: $base-blue;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 22px;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 50px 50px 70px;
+    grid-template-columns: repeat(2, 253px);
+    column-gap: 52px;
+    row-gap: 54px;
+  }
 }
 
 .about__list li {
@@ -60,6 +103,13 @@
   text-transform: uppercase;
   border: 1px solid $biege;
   border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 20px 15px;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+  }
 
   &::after {
     content: "";
@@ -93,4 +143,10 @@
   line-height: 20px;
   text-transform: initial;
   letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
