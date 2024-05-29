@@ -10,6 +10,11 @@
     margin: 24px 15px 0 auto;
     width: 236px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+    padding-top: 32px;
+  }
 }
 
 .site-list__item {

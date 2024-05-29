@@ -73,6 +73,10 @@
     width: 286px;
     left: 407px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 970px;
+  }
 }
 
 .nav--opened .nav__toggle::after {
@@ -84,6 +88,11 @@
   background: url("/__spritemap#sprite-toggle-open-view") no-repeat center;
   width: 20px;
   height: 20px;
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+    top: 16px;
+  }
 }
 
 .nav--closed .nav__list {

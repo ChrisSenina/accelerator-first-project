@@ -4,57 +4,6 @@
   position: relative;
 }
 
-.hero__slide-one {
-  background: url("../img/hero/photo-1-mobile.jpg") no-repeat center;
-  background-size: cover;
-
-  @media (min-width: $tablet-width) {
-    background: url("../img/hero/photo-1-tablet.jpg") no-repeat center;
-    background-size: cover;
-  }
-
-  @media (min-width: $desktop-width) {
-    background: url("../img/hero/photo-1.jpg") no-repeat center;
-    background-size: cover;
-  }
-}
-
-.hero__slide-two {
-  background: url("../img/hero/photo-2-mobile.jpg") no-repeat center;
-  background-size: cover;
-
-  @media (min-width: $tablet-width) {
-    background: url("../img/hero/photo-2-tablet.jpg") no-repeat center;
-    background-size: cover;
-  }
-}
-
-.hero__slide-three {
-  background: url("../img/hero/photo-3-mobile.jpg") no-repeat center;
-  background-size: cover;
-
-  @media (min-width: $tablet-width) {
-    background: url("../img/hero/photo-3-tablet.jpg") no-repeat center;
-    background-size: cover;
-  }
-}
-
-.hero__slide-content {
-  padding: 229px 15px 20px;
-  width: 290px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    padding: 687px 15px 60px;
-    width: 678px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 434px 15px 60px;
-    width: 1240px;
-  }
-}
-
 .hero__devider {
   position: relative;
   margin: 0 auto;
@@ -133,6 +82,67 @@
   border: none;
 }
 
+.hero__slide-one {
+  background: url("../img/hero/photo-1-mobile.jpg") no-repeat center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/hero/photo-1-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/hero/photo-1.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.hero__slide-two {
+  background: url("../img/hero/photo-2-mobile.jpg") no-repeat center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/hero/photo-2-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/hero/photo-2.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.hero__slide-three {
+  background: url("../img/hero/photo-3-mobile.jpg") no-repeat center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/hero/photo-3-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/hero/photo-3.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.hero__slide-content {
+  padding: 229px 15px 20px;
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 687px 15px 60px;
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 434px 15px 60px;
+    width: 1240px;
+  }
+}
+
 .hero__slide-title {
   position: relative;
   margin: 0;
@@ -155,7 +165,7 @@
   @media (min-width: $desktop-width) {
     font-size: 54px;
     line-height: 62px;
-    padding: 40px 50px 30px;
+    padding: 40px 50px 29px;
     width: 868px;
   }
 
@@ -171,6 +181,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 22px;
+  }
 }
 
 .hero__slide-wrapper {
@@ -182,17 +196,18 @@
     border-radius: 0px 0px 30px 30px;
     padding: 0 40px 35px;
     margin-right: 85px;
-    align-items: center;
+
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 50px 35px;
     margin-right: 465px;
+    align-items: center;
   }
 }
 
 .hero__slide-title,
-.hero__slide p {
+.hero__slide-wrapper p {
   position: relative;
 
   &::after {
@@ -210,10 +225,14 @@
       bottom: -25px;
       right: 40px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 168px;
+    }
   }
 }
 
-.hero__slide p {
+.hero__slide-wrapper p {
   position: relative;
   margin: 0 23px 0 0;
   padding: 0 14px 15px;
@@ -241,7 +260,7 @@
   }
 }
 
-.hero__slide p br:first-of-type {
+.hero__slide-wrapper p br:first-of-type {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -253,7 +272,7 @@
   }
 }
 
-.hero__slide p br:last-of-type {
+.hero__slide-wrapper p br:last-of-type {
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -267,6 +286,22 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: unset;
+  }
+}
+
+.hero__slide-two p {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
+}
+
+.hero__slide-three p {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 33px;
   }
 }
 
@@ -297,7 +332,6 @@
     height: 56px;
   }
 }
-
 
 .hero__wrap {
   position: absolute;
