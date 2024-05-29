@@ -25,12 +25,23 @@
     margin: 0 auto;
     padding-top: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+    padding-top: 4px;
+  }
 }
 
 .programs__container {
   @media (min-width: $tablet-width) {
     width: 678px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
   }
 }
 
@@ -40,6 +51,11 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     margin-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-top: 46px;
   }
 }
 
@@ -101,6 +117,10 @@
   @media (min-width: $tablet-width) {
     padding: 285px 20px 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 280px 20px 17px;
+  }
 }
 
 .programs__slide-title {
@@ -121,6 +141,13 @@
     line-height: 14px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-right: 158px;
+    padding: 18px 18px 6px;
+    font-size: 24px;
+    line-height: 17px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -129,6 +156,11 @@
     background: url("/__spritemap#sprite-angle-prog-view") no-repeat center;
     right: -18px;
     bottom: -8px;
+
+    @media (min-width: $desktop-width) {
+      right: -17px;
+      bottom: 0;
+    }
   }
 }
 
@@ -146,6 +178,11 @@
     padding: 12px 18px 15px;
     min-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 18px 13px;
+    margin-right: 31px;
+  }
 }
 
 
@@ -158,6 +195,17 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+    padding-right: 20px;
+  }
+}
+
+.programs__slide-three .programs__slide-wrapper p {
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -213,6 +261,11 @@
     gap: 10px;
     width: 693px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 40px;
+    width: 1255px;
+  }
 }
 
 .programs__button-prev,
@@ -246,6 +299,11 @@
     position: absolute;
     top: 50px;
     right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 62px;
+    right: 100px;
   }
 
   &::after {

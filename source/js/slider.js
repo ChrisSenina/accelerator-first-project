@@ -84,6 +84,7 @@ export function sliderPrograms() {
 
       1440: {
         width: 1240,
+        slidesPerView: 3,
         spaceBetween: 32,
         allowTouchMove: false,
       }
