@@ -42,10 +42,6 @@
     padding: 14px 20px;
     width: 60px;
     border-radius: 20px 20px 0px 0px;
-
-    @media (min-width: $desktop-width) {
-      padding: 12px 20px;
-    }
   }
 
 
@@ -142,7 +138,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 433px 15px 61px;
+    padding: 433px 15px 60px;
     width: 1240px;
   }
 }

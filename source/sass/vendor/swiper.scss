@@ -130,3 +130,10 @@
     200ms transform,
     200ms right;
 }
+
+
+// Navigation
+
+.swiper-button-disabled {
+  filter: invert(50%) sepia(13%) saturate(165%) hue-rotate(174deg) brightness(146%) contrast(86%);
+}

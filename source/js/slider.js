@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 export function sliderHero() {
@@ -40,6 +40,52 @@ export function sliderHero() {
 
       1440: {
         width: 1440,
+      }
+    }
+
+  });
+}
+
+
+export function sliderPrograms() {
+  new Swiper('.programs__slider', {
+    modules: [Pagination, Navigation],
+
+    direction: 'horizontal',
+    loop: false,
+
+    slidesPerView: 'auto',
+    initialSlide: 0,
+
+    pagination: {
+      el: '.programs__pagination',
+      bulletElement: 'button',
+      bulletClass: 'programs__pagination-bullet swiper-pagination-bullet',
+      bulletActiveClass: 'programs__pagination-bullet--active swiper-pagination-bullet-active',
+      type: 'bullets',
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next.programs__button-next',
+      prevEl: '.swiper-button-prev.programs__button-prev',
+      disabledClass: 'swiper-button-disabled',
+    },
+
+    breakpoints: {
+      320: {
+        width: 290,
+      },
+
+      768: {
+        width: 678,
+        spaceBetween: 30,
+      },
+
+      1440: {
+        width: 1240,
+        spaceBetween: 32,
+        allowTouchMove: false,
       }
     }
 

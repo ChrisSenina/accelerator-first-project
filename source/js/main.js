@@ -1,6 +1,7 @@
 import { navOpen, subOpen } from './nav.js';
-import { sliderHero } from './slider.js';
+import { sliderHero, sliderPrograms } from './slider.js';
 
 navOpen();
 subOpen();
 sliderHero ();
+sliderPrograms ();

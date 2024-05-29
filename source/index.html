@@ -172,25 +172,22 @@
       </ul>
     </section>
     <section class="programs" data-test="programs" id="programs">
-      <div class="programs__container">
-        <h2 class="programs__title inner-title">Программы</h2>
-        <button class="programs__button" type="button">Все программы</button>
-      </div>
+      <h2 class="programs__title inner-title">Программы</h2>
       <div class="programs__slider swiper">
         <div class="programs__wrapper swiper-wrapper">
-          <div class="programs__slide swiper-slide">
+          <div class="programs__slide programs__slide-one swiper-slide">
             <div class="programs__slide-content">
               <h3 class="programs__slide-title">Стажировки</h3>
               <div class="programs__slide-wrapper">
                 <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
-                <a class="programs__link" href="#">
+                <a class="programs__link link" href="#">
                   <span class="visually-hidden">Подробнее</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="programs__slide swiper-slide">
+          <div class="programs__slide programs__slide-two swiper-slide">
             <div class="programs__slide-content">
               <h3 class="programs__slide-title">Волонтёрство</h3>
               <div class="programs__slide-wrapper">
@@ -202,7 +199,7 @@
             </div>
           </div>
 
-          <div class="programs__slide swiper-slide">
+          <div class="programs__slide programs__slide-three swiper-slide">
             <div class="programs__slide-content">
               <h3 class="programs__slide-title">Учёба</h3>
               <div class="programs__slide-wrapper">
@@ -225,12 +222,13 @@
             aria-label="смотреть следующий слайд"></button>
         </div>
         <div class="programs__navigation">
-          <button class="programs-button-prev swiper-button swiper-button-prev" type="button"
+          <button class="programs__button-prev swiper-button swiper-button-prev" type="button"
             aria-label="смотреть предыдущий"></button>
-          <button class="programs-button-next swiper-button swiper-button-next" type="button"
+          <button class="programs__button-next swiper-button swiper-button-next" type="button"
             aria-label="смотреть следующий"></button>
         </div>
       </div>
+      <button class="programs__button button" type="button">Все программы</button>
     </section>
     <section class="grant" data-test="grant" id="grant">
       <div class="grant__container">
