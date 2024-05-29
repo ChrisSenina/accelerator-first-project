@@ -14,7 +14,7 @@ const desktopSections = [
 const tabletSections = [
   {section: 'hero', misMatchThreshold: 0.5},
   {section: 'about', misMatchThreshold: 0.5},
-  // {section: 'programs', misMatchThreshold: 0.7},
+  {section: 'programs', misMatchThreshold: 0.7},
   // {section: 'grant', misMatchThreshold: 0.5},
   // {section: 'news', misMatchThreshold: 0.7},
   // {section: 'FAQ', misMatchThreshold: 1.1},
@@ -27,7 +27,7 @@ const tabletSections = [
 const mobileSections = [
   {section: 'hero', misMatchThreshold: 2.3},
   {section: 'about', misMatchThreshold: 1.8},
-  // {section: 'programs', misMatchThreshold: 0.5},
+  {section: 'programs', misMatchThreshold: 0.5},
   // {section: 'grant', misMatchThreshold: 2.3},
   // {section: 'news', misMatchThreshold: 0.5},
   // {section: 'FAQ', misMatchThreshold: 1.8},

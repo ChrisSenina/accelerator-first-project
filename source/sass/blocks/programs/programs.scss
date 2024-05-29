@@ -6,10 +6,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 50px 45px;
-    width: 678px;
+    margin: 0;
+    width: unset;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
     padding: 60px 100px;
     width: 1240px;
   }
@@ -19,7 +21,16 @@
   padding-top: 6px;
 
   @media (min-width: $tablet-width) {
+    width: 678px;
+    margin: 0 auto;
     padding-top: 3px;
+  }
+}
+
+.programs__container {
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    margin: 0 auto;
   }
 }
 
@@ -27,6 +38,7 @@
   margin-top: 34px;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     margin-top: 43px;
   }
 }
@@ -37,15 +49,18 @@
 
 .programs__slide-one {
   background: url("../img/programs/slide-1-mob.jpg") no-repeat center;
+  background-color: rgba(49, 109, 194, 0.2);
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     background: url("../img/programs/slide-1-tab.jpg") no-repeat center;
+    background-color: rgba(49, 109, 194, 0.2);
     background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../img/programs/slide-1.jpg") no-repeat center;
+    background-color: rgba(49, 109, 194, 0.2);
     background-size: cover;
   }
 }
@@ -192,15 +207,12 @@
   gap: 8px;
 
   @media (min-width: $tablet-width) {
-    top: 606px;
-    right: 45px;
+    position: relative;
+    top: 38px;
+    justify-content: flex-end;
     gap: 10px;
-    width: 54px;
+    width: 693px;
   }
-}
-
-.test {
-  display: flex;
 }
 
 .programs__button-prev,
