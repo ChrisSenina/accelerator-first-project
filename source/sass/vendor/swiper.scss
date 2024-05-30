@@ -134,6 +134,11 @@
 
 // Navigation
 
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+}
+
 .swiper-button-disabled {
   filter: invert(50%) sepia(13%) saturate(165%) hue-rotate(174deg) brightness(146%) contrast(86%);
 }

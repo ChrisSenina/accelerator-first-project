@@ -93,6 +93,7 @@ export function sliderPrograms() {
         allowTouchMove: false,
         scrollbar: {
           dragSize: '394px',
+          draggable: true,
         }
       }
     },
