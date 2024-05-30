@@ -5,14 +5,14 @@
   width: 290px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 45px;
+    padding: 50px 45px 38px;
     margin: 0;
     width: unset;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 60px 100px;
+    padding: 60px 100px 48px;
     width: 1240px;
   }
 }
@@ -49,7 +49,7 @@
   margin-top: 34px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 722px;
     margin-top: 43px;
   }
 
@@ -155,7 +155,7 @@
     height: 18px;
     background: url("/__spritemap#sprite-angle-prog-view") no-repeat center;
     right: -18px;
-    bottom: -8px;
+    bottom: 0;
 
     @media (min-width: $desktop-width) {
       right: -17px;
@@ -243,6 +243,12 @@
     visibility: visible;
     width: 562px;
     height: 2px;
+    background: rgb(49, 109, 194, 0.2);
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1136px;
   }
 }
 
@@ -256,14 +262,13 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    top: 38px;
+    top: -12px;
     justify-content: flex-end;
     gap: 10px;
     width: 693px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 40px;
     width: 1255px;
   }
 }
@@ -299,6 +304,7 @@
     position: absolute;
     top: 50px;
     right: 45px;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {

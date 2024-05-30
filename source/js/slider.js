@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 
 export function sliderHero() {
@@ -49,10 +49,11 @@ export function sliderHero() {
 
 export function sliderPrograms() {
   new Swiper('.programs__slider', {
-    modules: [Scrollbar, Navigation],
+    modules: [Scrollbar, Navigation, Manipulation],
 
     direction: 'horizontal',
     loop: false,
+    autoplay: false,
 
     slidesPerView: 'auto',
     initialSlide: 0,
@@ -60,7 +61,6 @@ export function sliderPrograms() {
     scrollbar: {
       el: '.swiper-scrollbar',
       dragClass: 'swiper-scrollbar-drag',
-      dragSize: '326px',
       draggable: true,
     },
 
@@ -80,6 +80,10 @@ export function sliderPrograms() {
         width: 678,
         spaceBetween: 30,
         slidesPerView: 2,
+
+        scrollbar: {
+          dragSize: '326px',
+        }
       },
 
       1440: {
@@ -87,8 +91,10 @@ export function sliderPrograms() {
         slidesPerView: 3,
         spaceBetween: 32,
         allowTouchMove: false,
+        scrollbar: {
+          dragSize: '394px',
+        }
       }
-    }
-
+    },
   });
 }
