@@ -50,6 +50,15 @@
   display: block;
 }
 
+.swiper-grid > .swiper-wrapper {
+  display: grid;
+  grid-template-columns: 330px 240px;
+}
+.swiper-grid-column > .swiper-wrapper {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 // Pagination
 
 .swiper-pagination {

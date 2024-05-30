@@ -264,7 +264,7 @@
     <section class="news" data-test="news" id="news">
       <h2 class="news__title inner-title">Новости и материалы</h2>
       <div class="news__tabs">
-        <button class="news__tabs-button" type="button">Общее</button>
+        <button class="news__tabs-button news__tabs-button--active" type="button">Общее</button>
         <button class="news__tabs-button" type="button">Волонтёрство</button>
         <button class="news__tabs-button" type="button">Стажировки</button>
         <button class="news__tabs-button" type="button">Карьера</button>
@@ -272,61 +272,69 @@
       </div>
       <div class="news__slider swiper">
         <div class="news__wrapper swiper-wrapper">
-          <div class="news__slide swiper-slide">
+          <div class="news__slide news__slide-one swiper-slide">
             <div class="news__slide-content">
               <span class="news__slide-data">23/03/2023</span>
               <h3 class="news__slide-title">Интервью с участницей программы стажировки</h3>
-              <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
-              <a class="news__slide-link" href="#">
-                <span class="visually-hidden">Подробнее</span>
-              </a>
+              <div class="news__slide-wrapper">
+                <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                <a class="news__slide-link link" href="#">
+                  <span class="visually-hidden">Подробнее</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="news__slide swiper-slide">
+          <div class="news__slide news__slide-two swiper-slide">
             <div class="news__slide-content">
               <span class="news__slide-data">20/03/2023</span>
               <h3 class="news__slide-title">Путешествуем по миру</h3>
-              <p class="news__slide-text">Какие места посещают наши студенты весной</p>
-              <a class="news__slide-link" href="#">
-                <span class="visually-hidden">Подробнее</span>
-              </a>
+              <div class="news__slide-wrapper">
+                <p class="news__slide-text">Какие места посещают наши студенты весной</p>
+                <a class="news__slide-link link" href="#">
+                  <span class="visually-hidden">Подробнее</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="news__slide swiper-slide">
+          <div class="news__slide news__slide-three swiper-slide">
             <div class="news__slide-content">
               <span class="news__slide-data">17/03/2023</span>
               <h3 class="news__slide-title">Новая программа волонтёрства</h3>
-              <p class="news__slide-text">Программа помощи детям длительностью 4 месяца</p>
-              <a class="news__slide-link" href="#">
-                <span class="visually-hidden">Подробнее</span>
-              </a>
+              <div class="news__slide-wrapper">
+                <p class="news__slide-text">Программа помощи детям длительностью 4 месяца</p>
+                <a class="news__slide-link link" href="#">
+                  <span class="visually-hidden">Подробнее</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="news__slide swiper-slide">
+          <div class="news__slide news__slide-four swiper-slide">
             <div class="news__slide-content">
               <span class="news__slide-data">10/03/2023</span>
               <h3 class="news__slide-title">Построй свою карьеру</h3>
-              <p class="news__slide-text">Ведущие компании готовы трудоустроить выпускников стажировки</p>
-              <a class="news__slide-link" href="#">
-                <span class="visually-hidden">Подробнее</span>
-              </a>
+              <div class="news__slide-wrapper">
+                <p class="news__slide-text">Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                <a class="news__slide-link link" href="#">
+                  <span class="visually-hidden">Подробнее</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="grant__wrap">
-        <div class="grant__pagination swiper-pagination">
-          <button class="grant__pagination-bullet swiper-pagination-bullet" type="button"
+      <div class="news__wrap">
+        <div class="news__pagination swiper-pagination">
+          <button class="news__pagination-bullet swiper-pagination-bullet" type="button"
             aria-label="смотреть следующий слайд"></button>
-          <button class="grant__pagination-bullet swiper-pagination-bullet" type="button"
+          <button class="news__pagination-bullet swiper-pagination-bullet" type="button"
             aria-label="смотреть следующий слайд"></button>
-          <button class="grant__pagination-bullet swiper-pagination-bullet" type="button"
+          <button class="news__pagination-bullet swiper-pagination-bullet" type="button"
             aria-label="смотреть следующий слайд"></button>
         </div>
-        <div class="grant__navigation">
-          <button class="grant-button-prev swiper-button swiper-button-prev" type="button"
+        <div class="news__navigation">
+          <button class="news-button-prev swiper-button swiper-button-prev" type="button"
             aria-label="смотреть предыдущий"></button>
-          <button class="grant-button-next swiper-button swiper-button-next" type="button"
+          <button class="news-button-next swiper-button swiper-button-next" type="button"
             aria-label="смотреть следующий"></button>
         </div>
       </div>

@@ -1,0 +1,122 @@
+.news {
+  margin: 0 auto;
+  padding: 50px 15px;
+  width: 290px;
+}
+
+.news__title {
+  text-align: center;
+  padding-top: 1px;
+}
+
+.news__tabs {
+  margin: 0;
+  padding: 23px 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.news__tabs-button {
+  margin: 0;
+  padding: 1px 16px 0 13px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  color: rgb(49, 109, 194, 0.6);
+  border: none;
+  background-color: transparent;
+}
+
+.news__tabs-button--active {
+  color: $base-blue;
+  border: 2px solid $base-blue;
+  border-radius: 20px;
+  padding: 11px 15px 9px 14px;
+}
+
+.news__slide {
+  border-radius: 12px;
+}
+
+.news__slide-one {
+  background: url("../img/news/photo-1-mob.jpg") no-repeat center;
+  object-fit: cover;
+  min-height: 331px;
+}
+
+.news__slide-two {
+  background: url("../img/news/photo-2-mob.jpg") no-repeat center;
+  object-fit: cover;
+  grid-row: 2;
+}
+
+.news__slide-content {
+  padding: 191px 0 0;
+}
+
+.news__slide-data {
+  margin: 0;
+  padding: 10px 12px 6px 0px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  color: $base-blue;
+  border-radius: 0px 12px 0px 0px;
+  background-color: $biege;
+}
+
+.news__slide-title {
+  margin: 0 90px 0 0;
+  padding: 10px 18px 4px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $base-blue;
+  border-radius: 0px 12px 0px 0px;
+  background-color: $biege;
+}
+
+.news__slide-wrapper {
+  margin: 0 27px 0 0;
+  padding: 13px 10px 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px 12px 0px 12px;
+  background-color: $biege;
+}
+
+.news__slide-wrapper p {
+  margin: 0;
+  padding: 0 15px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.news__slide-link {
+  position: relative;
+  top: -1px;
+  background-color: $base-blue;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: url(/__spritemap#sprite-arrow-view) no-repeat center;
+    right: 11px;
+    top: 11px;
+    z-index: 1;
+  }
+}

@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Grid, Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 
 export function sliderHero() {
@@ -95,6 +95,30 @@ export function sliderPrograms() {
           dragSize: '394px',
           draggable: true,
         }
+      }
+    },
+  });
+}
+
+export function sliderNews() {
+  new Swiper('.news__slider', {
+    modules: [Pagination, Navigation, Grid],
+
+    direction: 'horizontal',
+    loop: false,
+    autoplay: false,
+    autoHeight: false,
+
+    breakpoints: {
+      320: {
+        width: 290,
+        grid: {
+          rows: 2,
+          fill: 'row',
+        },
+        spaceBetween: 30,
+        observer: true,
+        observeParents: true,
       }
     },
   });
