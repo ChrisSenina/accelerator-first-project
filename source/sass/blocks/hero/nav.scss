@@ -16,11 +16,6 @@
   letter-spacing: 0.2px;
   padding: 4px 4px 4px 21px;
 
-  @media (min-width: $tablet-width) {
-    padding: 5px 5px 5px 21px;
-    height: 56px;
-  }
-
   &::after {
     width: 46px;
     height: 46px;
@@ -31,11 +26,6 @@
     background: url("/__spritemap#sprite-toggle-close-view") no-repeat center;
     width: 18px;
     height: 8px;
-
-    @media (min-width: $tablet-width) {
-      right: 18px;
-      top: 23px;
-    }
   }
 
   &:hover,
@@ -48,6 +38,16 @@
   &:active {
     color: rgb(255, 255, 255, 0.7);
     background-color: $base-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 5px 5px 21px;
+    height: 56px;
+
+    &::before {
+      right: 18px;
+      top: 23px;
+    }
   }
 }
 

@@ -11,8 +11,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 120px;
+    padding: 120px 100px;
     width: 1240px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
   }
 }
 
@@ -36,6 +39,11 @@
     padding: 30px 140px 40px 0;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 65px;
+    line-height: 26px;
   }
 }
 
@@ -68,6 +76,12 @@
     font-size: 28px;
     line-height: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 67px 55px 0;
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .grant__list {
@@ -84,6 +98,11 @@
     column-gap: 48px;
     row-gap: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 478px;
+    row-gap: 23px;
+  }
 }
 
 .grant__item {
@@ -95,12 +114,6 @@
   line-height: 20px;
   border: 1px solid $biege;
   border-radius: 16px;
-
-  @media (min-width: $tablet-width) {
-    padding: 30px 25px;
-    font-size: 16px;
-    line-height: 20px;
-  }
 
   &::before {
     content: counter(section) " ";
@@ -117,8 +130,14 @@
     justify-content: center;
     top: -6px;
     left: -16px;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    padding: 30px 25px;
+    font-size: 16px;
+    line-height: 20px;
+
+    &::before {
       width: 42px;
       height: 42px;
       font-size: 22px;
@@ -127,5 +146,9 @@
       top: -16px;
       left: -21px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
   }
 }

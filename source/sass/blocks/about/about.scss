@@ -91,17 +91,15 @@
     right: 4px;
   }
 
-  &::before {
-    @media (min-width: $tablet-width) {
-      right: 23px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: 279px;
     height: 56px;
     margin: 40px 0 60px;
     padding-left: 30px;
+
+    &::before {
+      right: 23px;
+    }
   }
 
   @media (min-width: $desktop-width) {

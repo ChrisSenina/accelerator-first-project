@@ -324,8 +324,22 @@
   height: 44px;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
+    width: 198px;
     height: 56px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 199px;
+    height: 58px;
+
+    &::after {
+      right: 5px;
+    }
+
+    &::before {
+      right: 24px;
+    }
   }
 }
 
