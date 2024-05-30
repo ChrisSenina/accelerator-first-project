@@ -4,11 +4,25 @@
   width: 290px;
   background-color: $base-blue;
   color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 100px 45px;
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 120px;
+    width: 1240px;
+  }
 }
 
 .grant__title {
   color: $base-white;
   padding-top: 1px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .grant__container p {
@@ -17,6 +31,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 140px 40px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .grant__img {
@@ -42,6 +62,12 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 0 45px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .grant__list {
@@ -51,6 +77,13 @@
   display: grid;
   gap: 15px;
   counter-reset: section;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+    row-gap: 25px;
+  }
 }
 
 .grant__item {
@@ -62,6 +95,12 @@
   line-height: 20px;
   border: 1px solid $biege;
   border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 25px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   &::before {
     content: counter(section) " ";
@@ -78,5 +117,15 @@
     justify-content: center;
     top: -6px;
     left: -16px;
+
+    @media (min-width: $tablet-width) {
+      width: 42px;
+      height: 42px;
+      font-size: 22px;
+      line-height: 22px;
+      letter-spacing: 0.22px;
+      top: -16px;
+      left: -21px;
+    }
   }
 }
