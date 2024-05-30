@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Grid, Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Grid, Manipulation, Navigation, Pagination, Scrollbar, Virtual } from 'swiper/modules';
 import 'swiper/css';
 
 export function sliderHero() {
@@ -101,25 +101,87 @@ export function sliderPrograms() {
 }
 
 export function sliderNews() {
-  new Swiper('.news__slider', {
-    modules: [Pagination, Navigation, Grid],
+  document.addEventListener('DOMContentLoaded', () => {
+    new Swiper('.news__slider', {
+      modules: [Pagination, Navigation, Grid, Manipulation],
 
-    direction: 'horizontal',
-    loop: false,
-    autoplay: false,
-    autoHeight: false,
+      direction: 'horizontal',
+      loop: false,
+      autoplay: false,
+      autoHeight: false,
 
-    breakpoints: {
-      320: {
-        width: 290,
-        grid: {
-          rows: 2,
-          fill: 'row',
-        },
-        spaceBetween: 30,
-        observer: true,
-        observeParents: true,
-      }
-    },
-  });
+      slideActiveClass: 'news__slide-active',
+
+      navigation: {
+        nextEl: '.swiper-button-next.news__button-next',
+        prevEl: '.swiper-button-prev.news__button-prev',
+        disabledClass: 'swiper-button-disabled',
+      },
+
+      pagination: {
+        el: '.news__pagination',
+        bulletElement: 'button',
+        bulletClass: 'news__pagination-bullet swiper-pagination-bullet',
+        bulletActiveClass: 'news__pagination-bullet--active swiper-pagination-bullet-active',
+        type: 'bullets',
+        clickable: true,
+
+        on: {
+          init: function onFocus() {
+            'swiper-pagination-bullet'.setAttribute('tabIndex', 0);
+          }
+        }
+      },
+
+      on: {
+        init: function getClone() {
+          const wrapper = document.querySelector('.news__wrapper');
+          const slide = wrapper.querySelector('.news__slide-one');
+          const slide2 = wrapper.querySelector('.news__slide-two');
+          const slide3 = wrapper.querySelector('.news__slide-three');
+          const slide4 = wrapper.querySelector('.news__slide-four');
+
+          // const clone = slide.cloneNode(true);
+          // wrapper.append(clone);
+
+          // const clone2 = slide2.cloneNode(true);
+          // wrapper.append(clone2);
+
+
+          const clone3 = slide3.cloneNode(true);
+          wrapper.append(clone3);
+
+          const clone4 = slide4.cloneNode(true);
+          wrapper.append(clone4);
+
+          const clone2 = slide2.cloneNode(true);
+          wrapper.append(clone2);
+
+          // const clone = slide.cloneNode(true);
+          // wrapper.append(clone);
+
+
+
+
+
+        }
+      },
+
+      breakpoints: {
+        320: {
+          width: 290,
+          grid: {
+            rows: 2,
+            fill: 'row',
+          },
+          spaceBetween: 20,
+          observer: true,
+          observeParents: true,
+          autoHeight: false,
+        }
+      },
+    });
+  }
+  );
 }
+

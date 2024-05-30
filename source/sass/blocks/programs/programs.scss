@@ -257,8 +257,6 @@
   position: absolute;
   top: 54px;
   right: 15px;
-  display: flex;
-  flex-direction: row;
   gap: 8px;
 
   @media (min-width: $tablet-width) {
@@ -272,23 +270,6 @@
   @media (min-width: $desktop-width) {
     width: 1255px;
   }
-}
-
-.programs__button-prev,
-.programs__button-next {
-  border: none;
-  width: 22px;
-  height: 22px;
-}
-
-.programs__button-prev {
-  background: url("/__spritemap#sprite-prev-view") no-repeat center;
-  background-size: 10px 10px;
-}
-
-.programs__button-next {
-  background: url("/__spritemap#sprite-next-view") no-repeat center;
-  background-size: 10px 10px;
 }
 
 .programs__button {
