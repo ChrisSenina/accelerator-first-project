@@ -108,7 +108,7 @@ export function sliderNews() {
       direction: 'horizontal',
       loop: false,
       autoplay: false,
-      autoHeight: false,
+      autoHeight: true,
 
       slideActiveClass: 'news__slide-active',
 
@@ -147,16 +147,22 @@ export function sliderNews() {
           const clone = slide.cloneNode(true);
           wrapper.append(clone);
 
-          clone.style.marginTop = '-20px';
+          clone.style.top = '-20px';
 
           const clone2 = slide2.cloneNode(true);
           wrapper.appendChild(clone2);
 
+          clone2.style.top = '-20px';
+
           const clone3 = slide3.cloneNode(true);
           wrapper.appendChild(clone3);
 
+          clone3.style.top = '-20px';
+
           const clone4 = slide4.cloneNode(true);
           wrapper.appendChild(clone4);
+
+          clone4.style.top = '-20px';
         }
       },
 
@@ -168,6 +174,7 @@ export function sliderNews() {
             fill: 'row',
           },
           slidesPerView: 1,
+          spaceBetween: 20,
           observer: true,
           observeParents: true,
           autoHeight: false,
