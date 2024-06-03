@@ -74,7 +74,7 @@ export function sliderPrograms() {
     initialSlide: 0,
 
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.swiper-scrollbar.programs__scrollbar',
       dragClass: 'swiper-scrollbar-drag',
       draggable: true,
     },
@@ -309,7 +309,8 @@ export function sliderNews() {
 export function sliderReviews() {
   document.addEventListener('DOMContentLoaded', () => {
     new Swiper('.reviews__slider', {
-      modules: [Pagination, Navigation],
+      modules: [Scrollbar, Navigation],
+      direction: 'horizontal',
 
       loop: false,
       autoplay: false,
@@ -321,12 +322,35 @@ export function sliderReviews() {
         disabledClass: 'swiper-button-disabled',
       },
 
+      scrollbar: {
+        el: '.swiper-scrollbar.reviews__scrollbar',
+        dragClass: 'swiper-scrollbar-drag reviews__scrollbar-drag',
+        draggable: true,
+      },
+
+      // on: {
+      //   init: function appendSlide() {
+      //     const wrapper = document.querySelector('.reviews__wrapper');
+      //     const slide = wrapper.querySelector('.reviews__slide-one');
+
+      //     slide.cloneNode(true);
+      //     wrapper.appendChild(slide);
+      //   }
+      // },
+
       breakpoints: {
         320: {
           width: 290,
           spaceBetween: 15,
+        },
+
+        768: {
+          width: 560,
+          spaceBetween: 30,
+          slidesPerView: 1,
+          autoHeight: false,
         }
       }
-    })
-  })
+    });
+  });
 }
