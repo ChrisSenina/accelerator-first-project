@@ -71,6 +71,9 @@
   background-color: $base-blue;
   border: transparent;
   border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
 
   &::after {
     content: "";

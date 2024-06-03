@@ -328,16 +328,6 @@ export function sliderReviews() {
         draggable: true,
       },
 
-      // on: {
-      //   init: function appendSlide() {
-      //     const wrapper = document.querySelector('.reviews__wrapper');
-      //     const slide = wrapper.querySelector('.reviews__slide-one');
-
-      //     slide.cloneNode(true);
-      //     wrapper.appendChild(slide);
-      //   }
-      // },
-
       breakpoints: {
         320: {
           width: 290,
@@ -349,6 +339,12 @@ export function sliderReviews() {
           spaceBetween: 30,
           slidesPerView: 1,
           autoHeight: false,
+        },
+
+        1440: {
+          width: 1240,
+          spaceBetween: 32,
+          slidesPerView: 2,
         }
       }
     });
