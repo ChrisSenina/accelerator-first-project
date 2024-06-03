@@ -3,7 +3,7 @@ const desktopSections = [
   // {section: 'about', misMatchThreshold: 0.5},
   // {section: 'programs', misMatchThreshold: 0.5},
   // {section: 'grant', misMatchThreshold: 0.5},
-  // {section: 'news', misMatchThreshold: 0.5},
+  {section: 'news', misMatchThreshold: 0.5},
   // {section: 'FAQ', misMatchThreshold: 0.5},
   // {section: 'reviews', misMatchThreshold: 0.5},
   // {section: 'contacts', misMatchThreshold: 0.5},
