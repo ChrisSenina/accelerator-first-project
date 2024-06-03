@@ -182,7 +182,7 @@ export function sliderNews() {
 
             clone4.style.top = '-20px';
 
-          } if (window.innerWidth === 768) {
+          } if (window.innerWidth >= 768) {
 
             const clone = slide.cloneNode(true);
             wrapper.append(clone);
@@ -190,12 +190,12 @@ export function sliderNews() {
             const clone2 = slide2.cloneNode(true);
             wrapper.appendChild(clone2);
 
-            clone2.style.top = '-30px';
+            // clone2.style.top = '-30px';
 
             const clone3 = slide3.cloneNode(true);
             wrapper.appendChild(clone3);
 
-            clone3.style.top = '-30px';
+            // clone3.style.top = '-30px';
 
             const clone4 = slide4.cloneNode(true);
             wrapper.appendChild(clone4);
@@ -206,32 +206,63 @@ export function sliderNews() {
             wrapper.appendChild(clone5);
 
             clone5.style.top = '-30px';
-          } if (window.innerWidth === 1440) {
-
-            const clone = slide.cloneNode(true);
-            wrapper.append(clone);
-
-            const clone2 = slide2.cloneNode(true);
-            wrapper.appendChild(clone2);
-
-            const clone3 = slide3.cloneNode(true);
-            wrapper.appendChild(clone3);
-
-            const clone4 = slide4.cloneNode(true);
-            wrapper.appendChild(clone4);
-
-            const clone5 = slide.cloneNode(true);
-            wrapper.appendChild(clone5);
 
             const clone6 = slide2.cloneNode(true);
             wrapper.appendChild(clone6);
 
+            clone6.style.top = '-30px';
+
             const clone7 = slide3.cloneNode(true);
             wrapper.appendChild(clone7);
 
+            clone7.style.top = '-30px';
+
             const clone8 = slide4.cloneNode(true);
             wrapper.appendChild(clone8);
+
+            clone8.style.top = '-30px';
+
+            const clone9 = slide.cloneNode(true);
+            wrapper.appendChild(clone9);
+
+            clone9.style.top = '-30px';
+
+          } if (window.innerWidth >= 1440) {
+
+            const clone = slide.cloneNode(true);
+            wrapper.removeChild(clone);
+
+            clone.style.top = '0';
+
+            const clone2 = slide2.cloneNode(true);
+            wrapper.appendChild(clone2);
+
+            clone2.style.top = '0';
+
+            const clone3 = slide3.cloneNode(true);
+            wrapper.appendChild(clone3);
+
+            clone3.style.top = '0';
+
+            const clone4 = slide4.cloneNode(true);
+            wrapper.appendChild(clone4);
+
+            clone4.style.top = '0';
+
+            // const clone5 = slide.cloneNode(true);
+            // wrapper.appendChild(clone5);
+
+            // const clone6 = slide2.cloneNode(true);
+            // wrapper.appendChild(clone6);
+
+            // const clone7 = slide3.cloneNode(true);
+            // wrapper.appendChild(clone7);
+
+            // const clone8 = slide4.cloneNode(true);
+            // wrapper.appendChild(clone8);
           }
+
+          // Swiper.update();
         }
       },
 
@@ -252,6 +283,7 @@ export function sliderNews() {
             rows: 2,
             fill: 'rows',
           },
+          slidesPerGroup: 2,
           slidesPerView: 2,
           spaceBetween: 30,
         },

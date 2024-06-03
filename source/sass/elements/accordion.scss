@@ -1,0 +1,78 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion__content {
+  padding: 20px 15px;
+  overflow: hidden;
+  transition: all 1s linear;
+  border: 2px solid $base-blue;
+  border-radius: 14px;
+}
+
+.accordion__title {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 188px 1fr;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $base-blue;
+  gap: 28px;
+}
+
+.accordion__input {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: $base-blue;
+  border: transparent;
+  border-radius: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url("/__spritemap#sprite-toggle-plus-view") no-repeat center;
+    left: 11px;
+    top: 11px;
+  }
+}
+
+.accordion__content p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: all 1s linear;
+  color: $biege;
+  height: 0;
+}
+
+.accordion__content.open {
+  transition: all 1s linear;
+  background-color: $base-blue;
+}
+
+.accordion__content.open p {
+  padding: 20px 0 0;
+  height: unset;
+}
+
+.accordion__content.open .accordion__title {
+  color: $biege;
+}
+
+.accordion__content.open .accordion__input {
+  background-color: $base-white;
+
+  &::after {
+    background: url("/__spritemap#sprite-toggle-minus-view") no-repeat center;
+  }
+}
