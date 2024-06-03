@@ -466,8 +466,10 @@
 .news__navigation {
   position: relative;
   margin-top: -24px;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     margin-top: -27px;
+
   }
 }

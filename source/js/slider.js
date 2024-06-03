@@ -305,3 +305,28 @@ export function sliderNews() {
 
   });
 }
+
+export function sliderReviews() {
+  document.addEventListener('DOMContentLoaded', () => {
+    new Swiper('.reviews__slider', {
+      modules: [Pagination, Navigation],
+
+      loop: false,
+      autoplay: false,
+      autoHeight: false,
+
+      navigation: {
+        nextEl: '.swiper-button-next.reviews__button-next',
+        prevEl: '.swiper-button-prev.reviews__button-prev',
+        disabledClass: 'swiper-button-disabled',
+      },
+
+      breakpoints: {
+        320: {
+          width: 290,
+          spaceBetween: 15,
+        }
+      }
+    })
+  })
+}

@@ -1,9 +1,12 @@
 .grant {
+  background-color: $base-blue;
+  color: $base-white;
+}
+
+.grant__wrap {
   margin: 0 auto;
   padding: 70px 15px;
   width: 290px;
-  background-color: $base-blue;
-  color: $base-white;
 
   @media (min-width: $tablet-width) {
     padding: 100px 45px;
