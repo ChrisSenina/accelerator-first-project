@@ -10,6 +10,11 @@
   transition: all 1s linear;
   border: 2px solid $base-blue;
   border-radius: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+    border-radius: 16px;
+  }
 }
 
 .accordion__title {
@@ -23,6 +28,26 @@
   line-height: 18px;
   color: $base-blue;
   gap: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 26px;
+    grid-template-columns: 546px 1fr;
+  }
+}
+
+.accordion__title--special {
+  @media (min-width: $tablet-width) {
+    align-items: unset;
+  }
+}
+
+.accordion__title br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .accordion__input {
@@ -53,6 +78,11 @@
   transition: all 1s linear;
   color: $biege;
   height: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .accordion__content.open {

@@ -230,7 +230,7 @@ export function sliderNews() {
           } if (window.innerWidth >= 1440) {
 
             const clone = slide.cloneNode(true);
-            wrapper.removeChild(clone);
+            wrapper.append(clone);
 
             clone.style.top = '0';
 
@@ -273,6 +273,7 @@ export function sliderNews() {
             rows: 2,
             fill: 'row',
           },
+          slidesPerGroup: 1,
           slidesPerView: 1,
           spaceBetween: 20,
         },

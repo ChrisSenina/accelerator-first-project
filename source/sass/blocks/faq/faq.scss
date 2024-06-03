@@ -2,16 +2,28 @@
   margin: 0 auto;
   padding: 51px 15px;
   width: 290px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 45px 50px;
+    width: 678px;
+  }
 }
 
 .faq__title {
   margin: 0;
-  // padding-top: 3px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }
 
 .faq__list {
   margin: 0;
   padding: 29px 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
 }
