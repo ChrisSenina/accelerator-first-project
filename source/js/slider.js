@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Grid, Manipulation, Navigation, Pagination, Scrollbar, Virtual } from 'swiper/modules';
+import { Grid, Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 
 export function sliderHero() {
@@ -28,6 +28,21 @@ export function sliderHero() {
         }
       }
     },
+
+
+
+    // on: {
+    //   init: function change() {
+    //     const hero = document.querySelector('.hero');
+    //     const slide = document.querySelector('.hero__slide');
+    //     if (slide.classList.contains('hero__slide-one')) {
+    //       hero.style.background = 'red';
+    //     } else {
+    //       hero.style.background = 'unset';
+    //     }
+    //   slide
+    //   }
+    // },
 
     breakpoints: {
       320: {
@@ -108,7 +123,9 @@ export function sliderNews() {
       direction: 'horizontal',
       loop: false,
       autoplay: false,
-      autoHeight: true,
+      autoHeight: false,
+      observer: true,
+      observeParents: true,
 
       slideActiveClass: 'news__slide-active',
 
@@ -144,25 +161,52 @@ export function sliderNews() {
           const slide3 = wrapper.querySelector('.news__slide-three');
           const slide4 = wrapper.querySelector('.news__slide-four');
 
-          const clone = slide.cloneNode(true);
-          wrapper.append(clone);
+          if (window.innerWidth < 767) {
+            const clone = slide.cloneNode(true);
+            wrapper.append(clone);
 
-          clone.style.top = '-20px';
+            clone.style.top = '-20px';
 
-          const clone2 = slide2.cloneNode(true);
-          wrapper.appendChild(clone2);
+            const clone2 = slide2.cloneNode(true);
+            wrapper.appendChild(clone2);
 
-          clone2.style.top = '-20px';
+            clone2.style.top = '-20px';
 
-          const clone3 = slide3.cloneNode(true);
-          wrapper.appendChild(clone3);
+            const clone3 = slide3.cloneNode(true);
+            wrapper.appendChild(clone3);
 
-          clone3.style.top = '-20px';
+            clone3.style.top = '-20px';
 
-          const clone4 = slide4.cloneNode(true);
-          wrapper.appendChild(clone4);
+            const clone4 = slide4.cloneNode(true);
+            wrapper.appendChild(clone4);
 
-          clone4.style.top = '-20px';
+            clone4.style.top = '-20px';
+          } if (window.innerWidth === 768 || window.innerWidth < 1439) {
+            const clone = slide.cloneNode(true);
+            wrapper.append(clone);
+
+            const clone2 = slide2.cloneNode(true);
+            wrapper.appendChild(clone2);
+
+            clone2.style.top = '-30px';
+
+            const clone3 = slide3.cloneNode(true);
+            wrapper.appendChild(clone3);
+
+            clone3.style.top = '-30px';
+
+            const clone4 = slide4.cloneNode(true);
+            wrapper.appendChild(clone4);
+
+            clone4.style.top = '-30px';
+
+            const clone5 = slide.cloneNode(true);
+            wrapper.appendChild(clone5);
+
+            clone5.style.top = '-30px';
+          }
+
+
         }
       },
 
@@ -175,9 +219,16 @@ export function sliderNews() {
           },
           slidesPerView: 1,
           spaceBetween: 20,
-          observer: true,
-          observeParents: true,
-          autoHeight: false,
+        },
+
+        768: {
+          width: 678,
+          grid: {
+            rows: 2,
+            fill: 'rows',
+          },
+          slidesPerView: 2,
+          spaceBetween: 30,
         }
       },
 
