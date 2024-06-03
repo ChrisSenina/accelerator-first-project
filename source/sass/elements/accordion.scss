@@ -15,6 +15,10 @@
     padding: 30px;
     border-radius: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px;
+  }
 }
 
 .accordion__title {
@@ -34,6 +38,12 @@
     line-height: 26px;
     grid-template-columns: 546px 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+    line-height: 34px;
+    grid-template-columns: 876px 1fr;
+  }
 }
 
 .accordion__title--special {
@@ -47,6 +57,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -83,6 +97,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+  }
 }
 
 .accordion__content.open {
@@ -104,5 +122,9 @@
 
   &::after {
     background: url("/__spritemap#sprite-toggle-minus-view") no-repeat center;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 4px;
   }
 }
