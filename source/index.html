@@ -428,7 +428,8 @@
                   </ul>
                 </div>
                 <div class="reviews__wrap">
-                  <h3 class="reviews__heading">Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в&nbsp;жизни!</h3>
+                  <h3 class="reviews__heading">Я могу с уверенностью сказать, что это был один из самых незабываемых
+                    опытов в&nbsp;жизни!</h3>
                   <p>Я рекомендую программу «Стажировка» всем студентам,
                     желающим получить незабываемые впечатления. Сочетание
                     путешествий, общения и значимой работы действительно
@@ -520,64 +521,78 @@
     <section class="contacts" data-test="contacts" id="contacts">
       <div class="contacts__container">
         <div class="contacts__wrapper">
-        <h2 class="contacts__title inner-title">Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">Центральный офис
-            <p class="contacts__address">г. Новосибирск, ул. Щетинкина 68, <br> культурный центр</p>
-          </li>
-          <li class="contacts__item">Телефон
-            <a class="contacts__link link" href="tel:+796387687676">+7 963 876 876 76</a>
-          </li>
-          <li class="contacts__item">Email
-            <a class="contacts__link link" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
-          </li>
-        </ul>
+          <h2 class="contacts__title inner-title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">Центральный офис
+              <p class="contacts__address">г. Новосибирск, ул. Щетинкина 68, <br> культурный центр</p>
+            </li>
+            <li class="contacts__item">Телефон
+              <a class="contacts__link link" href="tel:+796387687676">+7 963 876 876 76</a>
+            </li>
+            <li class="contacts__item">Email
+              <a class="contacts__link link" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+            </li>
+          </ul>
         </div>
 
-      <picture>
-        <!-- <source media="(min-width: 1440px)" srcset="img/contacts/map-desktop.webp, img/contacts/map-desktop@2x.webp 2x"
+        <picture>
+          <!-- <source media="(min-width: 1440px)" srcset="img/contacts/map-desktop.webp, img/contacts/map-desktop@2x.webp 2x"
           width="1240" height="486" type="image/webp">
         <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.webp, img/contacts/map-tablet@2x.webp 2x"
           width="678" height="500" type="image/webp">
         <source media="(min-width: 320px)" srcset="img/contacts/map-mobile.webp, img/contacts/map-mobile@2x.webp 2x"
           width="290" height="240" type="image/webp"> -->
-        <source media="(min-width: 1440px)" srcset="img/contacts/map-desktop.jpg, img/contacts/map-desktop@2x.jpg 2x"
-          width="1240" height="486" type="image/jpg">
-        <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.jpg, img/contacts/map-tablet@2x.jpg 2x"
-          width="678" height="500" type="image/jpg">
-        <img class="contacts__map" src="img/contacts/map.jpg" srcset="img/contacts/map@2x.jpg 2x"
-          alt="Карта с местоположением офиса INTERNSHIP" width="290" height="240">
-      </picture>
+          <source media="(min-width: 1440px)" srcset="img/contacts/map-desktop.jpg, img/contacts/map-desktop@2x.jpg 2x"
+            width="1240" height="486" type="image/jpg">
+          <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.jpg, img/contacts/map-tablet@2x.jpg 2x"
+            width="678" height="500" type="image/jpg">
+          <img class="contacts__map" src="img/contacts/map.jpg" srcset="img/contacts/map@2x.jpg 2x"
+            alt="Карта с местоположением офиса INTERNSHIP" width="290" height="240">
+        </picture>
       </div>
     </section>
     <section class="form" data-test="form">
       <h2 class="visually-hidden">Форма</h2>
-      <div class="form__container">
-        <h3 class="form__title">Напишите нам</h3>
-        <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+      <div class="form__wrapper">
+        <div class="form__container">
+          <h3 class="form__title">Напишите нам</h3>
+          <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+
+          <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form__box">
+              <label class="form__label" for="name">Имя</label>
+              <input class="form__input" type="text" id="name" name="name" pattern="^[А-Яа-яЁё\s]+$" minlength="2"
+                maxlength="18">
+            </div>
+            <div class="form__box">
+              <label class="form__label" for="phone">Телефон</label>
+              <input class="form__input" type="tel" id="phone" name="phone" pattern="^((\+7|)+([0-9]){10})$"
+                minlength="12" maxlength="12">
+            </div>
+            <div class="form__box">
+              <label class="form__label" for="message">Ваше сообщение</label>
+              <input class="form__input form__input-message" type="text" id="message" name="message"
+                pattern="^[А-Яа-яЁё\s]+$">
+            </div>
+            <div class="form__box form__box-select">
+              <label class="form__label" for="select">Выберите город</label>
+              <input class="form__input form__input-select" type="text" readonly>
+              <ul class="form__list closed">
+                <li class="form__item">Санкт-Петербург</li>
+                <li class="form__item">Санкт-Петербург</li>
+                <li class="form__item">Санкт-Петербург</li>
+                <li class="form__item">Санкт-Петербург</li>
+              </ul>
+            </div>
+            <div class="form__box form__box-checkbox">
+              <label class="form__label" for="agreement"></label>
+              <input class="form__input-checkbox" type="checkbox" id="agreement" name="agreement" required>
+              <p class="form__input-text">Я согласен на обработку моих персональных данных</p>
+            </div>
+            <button class="form__button button" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
-      <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="form__label" for="name">Имя</label>
-        <input class="form__input" type="text" id="name" name="name" pattern="^[А-Яа-яЁё\s]+$" minlength="2"
-          maxlength="18">
-        <label class="form__label" for="phone">Телефон</label>
-        <input class="form__input" type="tel" id="phone" name="phone" pattern="^((\+7|)+([0-9]){10})$" minlength="12"
-          maxlength="12">
-        <label class="form__label" for="message">Ваше сообщение</label>
-        <input class="form__input" type="text" id="message" name="message" pattern="^[А-Яа-яЁё\s]+$">
-        <label class="form__label" for="city-select">Выберите город</label>
-        <select class="form__input" name="city" id="city-select">
-          <option class="form__option" value="city">Выберите город</option>
-          <option class="form__option" value="petersburg">Санкт-Петербург</option>
-          <option class="form__option" value="petersburg">Санкт-Петербург</option>
-          <option class="form__option" value="petersburg">Санкт-Петербург</option>
-          <option class="form__option" value="petersburg">Санкт-Петербург</option>
-        </select>
-        <label class="form__label" for="agreement"></label>
-        <input class="form__input" type="checkbox" id="agreement" name="agreement" required>Я согласен на обработку моих
-        персональных данных
-        <button class="form__button" type="submit">Отправить</button>
-      </form>
     </section>
   </main>
   <footer class="footer" data-test="footer">
