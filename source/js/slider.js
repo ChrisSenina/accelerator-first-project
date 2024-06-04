@@ -332,6 +332,7 @@ export function sliderReviews() {
         320: {
           width: 290,
           spaceBetween: 15,
+          slidesPerView: 1,
         },
 
         768: {
