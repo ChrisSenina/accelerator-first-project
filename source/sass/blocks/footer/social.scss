@@ -7,6 +7,10 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
 }
 
 .social__item {
@@ -29,6 +33,11 @@
   &:active {
     background-color: $secondary-blue;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .social__link {
@@ -39,22 +48,41 @@
     outline: none;
     filter: invert(59%) sepia(89%) saturate(494%) hue-rotate(175deg) brightness(96%) contrast(91%);
   }
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+  }
 }
 
 .social__link--vk {
   background: url("/__spritemap#sprite-vk-view") no-repeat center;
   height: 7px;
   top: 9px;
+
+  @media (min-width: $tablet-width) {
+    height: 9px;
+    top: 14px;
+  }
 }
 
 .social__link--ok {
   background: url("/__spritemap#sprite-ok-view") no-repeat center;
   height: 12px;
   top: 7px;
+
+  @media (min-width: $tablet-width) {
+    height: 17px;
+    top: 10px;
+  }
 }
 
 .social__link--reddit {
   background: url("/__spritemap#sprite-reddit-view") no-repeat center;
   height: 12px;
   top: 7px;
+
+  @media (min-width: $tablet-width) {
+    height: 17px;
+    top: 10px;
+  }
 }
