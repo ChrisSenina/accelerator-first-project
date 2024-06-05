@@ -1,18 +1,38 @@
 .form {
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 50px 71px 50px 45px;
+    width: 652px;
+  }
 }
 
 .form__wrapper {
   padding: 43px 10px 40px;
-  background: url("../img/form/background.jpg") no-repeat center;
+  background: url("../img/form/form-mobile.jpg") no-repeat center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background: url("../img/form/form-tablet.jpg") no-repeat center;
+    background-size: cover;
+    border-radius: 16px;
+  }
 }
 
 .form__container {
   margin: 0 auto;
-  padding: 15px;
+  padding: 15px 15px 27px;
   width: 270px;
   background-color: $base-blue;
   border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 30px 40px 36px;
+    width: 362px;
+  }
 }
 
 .form__title {
@@ -22,6 +42,12 @@
   font-weight: 400;
   line-height: 22px;
   color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 11px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .form__description {
@@ -31,6 +57,11 @@
   font-weight: 400;
   line-height: 20px;
   color: $biege;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 0 40px;
+    font-size: 16px;
+  }
 }
 
 .form__form {
@@ -40,6 +71,19 @@
   flex-wrap: nowrap;
   flex-direction: column;
   gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+}
+
+.form__box {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
 }
 
 .form__label {
@@ -49,6 +93,11 @@
   font-weight: 400;
   line-height: 14px;
   color: rgba(240, 239, 233, 0.8);
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .form__input {
@@ -59,10 +108,25 @@
   background: transparent;
   box-sizing: border-box;
   margin-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 362px;
+    margin-top: 0;
+  }
+}
+
+.form__input-error {
+  border-color: $error-color;
+  background: rgba(255, 94, 102, 0.2);
+  opacity: 0.7;
 }
 
 .form__input-message {
   min-height: 94px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 88px;
+  }
 }
 
 .form__box-select {
@@ -95,6 +159,11 @@
   &:focus {
     outline: none;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 362px;
+    background-position: 324px 18px;
+  }
 }
 
 .form__list {
@@ -107,6 +176,11 @@
   z-index: 10;
   border-radius: 8px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 362px;
+    margin-top: 90px;
+  }
 }
 
 .form__list.closed {
@@ -138,25 +212,96 @@
 }
 
 .form__box-checkbox {
+  padding: 8px 0 6px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 2px 0 0;
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+.form__label-checkbox {
+  position: relative;
 }
 
 .form__input-checkbox {
-  width: 24.26px;
+  position: relative;
+  width: 21.47px;
   height: 20px;
+  appearance: none;
+  background-color: $base-white;
+  border: 1px solid transparent;
   border-radius: 2px;
-  border: none;
-  margin: 0;
+  margin: -2px 0 0;
+  cursor: pointer;
+
+  &:checked {
+    background: url("/__spritemap#sprite-check-view") no-repeat center $base-white;
+    background-size: 10px 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background: url("/__spritemap#sprite-check-hover-view") no-repeat center transparent;
+    background-size: 10px 10px;
+    border-color: $base-white;
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+  }
 }
 
 .form__input-text {
   margin: 0;
-  padding: 0;
+  padding-left: 10px;
   color: $base-white;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 12px;
+  }
+}
+
+.form__input-text br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.form__button {
+  width: 260px;
+  height: 44px;
+  padding: 8px 6px 6px 74px;
+  background-color: transparent;
+  color: $base-white;
+  border: 1px solid $base-white;
+
+  &::after {
+    background-color: $base-white;
+    top: 4px;
+  }
+
+  &::before {
+    top: 17px;
+    filter: invert(59%) sepia(89%) saturate(494%) hue-rotate(175deg) brightness(96%) contrast(91%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 352px;
+    height: 56px;
+    margin-top: 20px;
+    padding-top: 6px;
+    padding-left: 108px;
+
+    &::before {
+      top: 23px;
+    }
+  }
 }

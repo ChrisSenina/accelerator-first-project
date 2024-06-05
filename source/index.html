@@ -576,7 +576,7 @@
             </div>
             <div class="form__box form__box-select">
               <label class="form__label" for="select">Выберите город</label>
-              <input class="form__input form__input-select" type="text" readonly>
+              <input class="form__input form__input-select" id="select" name="select" type="text" readonly>
               <ul class="form__list closed">
                 <li class="form__item">Санкт-Петербург</li>
                 <li class="form__item">Санкт-Петербург</li>
@@ -585,9 +585,9 @@
               </ul>
             </div>
             <div class="form__box form__box-checkbox">
-              <label class="form__label" for="agreement"></label>
-              <input class="form__input-checkbox" type="checkbox" id="agreement" name="agreement" required>
-              <p class="form__input-text">Я согласен на обработку моих персональных данных</p>
+              <label class="form__label form__label-checkbox" for="agreement"></label>
+              <input class="form__input-checkbox" type="checkbox" id="agreement" name="agreement"  required>
+              <p class="form__input-text">Я согласен на обработку моих персональных <br> данных</p>
             </div>
             <button class="form__button button" type="submit">Отправить</button>
           </form>
