@@ -1,96 +1,4 @@
 .form {
-  padding: 40px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    padding: 50px 71px 50px 45px;
-    width: 652px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 60px 100px;
-    width: 1240px;
-  }
-}
-
-.form__wrapper {
-  padding: 43px 10px 40px;
-  background: url("../img/form/form-mobile.jpg") no-repeat center;
-  background-size: cover;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    background: url("../img/form/form-tablet.jpg") no-repeat center;
-    background-size: cover;
-    border-radius: 16px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background: url("../img/form/form-desktop.jpg") no-repeat center;
-    background-size: cover;
-  }
-}
-
-.form__container {
-  margin: 0 auto;
-  padding: 15px 15px 27px;
-  width: 270px;
-  background-color: $base-blue;
-  border-radius: 16px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 30px 40px 36px;
-    width: 362px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 30px 70px 40px;
-    width: 350px;
-  }
-}
-
-.form__title {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  color: $base-white;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 11px;
-    font-size: 28px;
-    line-height: 28px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 14px;
-    font-size: 32px;
-    line-height: 36px;
-  }
-}
-
-.form__description {
-  margin: 0;
-  padding: 10px 0 13px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  color: $biege;
-
-  @media (min-width: $tablet-width) {
-    padding: 31px 0 40px;
-    font-size: 16px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 34px;
-    line-height: 26px;
-  }
-}
-
-.form__form {
   margin: 0;
   padding: 0;
   display: flex;
@@ -170,16 +78,6 @@
 
 .form__box-select {
   position: relative;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 16px;
-  //   height: 16px;
-  //   background: url("/__spritemap#sprite-arrow-down-view") no-repeat center;
-  //   top: 52px;
-  //   right: 31px;
-  // }
 }
 
 .form__input-select {

@@ -551,14 +551,14 @@
         </picture>
       </div>
     </section>
-    <section class="form" data-test="form">
+    <section class="form-page" data-test="form">
       <h2 class="visually-hidden">Форма</h2>
-      <div class="form__wrapper">
-        <div class="form__container">
-          <h3 class="form__title">Напишите нам</h3>
-          <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+      <div class="form-page__wrapper">
+        <div class="form-page__container">
+          <h3 class="form-page__title">Напишите нам</h3>
+          <p class="form-page__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
 
-          <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form form-page__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__box">
               <label class="form__label" for="name">Имя</label>
               <input class="form__input" type="text" id="name" name="name" pattern="^[А-Яа-яЁё\s]+$" minlength="2"
@@ -577,7 +577,7 @@
             <div class="form__box form__box-select">
               <label class="form__label" for="select">Выберите город</label>
               <input class="form__input form__input-select" id="select" name="select" type="text" readonly>
-              <ul class="form__list closed">
+              <ul class="form__list">
                 <li class="form__item">Санкт-Петербург</li>
                 <li class="form__item">Санкт-Петербург</li>
                 <li class="form__item">Санкт-Петербург</li>
@@ -585,8 +585,8 @@
               </ul>
             </div>
             <div class="form__box form__box-checkbox">
-              <label class="form__label form__label-checkbox" for="agreement"></label>
-              <input class="form__input-checkbox" type="checkbox" id="agreement" name="agreement" required>
+              <label class="form__label form__label-checkbox" for="checkbox"></label>
+              <input class="form__input-checkbox" type="checkbox" id="checkbox" name="agreement" required>
               <p class="form__input-text">Я согласен на обработку моих персональных <br> данных</p>
             </div>
             <button class="form__button button" type="submit">Отправить</button>
@@ -644,36 +644,47 @@
   </footer>
   <div class="modal">
     <div class="modal__window">
+      <button class="modal__toggle">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
       <div class="modal__header">
-        <button class="modal__toggle">
-          <span class="visually-hidden">Закрыть окно</span>
-        </button>
         <h2 class="modal__title">Напишите нам</h2>
-        <p class="modal__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+        <p class="modal__description">Оставьте ваши контакты, <br> если у вас остались вопросы — мы&nbsp;на них ответим!
+        </p>
       </div>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="form__label" for="modal-name">Имя</label>
-        <input class="form__input" type="text" id="modal-name" name="name" pattern="^[А-Яа-яЁё\s]+$" minlength="2"
-          maxlength="18">
-        <label class="form__label" for="modal-phone">Телефон</label>
-        <input class="form__input" type="tel" id="modal-phone" name="phone" pattern="^((\+7|)+([0-9]){10})$"
-          minlength="12" maxlength="12">
-        <label class="form__label" for="city">Выберите город</label>
-        <select class="form__input" name="city" id="city">
-          <option class="form__option" value="city">Выберите город</option>
-          <option class="form__option" value="petersburg">Санкт-Петербург</option>
-          <option class="form__option" value="petersburg">Санкт-Петербург</option>
-          <option class="form__option" value="petersburg">Санкт-Петербург</option>
-          <option class="form__option" value="petersburg">Санкт-Петербург</option>
-        </select>
-        <label class="form__label" for="modal-agreement"></label>
-        <input class="form__input" type="checkbox" id="modal-agreement" name="agreement" required>Я согласен
-        на обработку моих
-        персональных данных
-        <button class="form__button" type="submit">Отправить</button>
-      </form>
+
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" target="index" onsubmit="this.form.reset()">
+        <div class=" form__box">
+        <label class="modal__label form__label" for="modal-name">Имя</label>
+        <input class="modal__input form__input" type="text" id="modal-name" name="name" pattern="^[А-Яа-яЁё\s]+$"
+          minlength="2" maxlength="18">
     </div>
+    <div class="form__box">
+      <label class="modal__label form__label" for="modal-phone">Телефон</label>
+      <input class="modal__input form__input" type="tel" id="modal-phone" name="phone" pattern="^((\+7|)+([0-9]){10})$"
+        minlength="12" maxlength="12">
+    </div>
+    <div class="form__box form__box-select">
+      <label class="modal__label form__label" for="modal-select">Выберите город</label>
+      <input class="modal__input modal__input-select form__input form__input-select" id="modal-select" name="select"
+        type="text" readonly>
+      <ul class="form__list closed">
+        <li class="form__item">Санкт-Петербург</li>
+        <li class="form__item">Санкт-Петербург</li>
+        <li class="form__item">Санкт-Петербург</li>
+        <li class="form__item">Санкт-Петербург</li>
+      </ul>
+    </div>
+    <div class="form__box form__box-checkbox">
+      <label class="form__label form__label-checkbox" for="modal-checkbox"></label>
+      <input class="modal__checkbox form__input-checkbox" type="checkbox" id="modal-checkbox" name="agreement" required>
+      <p class="modal__text form__input-text">Я согласен на обработку моих персональных данных</p>
+    </div>
+    <button class="modal__form-button button" type="submit">Отправить</button>
+    </form>
   </div>
+  </div>
+
   <script type="module" src="js/main.js"></script>
 </body>
 
