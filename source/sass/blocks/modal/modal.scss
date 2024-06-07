@@ -1,6 +1,7 @@
 .modal {
   margin: 0;
-  padding: 23px 15px 14px;
+  padding: 23px 0 14px;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,11 +10,11 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    padding: 204px 129px;
+    padding: 204px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 90px 465px 61px;
+    padding: 90px 0 61px;
   }
 }
 
