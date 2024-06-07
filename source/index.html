@@ -576,7 +576,7 @@
             </div>
             <div class="form__box form__box-select">
               <label class="form__label" for="select">Выберите город</label>
-              <input class="form__input form__input-select" id="select" name="select" type="text" readonly>
+              <input class="form__input form__input-select" id="select" name="city" type="text" readonly>
               <ul class="form__list">
                 <li class="form__item">Санкт-Петербург</li>
                 <li class="form__item">Санкт-Петербург</li>
@@ -586,7 +586,7 @@
             </div>
             <div class="form__box form__box-checkbox">
               <label class="form__label form__label-checkbox" for="checkbox"></label>
-              <input class="form__input-checkbox" type="checkbox" id="checkbox" name="agreement" required>
+              <input class="form__input-checkbox" type="checkbox" id="checkbox" name="agreement">
               <p class="form__input-text">Я согласен на обработку моих персональных <br> данных</p>
             </div>
             <button class="form__button button" type="submit">Отправить</button>
@@ -653,7 +653,7 @@
         </p>
       </div>
 
-      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" target="index" onsubmit="this.form.reset()">
+      <form class="modal__form form" id="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class=" form__box">
         <label class="modal__label form__label" for="modal-name">Имя</label>
         <input class="modal__input form__input" type="text" id="modal-name" name="name" pattern="^[А-Яа-яЁё\s]+$"
@@ -666,7 +666,7 @@
     </div>
     <div class="form__box form__box-select">
       <label class="modal__label form__label" for="modal-select">Выберите город</label>
-      <input class="modal__input modal__input-select form__input form__input-select" id="modal-select" name="select"
+      <input class="modal__input modal__input-select form__input form__input-select" id="modal-select" name="city"
         type="text" readonly>
       <ul class="form__list closed">
         <li class="form__item">Санкт-Петербург</li>
@@ -677,7 +677,7 @@
     </div>
     <div class="form__box form__box-checkbox">
       <label class="form__label form__label-checkbox" for="modal-checkbox"></label>
-      <input class="modal__checkbox form__input-checkbox" type="checkbox" id="modal-checkbox" name="agreement" required>
+      <input class="modal__checkbox form__input-checkbox" type="checkbox" id="modal-checkbox" name="agreement">
       <p class="modal__text form__input-text">Я согласен на обработку моих персональных данных</p>
     </div>
     <button class="modal__form-button button" type="submit">Отправить</button>

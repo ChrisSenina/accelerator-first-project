@@ -7,6 +7,14 @@
   z-index: 10;
   background: rgba(13, 29, 51, 0.4);
   display: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 204px 129px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 465px 61px;
+  }
 }
 
 .modal--show {
@@ -22,12 +30,32 @@
   width: 260px;
   background-color: $base-white;
   border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 80px 60px;
+    width: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 80px 60px;
+  }
 }
 
 .modal__toggle {
   position: absolute;
-  top: 13px;
+  top: 21px;
   right: 21px;
+  background: url("/__spritemap#sprite-modal-close-view") no-repeat center;
+  width: 14px;
+  height: 14px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    right: 31px;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .modal__header {
@@ -42,6 +70,16 @@
   font-weight: 400;
   line-height: 18px;
   color: $base-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .modal__description {
@@ -50,10 +88,30 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 2px 12px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
+    line-height: 26px;
+  }
+}
+
+.modal__description br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .modal__form {
   gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .modal__label {
@@ -67,10 +125,22 @@
   width: 260px;
   height: 44px;
   border-color: rgba(72, 72, 72, 0.3);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    width: 350px;
+    height: 50px;
+  }
 }
 
 .modal__input-select {
   color: $base-grey;
+  background: url("/__spritemap#sprite-modal-arrow-view") no-repeat 223px 13px;
+  background-size: 16px 16px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 313px 16px;
+  }
 }
 
 .modal__input-error {
@@ -82,6 +152,14 @@
 .modal__checkbox {
   width: 25.47px;
   background-color: $base-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -2px;
+  }
 }
 
 .modal__text {
@@ -105,5 +183,17 @@
     height: 10px;
     right: 15px;
     top: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 194px;
+    height: 54px;
+    padding: 4px 4px 4px 29px;
+    margin: 10px auto 0;
+
+    &::before {
+      right: 21px;
+      top: 21px;
+    }
   }
 }

@@ -32,34 +32,46 @@ export function isValidModal() {
     const phone = document.getElementById('modal-phone');
     const select = document.getElementById('modal-select');
     const checkbox = document.getElementById('modal-checkbox');
+
     if (name.value === '') {
       name.classList.add('modal__input-error');
       event.preventDefault();
     } else {
-      return (true);
+      form.submit();
+      window.close();
     }
 
     if (phone.value === '') {
       phone.classList.add('modal__input-error');
       event.preventDefault();
     } else {
-      return (true);
+      form.submit();
+      window.close();
     }
 
     if (select.value === '') {
       select.classList.add('modal__input-error');
       event.preventDefault();
     } else {
-      return (true);
+      form.submit();
+      window.close();
     }
 
-    checkbox.required = true;
-    if (checkbox.value === '') {
+    if(!checkbox.checked) {
       checkbox.classList.add('modal__input-error');
+      checkbox.style.backgroundColor = 'unset';
       event.preventDefault();
-    } else {
-      return (true);
     }
+
+    // checkbox.required = true;
+    // if (checkbox.checked) {
+    //   checkbox.classList.add('modal__input-error');
+    //   event.preventDefault();
+    // } else {
+    //   form.submit();
+    //   window.close();
+    // }
+
   });
 }
 

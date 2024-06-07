@@ -40,9 +40,9 @@ export function isValid() {
       return (true);
     }
 
-    checkbox.required = true;
-    if (checkbox.value === '') {
+    if (!checkbox.checked) {
       checkbox.classList.add('form__input-error');
+      checkbox.style.borderColor = '#ff5e66';
       event.preventDefault();
     } else {
       return (true);
