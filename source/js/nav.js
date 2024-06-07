@@ -12,8 +12,12 @@ export function navOpen() {
 
     if (!nav.classList.contains('nav--closed')) {
       document.body.style.background = 'rgba(13, 29, 51, 0.4)';
+      document.querySelector('.hero__wrap').style.background = 'rgba(13, 29, 51, 0.4)';
+      document.querySelector('.hero__wrap').style.zIndex = '1';
     } else {
       document.body.style.background = '#f0efe9';
+      document.querySelector('.hero__wrap').style.background = 'unset';
+      document.querySelector('.hero__wrap').style.zIndex = 'unset';
     }
   });
 

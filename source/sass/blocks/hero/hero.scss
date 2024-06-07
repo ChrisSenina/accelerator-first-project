@@ -81,50 +81,50 @@
   border: none;
 }
 
-.hero__slide-one {
-  background: url("../img/hero/photo-1-mobile.jpg") no-repeat center;
-  background-size: cover;
+// .hero__slide-one {
+//   background: url("../img/hero/photo-1-mobile.jpg") no-repeat center;
+//   background-size: cover;
 
-  @media (min-width: $tablet-width) {
-    background: url("../img/hero/photo-1-tablet.jpg") no-repeat center;
-    background-size: cover;
-  }
+//   @media (min-width: $tablet-width) {
+//     background: url("../img/hero/photo-1-tablet.jpg") no-repeat center;
+//     background-size: cover;
+//   }
 
-  @media (min-width: $desktop-width) {
-    background: url("../img/hero/photo-1.jpg") no-repeat center;
-    background-size: cover;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     background: url("../img/hero/photo-1.jpg") no-repeat center;
+//     background-size: cover;
+//   }
+// }
 
-.hero__slide-two {
-  background: url("../img/hero/photo-2-mobile.jpg") no-repeat center;
-  background-size: cover;
+// .hero__slide-two {
+//   background: url("../img/hero/photo-2-mobile.jpg") no-repeat center;
+//   background-size: cover;
 
-  @media (min-width: $tablet-width) {
-    background: url("../img/hero/photo-2-tablet.jpg") no-repeat center;
-    background-size: cover;
-  }
+//   @media (min-width: $tablet-width) {
+//     background: url("../img/hero/photo-2-tablet.jpg") no-repeat center;
+//     background-size: cover;
+//   }
 
-  @media (min-width: $desktop-width) {
-    background: url("../img/hero/photo-2.jpg") no-repeat center;
-    background-size: cover;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     background: url("../img/hero/photo-2.jpg") no-repeat center;
+//     background-size: cover;
+//   }
+// }
 
-.hero__slide-three {
-  background: url("../img/hero/photo-3-mobile.jpg") no-repeat center;
-  background-size: cover;
+// .hero__slide-three {
+//   background: url("../img/hero/photo-3-mobile.jpg") no-repeat center;
+//   background-size: cover;
 
-  @media (min-width: $tablet-width) {
-    background: url("../img/hero/photo-3-tablet.jpg") no-repeat center;
-    background-size: cover;
-  }
+//   @media (min-width: $tablet-width) {
+//     background: url("../img/hero/photo-3-tablet.jpg") no-repeat center;
+//     background-size: cover;
+//   }
 
-  @media (min-width: $desktop-width) {
-    background: url("../img/hero/photo-3.jpg") no-repeat center;
-    background-size: cover;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     background: url("../img/hero/photo-3.jpg") no-repeat center;
+//     background-size: cover;
+//   }
+// }
 
 .hero__slide-content {
   padding: 229px 15px 20px;
@@ -345,10 +345,16 @@
 .hero__wrap {
   position: absolute;
   width: 100%;
+  height: 528px;
   top: 0;
   padding: 20px 0;
 
   @media (min-width: $tablet-width) {
+    height: 964px;
     padding: 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 740px;
   }
 }

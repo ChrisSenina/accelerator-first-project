@@ -29,18 +29,22 @@ export function sliderHero() {
       }
     },
 
-
-
     // on: {
     //   init: function change() {
     //     const hero = document.querySelector('.hero');
-    //     const slide = document.querySelector('.hero__slide');
-    //     if (slide.classList.contains('hero__slide-one')) {
+    //     const slide = document.querySelector('.hero__slide-one');
+    //     const slide2 = document.querySelector('.hero__slide-two');
+    //     if (!slide.contains('data-swiper-slide-index = 0')) {
     //       hero.style.background = 'red';
     //     } else {
     //       hero.style.background = 'unset';
     //     }
-    //   slide
+
+    //     if (slide2.getAttribute('data-swiper-slide-index = 1')) {
+    //       hero.style.background = 'yellow';
+    //     } else {
+    //       hero.style.background = 'unset';
+    //     }
     //   }
     // },
 
