@@ -65,17 +65,28 @@ export function sliderPrograms() {
         disabledClass: 'swiper-button-disabled',
       },
 
+      on: {
+        init: function () {
+          const wrapper = document.querySelector('.programs__wrapper');
+          const slide = document.querySelector('.programs__slide-two');
+
+          const clone = slide.cloneNode(true);
+          wrapper.appendChild(clone);
+        }
+      },
+
       breakpoints: {
         320: {
           width: 290,
           slidesPerView: 1,
+          allowTouchMove: true,
         },
 
         768: {
           width: 678,
           spaceBetween: 30,
           slidesPerView: 2,
-
+          allowTouchMove: true,
           scrollbar: {
             dragSize: '326px',
           }
@@ -185,7 +196,7 @@ export function sliderNews() {
 
     if (mob.matches) {
       mobile();
-    }else {
+    } else {
       window.removeEventListener('resize', sliderNews);
     }
 
@@ -197,7 +208,7 @@ export function sliderNews() {
 
     if (desk.matches && window.innerWidth > 1439) {
       desktop();
-    }else {
+    } else {
       window.removeEventListener('resize', sliderNews);
     }
 
@@ -225,6 +236,16 @@ export function sliderReviews() {
         el: '.swiper-scrollbar.reviews__scrollbar',
         dragClass: 'swiper-scrollbar-drag reviews__scrollbar-drag',
         draggable: true,
+      },
+
+      on: {
+        init: function () {
+          const wrapper = document.querySelector('.reviews__wrapper');
+          const slide = document.querySelector('.reviews__slide-one');
+
+          const clone = slide.cloneNode(true);
+          wrapper.appendChild(clone);
+        }
       },
 
       breakpoints: {
