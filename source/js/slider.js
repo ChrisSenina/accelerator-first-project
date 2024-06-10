@@ -1,12 +1,12 @@
 import Swiper from 'swiper';
-import { Grid, Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Autoplay, EffectFade, Grid, Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import { mob, tab, desk, mobile, tablet, desktop } from './slider-news';
 
 export function sliderHero() {
   document.addEventListener('DOMContentLoaded', () => {
     new Swiper('.hero__slider', {
-      modules: [Pagination],
+      modules: [Pagination, EffectFade],
 
       direction: 'horizontal',
 
@@ -14,7 +14,13 @@ export function sliderHero() {
 
       slidesPerView: 'auto',
       initialSlide: 0,
-      autoHeight: true,
+      allowTouchMove: true,
+      allowSlidePrev: true,
+      allowSlideNext: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true,
+      },
 
       pagination: {
         el: '.hero__pagination',
@@ -30,39 +36,10 @@ export function sliderHero() {
           }
         }
       },
-
-      // on: {
-      //   init: function () {
-      //     let slide1 = document.querySelector('.hero__slide-one');
-      //     let slide2 = document.querySelector('.hero__slide-two');
-      //     let slide3 = document.querySelector('.hero__slide-three');
-      //     let arr = ['slide1', 'slide2', 'slide3'];
-      //     const index = arr.indexOf('slide1');
-
-      //     if (!index === 0) {
-      //       document.querySelector('.hero').style.background = 'red';
-      //     }
-
-      //   }
-      // },
-
-      breakpoints: {
-        320: {
-          width: 320,
-        },
-
-        768: {
-          width: 768,
-        },
-
-        1440: {
-          width: 1440,
-        }
-      }
     });
   });
-}
 
+}
 
 export function sliderPrograms() {
   document.addEventListener('DOMContentLoaded', () => {
@@ -132,6 +109,7 @@ export function sliderNews() {
       observer: true,
       observeParents: true,
       loopAddBlankSlides: true,
+      updateOnWindowResize: true,
 
       slideActiveClass: 'news__slide-active',
 
@@ -169,10 +147,10 @@ export function sliderNews() {
           slidesPerGroup: 1,
           slidesPerView: 1,
           spaceBetween: 20,
-          pagination: {
-            dynamicBullets: true,
-            dynamicMainBullets: 4,
-          },
+          // pagination: {
+          //   dynamicBullets: true,
+          //   dynamicMainBullets: 4,
+          // },
         },
 
         768: {
@@ -184,10 +162,10 @@ export function sliderNews() {
           slidesPerGroup: 2,
           slidesPerView: 2,
           spaceBetween: 30,
-          pagination: {
-            dynamicBullets: true,
-            dynamicMainBullets: 4,
-          },
+          // pagination: {
+          //   dynamicBullets: true,
+          //   dynamicMainBullets: 4,
+          // },
         },
 
         1440: {
@@ -197,30 +175,33 @@ export function sliderNews() {
           slidesPerGroup: 3,
           loopAddBlankSlides: true,
           loopAdditionalSlides: true,
-          pagination: {
-            dynamicBullets: true,
-            dynamicMainBullets: 4,
-          },
+          // pagination: {
+          //   dynamicBullets: true,
+          //   dynamicMainBullets: 4,
+          // },
         }
       },
     });
 
     if (mob.matches) {
       mobile();
+    }else {
+      window.removeEventListener('resize', sliderNews);
     }
 
-    if (tab.matches) {
+    if (tab.matches && window.innerWidth <= 1439) {
       tablet();
     } else {
       window.removeEventListener('resize', sliderNews);
     }
 
-    // if (desktop.matches) {
-    //   desktop();
-    // }
+    if (desk.matches && window.innerWidth > 1439) {
+      desktop();
+    }else {
+      window.removeEventListener('resize', sliderNews);
+    }
 
     window.addEventListener('resize', sliderNews);
-    window.addEventListener('load', sliderNews);
   });
 }
 

@@ -194,7 +194,7 @@
   }
 }
 
-.news__slide-active .news__slide-wrapper {
+.news__slide:nth-child(3n - 2) .news__slide-wrapper {
   @media (min-width: $desktop-width) {
     margin-right: 136px;
 
@@ -204,7 +204,7 @@
   }
 }
 
-.news__slide-active .news__slide-title {
+.news__slide:nth-child(3n - 2) .news__slide-title {
   @media (min-width: $desktop-width) {
     padding: 18px 18px 6px 0;
     margin-right: 178px;
@@ -221,6 +221,10 @@
 
   &::after {
     left: 78px;
+
+    @media (min-width: $desktop-width) {
+      left: 77px;
+    }
   }
 }
 

@@ -14,10 +14,12 @@ export function navOpen() {
       document.body.style.background = 'rgba(13, 29, 51, 0.4)';
       document.querySelector('.hero__wrap').style.background = 'rgba(13, 29, 51, 0.4)';
       document.querySelector('.hero__wrap').style.zIndex = '1';
+      document.querySelector('.header__logo').style.opacity = '0.2';
     } else {
       document.body.style.background = '#f0efe9';
       document.querySelector('.hero__wrap').style.background = 'unset';
       document.querySelector('.hero__wrap').style.zIndex = 'unset';
+      document.querySelector('.header__logo').style.opacity = 'unset';
     }
   });
 

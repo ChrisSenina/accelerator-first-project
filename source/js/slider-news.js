@@ -108,7 +108,7 @@ export function desktop() {
   wrapper.appendChild(clone8);
   clone8.style.top = '0px';
 
-  const clone9 = slide.cloneNode(true);
-  wrapper.appendChild(clone9);
-  clone9.style.top = '0px';
+  // const clone9 = slide.cloneNode(true);
+  // wrapper.appendChild(clone9);
+  // clone9.style.top = '0px';
 }
