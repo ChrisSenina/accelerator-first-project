@@ -10,19 +10,21 @@ export function modalOpen() {
   button.addEventListener('click', (evt) => {
     evt.preventDefault();
     modal.classList.add('modal--show');
-    // document.body.style.position = 'fixed';
-    // document.querySelector('.about').style.height = '0';
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
   });
 
   toggle.addEventListener('click', () => {
     modal.classList.remove('modal--show');
   });
 
-  // document.addEventListener('click', (evt) => {
-  //   if (modal.contains(evt.target)) {
-  //     modal.classList.remove('modal--show');
-  //   }
-  // });
+  document.addEventListener('click', (evt) => {
+    if (modal.contains(evt.target)) {
+      modal.classList.remove('modal--show');
+      document.body.style.position = '';
+      document.body.style.width = '';
+    }
+  });
 }
 
 export function isValidModal() {

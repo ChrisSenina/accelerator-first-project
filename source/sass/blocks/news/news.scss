@@ -187,10 +187,10 @@
   }
 }
 
-.news__slide-active {
+.news__slide:nth-child(3n - 2) {
   @media (min-width: $desktop-width) {
-    max-width: 604px;
     background-size: 604px 400px;
+    max-width: 604px;
   }
 }
 
