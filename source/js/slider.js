@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Autoplay, EffectFade, Grid, Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { EffectFade, Grid, Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import { mob, tab, desk, mobile, tablet, desktop } from './slider-news';
 
@@ -32,7 +32,7 @@ export function sliderHero() {
 
         on: {
           init: function onFocus() {
-            'swiper-pagination-bullet'.setAttribute('tabIndex', 0);
+            'hero__pagination-bullet'.setAttribute('tabIndex', 0);
           }
         }
       },

@@ -19,13 +19,6 @@
   cursor: pointer;
   padding: 5px 5px 5px 21px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 0.28px;
-    padding-left: 31px;
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -34,11 +27,6 @@
     background-color: $base-blue;
     border-radius: 44px;
     right: 4px;
-
-    @media (min-width: $tablet-width) {
-      width: 46px;
-      height: 46px;
-    }
   }
 
   &::before {
@@ -49,9 +37,65 @@
     background: url("/__spritemap#sprite-arrow-view") no-repeat center;
     right: 17px;
     z-index: 1;
+  }
 
-    @media (min-width: $tablet-width) {
+  &:hover {
+    color: $base-white;
+    background-color: $base-blue;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.7);
+    background-color: $base-blue;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+    border-color: $disabled-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    padding-left: 31px;
+
+    &::after {
+      width: 46px;
+      height: 46px;
+    }
+
+    &::before {
       right: 23px;
     }
   }
+}
+
+.button:hover::after,
+.button:active::after {
+  background-color: $base-white;
+}
+
+.button:focus:after {
+  outline: none;
+  background-color: $base-blue;
+}
+
+.button:disabled::after {
+  background-color: $disabled-color;
+}
+
+.button:hover::before,
+.button:active::before {
+  transform: rotate(45deg);
+  filter: invert(59%) sepia(89%) saturate(494%) hue-rotate(175deg) brightness(96%) contrast(91%);
+}
+
+.button:focus::before {
+  transform: rotate(45deg);
+  filter: none;
 }

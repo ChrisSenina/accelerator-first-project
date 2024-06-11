@@ -1,5 +1,6 @@
 const button = document.querySelector('.about__button');
 const modal = document.querySelector('.modal');
+const window = document.querySelector('.modal__window');
 const toggle = document.querySelector('.modal__toggle');
 const form = document.querySelector('.modal__form');
 const dropdown = form.querySelector('.form__list');
@@ -12,10 +13,18 @@ export function modalOpen() {
     modal.classList.add('modal--show');
     document.body.style.position = 'fixed';
     document.body.style.width = '100%';
+    document.body.style.background = 'rgba(13, 29, 51, 0.4)';
   });
 
   toggle.addEventListener('click', () => {
     modal.classList.remove('modal--show');
+    document.body.style.position = '';
+    document.body.style.width = '';
+    document.body.style.background = '';
+  });
+
+  window.addEventListener('click', (event) => {
+    event.stopPropagation();
   });
 
   document.addEventListener('click', (evt) => {
@@ -23,9 +32,11 @@ export function modalOpen() {
       modal.classList.remove('modal--show');
       document.body.style.position = '';
       document.body.style.width = '';
+      document.body.style.background = '';
     }
   });
 }
+
 
 export function isValidModal() {
   form.addEventListener('submit', (event) => {
@@ -59,21 +70,11 @@ export function isValidModal() {
       window.close();
     }
 
-    if(!checkbox.checked) {
+    if (!checkbox.checked) {
       checkbox.classList.add('modal__input-error');
       checkbox.style.backgroundColor = 'unset';
       event.preventDefault();
     }
-
-    // checkbox.required = true;
-    // if (checkbox.checked) {
-    //   checkbox.classList.add('modal__input-error');
-    //   event.preventDefault();
-    // } else {
-    //   form.submit();
-    //   window.close();
-    // }
-
   });
 }
 
@@ -82,6 +83,7 @@ export function selectModalChange() {
   input.addEventListener('click', () => {
     dropdown.classList.toggle('closed');
     dropdown.classList.toggle('opened');
+    input.classList.add('opened');
   });
 
   const selectOption = (event) => {
@@ -92,6 +94,7 @@ export function selectModalChange() {
     if (!dropdown.classList.contains('opened')) {
       dropdown.classList.remove('opened');
       dropdown.classList.add('closed');
+      input.classList.remove('opened');
     }
   };
 

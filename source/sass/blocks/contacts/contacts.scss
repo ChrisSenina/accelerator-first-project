@@ -82,6 +82,11 @@
   line-height: 20px;
   letter-spacing: 0;
 
+  &:hover,
+  &:active {
+    background-color: unset;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 23px;
     font-size: 16px;
@@ -90,6 +95,25 @@
   @media (min-width: $desktop-width) {
     padding-top: 24px;
     line-height: 17px;
+  }
+}
+
+.contacts__link {
+  &:hover {
+    background-color: unset;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    outline: none;
+    color: $base-grey;
+  }
+
+  &:active {
+    background-color: unset;
+    color: $base-white;
+    border-bottom: 1px solid $base-white;
+    margin-bottom: -1px;
   }
 }
 

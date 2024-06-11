@@ -86,6 +86,20 @@
     padding-right: 1px;
     line-height: 17px;
   }
+
+  &:hover {
+    color: rgba(49, 109, 194, 0.6);
+    background-color: unset;
+  }
+
+  &:focus {
+    color: $base-blue;
+  }
+
+  &:active {
+    color: $secondary-blue;
+    background-color: unset;
+  }
 }
 
 .footer__social {
@@ -145,5 +159,23 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 2px;
+  }
+
+  &:hover {
+    color: rgba(49, 109, 194, 0.6);
+    border-color: rgba(49, 109, 194, 0.6);
+    background-color: unset;
+  }
+
+  &:focus {
+    color: $base-blue;
+    border-color: $base-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $secondary-blue;
+    border-color: $secondary-blue;
+    background-color: unset;
   }
 }

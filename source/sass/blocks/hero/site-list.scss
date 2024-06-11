@@ -41,6 +41,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: unset;
+    opacity: unset;
+  }
 }
 
 .site-list__svg {
@@ -76,4 +83,11 @@
   letter-spacing: 0;
   opacity: 0.6;
   text-transform: capitalize;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: unset;
+    opacity: unset;
+  }
 }

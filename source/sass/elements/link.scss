@@ -2,4 +2,29 @@
   display: block;
   cursor: pointer;
   text-decoration: none;
+  color: $base-grey;
+
+  &:hover,
+  &:active {
+    background-color: $base-white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $disabled-color;
+  }
+}
+
+.link:hover::after,
+.link:active::after {
+  transform: rotate(45deg);
+  filter: invert(59%) sepia(89%) saturate(494%) hue-rotate(175deg) brightness(96%) contrast(91%);
+}
+
+.link:focus::after {
+  outline: none;
+  transform: rotate(45deg);
 }

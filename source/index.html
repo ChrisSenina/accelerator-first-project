@@ -152,7 +152,7 @@
             карьеры, предоставляя им инструменты для решения сложных проблем,
             с которыми сталкиваются в мире. Цель центра — наделить этих
             людей способностью инициировать значимые изменения.</p>
-          <button class="about__button button" type="button">Подробнее о проекте</button>
+          <button class="about__button button" type="button" tabindex="0">Подробнее о проекте</button>
         </div>
       </div>
 
@@ -193,7 +193,7 @@
                 <h3 class="programs__slide-title">Волонтёрство</h3>
                 <div class="programs__slide-wrapper">
                   <p class="programs__slide-text">Помогайте другим и развивайте свои лидерские&nbsp;качества.</p>
-                  <a class="programs__link" href="#">
+                  <a class="programs__link link" href="#">
                     <span class="visually-hidden">Подробнее</span>
                   </a>
                 </div>
@@ -205,7 +205,7 @@
                 <h3 class="programs__slide-title">Учёба</h3>
                 <div class="programs__slide-wrapper">
                   <p class="programs__slide-text">Получите образование и измените своё будущее.</p>
-                  <a class="programs__link" href="#">
+                  <a class="programs__link link" href="#">
                     <span class="visually-hidden">Подробнее</span>
                   </a>
                 </div>
@@ -222,7 +222,7 @@
             aria-label="смотреть следующий"></button>
         </div>
       </div>
-      <a class="programs__button button link" href="#">Все программы</a>
+      <a class="programs__button button link" href="#" tabindex="0">Все программы</a>
     </section>
     <section class="grant" data-test="grant" id="grant">
       <div class="grant__wrap">
@@ -336,7 +336,7 @@
     <section class="faq" data-test="FAQ">
       <h2 class="faq__title inner-title">Вопросы и ответы</h2>
       <ul class="faq__list accordion">
-        <li class="faq__item accordion__content">
+        <li class="faq__item accordion__content" tabindex="0">
           <h3 class="accordion__title">Кто организатор? Какие сроки у программы?
             <button class="accordion__input" type="button">
               <span class="visually-hidden">Открыть окно.</span>
@@ -345,7 +345,7 @@
           <p class="accordion__text">Организатором программы является проект «Стажировка» в сотрудничестве с
             образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
         </li>
-        <li class="faq__item accordion__content">
+        <li class="faq__item accordion__content" tabindex="0">
           <h3 class="accordion__title">Что такое грант на обучение?
             <button class="accordion__input" type="button">
               <span class="visually-hidden">Открыть окно.</span>
@@ -354,7 +354,7 @@
           <p class="accordion__text">Грант на обучение — это финансовая поддержка, которую предоставляет организатор
             программы обмена студентами для оплаты учебных расходов.</p>
         </li>
-        <li class="faq__item accordion__content open">
+        <li class="faq__item accordion__content open" tabindex="0">
           <h3 class="accordion__title">Как определяется стоимость программы?
             <button class="accordion__input open" type="button">
               <span class="visually-hidden">Закрыть окно.</span>
@@ -364,7 +364,7 @@
             «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного
             участия.</p>
         </li>
-        <li class="faq__item accordion__content">
+        <li class="faq__item accordion__content" tabindex="0">
           <h3 class="accordion__title accordion__title--special">Признаётся ли учёба в&nbsp;рамках проекта <br> для
             дальнейшего обучения?
             <button class="accordion__input" type="button">
@@ -375,7 +375,7 @@
             своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того,
             многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
         </li>
-        <li class="faq__item accordion__content">
+        <li class="faq__item accordion__content" tabindex="0">
           <h3 class="accordion__title accordion__title--special">Как выглядит полный процесс регистрации на программу
             «Стажировка»?
             <button class="accordion__input" type="button">
@@ -384,12 +384,12 @@
           </h3>
           <p class="accordion__text">Процесс регистрации на программу обмена включает выбор университета-партнера и
             программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых
-            документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и
-            подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
+            документов, прохождениеe интервью, оформление визы, жилья и страховки, обучение по безопасности за границей
+            и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
         </li>
       </ul>
     </section>
-    <section class="reviews" data-test="reviews" id="reviews">
+    <section class="reviews" data-test="reviews" id="reviws">
       <h2 class="reviews__title inner-title">Отзывы</h2>
       <div class="reviews__box">
         <div class="reviews__slider swiper">
@@ -538,12 +538,12 @@
             </div>
             <div class="form__box">
               <label class="form__label" for="message">Ваше сообщение</label>
-              <input class="form__input form__input-message" type="text" id="message" name="message"
+              <input class="form__input form__input-message" type="text" id="message" rows="5" cols="5" name="message"
                 pattern="^[А-Яа-яЁё\s]+$">
             </div>
             <div class="form__box form__box-select">
               <label class="form__label" for="select">Выберите город</label>
-              <input class="form__input form__input-select" id="select" name="city" type="text" readonly>
+              <input class="form__input form__input-select" id="select" name="city" type="text" tabindex="0" readonly>
               <ul class="form__list">
                 <li class="form__item">Санкт-Петербург</li>
                 <li class="form__item">Санкт-Петербург</li>
@@ -606,49 +606,52 @@
     </ul>
     <div class="footer__wrapper">
       <p class="footer__text">Стажировка © 2023 Все права защищены</p>
-      <p class="footer__text footer__text--policy">Политика конфиденциальности</p>
+      <a class="footer__text link footer__text--policy" href="#">Политика конфиденциальности</a>
     </div>
   </footer>
   <div class="modal">
-    <div class="modal__window">
-      <button class="modal__toggle">
-        <span class="visually-hidden">Закрыть окно</span>
-      </button>
-      <div class="modal__header">
-        <h2 class="modal__title">Напишите нам</h2>
-        <p class="modal__description">Оставьте ваши контакты, <br> если у вас остались вопросы — мы&nbsp;на них ответим!
-        </p>
-      </div>
+    <div class="modal__wrapper">
+      <div class="modal__window">
+        <button class="modal__toggle">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <div class="modal__header">
+          <h2 class="modal__title">Напишите нам</h2>
+          <p class="modal__description">Оставьте ваши контакты, <br> если у вас остались вопросы — мы&nbsp;на них
+            ответим!
+          </p>
+        </div>
 
-      <form class="modal__form form" id="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class=" form__box">
-          <label class="modal__label form__label" for="modal-name">Имя</label>
-          <input class="modal__input form__input" type="text" id="modal-name" name="name" pattern="^[А-Яа-яЁё\s]+$"
-            minlength="2" maxlength="18">
-        </div>
-        <div class="form__box">
-          <label class="modal__label form__label" for="modal-phone">Телефон</label>
-          <input class="modal__input form__input" type="tel" id="modal-phone" data-tel-input name="phone"
-            pattern="^((\+7|)+([0-9]){10})$" minlength="12">
-        </div>
-        <div class="form__box form__box-select">
-          <label class="modal__label form__label" for="modal-select">Выберите город</label>
-          <input class="modal__input modal__input-select form__input form__input-select" id="modal-select" name="city"
-            type="text" readonly>
-          <ul class="form__list closed">
-            <li class="form__item">Санкт-Петербург</li>
-            <li class="form__item">Санкт-Петербург</li>
-            <li class="form__item">Санкт-Петербург</li>
-            <li class="form__item">Санкт-Петербург</li>
-          </ul>
-        </div>
-        <div class="form__box form__box-checkbox">
-          <label class="form__label form__label-checkbox" for="modal-checkbox"></label>
-          <input class="modal__checkbox form__input-checkbox" type="checkbox" id="modal-checkbox" name="agreement">
-          <p class="modal__text form__input-text">Я согласен на обработку моих персональных данных</p>
-        </div>
-        <button class="modal__form-button button" type="submit">Отправить</button>
-      </form>
+        <form class="modal__form form" id="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class=" form__box">
+            <label class="modal__label form__label" for="modal-name">Имя</label>
+            <input class="modal__input form__input" type="text" id="modal-name" name="name" pattern="^[А-Яа-яЁё\s]+$"
+              minlength="2" maxlength="18">
+          </div>
+          <div class="form__box">
+            <label class="modal__label form__label" for="modal-phone">Телефон</label>
+            <input class="modal__input form__input" type="tel" id="modal-phone" data-tel-input name="phone"
+              pattern="^((\+7|)+([0-9]){10})$" minlength="12">
+          </div>
+          <div class="form__box form__box-select">
+            <label class="modal__label form__label" for="modal-select">Выберите город</label>
+            <input class="modal__input modal__input-select form__input form__input-select" id="modal-select" name="city"
+              type="text" readonly>
+            <ul class="form__list closed">
+              <li class="form__item">Санкт-Петербург</li>
+              <li class="form__item">Санкт-Петербург</li>
+              <li class="form__item">Санкт-Петербург</li>
+              <li class="form__item">Санкт-Петербург</li>
+            </ul>
+          </div>
+          <div class="form__box form__box-checkbox">
+            <label class="form__label form__label-checkbox" for="modal-checkbox"></label>
+            <input class="modal__checkbox form__input-checkbox" type="checkbox" id="modal-checkbox" name="agreement">
+            <p class="modal__text form__input-text">Я согласен на обработку моих персональных данных</p>
+          </div>
+          <button class="modal__form-button button" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </div>
 

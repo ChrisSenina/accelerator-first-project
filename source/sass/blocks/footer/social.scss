@@ -54,6 +54,11 @@
   position: absolute;
   width: 26px;
 
+  &:hover,
+  &:active {
+    background-color: unset;
+  }
+
   &:focus {
     outline: none;
     filter: invert(59%) sepia(89%) saturate(494%) hue-rotate(175deg) brightness(96%) contrast(91%);

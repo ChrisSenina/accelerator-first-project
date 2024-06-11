@@ -28,16 +28,8 @@
     height: 8px;
   }
 
-  &:hover,
   &:focus {
-    color: $base-white;
-    background-color: $base-blue;
-    outline: none;
-  }
-
-  &:active {
-    color: rgb(255, 255, 255, 0.7);
-    background-color: $base-blue;
+    border-color: rgba(49, 109, 194, 0.4);
   }
 
   @media (min-width: $tablet-width) {
@@ -49,6 +41,12 @@
       top: 23px;
     }
   }
+}
+
+.nav__toggle:hover::before,
+.nav__toggle:focus::before,
+.nav__toggle:active::before {
+  transform: unset;
 }
 
 .nav--opened {

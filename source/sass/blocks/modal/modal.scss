@@ -44,18 +44,38 @@
 
 .modal__toggle {
   position: absolute;
-  top: 21px;
-  right: 21px;
+  top: 13px;
+  right: 13px;
   background: url("/__spritemap#sprite-modal-close-view") no-repeat center;
-  width: 14px;
-  height: 14px;
-  border: none;
+  background-size: 16px 16px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 31px;
-    right: 31px;
-    width: 20px;
-    height: 20px;
+    top: 21px;
+    right: 21px;
+    background-size: 20px 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    border-color: rgba(49, 109, 194, 0.6);
+  }
+
+  &:focus {
+    border-color: $base-blue;
+    outline: none;
+  }
+
+  &:active {
+    border-color: $secondary-blue;
+  }
+
+  &:disabled {
+    opacity: 0.6;
   }
 }
 
@@ -126,17 +146,34 @@
   width: 260px;
   height: 44px;
   border-color: rgba(72, 72, 72, 0.3);
+  color: $base-grey;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     width: 350px;
     height: 50px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $base-grey;
+  }
 }
 
 .modal__input-select {
   color: $base-grey;
   background: url("/__spritemap#sprite-modal-arrow-view") no-repeat 223px 13px;
+  background-size: 16px 16px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 313px 16px;
+  }
+}
+
+.modal__input-select.opened {
+  background: url("/__spritemap#sprite-modal-arrow-up-view") no-repeat 223px 13px;
   background-size: 16px 16px;
 
   @media (min-width: $tablet-width) {

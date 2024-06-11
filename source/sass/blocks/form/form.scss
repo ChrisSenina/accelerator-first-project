@@ -41,11 +41,13 @@
 .form__input {
   width: 270px;
   height: 50px;
-  border: 1px solid rgb(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   background: transparent;
   box-sizing: border-box;
   margin-top: 7px;
+  padding: 16px 25px;
+  color: $base-white;
 
   @media (min-width: $tablet-width) {
     width: 362px;
@@ -54,6 +56,21 @@
 
   @media (min-width: $desktop-width) {
     width: 350px;
+  }
+
+  &:hover {
+    border-color: $base-white;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    border-color:$base-white;
+  }
+
+  &:disabled {
+    border-color:rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 
@@ -108,6 +125,19 @@
   }
 }
 
+.form__input-select.opened {
+  background: url("/__spritemap#sprite-arrow-up-view") no-repeat 222px 18px;
+  background-size: 16px 16px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 324px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 312px 17px;
+  }
+}
+
 .form__list {
   margin: 5px 0 0;
   padding: 0;
@@ -122,6 +152,10 @@
   @media (min-width: $tablet-width) {
     width: 362px;
     margin-top: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
   }
 }
 
@@ -141,9 +175,9 @@
   font-weight: 400;
   line-height: 14px;
 
-  // &:hover {
-  //   background-color: rgb(49, 109, 194, 0.4);
-  // }
+  &:hover {
+    background-color: rgb(49, 109, 194, 0.4);
+  }
 
   &:focus,
   &:active {
@@ -239,6 +273,16 @@
     filter: invert(59%) sepia(89%) saturate(494%) hue-rotate(175deg) brightness(96%) contrast(91%);
   }
 
+  &:hover {
+    background-color: $base-white;
+    color: $base-blue;
+  }
+
+  &:active {
+    background-color: $base-white;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
   @media (min-width: $tablet-width) {
     width: 352px;
     height: 56px;
@@ -254,4 +298,22 @@
   @media (min-width: $desktop-width) {
     width: 350px;
   }
+}
+
+.form__button:hover::after,
+.form__button:active::after {
+  background-color: $base-blue;
+}
+
+.form__button:focus::after {
+  background-color: $base-white;
+}
+
+.form__button:hover::before,
+.form__button:active::before {
+  filter: none;
+}
+
+.form__button:focus::before {
+  filter: invert(59%) sepia(89%) saturate(494%) hue-rotate(175deg) brightness(96%) contrast(91%);
 }

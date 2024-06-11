@@ -55,6 +55,7 @@ export function selectChange() {
   input.addEventListener('click', () => {
     dropdown.classList.toggle('closed');
     dropdown.classList.toggle('opened');
+    input.classList.add('opened');
   });
 
   const selectOption = (event) => {
@@ -65,6 +66,7 @@ export function selectChange() {
     if (!dropdown.classList.contains('opened')) {
       dropdown.classList.remove('opened');
       dropdown.classList.add('closed');
+      input.classList.remove('opened');
     }
   };
 

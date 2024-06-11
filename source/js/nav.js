@@ -27,6 +27,10 @@ export function navOpen() {
     if (!nav.contains(event.target)) {
       nav.classList.remove('nav--opened');
       nav.classList.add('nav--closed');
+      document.body.style.background = '#f0efe9';
+      document.querySelector('.hero__wrap').style.background = 'unset';
+      document.querySelector('.hero__wrap').style.zIndex = 'unset';
+      document.querySelector('.header__logo').style.opacity = 'unset';
     }
   });
 }
