@@ -15,41 +15,23 @@ export function isValid() {
     if (name.value === '') {
       name.classList.add('form__input-error');
       event.preventDefault();
-    } else {
-      return (true);
     }
-
     if (phone.value === '') {
       phone.classList.add('form__input-error');
       event.preventDefault();
-    } else {
-      return (true);
     }
-
     if (message.value === '') {
       message.classList.add('form__input-error');
       event.preventDefault();
-    } else {
-      return (true);
     }
-
     if (select.value === '') {
       select.classList.add('form__input-error');
       event.preventDefault();
-    } else {
-      return (true);
     }
-
     if (!checkbox.checked) {
       checkbox.classList.add('form__input-error');
       checkbox.style.borderColor = '#ff5e66';
       event.preventDefault();
-    } else {
-      return (true);
-    }
-
-    if (form.submit()) {
-      window.close();
     }
   });
 }
@@ -79,5 +61,5 @@ export function selectChange() {
   options.forEach((option) => {
     option.addEventListener('click', selectOption);
   });
-
 }
+

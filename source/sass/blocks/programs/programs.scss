@@ -5,14 +5,13 @@
   width: 290px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 45px 38px;
-    margin: 0;
-    width: unset;
+    padding: 50px 45px;
+    width: 678px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 60px 100px 48px;
+    padding: 60px 100px;
     width: 1240px;
   }
 }
@@ -262,6 +261,17 @@
   }
 }
 
+.programs__wrap {
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .programs__scrollbar {
   visibility: hidden;
   width: 0;
@@ -273,7 +283,6 @@
     width: 562px;
     height: 2px;
     background: rgb(49, 109, 194, 0.2);
-    margin-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -288,15 +297,8 @@
   gap: 8px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: -12px;
-    justify-content: flex-end;
+    position: unset;
     gap: 10px;
-    width: 693px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1255px;
   }
 }
 

@@ -13,6 +13,7 @@ export function modalOpen() {
     modal.classList.add('modal--show');
     document.body.style.position = 'fixed';
     document.body.style.width = '100%';
+    document.body.style.overflow = 'hidden';
     document.body.style.background = 'rgba(13, 29, 51, 0.4)';
   });
 
@@ -20,6 +21,7 @@ export function modalOpen() {
     modal.classList.remove('modal--show');
     document.body.style.position = '';
     document.body.style.width = '';
+    document.body.style.overflow = '';
     document.body.style.background = '';
   });
 
@@ -32,6 +34,7 @@ export function modalOpen() {
       modal.classList.remove('modal--show');
       document.body.style.position = '';
       document.body.style.width = '';
+      document.body.style.overflow = '';
       document.body.style.background = '';
     }
   });
@@ -49,27 +52,15 @@ export function isValidModal() {
     if (name.value === '') {
       name.classList.add('modal__input-error');
       event.preventDefault();
-    } else {
-      form.submit();
-      window.close();
     }
-
     if (phone.value === '') {
       phone.classList.add('modal__input-error');
       event.preventDefault();
-    } else {
-      form.submit();
-      window.close();
     }
-
     if (select.value === '') {
       select.classList.add('modal__input-error');
       event.preventDefault();
-    } else {
-      form.submit();
-      window.close();
     }
-
     if (!checkbox.checked) {
       checkbox.classList.add('modal__input-error');
       checkbox.style.backgroundColor = 'unset';

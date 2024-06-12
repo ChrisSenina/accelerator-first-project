@@ -22,6 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .modal__window {
@@ -190,6 +191,15 @@
 .modal__checkbox {
   width: 25.47px;
   background-color: $base-blue;
+
+  &:checked {
+    background-color: $base-blue;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $base-blue;
+  }
 
   @media (min-width: $tablet-width) {
     width: 20px;

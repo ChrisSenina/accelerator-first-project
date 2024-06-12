@@ -51,7 +51,6 @@ export function sliderPrograms() {
       loop: false,
       autoplay: false,
 
-      slidesPerView: 'auto',
       initialSlide: 0,
 
       scrollbar: {
@@ -64,16 +63,6 @@ export function sliderPrograms() {
         nextEl: '.swiper-button-next.programs__button-next',
         prevEl: '.swiper-button-prev.programs__button-prev',
         disabledClass: 'swiper-button-disabled',
-      },
-
-      on: {
-        init: function () {
-          const wrapper = document.querySelector('.programs__wrapper');
-          const slide = document.querySelector('.programs__slide-two');
-
-          const clone = slide.cloneNode(true);
-          wrapper.appendChild(clone);
-        }
       },
 
       breakpoints: {
@@ -100,7 +89,6 @@ export function sliderPrograms() {
           allowTouchMove: false,
           scrollbar: {
             dragSize: '394px',
-            draggable: true,
           }
         }
       },

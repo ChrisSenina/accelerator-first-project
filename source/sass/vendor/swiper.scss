@@ -201,11 +201,6 @@
   position: relative;
   -ms-touch-action: none;
   touch-action: none;
-
-  .swiper-scrollbar-disabled>&,
-  &.swiper-scrollbar-disabled {
-    display: none;
-  }
 }
 
 .swiper-scrollbar-drag {
@@ -221,6 +216,3 @@
   cursor: move;
 }
 
-.swiper-scrollbar-lock {
-  display: none;
-}
