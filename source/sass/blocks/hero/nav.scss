@@ -20,12 +20,14 @@
     width: 46px;
     height: 46px;
     right: 3px;
+    top: unset;
   }
 
   &::before {
     background: url("/__spritemap#sprite-toggle-close-view") no-repeat center;
     width: 18px;
     height: 8px;
+    top: unset;
   }
 
   &:focus {
@@ -56,6 +58,7 @@
 }
 
 .nav--opened .nav__toggle {
+  transition: all 0.5s ease-in-out;
   width: 290px;
   margin: 0 auto;
   background-color: $base-blue;
@@ -95,6 +98,21 @@
   }
 }
 
+.nav--opened .nav__list {
+  width: 240px;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear, visibility 1s linear;
+
+  @media (min-width: $tablet-width) {
+    width: 236px;
+  }
+}
+
 .nav--closed .nav__list {
-  display: none;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
 }

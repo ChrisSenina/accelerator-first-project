@@ -27,6 +27,7 @@
     background-color: $base-blue;
     border-radius: 44px;
     right: 4px;
+    top: 4px;
   }
 
   &::before {
@@ -36,6 +37,7 @@
     height: 8px;
     background: url("/__spritemap#sprite-arrow-view") no-repeat center;
     right: 17px;
+    top: 17px;
     z-index: 1;
   }
 
@@ -67,9 +69,11 @@
     &::after {
       width: 46px;
       height: 46px;
+      top: unset;
     }
 
     &::before {
+      top: unset;
       right: 23px;
     }
   }

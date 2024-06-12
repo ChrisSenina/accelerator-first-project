@@ -84,6 +84,10 @@
 .swiper-pagination-bullet-active {
   background-color: $base-blue;
   color: $base-white;
+
+  &:focus {
+    color: $base-blue;
+  }
 }
 
 .swiper-pagination-bullet-disabled {

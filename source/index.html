@@ -91,7 +91,7 @@
                   <a class="site-list__link link" href="#">Программы
                     <span class="site-list__svg">-</span>
                   </a>
-                  <ul class="site-list__submenu site-list__submenu--closed">
+                  <ul class="site-list__submenu site-list__submenu--closed" id="sub1">
                     <li class="site-list__subitem">
                       <a class="site-list__subitem-link link" href="#">Стажировки</a>
                     </li>
@@ -118,7 +118,7 @@
                   <a class="site-list__link link" href="#">Новости
                     <span class="site-list__svg">-</span>
                   </a>
-                  <ul class="site-list__submenu site-list__submenu--closed">
+                  <ul class="site-list__submenu site-list__submenu--closed" id="sub2">
                     <li class="site-list__subitem">
                       <a class="site-list__subitem-link link" href="#">Общее</a>
                     </li>
@@ -152,7 +152,7 @@
             карьеры, предоставляя им инструменты для решения сложных проблем,
             с которыми сталкиваются в мире. Цель центра — наделить этих
             людей способностью инициировать значимые изменения.</p>
-          <button class="about__button button" type="button" tabindex="0">Подробнее о проекте</button>
+          <button class="about__button button" type="button">Подробнее о проекте</button>
         </div>
       </div>
 
@@ -222,7 +222,7 @@
             aria-label="смотреть следующий"></button>
         </div>
       </div>
-      <a class="programs__button button link" href="#" tabindex="0">Все программы</a>
+      <a class="programs__button button link" href="#">Все программы</a>
     </section>
     <section class="grant" data-test="grant" id="grant">
       <div class="grant__wrap">
@@ -336,7 +336,7 @@
     <section class="faq" data-test="FAQ">
       <h2 class="faq__title inner-title">Вопросы и ответы</h2>
       <ul class="faq__list accordion">
-        <li class="faq__item accordion__content" tabindex="0">
+        <li class="faq__item accordion__content">
           <h3 class="accordion__title">Кто организатор? Какие сроки у программы?
             <button class="accordion__input" type="button">
               <span class="visually-hidden">Открыть окно.</span>
@@ -345,7 +345,7 @@
           <p class="accordion__text">Организатором программы является проект «Стажировка» в сотрудничестве с
             образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
         </li>
-        <li class="faq__item accordion__content" tabindex="0">
+        <li class="faq__item accordion__content">
           <h3 class="accordion__title">Что такое грант на обучение?
             <button class="accordion__input" type="button">
               <span class="visually-hidden">Открыть окно.</span>
@@ -354,7 +354,7 @@
           <p class="accordion__text">Грант на обучение — это финансовая поддержка, которую предоставляет организатор
             программы обмена студентами для оплаты учебных расходов.</p>
         </li>
-        <li class="faq__item accordion__content open" tabindex="0">
+        <li class="faq__item accordion__content open">
           <h3 class="accordion__title">Как определяется стоимость программы?
             <button class="accordion__input open" type="button">
               <span class="visually-hidden">Закрыть окно.</span>
@@ -364,7 +364,7 @@
             «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного
             участия.</p>
         </li>
-        <li class="faq__item accordion__content" tabindex="0">
+        <li class="faq__item accordion__content">
           <h3 class="accordion__title accordion__title--special">Признаётся ли учёба в&nbsp;рамках проекта <br> для
             дальнейшего обучения?
             <button class="accordion__input" type="button">
@@ -375,7 +375,7 @@
             своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того,
             многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
         </li>
-        <li class="faq__item accordion__content" tabindex="0">
+        <li class="faq__item accordion__content">
           <h3 class="accordion__title accordion__title--special">Как выглядит полный процесс регистрации на программу
             «Стажировка»?
             <button class="accordion__input" type="button">
@@ -436,7 +436,7 @@
                   <div class="reviews__user">
                     <picture>
                       <source media="(min-width: 768px)"
-                        srcset="img/reviews/avatar-2.webp, img/reviews/avatar-2@wx.webp 2x" width="90" height="90"
+                        srcset="img/reviews/avatar-2.webp, img/reviews/avatar-2@2x.webp 2x" width="90" height="90"
                         type="image/webp">
                       <source media="(min-width: 320px)"
                         srcset="img/reviews/avatar-2.webp, img/reviews/avatar-2@2x.webp 2x" width="60" height="60"
@@ -507,7 +507,7 @@
             type="image/webp">
           <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.webp, img/contacts/map-tablet@2x.webp 2x"
             width="678" height="500" type="image/webp">
-          <source media="(min-width: 320px)" srcset="img/contacts/map-mobile.webp, img/contacts/map-mobile@2x.webp 2x"
+          <source media="(min-width: 320px)" srcset="img/contacts/map.webp, img/contacts/map@2x.webp 2x"
             width="290" height="240" type="image/webp">
           <source media="(min-width: 1440px)" srcset="img/contacts/map-desktop.jpg, img/contacts/map-desktop@2x.jpg 2x"
             width="1240" height="486" type="image/jpg">
@@ -533,8 +533,7 @@
             </div>
             <div class="form__box">
               <label class="form__label" for="phone">Телефон</label>
-              <input class="form__input" type="tel" id="phone" data-tel-input name="phone"
-                pattern="^((\+7|)+([0-9]){10})$" minlength="12">
+              <input class="form__input" type="tel" id="phone" data-tel-input name="phone" minlength="12">
             </div>
             <div class="form__box">
               <label class="form__label" for="message">Ваше сообщение</label>
@@ -589,17 +588,17 @@
     </div>
     <ul class="footer__social social">
       <li class="social__item">
-        <a class="social__link link social__link--vk" href="https://vk.com/htmlacademy">
+        <a class="social__link link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link link social__link--ok" href="https://ok.ru/live/htmlacademy">
+        <a class="social__link link social__link--ok" href="https://ok.ru/live/htmlacademy" target="_blank">
           <span class="visually-hidden">Одноклассники</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link link social__link--reddit" href="https://reddit.com/">
+        <a class="social__link link social__link--reddit" href="https://reddit.com/" target="_blank">
           <span class="visually-hidden">Reddit</span>
         </a>
       </li>
@@ -630,8 +629,7 @@
           </div>
           <div class="form__box">
             <label class="modal__label form__label" for="modal-phone">Телефон</label>
-            <input class="modal__input form__input" type="tel" id="modal-phone" data-tel-input name="phone"
-              pattern="^((\+7|)+([0-9]){10})$" minlength="12">
+            <input class="modal__input form__input" type="tel" id="modal-phone" data-tel-input name="phone" minlength="12">
           </div>
           <div class="form__box form__box-select">
             <label class="modal__label form__label" for="modal-select">Выберите город</label>

@@ -47,6 +47,10 @@ export function isValid() {
     } else {
       return (true);
     }
+
+    if (form.submit()) {
+      window.close();
+    }
   });
 }
 

@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import { EffectFade, Grid, Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import { mob, tab, desk, mobile, tablet, desktop } from './slider-news';
+import { renderIssue } from '@linthtml/linthtml/messages';
 
 export function sliderHero() {
   document.addEventListener('DOMContentLoaded', () => {
@@ -122,6 +123,7 @@ export function sliderNews() {
       loopAddBlankSlides: true,
       updateOnWindowResize: true,
 
+
       slideActiveClass: 'news__slide-active',
 
       navigation: {
@@ -158,10 +160,6 @@ export function sliderNews() {
           slidesPerGroup: 1,
           slidesPerView: 1,
           spaceBetween: 20,
-          // pagination: {
-          //   dynamicBullets: true,
-          //   dynamicMainBullets: 4,
-          // },
         },
 
         768: {
@@ -173,10 +171,6 @@ export function sliderNews() {
           slidesPerGroup: 2,
           slidesPerView: 2,
           spaceBetween: 30,
-          // pagination: {
-          //   dynamicBullets: true,
-          //   dynamicMainBullets: 4,
-          // },
         },
 
         1440: {
@@ -186,10 +180,6 @@ export function sliderNews() {
           slidesPerGroup: 3,
           loopAddBlankSlides: true,
           loopAdditionalSlides: true,
-          // pagination: {
-          //   dynamicBullets: true,
-          //   dynamicMainBullets: 4,
-          // },
         }
       },
     });

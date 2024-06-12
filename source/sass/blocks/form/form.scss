@@ -265,11 +265,9 @@
 
   &::after {
     background-color: $base-white;
-    top: 4px;
   }
 
   &::before {
-    top: 17px;
     filter: invert(59%) sepia(89%) saturate(494%) hue-rotate(175deg) brightness(96%) contrast(91%);
   }
 
@@ -289,10 +287,6 @@
     margin-top: 20px;
     padding-top: 6px;
     padding-left: 108px;
-
-    &::before {
-      top: 23px;
-    }
   }
 
   @media (min-width: $desktop-width) {

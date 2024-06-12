@@ -20,7 +20,7 @@
 }
 
 .hero__devider-two {
-  margin: 202px 0 0;
+  margin: 201px 0 0;
   position: absolute;
 
   @media (min-width: $tablet-width) {
@@ -33,7 +33,7 @@
 }
 
 .hero__pagination {
-  padding: 10px 16px;
+  padding: 10px 16px 11px;
   border-radius: 12px 12px 0px 0px;
   background-color: $base-white;
   width: 48px;
@@ -372,11 +372,14 @@
 .hero__button {
   width: 154px;
   height: 44px;
+  padding-left: 20px;
+  padding-top: 6px;
 
   @media (min-width: $tablet-width) {
     width: 198px;
     height: 56px;
     padding-left: 30px;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
