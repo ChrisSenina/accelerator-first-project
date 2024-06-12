@@ -9,6 +9,11 @@ export function mobile() {
   const slide2 = wrapper.querySelector('.news__slide-two');
   const slide3 = wrapper.querySelector('.news__slide-three');
   const slide4 = wrapper.querySelector('.news__slide-four');
+  // const link = document.querySelectorAll('.news__slide-link');
+
+  // link.forEach((item) => {
+  //   item.setAttribute('tabIndex', -1);
+  // });
 
   const clone = slide.cloneNode(true);
   wrapper.append(clone);
@@ -25,6 +30,12 @@ export function mobile() {
   const clone4 = slide4.cloneNode(true);
   wrapper.appendChild(clone4);
   clone4.style.top = '-20px';
+
+  const clones = [clone, clone2, clone3, clone4];
+  clones.forEach((item) => {
+    const link = item.querySelector('.news__slide-link');
+    link.setAttribute('tabIndex', -1);
+  });
 }
 
 export function tablet() {
@@ -68,6 +79,12 @@ export function tablet() {
   const clone9 = slide.cloneNode(true);
   wrapper.appendChild(clone9);
   clone9.style.top = '-30px';
+
+  const clones = [clone, clone2, clone3, clone4, clone5, clone6, clone7, clone8, clone9];
+  clones.forEach((item) => {
+    const link = item.querySelector('.news__slide-link');
+    link.setAttribute('tabIndex', -1);
+  });
 }
 
 export function desktop() {
@@ -108,7 +125,9 @@ export function desktop() {
   wrapper.appendChild(clone8);
   clone8.style.top = '0px';
 
-  // const clone9 = slide.cloneNode(true);
-  // wrapper.appendChild(clone9);
-  // clone9.style.top = '0px';
+  const clones = [clone, clone2, clone3, clone4, clone5, clone6, clone7, clone8];
+  clones.forEach((item) => {
+    const link = item.querySelector('.news__slide-link');
+    link.setAttribute('tabIndex', -1);
+  });
 }

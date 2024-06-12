@@ -22,7 +22,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-within {
     outline: none;
     background-color: $base-white;
   }
@@ -138,7 +138,7 @@
 }
 
 .accordion__content:hover p,
-.accordion__content:focus p {
+.accordion__content:focus-within p {
   color: $base-white;
   outline: none;
 }

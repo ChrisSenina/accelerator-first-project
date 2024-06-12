@@ -238,12 +238,18 @@ export function sliderReviews() {
           spaceBetween: 30,
           slidesPerView: 1,
           autoHeight: false,
+          scrollbar: {
+            dragSize: '326px',
+          }
         },
 
         1440: {
           width: 1240,
           spaceBetween: 32,
           slidesPerView: 2,
+          scrollbar: {
+            dragSize: '394px',
+          }
         }
       }
     });
