@@ -239,8 +239,8 @@
 
 .hero__slide-wrapper {
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 198px;
     gap: 40px;
     background-color: $base-white;
     border-radius: 0px 0px 30px 30px;

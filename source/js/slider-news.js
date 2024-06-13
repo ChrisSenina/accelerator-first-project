@@ -9,11 +9,6 @@ export function mobile() {
   const slide2 = wrapper.querySelector('.news__slide-two');
   const slide3 = wrapper.querySelector('.news__slide-three');
   const slide4 = wrapper.querySelector('.news__slide-four');
-  // const link = document.querySelectorAll('.news__slide-link');
-
-  // link.forEach((item) => {
-  //   item.setAttribute('tabIndex', -1);
-  // });
 
   const clone = slide.cloneNode(true);
   wrapper.append(clone);

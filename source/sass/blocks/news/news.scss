@@ -45,6 +45,8 @@
     gap: 32.5px;
     width: 720px;
     overflow-y: unset;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -335,8 +337,7 @@
   border-radius: 0px 12px 0px 0px;
   background-color: $biege;
   display: block;
-  width: 66px;
-  word-break: keep-all;
+  width: min-content;
 
   &::after,
   &::before {
@@ -360,7 +361,6 @@
   @media (min-width: $tablet-width) {
     padding: 13px 12px 5px 0px;
     line-height: 12px;
-    width: min-content;
 
     &::after {
       left: 75px;

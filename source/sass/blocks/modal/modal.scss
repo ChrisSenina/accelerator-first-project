@@ -189,7 +189,6 @@
 }
 
 .modal__checkbox {
-  width: 25.47px;
   background-color: $base-blue;
 
   &:checked {
@@ -199,10 +198,6 @@
   &:hover,
   &:focus {
     border-color: $base-blue;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 20px;
   }
 
   @media (min-width: $desktop-width) {

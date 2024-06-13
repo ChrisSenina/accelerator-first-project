@@ -26,6 +26,8 @@
 }
 
 .reviews__title {
+  word-break: break-all;
+
   @media (min-width: $desktop-width) {
     padding-left: 3px;
   }
@@ -77,12 +79,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 0;
+    gap: 32px;
     align-items: center;
+    justify-content: unset;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 79px;
+    gap: 80px;
   }
 }
 
@@ -131,18 +134,26 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  gap: 26px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -7px;
+    gap: 26px;
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
     margin-top: -5px;
-    gap: 27px;
+    gap: 25px;
   }
 }
 
 .reviews__slide-two .reviews__list {
   @media (min-width: $desktop-width) {
-    gap: 17px;
+    gap: 15px;
   }
 }
 

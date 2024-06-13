@@ -32,6 +32,7 @@
 .contacts__title {
   padding-top: 6px;
   color: $base-white;
+  word-break: break-all;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -50,6 +51,7 @@
   @media (min-width: $tablet-width) {
     padding: 31px 0 30px;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: unset;
     justify-content: space-between;
   }
