@@ -101,6 +101,8 @@
 }
 
 .contacts__link {
+  word-break: break-all;
+
   &:hover {
     background-color: unset;
     color: rgba(255, 255, 255, 0.4);
@@ -114,6 +116,7 @@
   &:active {
     background-color: unset;
     color: $base-white;
+    width: max-content;
     border-bottom: 1px solid $base-white;
     margin-bottom: -1px;
   }

@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#316dc2"/>
+  <meta name="description" content="INTERNSHIP - профессиональный опыт обучения за рубежом">
   <title>INTERNSHIP</title>
-  <link rel="stylesheet" href="sass/style.scss">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -13,6 +14,7 @@
   <link rel="preload" href="fonts/Manrope/Manrope-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Manrope/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Manrope/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body class="page-body">
@@ -549,7 +551,7 @@
             </div>
             <div class="form__box">
               <label class="form__label" for="message">Ваше сообщение</label>
-              <input class="form__input form__input-message" type="text" id="message" rows="5" cols="5" name="message"
+              <input class="form__input form__input-message" type="text" id="message" name="message"
                 pattern="^[А-Яа-яЁё\s]+$">
             </div>
             <div class="form__box form__box-select">
@@ -564,7 +566,7 @@
             </div>
             <div class="form__box form__box-checkbox">
               <label class="form__label form__label-checkbox" for="checkbox"></label>
-              <input class="form__input-checkbox" type="checkbox" id="checkbox" name="agreement">
+              <input class="form__input-checkbox" type="checkbox" id="checkbox" name="checkbox">
               <p class="form__input-text">Я согласен на обработку моих персональных <br> данных</p>
             </div>
             <button class="form__button button" type="submit">Отправить</button>
@@ -634,7 +636,7 @@
         </div>
 
         <form class="modal__form form" id="modal-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class=" form__box">
+          <div class="form__box">
             <label class="modal__label form__label" for="modal-name">Имя</label>
             <input class="modal__input form__input" type="text" id="modal-name" name="name" pattern="^[А-Яа-яЁё\s]+$"
               minlength="2" maxlength="18">

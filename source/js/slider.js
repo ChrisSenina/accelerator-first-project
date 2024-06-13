@@ -1,13 +1,12 @@
 import Swiper from 'swiper';
-import { EffectFade, Grid, Manipulation, Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { EffectFade, Grid, Manipulation, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import { mob, tab, desk, mobile, tablet, desktop } from './slider-news';
-import { renderIssue } from '@linthtml/linthtml/messages';
 
 export function sliderHero() {
   document.addEventListener('DOMContentLoaded', () => {
     new Swiper('.hero__slider', {
-      modules: [Pagination, EffectFade],
+      modules: [Pagination, EffectFade, A11y],
 
       direction: 'horizontal',
 
@@ -36,6 +35,10 @@ export function sliderHero() {
             'hero__pagination-bullet'.setAttribute('tabIndex', 0);
           }
         }
+      },
+
+      ally: {
+        paginationBulletMessage: 'Go to slide {{index}}',
       },
     });
   });
@@ -100,7 +103,7 @@ export function sliderNews() {
   document.addEventListener('DOMContentLoaded', () => {
 
     new Swiper('.news__slider', {
-      modules: [Pagination, Navigation, Grid, Manipulation],
+      modules: [Pagination, Navigation, Grid, Manipulation, A11y],
 
       direction: 'horizontal',
       loop: false,
@@ -136,6 +139,10 @@ export function sliderNews() {
             'swiper-pagination-bullet'.setAttribute('tabIndex', 0);
           }
         }
+      },
+
+      ally: {
+        paginationBulletMessage: 'Go to slide {{index}}',
       },
 
       breakpoints: {
