@@ -111,6 +111,8 @@ export function sliderNews() {
       autoHeight: false,
       observer: true,
       observeParents: true,
+      observeSlideChildren: true,
+      resizeObserver: true,
       loopAddBlankSlides: true,
       updateOnWindowResize: true,
 
@@ -140,6 +142,7 @@ export function sliderNews() {
           }
         },
       },
+          Swiper.on('slidesUpdates', sliderNews);
 
       ally: {
         paginationBulletMessage: 'Go to slide {{index}}',
