@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#316dc2"/>
+  <meta name="theme-color" content="#316dc2">
   <meta name="description" content="INTERNSHIP - профессиональный опыт обучения за рубежом">
   <title>INTERNSHIP</title>
   <link rel="icon" href="favicon.ico">
@@ -539,7 +539,7 @@
           <h3 class="form-page__title">Напишите нам</h3>
           <p class="form-page__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
 
-          <form class="form form-page__form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form form-page__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
             <div class="form__box">
               <label class="form__label" for="name">Имя</label>
               <input class="form__input" type="text" id="name" name="name" pattern="^[А-Яа-яЁё\s]+$" minlength="2"
@@ -547,7 +547,7 @@
             </div>
             <div class="form__box">
               <label class="form__label" for="phone">Телефон</label>
-              <input class="form__input" type="tel" id="phone" data-tel-input name="phone" minlength="12">
+              <input class="form__input" type="tel" id="phone" name="phone" minlength="12" data-tel-input="input">
             </div>
             <div class="form__box">
               <label class="form__label" for="message">Ваше сообщение</label>
@@ -565,9 +565,8 @@
               </ul>
             </div>
             <div class="form__box form__box-checkbox">
-              <label class="form__label form__label-checkbox" for="checkbox"></label>
+              <label class="form__label form__label-checkbox" for="checkbox">Я согласен на обработку моих персональных <br> данных</label>
               <input class="form__input-checkbox" type="checkbox" id="checkbox" name="checkbox">
-              <p class="form__input-text">Я согласен на обработку моих персональных <br> данных</p>
             </div>
             <button class="form__button button" type="submit">Отправить</button>
           </form>
@@ -602,17 +601,17 @@
     </div>
     <ul class="footer__social social">
       <li class="social__item">
-        <a class="social__link link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
+        <a class="social__link link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link link social__link--ok" href="https://ok.ru/live/htmlacademy" target="_blank">
+        <a class="social__link link social__link--ok" href="https://ok.ru/live/htmlacademy" target="_blank" rel="noopener noreferrer">
           <span class="visually-hidden">Одноклассники</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link link social__link--reddit" href="https://reddit.com/" target="_blank">
+        <a class="social__link link social__link--reddit" href="https://reddit.com/" target="_blank" rel="noopener noreferrer">
           <span class="visually-hidden">Reddit</span>
         </a>
       </li>
@@ -625,7 +624,7 @@
   <div class="modal">
     <div class="modal__wrapper">
       <div class="modal__window">
-        <button class="modal__toggle">
+        <button class="modal__toggle" type="button">
           <span class="visually-hidden">Закрыть окно</span>
         </button>
         <div class="modal__header">
@@ -643,8 +642,8 @@
           </div>
           <div class="form__box">
             <label class="modal__label form__label" for="modal-phone">Телефон</label>
-            <input class="modal__input form__input" type="tel" id="modal-phone" data-tel-input name="phone"
-              minlength="12">
+            <input class="modal__input form__input" type="tel" id="modal-phone" name="phone"
+              minlength="12" data-tel-input="input">
           </div>
           <div class="form__box form__box-select">
             <label class="modal__label form__label" for="modal-select">Выберите город</label>
@@ -658,9 +657,8 @@
             </ul>
           </div>
           <div class="form__box form__box-checkbox">
-            <label class="form__label form__label-checkbox" for="modal-checkbox"></label>
+            <label class="modal__label-checkbox form__label form__label-checkbox" for="modal-checkbox">Я согласен на обработку моих персональных данных</label>
             <input class="modal__checkbox form__input-checkbox" type="checkbox" id="modal-checkbox" name="agreement">
-            <p class="modal__text form__input-text">Я согласен на обработку моих персональных данных</p>
           </div>
           <button class="modal__form-button button" type="submit">Отправить</button>
         </form>

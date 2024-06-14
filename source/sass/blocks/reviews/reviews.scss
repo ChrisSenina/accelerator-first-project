@@ -47,6 +47,7 @@
 
 .reviews__slide {
   min-height: 472px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     min-height: unset;

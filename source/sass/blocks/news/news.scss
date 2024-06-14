@@ -140,6 +140,7 @@
   background-color: rgba(49, 109, 194, 0.2);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     max-width: 286px;
@@ -212,11 +213,11 @@
   background-size: 290px 330px;
   min-height: 330px;
   background-image:
-  image-set(
-    url("../img/news/photo-3-tab@2x.webp") type("image/webp") 2x,
-    url("../img/news/photo-3-tab.webp") type("image/webp") 1x,
-    url("../img/news/photo-3-tab@2x.jpg") 2x,
-    url("../img/news/photo-3-tab.jpg") 1x);
+    image-set(
+      url("../img/news/photo-3-tab@2x.webp") type("image/webp") 2x,
+      url("../img/news/photo-3-tab.webp") type("image/webp") 1x,
+      url("../img/news/photo-3-tab@2x.jpg") 2x,
+      url("../img/news/photo-3-tab.jpg") 1x);
 
 
   @media (min-width: $tablet-width) {
@@ -242,11 +243,11 @@
   background-size: 290px 250px;
   order: 4;
   background-image:
-      image-set(
-        url("../img/news/photo-4-tab@2x.webp") type("image/webp") 2x,
-        url("../img/news/photo-4-tab.webp") type("image/webp") 1x,
-        url("../img/news/photo-4@-tab2x.jpg") 2x,
-        url("../img/news/photo-4-tab.jpg") 1x);
+    image-set(
+      url("../img/news/photo-4-tab@2x.webp") type("image/webp") 2x,
+      url("../img/news/photo-4-tab.webp") type("image/webp") 1x,
+      url("../img/news/photo-4-tab@2x.jpg") 2x,
+      url("../img/news/photo-4-tab.jpg") 1x);
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -303,6 +304,9 @@
 }
 
 .news__slide-two .news__slide-data {
+  &::after {
+    left: 79px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-right: 13px;
@@ -329,13 +333,13 @@
 
 .news__slide-data {
   margin: 0;
-  padding: 13px 13px 5px 0px;
+  padding: 13px 13px 5px 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   letter-spacing: 0.12px;
   color: $base-blue;
-  border-radius: 0px 12px 0px 0px;
+  border-radius: 0 12px 0 0;
   background-color: $biege;
   display: block;
   width: min-content;
@@ -350,7 +354,7 @@
   }
 
   &::after {
-    left: 79px;
+    left: 75px;
     top: 14px;
   }
 
@@ -360,7 +364,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 13px 12px 5px 0px;
+    padding: 13px 12px 5px 0;
     line-height: 12px;
 
     &::after {
@@ -379,12 +383,12 @@
 
 .news__slide-title {
   margin: 0 90px 0 0;
-  padding: 10px 18px 4px 0px;
+  padding: 10px 18px 4px 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: $base-blue;
-  border-radius: 0px 12px 0px 0px;
+  border-radius: 0 12px 0 0;
   background-color: $biege;
 
   @media (min-width: $tablet-width) {
@@ -405,12 +409,12 @@
 .news__slide-wrapper {
   position: relative;
   margin: 0 27px 0 0;
-  padding: 13px 10px 9px 0px;
+  padding: 13px 10px 9px 0;
   display: grid;
   grid-template-columns: 1fr 30px;
   align-items: center;
   gap: 10px;
-  border-radius: 0px 12px 0px 12px;
+  border-radius: 0 12px;
   background-color: $biege;
 
   &::after,
@@ -419,7 +423,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    background: url(/__spritemap#sprite-angle-b-view) no-repeat center;
+    background: url("/__spritemap#sprite-angle-b-view") no-repeat center;
   }
 
   &::after {
@@ -434,7 +438,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 84px;
-    padding: 12px 18px 15px 0px;
+    padding: 12px 18px 15px 0;
 
     &::before {
       right: 17px;
@@ -486,7 +490,7 @@
     position: absolute;
     width: 8px;
     height: 8px;
-    background: url(/__spritemap#sprite-arrow-view) no-repeat center;
+    background: url("/__spritemap#sprite-arrow-view") no-repeat center;
     right: 11px;
     top: 11px;
     z-index: 1;
@@ -539,7 +543,7 @@
     line-height: 20px;
   }
 
-  &:hover{
+  &:hover {
     border-color: $base-blue;
   }
 
@@ -556,6 +560,10 @@
   }
 }
 
+.news__pagination-bullet.test {
+  background-color: red;
+}
+
 .news__navigation {
   position: relative;
   margin-top: -24px;
@@ -563,6 +571,5 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -27px;
-
   }
 }

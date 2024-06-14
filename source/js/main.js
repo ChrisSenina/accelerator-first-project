@@ -18,4 +18,3 @@ isValidModal();
 modalOpen();
 selectModalChange();
 inputMask();
-

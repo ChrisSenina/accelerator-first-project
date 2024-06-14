@@ -34,14 +34,14 @@
 
 .hero__pagination {
   padding: 10px 16px 11px;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0 0;
   background-color: $base-white;
   width: 48px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 20px;
     width: 60px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,80 +100,81 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .hero__slide-one {
   background-image:
     image-set(url("../img/hero/photo-1-mobile@2x.webp") type("image/webp") 2x,
-      url("../img/hero/photo-1-mobile.webp") type("image/webp") 1x,
-      url("../img/hero/photo-1-mobile@2x.jpg") 2x,
-      url("../img/hero/photo-1-mobile.jpg") 1x);
+    url("../img/hero/photo-1-mobile.webp") type("image/webp") 1x,
+    url("../img/hero/photo-1-mobile@2x.jpg") 2x,
+    url("../img/hero/photo-1-mobile.jpg") 1x);
 
 
   @media (min-width: $tablet-width) {
     background-image:
       image-set(url("../img/hero/photo-1-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/hero/photo-1-tablet.webp") type("image/webp") 1x,
-        url("../img/hero/photo-1-tablet@2x.jpg") 2x,
-        url("../img/hero/photo-1-tablet.jpg") 1x);
+      url("../img/hero/photo-1-tablet.webp") type("image/webp") 1x,
+      url("../img/hero/photo-1-tablet@2x.jpg") 2x,
+      url("../img/hero/photo-1-tablet.jpg") 1x);
   }
 
   @media (min-width: $desktop-width) {
     background-image:
       image-set(url("../img/hero/photo-1@2x.webp") type("image/webp") 2x,
-        url("../img/hero/photo-1.webp") type("image/webp") 1x,
-        url("../img/hero/photo-1@2x.jpg") 2x,
-        url("../img/hero/photo-1.jpg") 1x);
+      url("../img/hero/photo-1.webp") type("image/webp") 1x,
+      url("../img/hero/photo-1@2x.jpg") 2x,
+      url("../img/hero/photo-1.jpg") 1x);
   }
 }
 
 .hero__slide-two {
   background-image:
     image-set(url("../img/hero/photo-2-mobile@2x.webp") type("image/webp") 2x,
-      url("../img/hero/photo-2-mobile.webp") type("image/webp") 1x,
-      url("../img/hero/photo-2-mobile@2x.jpg") 2x,
-      url("../img/hero/photo-2-mobile.jpg") 1x);
+    url("../img/hero/photo-2-mobile.webp") type("image/webp") 1x,
+    url("../img/hero/photo-2-mobile@2x.jpg") 2x,
+    url("../img/hero/photo-2-mobile.jpg") 1x);
 
 
   @media (min-width: $tablet-width) {
     background-image:
       image-set(url("../img/hero/photo-2-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/hero/photo-2-tablet.webp") type("image/webp") 1x,
-        url("../img/hero/photo-2-tablet@2x.jpg") 2x,
-        url("../img/hero/photo-2-tablet.jpg") 1x);
+      url("../img/hero/photo-2-tablet.webp") type("image/webp") 1x,
+      url("../img/hero/photo-2-tablet@2x.jpg") 2x,
+      url("../img/hero/photo-2-tablet.jpg") 1x);
   }
 
   @media (min-width: $desktop-width) {
     background-image:
       image-set(url("../img/hero/photo-2@2x.webp") type("image/webp") 2x,
-        url("../img/hero/photo-2.webp") type("image/webp") 1x,
-        url("../img/hero/photo-2@2x.jpg") 2x,
-        url("../img/hero/photo-2.jpg") 1x);
+      url("../img/hero/photo-2.webp") type("image/webp") 1x,
+      url("../img/hero/photo-2@2x.jpg") 2x,
+      url("../img/hero/photo-2.jpg") 1x);
   }
 }
 
 .hero__slide-three {
   background-image:
     image-set(url("../img/hero/photo-3-mobile@2x.webp") type("image/webp") 2x,
-      url("../img/hero/photo-3-mobile.webp") type("image/webp") 1x,
-      url("../img/hero/photo-3-mobile@2x.jpg") 2x,
-      url("../img/hero/photo-3-mobile.jpg") 1x);
+    url("../img/hero/photo-3-mobile.webp") type("image/webp") 1x,
+    url("../img/hero/photo-3-mobile@2x.jpg") 2x,
+    url("../img/hero/photo-3-mobile.jpg") 1x);
 
 
   @media (min-width: $tablet-width) {
     background-image:
       image-set(url("../img/hero/photo-3-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/hero/photo-3-tablet.webp") type("image/webp") 1x,
-        url("../img/hero/photo-3-tablet@2x.jpg") 2x,
-        url("../img/hero/photo-3-tablet.jpg") 1x);
+      url("../img/hero/photo-3-tablet.webp") type("image/webp") 1x,
+      url("../img/hero/photo-3-tablet@2x.jpg") 2x,
+      url("../img/hero/photo-3-tablet.jpg") 1x);
   }
 
   @media (min-width: $desktop-width) {
     background-image:
       image-set(url("../img/hero/photo-3@2x.webp") type("image/webp") 2x,
-        url("../img/hero/photo-3.webp") type("image/webp") 1x,
-        url("../img/hero/photo-3@2x.jpg") 2x,
-        url("../img/hero/photo-3.jpg") 1x);
+      url("../img/hero/photo-3.webp") type("image/webp") 1x,
+      url("../img/hero/photo-3@2x.jpg") 2x,
+      url("../img/hero/photo-3.jpg") 1x);
   }
 }
 
@@ -209,7 +210,7 @@
     line-height: 44px;
     padding: 30px 40px 24px;
     width: 579px;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0 30px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -243,10 +244,9 @@
     grid-template-columns: 1fr 198px;
     gap: 40px;
     background-color: $base-white;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0 0 30px 30px;
     padding: 0 40px 35px;
     margin-right: 85px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -289,7 +289,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  border-radius: 0 0 16px 0;
+  border-radius: 0 0 16px;
   background-color: $base-white;
 
   @media (min-width: $tablet-width) {
@@ -359,7 +359,7 @@
   margin-right: 106px;
   padding: 10px 15px;
   background-color: $base-white;
-  border-radius: 0px 0px 14px 14px;
+  border-radius: 0 0 14px 14px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

@@ -5,7 +5,6 @@
   font-weight: 500;
   line-height: 12px;
   letter-spacing: 0.24px;
-  text-align: center;
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
@@ -84,7 +83,7 @@
   background-color: $base-white;
 }
 
-.button:focus:after {
+.button:focus::after {
   outline: none;
   background-color: $base-blue;
 }

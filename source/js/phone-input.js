@@ -74,7 +74,7 @@ export function inputMask() {
       }
     };
     for (let i = 0; i < phoneInputs.length; i++) {
-      let input = phoneInputs[i];
+      const input = phoneInputs[i];
       input.addEventListener('keydown', onPhoneKeyDown);
       input.addEventListener('input', onPhoneInput, false);
       input.addEventListener('paste', onPhonePaste, false);

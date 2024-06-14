@@ -138,7 +138,7 @@ export function sliderNews() {
           init: function onFocus() {
             'swiper-pagination-bullet'.setAttribute('tabIndex', 0);
           }
-        }
+        },
       },
 
       ally: {
