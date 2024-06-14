@@ -142,7 +142,6 @@ export function sliderNews() {
           }
         },
       },
-          Swiper.on('slidesUpdates', sliderNews);
 
       ally: {
         paginationBulletMessage: 'Go to slide {{index}}',
