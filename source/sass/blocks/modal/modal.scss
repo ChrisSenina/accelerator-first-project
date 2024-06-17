@@ -241,3 +241,11 @@
     }
   }
 }
+
+.modal__form-button:active::after {
+  background-color: $base-white;
+}
+
+.modal__form-button:active::before {
+  filter: invert(59%) sepia(89%) saturate(494%) hue-rotate(175deg) brightness(96%) contrast(91%);
+}
