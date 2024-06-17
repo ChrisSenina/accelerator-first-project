@@ -30,11 +30,11 @@ export function sliderHero() {
         type: 'bullets',
         clickable: true,
 
-        on: {
-          init: function onFocus() {
-            'hero__pagination-bullet'.setAttribute('tabIndex', 0);
-          }
-        }
+        // on: {
+        //   init: function onFocus() {
+        //     'hero__pagination-bullet'.setAttribute('tabIndex', 0);
+        //   }
+        // }
       },
 
       ally: {
