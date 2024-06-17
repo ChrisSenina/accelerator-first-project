@@ -73,6 +73,7 @@
   border: 2px solid $base-blue;
   background: transparent;
   padding: 0;
+  font-size: 0;
 
   @media (min-width: $tablet-width) {
     width: 12px;

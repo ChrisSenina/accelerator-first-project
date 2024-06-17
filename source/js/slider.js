@@ -40,9 +40,14 @@ export function sliderHero() {
       ally: {
         paginationBulletMessage: 'Go to slide {{index}}',
       },
+
+      breakpoints: {
+        1440: {
+          allowTouchMove: false,
+        }
+      }
     });
   });
-
 }
 
 export function sliderPrograms() {
@@ -115,7 +120,6 @@ export function sliderNews() {
       resizeObserver: true,
       loopAddBlankSlides: true,
       updateOnWindowResize: true,
-
 
       slideActiveClass: 'news__slide-active',
 

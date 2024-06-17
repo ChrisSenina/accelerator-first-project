@@ -40,7 +40,6 @@ export function modalOpen() {
   });
 }
 
-
 export function isValidModal() {
   form.addEventListener('submit', (event) => {
 
@@ -94,5 +93,4 @@ export function selectModalChange() {
   options.forEach((option) => {
     option.addEventListener('click', selectOption);
   });
-
 }

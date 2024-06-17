@@ -18,7 +18,5 @@ export function playAccordion () {
         description.style.height = '0px';
       }
     });
-
-
   });
 }

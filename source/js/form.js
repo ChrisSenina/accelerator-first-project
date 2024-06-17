@@ -62,4 +62,3 @@ export function selectChange() {
     option.addEventListener('click', selectOption);
   });
 }
-

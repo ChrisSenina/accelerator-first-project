@@ -14,7 +14,7 @@ export function inputMask() {
       if (pasted) {
         const pastedText = pasted.getData('Text');
         if (/\D/g.test(pastedText)) {
-          // Если происходит попытка ввода нечисловых символов - удляем их
+          // Если происходит попытка ввода нечисловых символов - удаляем их
           // сбрасыываем форматирование
           input.value = inputNumbersValue;
         }
@@ -66,6 +66,7 @@ export function inputMask() {
       }
       input.value = formattedInputValue;
     };
+
     const onPhoneKeyDown = function (e) {
       // Очистка инпута после ввода последнего символа
       const inputValue = e.target.value.replace(/\D/g, '');
@@ -73,6 +74,7 @@ export function inputMask() {
         e.target.value = '';
       }
     };
+
     for (let i = 0; i < phoneInputs.length; i++) {
       const input = phoneInputs[i];
       input.addEventListener('keydown', onPhoneKeyDown);
