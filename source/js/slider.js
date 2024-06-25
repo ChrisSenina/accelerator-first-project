@@ -184,21 +184,31 @@ export function sliderAdv() {
         nextEl: '.swiper-button-next.advantages-button-next',
         prevEl: '.swiper-button-prev.advantages-button-prev',
       },
+
+      on: {
+        resize: function () {
+          const originalSlides = swiper.slides;
+          if (window.innerWidth >= 1440) {
+            originalSlides.forEach((slide) => {
+              swiper.appendSlide(slide.outerHTML);
+            });
+          } else {
+            originalSlides.forEach((slide) => {
+              swiper.removeSlide(slide.outerHTML);
+            });
+          }
+        }
+      }
     });
-    if (1440 > window.innerWidth) {
-      swiper.el.classList.add('-non-slider');
-      swiper.destroy(true, true);
-    } else {
+
+    if (1440 <= window.innerWidth) {
       setTimeout(() => {
         swiper.init();
-        swiper.el.classList.remove('-non-slider');
         window.removeEventListener('load', resizeWindow);
         window.removeEventListener('resize', resizeWindow);
-        const originalSlides = swiper.slides;
-        originalSlides.forEach((slide) => {
-          swiper.appendSlide(slide.outerHTML);
-        });
-      }, 500);
+      }, 300);
+    } else {
+      swiper.destroy(true, true);
     }
   };
 
