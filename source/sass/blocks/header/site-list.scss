@@ -55,19 +55,18 @@
   }
 
   &:hover {
-    @media (max-width: $tablet-width-only) {
-      padding: 0 3px;
-      border-bottom-color: $base-white;
-    }
+    border-bottom-color: $base-white;
 
-    @media (min-width: $desktop-width) {
-      border-bottom-color: $base-white;
+    @media (min-width: $tablet-width) {
+      padding: 0 3px;
     }
   }
 
   &:focus {
     outline: none;
-    border-color: $base-white;
+    padding: 3px 5px;
+    margin: -3px 0 -4px;
+    border: 1px solid $base-white;
   }
 
   &:active {
