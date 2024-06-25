@@ -12,29 +12,29 @@ const desktopSections = [
 ]
 
 const tabletSections = [
-  // {section: 'header', misMatchThreshold: 1.3},
-  // {section: 'hero', misMatchThreshold: 0.8},
-  // {section: 'tours', misMatchThreshold: 1.1},
-  // {section: 'training', misMatchThreshold: 3.5},
-  // {section: 'about', misMatchThreshold: 3.5},
-  // {section: 'reviews', misMatchThreshold: 2.5},
-  // {section: 'adv', misMatchThreshold: 0.8},
-  // {section: 'gallery', misMatchThreshold: 0.7},
-  // {section: 'form', misMatchThreshold: 1.2},
-  // {section: 'footer', misMatchThreshold: 1.1},
+  {section: 'header', misMatchThreshold: 1.3},
+  {section: 'hero', misMatchThreshold: 0.8},
+  {section: 'tours', misMatchThreshold: 1.1},
+  {section: 'training', misMatchThreshold: 3.5},
+  {section: 'about', misMatchThreshold: 3.5},
+  {section: 'reviews', misMatchThreshold: 2.5},
+  {section: 'adv', misMatchThreshold: 0.8},
+  {section: 'gallery', misMatchThreshold: 0.7},
+  {section: 'form', misMatchThreshold: 1.2},
+  {section: 'footer', misMatchThreshold: 1.1},
 ]
 
 const mobileSections = [
-  {section: 'header', misMatchThreshold: 2.2},
-  {section: 'hero', misMatchThreshold: 1.2},
-  {section: 'tours', misMatchThreshold: 2.2},
-  {section: 'training', misMatchThreshold: 4.3},
-  {section: 'about', misMatchThreshold: 3.5},
-  {section: 'reviews', misMatchThreshold: 2.6},
-  {section: 'adv', misMatchThreshold: 1.2},
-  {section: 'gallery', misMatchThreshold: 0.7},
-  {section: 'form', misMatchThreshold: 1.1},
-  {section: 'footer', misMatchThreshold: 1.1},
+  // {section: 'header', misMatchThreshold: 2.2},
+  // {section: 'hero', misMatchThreshold: 1.2},
+  // {section: 'tours', misMatchThreshold: 2.2},
+  // {section: 'training', misMatchThreshold: 4.3},
+  // {section: 'about', misMatchThreshold: 3.5},
+  // {section: 'reviews', misMatchThreshold: 2.6},
+  // {section: 'adv', misMatchThreshold: 1.2},
+  // {section: 'gallery', misMatchThreshold: 0.7},
+  // {section: 'form', misMatchThreshold: 1.1},
+  // {section: 'footer', misMatchThreshold: 1.1},
 ]
 
 const VIEWPORTS = {

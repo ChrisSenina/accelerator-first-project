@@ -42,7 +42,7 @@
   word-break: break-all;
 
   @media (min-width: $tablet-width) {
-    padding: 21px 0 60px;
+    padding: 20px 0 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,7 +183,7 @@
     top: 19px;
 
     @media (min-width: $tablet-width) {
-      top: 29px;
+      top: 28px;
     }
 
     @media (min-width: $desktop-width) {
@@ -198,7 +198,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 72px;
-    padding-bottom: 15px;
+    padding-bottom: 13.5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -219,7 +219,7 @@
     top: 19px;
 
     @media (min-width: $tablet-width) {
-      top: 29px;
+      top: 28px;
     }
 
     @media (min-width: $desktop-width) {
@@ -240,6 +240,14 @@
   &::before {
     background: url("/__spritemap#sprite-eco-view") no-repeat center;
     background-size: 24px 24px;
+
+    @media (min-width: $tablet-width) {
+      top: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 38px;
+    }
   }
 }
 
@@ -247,7 +255,7 @@
   padding: 61px 15px 15px 11px;
 
   @media (min-width: $tablet-width) {
-    padding: 70.5px 10px 15px 6px;
+    padding: 70.8px 10px 14px 6px;
   }
 
   @media (min-width: $desktop-width) {

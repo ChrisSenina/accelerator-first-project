@@ -58,7 +58,8 @@
   line-height: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 145px;
+    padding-top: 144px;
+    padding-right: 5px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -79,7 +80,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 0 25px;
+    padding: 28px 3px 25px 0;
     font-size: 16px;
     line-height: 24px;
   }
