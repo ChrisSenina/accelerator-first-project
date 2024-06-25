@@ -25,16 +25,16 @@ const tabletSections = [
 ]
 
 const mobileSections = [
-  // {section: 'header', misMatchThreshold: 2.2},
-  // {section: 'hero', misMatchThreshold: 1.2},
-  // {section: 'tours', misMatchThreshold: 2.2},
-  // {section: 'training', misMatchThreshold: 4.3},
-  // {section: 'about', misMatchThreshold: 3.5},
+  {section: 'header', misMatchThreshold: 2.2},
+  {section: 'hero', misMatchThreshold: 1.2},
+  {section: 'tours', misMatchThreshold: 2.2},
+  {section: 'training', misMatchThreshold: 4.3},
+  {section: 'about', misMatchThreshold: 3.5},
   {section: 'reviews', misMatchThreshold: 2.6},
-  // {section: 'adv', misMatchThreshold: 1.2},
-  // {section: 'gallery', misMatchThreshold: 0.7},
-  // {section: 'form', misMatchThreshold: 1.1},
-  // {section: 'footer', misMatchThreshold: 1.1},
+  {section: 'adv', misMatchThreshold: 1.2},
+  {section: 'gallery', misMatchThreshold: 0.7},
+  {section: 'form', misMatchThreshold: 1.1},
+  {section: 'footer', misMatchThreshold: 1.1},
 ]
 
 const VIEWPORTS = {

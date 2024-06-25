@@ -18,7 +18,7 @@
       top: 166px;
       left: 0;
 
-      @media (resolution >= 2dppx) {
+      @media (resolution >=2dppx) {
         background: url("../img/advantages/clouds@2x.png") no-repeat center;
         background-size: contain;
       }
@@ -173,6 +173,10 @@
 }
 
 .advantages__content--boots {
+  @media (max-width: $mobile-width-only) {
+    padding-right: 9px;
+  }
+
   &::before {
     background: url("/__spritemap#sprite-boots-view") no-repeat center;
     background-size: 24px 24px;
@@ -189,7 +193,7 @@
 }
 
 .advantages__content--boots .advantages__heading {
-  padding-top: 62px;
+  padding-top: 61px;
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -240,7 +244,7 @@
 }
 
 .advantages__content--eco .advantages__heading {
-  padding: 61px 15px 15px 10px;
+  padding: 61px 15px 15px 11px;
 
   @media (min-width: $tablet-width) {
     padding: 70.5px 10px 15px 6px;
@@ -251,10 +255,9 @@
   }
 }
 
-.advantages__content h3,
-.advantages__heading {
+.advantages__content h3 {
   margin: 0;
-  padding: 61px 15px 16px;
+  padding: 61px 15px 15px;
   font-size: 14px;
   font-weight: 600;
   line-height: 14px;
@@ -285,13 +288,12 @@
   }
 }
 
-.advantages__content p,
-.advantages__text {
+.advantages__content p {
   margin: 0;
   padding: 0;
   font-size: 12px;
   font-weight: 400;
-  line-height: 17.9px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
