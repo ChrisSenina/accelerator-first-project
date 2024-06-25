@@ -156,8 +156,9 @@ export function sliderReviews() {
 }
 
 export function sliderAdv() {
-  document.addEventListener('DOMContentLoaded', () => {
-    new Swiper('.advantages__slider', {
+
+  const resizeWindow = () => {
+    const swiper = new Swiper('.advantages__slider', {
       modules: [Navigation, Manipulation],
       direction: 'horizontal',
 
@@ -166,6 +167,7 @@ export function sliderAdv() {
       loopAdditionalSlides: 0,
       observer: true,
       observeParents: true,
+      observeSlideChildren: true,
       resizeObserver: true,
       updateOnWindowResize: true,
       centeredSlides: true,
@@ -182,28 +184,26 @@ export function sliderAdv() {
         nextEl: '.swiper-button-next.advantages-button-next',
         prevEl: '.swiper-button-prev.advantages-button-prev',
       },
-
-      on: {
-        resize: function enableOnlyDesktop(swiper) {
-          if (1440 > window.innerWidth) {
-            swiper.disable();
-            swiper.el.classList.add('-non-slider');
-            swiper.destroy(true, true);
-          } else {
-            swiper.enable();
-            swiper.el.classList.remove('-non-slider');
-            const originalSlides = swiper.slides;
-            originalSlides.forEach((slide) => {
-              swiper.appendSlide(slide.outerHTML);
-            });
-            swiper.init();
-          }
-          swiper.update();
-        },
-      },
     });
-  }
-  );
+    if (1440 > window.innerWidth) {
+      swiper.el.classList.add('-non-slider');
+      swiper.destroy(true, true);
+    } else {
+      setTimeout(() => {
+        swiper.init();
+        swiper.el.classList.remove('-non-slider');
+        window.removeEventListener('load', resizeWindow);
+        window.removeEventListener('resize', resizeWindow);
+        const originalSlides = swiper.slides;
+        originalSlides.forEach((slide) => {
+          swiper.appendSlide(slide.outerHTML);
+        });
+      }, 500);
+    }
+  };
+
+  window.addEventListener('load', resizeWindow);
+  window.addEventListener('resize', resizeWindow);
 }
 
 export function sliderGallery() {
