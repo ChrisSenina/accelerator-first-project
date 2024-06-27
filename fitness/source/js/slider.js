@@ -1,0 +1,92 @@
+import { Swiper } from 'swiper';
+import { Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
+
+export function slider() {
+  new Swiper('.juri__slider', {
+    modules: [Navigation, Autoplay],
+
+    direction: 'horizontal',
+    loop: true,
+
+    slidesPerView: 'auto',
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+
+    allowTouchMove: true,
+
+    speed: 1000,
+    freeMode: true,
+
+    navigation: {
+      nextEl: '.swiper-button-next.juri-button-next',
+      prevEl: '.swiper-button-prev.juri-button-prev',
+    },
+
+    breakpoints: {
+      320: {
+        width: 227,
+        slidesPerView: 1,
+        initialSlide: 2,
+        spaceBetween: 40,
+      },
+
+      768: {
+        width: 560,
+        slidesPerView: 2,
+        initialSlide: 0,
+        spaceBetween: 40,
+      },
+
+      1366: {
+        width: 1160,
+        height: 300,
+        slidesPerView: 4,
+        initialSlide: 0,
+        spaceBetween: 40,
+      }
+    }
+  });
+}
+
+export function sliderSecond() {
+  new Swiper('.reviews__slider', {
+    modules: [Navigation],
+
+    loop: false,
+    speed: 2000,
+
+    slidesPerView: 'auto',
+
+    direction: 'horizontal',
+
+    navigation: {
+      nextEl: '.swiper-button-next.reviews-button-next',
+      prevEl: '.swiper-button-prev.reviews-button-prev',
+      disabledClass: 'reviews-button-disabled',
+    },
+
+    breakpoints: {
+      320: {
+        width: 240,
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+
+      768: {
+        width: 500,
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+
+      1366: {
+        width: 560,
+        slidesPerView: 1,
+        spaceBetween: 40,
+      }
+    }
+  });
+}

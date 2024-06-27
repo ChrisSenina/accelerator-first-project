@@ -1,0 +1,33 @@
+.faq {
+  margin: 0;
+  padding: 70px 15px;
+  background-color: $secondary-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 45px 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+  }
+}
+
+.faq__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding-top: 50px;
+  }
+}
+
+.faq__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}

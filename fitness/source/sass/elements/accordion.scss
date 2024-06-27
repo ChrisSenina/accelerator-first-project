@@ -1,0 +1,173 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #74819c;
+}
+
+.accordion__content {
+  overflow: hidden;
+  transition: all 1s linear;
+}
+
+.accordion__content h3 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 32px;
+  gap: 22px;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  border-top: 1px solid #74819c;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 42px;
+    gap: 78px;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 25px 0 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 23px 0;
+  }
+}
+
+.accordion__content:nth-child(2) h3,
+.accordion__content:nth-child(4) h3 {
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 0 22px;
+  }
+}
+
+.accordion__content:nth-child(3) h3 {
+  @media (min-width: $tablet-width) {
+    padding: 26px 0 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 22px;
+  }
+}
+
+.accordion__content h3 br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.accordion__content:last-child h3 br {
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.accordion__content p {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  transition: all 1s linear;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 120px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 250px;
+  }
+}
+
+.accordion__content p br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.accordion__content p br:last-of-type {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.accordion__content.open h3 {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 23px;
+  }
+}
+
+.accordion__content.open p {
+  height: unset;
+}
+
+.accordion__input {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: url("/__spritemap#sprite-plus-view") no-repeat center;
+  background-size: 14px 14px;
+  border-radius: 50%;
+  border: 1px solid $base-blue;
+  cursor: pointer;
+  margin-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 20px 20px;
+  }
+}
+
+.accordion__input:hover {
+  background-color: $secondary-blue;
+}
+
+.accordion__input:focus {
+  outline: none;
+  border-color: $secondary-blue;
+  background-color: #74819c;
+}
+
+.accordion__input.open {
+  background: url("/__spritemap#sprite-minus-view") no-repeat center;
+  background-color: $base-blue;
+  border: none;
+  background-size: 14px 2px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 20px 2px;
+  }
+}
+
+.accordion__content.open {
+  transition: all 1s linear;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
+}

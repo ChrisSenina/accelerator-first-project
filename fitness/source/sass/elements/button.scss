@@ -1,0 +1,54 @@
+.button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid $base-white;
+  text-align: center;
+  color: $base-white;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-blue {
+  color: $base-blue;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  border: 2px solid $base-blue;
+}
+
+.button:hover {
+  background-color: $base-white;
+  color: $light-blue;
+  border: none;
+}
+
+.button:focus {
+  outline: none;
+  border-color: #000000;
+  color: $light-blue;
+  background-color: $base-white;
+  opacity: 0.8;
+}
+
+.button:active {
+  border: none;
+  background-color: $base-white;
+  color: $base-blue;
+}
+
+.button:disabled {
+  opacity: 0.5;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  outline: none;
+  color: $base-white;
+  border: none;
+  background: linear-gradient(151.36deg, #ed0233 16.34%, #003eb7 97.81%);
+}
