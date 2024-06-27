@@ -400,11 +400,10 @@
     width: 238px;
     font-size: 16px;
     line-height: 16px;
-    margin: 25px 220px 0;
     background-position: 218px 10px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 53px 481px 0;
+    margin-top: 53px;
   }
 }

@@ -164,14 +164,13 @@ export function sliderAdv() {
 
       loop: true,
       loopAddBlankSlides: false,
-      loopAdditionalSlides: 0,
+      loopAdditionalSlides: 3,
       observer: true,
       observeParents: true,
       observeSlideChildren: true,
       resizeObserver: true,
       updateOnWindowResize: true,
       centeredSlides: true,
-      allowSlidePrev: true,
       allowSlideNext: true,
 
       width: 1200,
