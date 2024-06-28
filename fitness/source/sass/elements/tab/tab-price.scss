@@ -10,7 +10,7 @@
   justify-content: center;
   gap: 46px;
   flex-wrap: wrap;
-  margin: 29px auto 30px;
+  margin: 29px auto;
 
   @media (min-width: $tablet-width) {
     margin: 36px auto 45px;
@@ -19,8 +19,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 52px;
-    margin: 20px auto 41px;
+    gap: 51px;
+    margin: 20px auto 40px;
     width: 352px;
   }
 }
@@ -41,7 +41,7 @@
   font-weight: 400;
   line-height: 16px;
   color: rgba(16, 38, 84, 0.5);
-  padding: 0 0 18px;
+  padding: 0 0 17px;
   border: none;
   background: transparent;
 
@@ -99,7 +99,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 49px 42px 50px;
+  padding: 50px 42px;
   background-color: $base-white;
 
   z-index: 1;
@@ -147,7 +147,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 21px;
+    padding-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -161,12 +161,12 @@
   font-weight: 700;
   color: #e8e8e8;
   opacity: 0.5;
-  padding-top: 30px;
+  padding-top: 29px;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
     font-size: 100px;
-    padding-top: 23px;
+    padding-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -189,7 +189,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -87px;
-    gap: 15px;
+    gap: 14px;
   }
 }
 
@@ -210,10 +210,12 @@
 .tab-price__icon {
   width: 25px;
   height: 34px;
+  margin-top: 2px;
   background: url("/__spritemap#sprite-ruble-mobile-view") no-repeat center;
   display: block;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     width: 31px;
     height: 42px;
     background-image: url("/__spritemap#sprite-ruble-tablet-view");
@@ -233,7 +235,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 197px;
+    width: 195px;
     margin-top: 18px;
   }
 }
