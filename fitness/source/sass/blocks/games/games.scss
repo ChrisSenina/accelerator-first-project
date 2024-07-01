@@ -139,13 +139,14 @@
 }
 
 .games__number {
-  margin: 0;
+  margin: -1px 0 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
   grid-row: 1/3;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding-top: 9px;
   }
 
@@ -181,7 +182,7 @@
   line-height: 20px;
   font-weight: 300;
   margin: 0;
-  padding: 15px 63px 15px 40px;
+  padding: 16px 63px 14px 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -203,7 +204,7 @@
   text-transform: uppercase;
   width: 210px;
   height: 60px;
-  padding: 23px 22px;
+  padding: 22px;
   margin: 2px auto 0;
   border: 2px solid $base-white;
 

@@ -28,9 +28,10 @@
 .form__title {
   padding: 0;
   width: 290px;
-  margin: 0 auto;
+  margin: 1px auto -1px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     width: 440px;
     font-size: 54px;
     line-height: 54px;

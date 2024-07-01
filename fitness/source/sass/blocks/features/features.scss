@@ -1,6 +1,6 @@
 .features {
   margin: 0;
-  padding: 40px 0 0;
+  padding: 41px 0 0;
   background-color: $secondary-white;
 
   @media (min-width: $tablet-width) {
@@ -113,7 +113,7 @@
 
 .features__item p {
   margin: 0;
-  padding: 12px 25px 0;
+  padding: 13px 25px 0;
   line-height: 22px;
   text-align: center;
 
@@ -135,6 +135,7 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -188,8 +189,8 @@
 }
 
 .features__item--special {
-  margin: 41px 0 40px;
-  padding: 29px 15px 40px;
+  margin: 39px 0 40px;
+  padding: 29px 15px 39px;
   background-color: $secondary-blue;
 
   @media (min-width: $tablet-width) {
@@ -217,7 +218,7 @@
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
-  padding-top: 6px;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
